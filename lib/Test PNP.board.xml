@@ -1,6 +1,0 @@
-<openpnp-board name="Test PNP.board.xml">
-   <outline units="Millimeters"/>
-   <fiducials/>
-   <placements/>
-   <solder-paste-pads/>
-</openpnp-board>
