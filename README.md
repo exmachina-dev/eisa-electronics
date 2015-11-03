@@ -6,13 +6,11 @@ ____ _ ____ _    ____    ____ _    ____ ____ ___ ____ ____ _  _ _ ____ ____
 ```
                                                                          
                                                                          
-Eisla electronics
-#################
+# Eisla electronics
 
 This repo contains all necessary files to design and produce PCBs for the Eisla product range.
 
-File format and folder structure
-################################
+## File format and folder structure
 
 Documentation files should be in PDF. Board image files can be in PNG or PDF
 PCB Design file are in EAGLE Standard edition (7.4) file format.
