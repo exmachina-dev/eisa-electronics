@@ -16,8 +16,8 @@ Documentation files should be in PDF. Board image files can be in PNG or PDF
 PCB Design file are in EAGLE Standard edition (7.4) file format.
 
 These are general rules to help maintain a consistent folder structure:  
-- All libraries are placed inside the root lib/ folder.  
+* All libraries are placed inside the root lib/ folder.  
 - One board for each project folder.  
 - Mutiples revisions can be placed inside a subfolder. i.e. ArmazCape/Rev A1  
 - BOMs, partlists, spreadsheet should placed inside a BOMs/ folder.  
-- Documentations files are in eagle-resources/doc or in doc/ inside a project folder.  
+- Documentations files are in eagle-resources/doc or in doc/ inside a project folder.
