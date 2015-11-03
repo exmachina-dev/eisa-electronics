@@ -12,7 +12,8 @@ This repo contains all necessary files to design and produce PCBs for the Eisla 
 
 ## File format and folder structure
 
-Documentation files should be in PDF. Board image files can be in PNG or PDF
+Documentation files should be in PDF. Board image files can be in PNG or PDF.
+
 PCB Design file are in EAGLE Standard edition (7.4) file format.
 
 These are general rules to help maintain a consistent folder structure:
