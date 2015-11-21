@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mic" unit="mic" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -617,6 +617,39 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="STPS3L40?" prefix="D" uservalue="yes">
+<gates>
+<gate name="A" symbol="SCHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="S" package="SMC">
+<connects>
+<connect gate="A" pin="A" pad="A"/>
+<connect gate="A" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MP" value="STMICROELECTRONICS" constant="no"/>
+<attribute name="MPN" value="STPS3L40S" constant="no"/>
+<attribute name="OC_FARNELL" value="2352680" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="UF" package="SMB">
+<connects>
+<connect gate="A" pin="A" pad="A"/>
+<connect gate="A" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MP" value="STMICROELECTRONICS" constant="no"/>
+<attribute name="MPN" value="STPS3L40UF" constant="no"/>
+<attribute name="OC_FARNELL" value="2341599" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
