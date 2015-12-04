@@ -25245,11 +25245,31 @@ at 30/07/2012 11:08:17</description>
 <text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="VDD18CORE" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
+<symbol name="VDD18PLL">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.905" x2="0" y2="1.27" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="VDD18PLL" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="VDD18CORE" prefix="VDD3V">
 <gates>
 <gate name="G$1" symbol="VDD18CORE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VDD18PLL">
+<gates>
+<gate name="G$1" symbol="VDD18PLL" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -29575,7 +29595,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="OC_FARNELL" value="2073509"/>
 </part>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
-<part name="VDD3V1" library="supply3" deviceset="VDD18CORE" device=""/>
 <part name="VDD3V2" library="supply3" deviceset="VDD18CORE" device=""/>
 <part name="R47" library="rcl" deviceset="R-EU_" device="R0603" value="4.7K">
 <attribute name="MF" value="MULTICOMP"/>
@@ -29590,7 +29609,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="OC_FARNELL" value="1759037"/>
 </part>
 <part name="VDD3V4" library="supply3" deviceset="VDD18CORE" device=""/>
-<part name="VDD3V5" library="supply3" deviceset="VDD18CORE" device=""/>
 <part name="U$6" library="emi_filter" deviceset="HI1206N101R-10" device="">
 <attribute name="MC" value="LAIRD TECHNOLOGIES"/>
 <attribute name="MPN" value="HI1206N101R-10"/>
@@ -29627,6 +29645,8 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="MPN" value="MC0603SAF1001T5E"/>
 <attribute name="OC_FARNELL" value="1632391"/>
 </part>
+<part name="U$3" library="supply3" deviceset="VDD18PLL" device=""/>
+<part name="U$7" library="supply3" deviceset="VDD18PLL" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -30048,7 +30068,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="MPN" x="175.26" y="91.44" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="GND20" gate="1" x="167.64" y="78.74"/>
-<instance part="VDD3V1" gate="G$1" x="172.72" y="137.16"/>
 <instance part="VDD3V2" gate="G$1" x="165.1" y="137.16"/>
 <instance part="R47" gate="G$1" x="241.3" y="116.84" rot="R90">
 <attribute name="OC_FARNELL" x="241.3" y="116.84" size="1.778" layer="96" display="off"/>
@@ -30058,7 +30077,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <instance part="GND24" gate="1" x="241.3" y="109.22"/>
 <instance part="+3V12" gate="G$1" x="259.08" y="40.64"/>
 <instance part="VDD3V4" gate="G$1" x="152.4" y="35.56"/>
-<instance part="VDD3V5" gate="G$1" x="200.66" y="35.56"/>
 <instance part="U$6" gate="FB$1" x="165.1" y="27.94">
 <attribute name="MC" x="165.1" y="27.94" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="165.1" y="27.94" size="1.778" layer="96" display="off"/>
@@ -30085,6 +30103,8 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="MPN" x="182.88" y="25.4" size="1.778" layer="96" display="off"/>
 <attribute name="OC_FARNELL" x="182.88" y="25.4" size="1.778" layer="96" display="off"/>
 </instance>
+<instance part="U$3" gate="G$1" x="200.66" y="35.56"/>
+<instance part="U$7" gate="G$1" x="172.72" y="137.16"/>
 </instances>
 <busses>
 </busses>
@@ -30119,6 +30139,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="GND27" gate="1" pin="GND"/>
 <wire x1="114.3" y1="139.7" x2="114.3" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="D4" gate="A" pin="A"/>
+<junction x="106.68" y="139.7"/>
 </segment>
 <segment>
 <pinref part="U1" gate="A" pin="GND"/>
@@ -30149,6 +30170,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="119.38" y1="68.58" x2="119.38" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="D3" gate="A" pin="A"/>
+<junction x="111.76" y="68.58"/>
 </segment>
 <segment>
 <wire x1="78.74" y1="213.36" x2="78.74" y2="215.9" width="0.1524" layer="91"/>
@@ -30293,6 +30315,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="C32" gate="G$1" pin="2"/>
 <junction x="190.5" y="20.32"/>
 <wire x1="190.5" y1="20.32" x2="182.88" y2="20.32" width="0.1524" layer="91"/>
+<junction x="182.88" y="20.32"/>
 </segment>
 </net>
 <net name="VDD_IN" class="1">
@@ -31091,17 +31114,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </net>
 <net name="VDD18CORE" class="0">
 <segment>
-<pinref part="VDD3V1" gate="G$1" pin="VDD18CORE"/>
-<pinref part="U$5" gate="G$1" pin="VDD_A1.8"/>
-<wire x1="172.72" y1="134.62" x2="172.72" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="121.92" x2="180.34" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="VDD_D1.8"/>
-<wire x1="180.34" y1="121.92" x2="182.88" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="121.92" x2="180.34" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="119.38" x2="182.88" y2="119.38" width="0.1524" layer="91"/>
-<junction x="180.34" y="121.92"/>
-</segment>
-<segment>
 <pinref part="VDD3V2" gate="G$1" pin="VDD18CORE"/>
 <pinref part="U$5" gate="G$1" pin="VDD_CO1.8"/>
 <wire x1="180.34" y1="116.84" x2="182.88" y2="116.84" width="0.1524" layer="91"/>
@@ -31114,19 +31126,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="152.4" y1="33.02" x2="152.4" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="U$6" gate="FB$1" pin="1"/>
 <wire x1="152.4" y1="27.94" x2="160.02" y2="27.94" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$6" gate="FB$1" pin="2"/>
-<pinref part="C33" gate="G$1" pin="1"/>
-<wire x1="170.18" y1="27.94" x2="182.88" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="VDD3V5" gate="G$1" pin="VDD18CORE"/>
-<wire x1="182.88" y1="27.94" x2="190.5" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="27.94" x2="200.66" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="27.94" x2="200.66" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="C32" gate="G$1" pin="1"/>
-<junction x="190.5" y="27.94"/>
-<pinref part="C34" gate="G$1" pin="+"/>
-<junction x="182.88" y="27.94"/>
 </segment>
 </net>
 <net name="SYS_RESET" class="0">
@@ -31141,6 +31140,32 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="U$5" gate="G$1" pin="EDD_IO"/>
 <pinref part="R47" gate="G$1" pin="2"/>
 <wire x1="223.52" y1="121.92" x2="241.3" y2="121.92" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VDD18PLL" class="0">
+<segment>
+<pinref part="U$6" gate="FB$1" pin="2"/>
+<pinref part="C33" gate="G$1" pin="1"/>
+<wire x1="170.18" y1="27.94" x2="182.88" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="27.94" x2="190.5" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="27.94" x2="200.66" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="27.94" x2="200.66" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="C32" gate="G$1" pin="1"/>
+<junction x="190.5" y="27.94"/>
+<pinref part="C34" gate="G$1" pin="+"/>
+<junction x="182.88" y="27.94"/>
+<pinref part="U$3" gate="G$1" pin="VDD18PLL"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="VDD_A1.8"/>
+<wire x1="172.72" y1="121.92" x2="180.34" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="VDD_D1.8"/>
+<wire x1="180.34" y1="121.92" x2="182.88" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="121.92" x2="180.34" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="119.38" x2="182.88" y2="119.38" width="0.1524" layer="91"/>
+<junction x="180.34" y="121.92"/>
+<pinref part="U$7" gate="G$1" pin="VDD18PLL"/>
+<wire x1="172.72" y1="121.92" x2="172.72" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -32557,6 +32582,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="C28" gate="G$1" pin="2"/>
 <wire x1="15.24" y1="45.72" x2="15.24" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="25.4" x2="20.32" y2="25.4" width="0.1524" layer="91"/>
+<junction x="20.32" y="25.4"/>
 </segment>
 <segment>
 <pinref part="SUPPLY8" gate="G$1" pin="GND1"/>
@@ -32634,6 +32660,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="C28" gate="G$1" pin="1"/>
 <wire x1="15.24" y1="53.34" x2="15.24" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="55.88" x2="20.32" y2="55.88" width="0.1524" layer="91"/>
+<junction x="20.32" y="55.88"/>
 </segment>
 <segment>
 <pinref part="OK2" gate="A" pin="A"/>
