@@ -155,8 +155,8 @@
 <symbol name="+3V3">
 <wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<pin name="+3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="+3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4677,8 +4677,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <library name="con-multicomp">
 <packages>
 <package name="5504F1-09S-02A">
-<hole x="-12.495" y="0" drill="3.2"/>
-<hole x="12.495" y="0" drill="3.2"/>
 <wire x1="-15.409" y1="9.5" x2="-13.995" y2="9.5" width="0.127" layer="21"/>
 <wire x1="-13.995" y1="9.5" x2="-10.995" y2="9.5" width="0.127" layer="21"/>
 <wire x1="-10.995" y1="9.5" x2="-8.165" y2="9.5" width="0.127" layer="21"/>
@@ -4709,6 +4707,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="10.995" y1="13.5" x2="10.995" y2="9.5" width="0.127" layer="21"/>
 <text x="-15.24" y="-5.08" size="1.27" layer="25">&gt;NAME</text>
 <text x="15.24" y="-3.81" size="1.27" layer="27" rot="R180">&gt;VALUE</text>
+<pad name="G1" x="-12.495" y="0" drill="3.2"/>
+<pad name="G2" x="12.495" y="0" drill="3.2"/>
 </package>
 </packages>
 <symbols>
@@ -4751,24 +4751,30 @@ In this library the device names are the same as the pin names of the symbols, t
 <text x="-3.81" y="10.16" size="1.778" layer="95">&gt;NAME</text>
 <text x="-3.81" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="SHIELD">
+<wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94" curve="180"/>
+<pin name="SHIELD" x="0" y="-2.54" length="middle" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="5504F1-09S-02A-03">
 <gates>
-<gate name="G$1" symbol="SUB-D9" x="0" y="0"/>
+<gate name="C" symbol="SUB-D9" x="0" y="0"/>
+<gate name="S" symbol="SHIELD" x="0" y="-20.32"/>
 </gates>
 <devices>
 <device name="" package="5504F1-09S-02A">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$1" pin="9" pad="9"/>
+<connect gate="C" pin="1" pad="1"/>
+<connect gate="C" pin="2" pad="2"/>
+<connect gate="C" pin="3" pad="3"/>
+<connect gate="C" pin="4" pad="4"/>
+<connect gate="C" pin="5" pad="5"/>
+<connect gate="C" pin="6" pad="6"/>
+<connect gate="C" pin="7" pad="7"/>
+<connect gate="C" pin="8" pad="8"/>
+<connect gate="C" pin="9" pad="9"/>
+<connect gate="S" pin="SHIELD" pad="G1 G2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -18854,8 +18860,8 @@ Differential to Common Mode Rejection	-38 dB typ.		1 MHz - 100 MHz</description>
 </part>
 <part name="R0" library="rcl" deviceset="R-EU_" device="R0603" value="1.5K">
 <attribute name="MF" value="MULTICOMP"/>
-<attribute name="MPN" value="MCMR04X1501FTL"/>
-<attribute name="OC_FARNELL" value="2072645"/>
+<attribute name="MPN" value="MCMR06X1501FTL"/>
+<attribute name="OC_FARNELL" value="2073391"/>
 </part>
 <part name="LED0" library="led" deviceset="LED" device="CHIP-LED0603" value="blue">
 <attribute name="MF" value="MULTICOMP"/>
@@ -18864,8 +18870,8 @@ Differential to Common Mode Rejection	-38 dB typ.		1 MHz - 100 MHz</description>
 </part>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R0603" value="1.5K">
 <attribute name="MF" value="MULTICOMP"/>
-<attribute name="MPN" value="MCMR04X1501FTL"/>
-<attribute name="OC_FARNELL" value="2072645"/>
+<attribute name="MPN" value="MCMR06X1501FTL"/>
+<attribute name="OC_FARNELL" value="2073391"/>
 </part>
 <part name="LED1" library="led" deviceset="LED" device="CHIP-LED0603" value="blue">
 <attribute name="MF" value="MULTICOMP"/>
@@ -18874,8 +18880,8 @@ Differential to Common Mode Rejection	-38 dB typ.		1 MHz - 100 MHz</description>
 </part>
 <part name="R2" library="rcl" deviceset="R-EU_" device="R0603" value="1.5K">
 <attribute name="MF" value="MULTICOMP"/>
-<attribute name="MPN" value="MCMR04X1501FTL"/>
-<attribute name="OC_FARNELL" value="2072645"/>
+<attribute name="MPN" value="MCMR06X1501FTL"/>
+<attribute name="OC_FARNELL" value="2073391"/>
 </part>
 <part name="LED2" library="led" deviceset="LED" device="CHIP-LED0603" value="blue">
 <attribute name="MF" value="MULTICOMP"/>
@@ -18884,8 +18890,8 @@ Differential to Common Mode Rejection	-38 dB typ.		1 MHz - 100 MHz</description>
 </part>
 <part name="R3" library="rcl" deviceset="R-EU_" device="R0603" value="1.5K">
 <attribute name="MF" value="MULTICOMP"/>
-<attribute name="MPN" value="MCMR04X1501FTL"/>
-<attribute name="OC_FARNELL" value="2072645"/>
+<attribute name="MPN" value="MCMR06X1501FTL"/>
+<attribute name="OC_FARNELL" value="2073391"/>
 </part>
 <part name="LED3" library="led" deviceset="LED" device="CHIP-LED0603" value="blue">
 <attribute name="MF" value="MULTICOMP"/>
@@ -18894,8 +18900,8 @@ Differential to Common Mode Rejection	-38 dB typ.		1 MHz - 100 MHz</description>
 </part>
 <part name="R4" library="rcl" deviceset="R-EU_" device="R0603" value="1.5K">
 <attribute name="MF" value="MULTICOMP"/>
-<attribute name="MPN" value="MCMR04X1501FTL"/>
-<attribute name="OC_FARNELL" value="2072645"/>
+<attribute name="MPN" value="MCMR06X1501FTL"/>
+<attribute name="OC_FARNELL" value="2073391"/>
 </part>
 <part name="LED4" library="led" deviceset="LED" device="CHIP-LED0603" value="blue">
 <attribute name="MF" value="MULTICOMP"/>
@@ -18908,29 +18914,29 @@ Differential to Common Mode Rejection	-38 dB typ.		1 MHz - 100 MHz</description>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="R5" library="rcl" deviceset="R-EU_" device="R0603" value="100">
 <attribute name="MF" value="MULTICOMP"/>
-<attribute name="MPN" value="MC00625W04021100R"/>
-<attribute name="OC_FARNELL" value="1358015"/>
+<attribute name="MPN" value="MCMR06X1000FTL"/>
+<attribute name="OC_FARNELL" value="2073347"/>
 </part>
 <part name="R6" library="rcl" deviceset="R-EU_" device="R0603" value="100">
 <attribute name="MF" value="MULTICOMP"/>
-<attribute name="MPN" value="MC00625W04021100R"/>
-<attribute name="OC_FARNELL" value="1358015"/>
+<attribute name="MPN" value="MCMR06X1000FTL"/>
+<attribute name="OC_FARNELL" value="2073347"/>
 </part>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="560pF">
 <attribute name="MF" value="MULTICOMP"/>
-<attribute name="MPN" value="MC0805B561K500CT"/>
-<attribute name="OC_FARNELL" value="1759219"/>
+<attribute name="MPN" value="MC0603B561K500CT"/>
+<attribute name="OC_FARNELL" value="1759081"/>
 </part>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0603" value="560pF">
 <attribute name="MF" value="MULTICOMP"/>
-<attribute name="MPN" value="MC0805B561K500CT"/>
-<attribute name="OC_FARNELL" value="1759219"/>
+<attribute name="MPN" value="MC0603B561K500CT"/>
+<attribute name="OC_FARNELL" value="1759081"/>
 </part>
 <part name="SUPPLY4" library="supply2" deviceset="+12V" device=""/>
 <part name="C3" library="rcl" deviceset="C-EU" device="C0603" value="1uF">
 <attribute name="MF" value="MULTICOMP"/>
-<attribute name="MPN" value="MC0805F105Z250CT"/>
-<attribute name="OC_FARNELL" value="1759429"/>
+<attribute name="MPN" value="MC0603F105Z250CT"/>
+<attribute name="OC_FARNELL" value="1759039"/>
 </part>
 <part name="SUPPLY5" library="supply2" deviceset="GND1" device=""/>
 <part name="SUPPLY6" library="supply2" deviceset="GND1" device=""/>
@@ -18942,8 +18948,8 @@ Differential to Common Mode Rejection	-38 dB typ.		1 MHz - 100 MHz</description>
 </part>
 <part name="R7" library="rcl" deviceset="R-EU_" device="R0603" value="120">
 <attribute name="MF" value="MULTICOMP"/>
-<attribute name="MPN" value="MC00625W04021120R"/>
-<attribute name="OC_FARNELL" value="1358018"/>
+<attribute name="MPN" value="MCMR06X1200FTL"/>
+<attribute name="OC_FARNELL" value="2073369"/>
 </part>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="R8" library="rcl" deviceset="R-EU_" device="R0603" value="120, 1/4W">
@@ -18981,23 +18987,23 @@ Differential to Common Mode Rejection	-38 dB typ.		1 MHz - 100 MHz</description>
 <part name="SUPPLY2" library="supply2" deviceset="GND1" device=""/>
 <part name="R24" library="rcl" deviceset="R-EU_" device="R0402" value="3K3">
 <attribute name="MF" value="MULTICOMP"/>
-<attribute name="MPN" value="MC00625W040213K3"/>
-<attribute name="OC_FARNELL" value="1358056"/>
+<attribute name="MPN" value="MCMR04X3301FTL"/>
+<attribute name="OC_FARNELL" value="2072928"/>
 </part>
 <part name="R25" library="rcl" deviceset="R-EU_" device="R0603" value="330">
 <attribute name="MF" value="MULTICOMP"/>
-<attribute name="MPN" value="MC00625W04021330R"/>
-<attribute name="OC_FARNELL" value="1358028"/>
+<attribute name="MPN" value="MCMR04X3300FTL"/>
+<attribute name="OC_FARNELL" value="2072927"/>
 </part>
 <part name="R26" library="rcl" deviceset="R-EU_" device="R0603" value="4K7">
 <attribute name="MF" value="MULTICOMP"/>
-<attribute name="MPN" value="MC00625W040214K7"/>
-<attribute name="OC_FARNELL" value="1358060"/>
+<attribute name="MPN" value="MCMR06X4701FTL"/>
+<attribute name="OC_FARNELL" value="2073509"/>
 </part>
 <part name="R27" library="rcl" deviceset="R-EU_" device="R0603" value="4K7">
 <attribute name="MF" value="MULTICOMP"/>
-<attribute name="MPN" value="MC00625W040214K7"/>
-<attribute name="OC_FARNELL" value="1358060"/>
+<attribute name="MPN" value="MCMR06X4701FTL"/>
+<attribute name="OC_FARNELL" value="2073509"/>
 </part>
 <part name="GND" library="wirepad" deviceset="WIREPAD" device="1,6/0,9" value="WIREPAD1,6/0,9">
 <attribute name="MF" value=""/>
@@ -19024,13 +19030,13 @@ Differential to Common Mode Rejection	-38 dB typ.		1 MHz - 100 MHz</description>
 <part name="SUPPLY3" library="supply2" deviceset="+12V" device=""/>
 <part name="C4" library="rcl" deviceset="C-EU" device="C0805" value="1uF">
 <attribute name="MF" value="MULTICOMP"/>
-<attribute name="MPN" value="MC0805F105Z250CT"/>
-<attribute name="OC_FARNELL" value="1759429"/>
+<attribute name="MPN" value="MC0805F105Z500CT"/>
+<attribute name="OC_FARNELL" value="1759432"/>
 </part>
 <part name="C5" library="rcl" deviceset="C-EU" device="C0805" value="1uF">
 <attribute name="MF" value="MULTICOMP"/>
-<attribute name="MPN" value="MC0805F105Z250CT"/>
-<attribute name="OC_FARNELL" value="1759429"/>
+<attribute name="MPN" value="MC0805F105Z500CT"/>
+<attribute name="OC_FARNELL" value="1759432"/>
 </part>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
@@ -19038,6 +19044,7 @@ Differential to Common Mode Rejection	-38 dB typ.		1 MHz - 100 MHz</description>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
+<part name="SUPPLY13" library="supply2" deviceset="GND1" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -19052,7 +19059,7 @@ Differential to Common Mode Rejection	-38 dB typ.		1 MHz - 100 MHz</description>
 <instance part="X6" gate="-1" x="22.86" y="121.92" rot="MR0"/>
 <instance part="X5" gate="-1" x="22.86" y="99.06" rot="MR0"/>
 <instance part="GND13" gate="1" x="38.1" y="144.78"/>
-<instance part="X7" gate="G$1" x="335.28" y="144.78">
+<instance part="X7" gate="C" x="335.28" y="144.78">
 <attribute name="OC_FARNELL" x="335.28" y="144.78" size="1.27" layer="96" display="off"/>
 <attribute name="MF" x="335.28" y="144.78" size="1.27" layer="96" display="off"/>
 <attribute name="MPN" x="335.28" y="144.78" size="1.27" layer="96" display="off"/>
@@ -19235,6 +19242,8 @@ Differential to Common Mode Rejection	-38 dB typ.		1 MHz - 100 MHz</description>
 <instance part="+3V1" gate="G$1" x="287.02" y="93.98"/>
 <instance part="+3V2" gate="G$1" x="129.54" y="144.78"/>
 <instance part="+3V3" gate="G$1" x="167.64" y="142.24"/>
+<instance part="X7" gate="S" x="330.2" y="119.38"/>
+<instance part="SUPPLY13" gate="G$1" x="330.2" y="109.22"/>
 </instances>
 <busses>
 </busses>
@@ -19541,7 +19550,7 @@ Differential to Common Mode Rejection	-38 dB typ.		1 MHz - 100 MHz</description>
 </net>
 <net name="CAN0-L" class="0">
 <segment>
-<pinref part="X7" gate="G$1" pin="2"/>
+<pinref part="X7" gate="C" pin="2"/>
 <label x="325.12" y="147.32" size="1.27" layer="95" rot="MR0"/>
 <wire x1="327.66" y1="147.32" x2="307.34" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="2"/>
@@ -19561,7 +19570,7 @@ Differential to Common Mode Rejection	-38 dB typ.		1 MHz - 100 MHz</description>
 </net>
 <net name="CAN0-H" class="0">
 <segment>
-<pinref part="X7" gate="G$1" pin="7"/>
+<pinref part="X7" gate="C" pin="7"/>
 <label x="345.44" y="144.78" size="1.27" layer="95"/>
 <wire x1="342.9" y1="144.78" x2="363.22" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
@@ -19581,7 +19590,7 @@ Differential to Common Mode Rejection	-38 dB typ.		1 MHz - 100 MHz</description>
 </net>
 <net name="+12V" class="1">
 <segment>
-<pinref part="X7" gate="G$1" pin="9"/>
+<pinref part="X7" gate="C" pin="9"/>
 <wire x1="342.9" y1="139.7" x2="347.98" y2="139.7" width="0.1524" layer="91"/>
 <label x="345.44" y="139.7" size="1.27" layer="95"/>
 <pinref part="SUPPLY4" gate="+12V" pin="+12V"/>
@@ -19640,6 +19649,11 @@ Differential to Common Mode Rejection	-38 dB typ.		1 MHz - 100 MHz</description>
 <pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="SUPPLY12" gate="G$1" pin="GND1"/>
 <wire x1="167.64" y1="127" x2="167.64" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X7" gate="S" pin="SHIELD"/>
+<pinref part="SUPPLY13" gate="G$1" pin="GND1"/>
+<wire x1="330.2" y1="111.76" x2="330.2" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FAN0_GND" class="1">
@@ -19752,14 +19766,14 @@ Differential to Common Mode Rejection	-38 dB typ.		1 MHz - 100 MHz</description>
 </net>
 <net name="CAN0_SHIELD" class="0">
 <segment>
-<pinref part="X7" gate="G$1" pin="5"/>
+<pinref part="X7" gate="C" pin="5"/>
 <wire x1="327.66" y1="139.7" x2="322.58" y2="139.7" width="0.1524" layer="91"/>
 <label x="325.12" y="139.7" size="1.27" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="CAN0_GND" class="0">
 <segment>
-<pinref part="X7" gate="G$1" pin="3"/>
+<pinref part="X7" gate="C" pin="3"/>
 <label x="325.12" y="144.78" size="1.27" layer="95" rot="MR0"/>
 <wire x1="327.66" y1="144.78" x2="312.42" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="312.42" y1="144.78" x2="312.42" y2="114.3" width="0.1524" layer="91"/>
@@ -19771,7 +19785,7 @@ Differential to Common Mode Rejection	-38 dB typ.		1 MHz - 100 MHz</description>
 <pinref part="SUPPLY5" gate="G$1" pin="GND1"/>
 </segment>
 <segment>
-<pinref part="X7" gate="G$1" pin="6"/>
+<pinref part="X7" gate="C" pin="6"/>
 <label x="345.44" y="147.32" size="1.27" layer="95"/>
 <wire x1="342.9" y1="147.32" x2="358.14" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="358.14" y1="147.32" x2="358.14" y2="114.3" width="0.1524" layer="91"/>
