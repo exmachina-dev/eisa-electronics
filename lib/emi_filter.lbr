@@ -146,18 +146,22 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="HI1206N101R-10">
+<deviceset name="HI?N101R-10" prefix="FB">
 <gates>
 <gate name="FB$1" symbol="HI1206N101R-10" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="1206">
+<device name="1206" package="1206">
 <connects>
 <connect gate="FB$1" pin="1" pad="1"/>
 <connect gate="FB$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MC" value="LAIRD TECHNOLOGIES" constant="no"/>
+<attribute name="MPN" value="HI1206N101R-10" constant="no"/>
+<attribute name="OC_FARNELL" value="2292367" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
