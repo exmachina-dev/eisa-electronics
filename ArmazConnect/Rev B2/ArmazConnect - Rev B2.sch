@@ -18884,13 +18884,13 @@ Differential to Common Mode Rejection	-38 dB typ.		1 MHz - 100 MHz</description>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
-<part name="U$1" library="dc-dc-converter" deviceset="MEE3" device="" technology="S1205SC"/>
-<part name="U$2" library="dc-dc-converter" deviceset="MEE3" device="" technology="S1205SC"/>
+<part name="DC1" library="dc-dc-converter" deviceset="MEE3" device="" technology="S1205SC"/>
+<part name="DC2" library="dc-dc-converter" deviceset="MEE3" device="" technology="S1205SC"/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="+12V" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="GND1" device=""/>
-<part name="U$3" library="murata-inductance" deviceset="84103C" device="" value="10uH"/>
+<part name="L1" library="murata-inductance" deviceset="84103C" device="" value="10uH"/>
 <part name="U$4" library="murata-inductance" deviceset="84103C" device="" value="10uH"/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="4.7uF"/>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0603" value="4.7uF"/>
@@ -19047,13 +19047,13 @@ Differential to Common Mode Rejection	-38 dB typ.		1 MHz - 100 MHz</description>
 <instance part="+3V1" gate="G$1" x="287.02" y="93.98"/>
 <instance part="+3V2" gate="G$1" x="129.54" y="144.78"/>
 <instance part="+3V3" gate="G$1" x="167.64" y="142.24"/>
-<instance part="U$1" gate="G$1" x="238.76" y="236.22"/>
-<instance part="U$2" gate="G$1" x="238.76" y="210.82"/>
+<instance part="DC1" gate="G$1" x="238.76" y="236.22"/>
+<instance part="DC2" gate="G$1" x="238.76" y="210.82"/>
 <instance part="P+4" gate="1" x="320.04" y="246.38"/>
 <instance part="GND3" gate="1" x="304.8" y="193.04" rot="MR0"/>
 <instance part="SUPPLY4" gate="+12V" x="200.66" y="248.92"/>
 <instance part="SUPPLY5" gate="G$1" x="208.28" y="195.58"/>
-<instance part="U$3" gate="L$1" x="276.86" y="238.76"/>
+<instance part="L1" gate="L$1" x="276.86" y="238.76"/>
 <instance part="U$4" gate="L$1" x="276.86" y="213.36"/>
 <instance part="C1" gate="G$1" x="304.8" y="233.68"/>
 <instance part="C2" gate="G$1" x="304.8" y="208.28"/>
@@ -19148,7 +19148,7 @@ Differential to Common Mode Rejection	-38 dB typ.		1 MHz - 100 MHz</description>
 <pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="304.8" y1="223.52" x2="304.8" y2="226.06" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="-VOUT"/>
+<pinref part="DC1" gate="G$1" pin="-VOUT"/>
 <wire x1="304.8" y1="226.06" x2="304.8" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="251.46" y1="233.68" x2="292.1" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="292.1" y1="226.06" x2="292.1" y2="233.68" width="0.1524" layer="91"/>
@@ -19161,7 +19161,7 @@ Differential to Common Mode Rejection	-38 dB typ.		1 MHz - 100 MHz</description>
 <wire x1="304.8" y1="198.12" x2="304.8" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="304.8" y1="198.12" x2="292.1" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="292.1" y1="198.12" x2="292.1" y2="208.28" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="-VOUT"/>
+<pinref part="DC2" gate="G$1" pin="-VOUT"/>
 <wire x1="292.1" y1="208.28" x2="251.46" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -19241,7 +19241,7 @@ Differential to Common Mode Rejection	-38 dB typ.		1 MHz - 100 MHz</description>
 <wire x1="167.64" y1="116.84" x2="167.64" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="L$1" pin="2"/>
+<pinref part="L1" gate="L$1" pin="2"/>
 <wire x1="287.02" y1="238.76" x2="304.8" y2="238.76" width="0.1524" layer="91"/>
 <pinref part="P+4" gate="1" pin="+5V"/>
 <pinref part="U$4" gate="L$1" pin="2"/>
@@ -19421,11 +19421,11 @@ Differential to Common Mode Rejection	-38 dB typ.		1 MHz - 100 MHz</description>
 <junction x="30.48" y="71.12"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="+VIN"/>
+<pinref part="DC1" gate="G$1" pin="+VIN"/>
 <pinref part="SUPPLY4" gate="+12V" pin="+12V"/>
 <wire x1="226.06" y1="238.76" x2="200.66" y2="238.76" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="238.76" x2="200.66" y2="246.38" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="+VIN"/>
+<pinref part="DC2" gate="G$1" pin="+VIN"/>
 <wire x1="200.66" y1="246.38" x2="200.66" y2="238.76" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="238.76" x2="200.66" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="213.36" x2="226.06" y2="213.36" width="0.1524" layer="91"/>
@@ -19455,13 +19455,13 @@ Differential to Common Mode Rejection	-38 dB typ.		1 MHz - 100 MHz</description>
 <wire x1="167.64" y1="127" x2="167.64" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="-VIN"/>
+<pinref part="DC1" gate="G$1" pin="-VIN"/>
 <wire x1="226.06" y1="233.68" x2="208.28" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="SUPPLY5" gate="G$1" pin="GND1"/>
 <wire x1="208.28" y1="233.68" x2="208.28" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="198.12" x2="208.28" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="208.28" x2="226.06" y2="208.28" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="-VIN"/>
+<pinref part="DC2" gate="G$1" pin="-VIN"/>
 <junction x="208.28" y="208.28"/>
 </segment>
 </net>
@@ -19677,15 +19677,15 @@ Differential to Common Mode Rejection	-38 dB typ.		1 MHz - 100 MHz</description>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="+VOUT"/>
-<pinref part="U$3" gate="L$1" pin="1"/>
+<pinref part="DC1" gate="G$1" pin="+VOUT"/>
+<pinref part="L1" gate="L$1" pin="1"/>
 <wire x1="251.46" y1="238.76" x2="266.7" y2="238.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="U$4" gate="L$1" pin="1"/>
-<pinref part="U$2" gate="G$1" pin="+VOUT"/>
+<pinref part="DC2" gate="G$1" pin="+VOUT"/>
 <wire x1="266.7" y1="213.36" x2="251.46" y2="213.36" width="0.1524" layer="91"/>
 </segment>
 </net>
