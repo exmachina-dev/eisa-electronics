@@ -376,6 +376,7 @@ UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/led.lbr"
 UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/maxim.lbr"
 UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/mentor.lbr"
 UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/microchip-6.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/microchip.lbr"
 UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/murata-inductance.lbr"
 UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/ohw-logo.lbr"
 UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/optocoupler.lbr"
@@ -394,11 +395,10 @@ UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/ti.lbr"
 UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/transistor-power.lbr"
 UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/wurth_elektronik.lbr"
 UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/xp-power.lbr"
-UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/microchip.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="709 238 1481 794"
+Loc="-8 -31 591 368"
 State=2
 Number=0
 
