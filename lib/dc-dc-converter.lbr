@@ -180,6 +180,17 @@
 </technology>
 </technologies>
 </device>
+<device name="0505MC" package="NTE">
+<connects>
+<connect gate="G$1" pin="+VIN" pad="3"/>
+<connect gate="G$1" pin="+VOUT" pad="8"/>
+<connect gate="G$1" pin="-VIN" pad="1"/>
+<connect gate="G$1" pin="-VOUT" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="MEE3">
