@@ -346,13 +346,73 @@ UsedLibrary="C:/EAGLE-7.5.0/lbr/xilinx-xc9.lbr"
 UsedLibrary="C:/EAGLE-7.5.0/lbr/xilinx-xcv.lbr"
 UsedLibrary="C:/EAGLE-7.5.0/lbr/zetex.lbr"
 UsedLibrary="C:/EAGLE-7.5.0/lbr/zilog.lbr"
+<<<<<<< HEAD
 
 [Win_1]
 Type="Control Panel"
 Loc="628 198 1227 597"
+=======
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/International_Rectifier_By_element14_Batch_1.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/Microchip_By_element14_Batch_1.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/Molex-8550x-xxxx.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/NSC_By_element14_Batch_1.1.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/SparkFun-Passives.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/SparkFun.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/TI-CD4050BD.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/WE-LAN-10_100-BASE-T_749010012.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/WE-PD.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/beaglebone.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/cc-by-sa.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/con-headers-jp.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/con-molex.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/con-multicomp.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/con-phoenix-508.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/crystal.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/custom.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/dac88s.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/dc-dc-converter.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/diode.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/e14_BeagleBoneBlack_RevA.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/exmachina.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/frames.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/fuse2.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/holes.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/keystone.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/led.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/maxim.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/mentor.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/microchip-6.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/murata-inductance.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/ohw-logo.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/optocoupler.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/rcl-2.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/rcl.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/rel-omron.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/replicape.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/resistor-epcos.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/resistor.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/supply1.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/supply2.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/supply3.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/switch-dil.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/testpad.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/ti.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/transistor-power.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/wurth_elektronik.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/xp-power.lbr"
+UsedLibrary="D:/Users/WillyKaze/repos/eisla-electronics/lib/microchip.lbr"
+
+[Win_1]
+Type="Control Panel"
+Loc="709 238 1481 794"
+>>>>>>> ff6b9e9807ba2bb5e632d7ab66532bd8ba6bc0ca
 State=2
 Number=0
 
 [Desktop]
+<<<<<<< HEAD
 Screen="3286 1080"
+=======
+Screen="1920 1080"
+>>>>>>> ff6b9e9807ba2bb5e632d7ab66532bd8ba6bc0ca
 Window="Win_1"
