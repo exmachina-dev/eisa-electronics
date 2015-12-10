@@ -127,6 +127,14 @@
 <text x="-1.905" y="-1.27" size="0.6096" layer="25" rot="R90">&gt;NAME</text>
 <text x="2.54" y="-1.27" size="0.6096" layer="27" rot="R90">&gt;VALUE</text>
 </package>
+<package name="8400">
+<smd name="P$1" x="-40.64" y="0" dx="50.8" dy="88.9" layer="1" rot="R180"/>
+<smd name="P$2" x="40.64" y="0" dx="50.8" dy="88.9" layer="1" rot="R180"/>
+<wire x1="57.15" y1="41.91" x2="-57.15" y2="41.91" width="1.27" layer="20"/>
+<wire x1="-57.15" y1="-41.91" x2="57.15" y2="-41.91" width="1.27" layer="20"/>
+<wire x1="-57.15" y1="41.91" x2="-57.15" y2="-41.91" width="1.27" layer="20"/>
+<wire x1="57.15" y1="41.91" x2="57.15" y2="-41.91" width="1.27" layer="20"/>
+</package>
 </packages>
 <symbols>
 <symbol name="L">
@@ -159,7 +167,9 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="84103C">
+<deviceset name="84103C" prefix="84">
+<description>WARNING : 8200 WRONG FOOTPRINT
+8400 GOOD FOOTPRINT</description>
 <gates>
 <gate name="L$1" symbol="L" x="0" y="0"/>
 </gates>
@@ -171,8 +181,17 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="VALUE" value="10uH" constant="no"/>
+<attribute name="VALUE" value="" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="103C" package="8400">
+<connects>
+<connect gate="L$1" pin="1" pad="P$1"/>
+<connect gate="L$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
