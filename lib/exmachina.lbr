@@ -146,7 +146,7 @@
 <package name="EXM-LOGO-BASELINE">
 <description>ExMachina logo</description>
 <wire x1="-1" y1="0" x2="1" y2="0" width="0.001" layer="21"/>
-<polygon width="0.001" layer="25">
+<polygon width="0.001" layer="21">
 <vertex x="2.651759375" y="0.027940625"/>
 <vertex x="1.33858125" y="-2.461259375"/>
 <vertex x="-1.330959375" y="-2.453640625"/>
@@ -163,12 +163,12 @@
 <vertex x="1.338584375" y="-2.458725"/>
 <vertex x="0.1016" y="-0.048259375"/>
 </polygon>
-<polygon width="0.001" layer="25">
+<polygon width="0.001" layer="21">
 <vertex x="1.6383" y="2.5781"/>
 <vertex x="0.40131875" y="0.251459375"/>
 <vertex x="2.839721875" y="0.327659375"/>
 </polygon>
-<text x="3.81" y="0.889" size="1.27" layer="25" font="vector" ratio="10">ExMachina</text>
+<text x="3.81" y="0.889" size="1.27" layer="21" font="vector" ratio="10">ExMachina</text>
 </package>
 </packages>
 <symbols>
