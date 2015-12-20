@@ -19909,9 +19909,18 @@ Various fiducial points for machine vision alignment.</description>
 </class>
 </classes>
 <parts>
-<part name="X1" library="con-neutrik_ag" deviceset="NC3" device="FAV2" value="NC3FAV2"/>
-<part name="X2" library="con-neutrik_ag" deviceset="NC3" device="FAV2" value="NC3FAV2"/>
-<part name="X3" library="con-neutrik_ag" deviceset="NC3" device="FAV2" value="NC3FAV2"/>
+<part name="X1" library="con-neutrik_ag" deviceset="NC3" device="FAV2" value="NC3FAV2">
+<attribute name="MPN" value="NC3FAAV2"/>
+<attribute name="OC_FARNELL" value="1310038"/>
+</part>
+<part name="X2" library="con-neutrik_ag" deviceset="NC3" device="FAV2" value="NC3FAV2">
+<attribute name="MPN" value="NC3FAAV2"/>
+<attribute name="OC_FARNELL" value="1310038"/>
+</part>
+<part name="X3" library="con-neutrik_ag" deviceset="NC3" device="FAV2" value="NC3FAV2">
+<attribute name="MPN" value="NC3FAAV2"/>
+<attribute name="OC_FARNELL" value="1310038"/>
+</part>
 <part name="X4" library="con-neutrik_ag" deviceset="NC5?-SW" device="FAV" value="NC5FAV-SW">
 <attribute name="OC_FARNELL" value="1310093"/>
 </part>
@@ -19923,7 +19932,10 @@ Various fiducial points for machine vision alignment.</description>
 <attribute name="OC_FARNELL" value="1310098"/>
 </part>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
-<part name="X0" library="con-neutrik_ag" deviceset="NC3" device="FAV2" value="NC3FAV2"/>
+<part name="X0" library="con-neutrik_ag" deviceset="NC3" device="FAV2" value="NC3FAV2">
+<attribute name="MPN" value="NC3FAAV2"/>
+<attribute name="OC_FARNELL" value="1310038"/>
+</part>
 <part name="R0" library="rcl" deviceset="R-EU_" device="R0603" value="1.5K">
 <attribute name="MF" value="MULTICOMP"/>
 <attribute name="MPN" value="MCMR06X1501FTL"/>
@@ -19981,13 +19993,13 @@ Various fiducial points for machine vision alignment.</description>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="R8" library="rcl" deviceset="R-EU_" device="R0603" value="120, 1/4W">
 <attribute name="MF" value="MULTICOMP"/>
-<attribute name="MPN" value="MCHP05W4F1200T5E"/>
-<attribute name="OC_FARNELL" value="1576447"/>
+<attribute name="MPN" value="MCMR06X1200FTL"/>
+<attribute name="OC_FARNELL" value="2073369"/>
 </part>
 <part name="R9" library="rcl" deviceset="R-EU_" device="R0603" value="120, 1/4W">
 <attribute name="MF" value="MULTICOMP"/>
-<attribute name="MPN" value="MCHP05W4F1200T5E"/>
-<attribute name="OC_FARNELL" value="1576447"/>
+<attribute name="MPN" value="MCMR06X1200FTL"/>
+<attribute name="OC_FARNELL" value="2073369"/>
 </part>
 <part name="X8" library="con-molex" deviceset="87832-26" device="">
 <attribute name="MF" value="MOLEX"/>
@@ -20019,8 +20031,8 @@ Various fiducial points for machine vision alignment.</description>
 </part>
 <part name="R25" library="rcl" deviceset="R-EU_" device="R0603" value="330">
 <attribute name="MF" value="MULTICOMP"/>
-<attribute name="MPN" value="MCMR04X3300FTL"/>
-<attribute name="OC_FARNELL" value="2072927"/>
+<attribute name="MPN" value="MCMR06X3300FTL"/>
+<attribute name="OC_FARNELL" value="2073472"/>
 </part>
 <part name="R26" library="rcl" deviceset="R-EU_" device="R0603" value="4K7">
 <attribute name="MF" value="MULTICOMP"/>
@@ -20047,10 +20059,12 @@ Various fiducial points for machine vision alignment.</description>
 <part name="FAN0" library="con-molex" deviceset="22-?-03" device="05-7038">
 <attribute name="MF" value="MOLEX"/>
 <attribute name="MPN" value="22-05-7038"/>
+<attribute name="OC_FARNELL" value="9731610"/>
 </part>
 <part name="FAN1" library="con-molex" deviceset="22-?-03" device="05-7038">
 <attribute name="MF" value="MOLEX"/>
 <attribute name="MPN" value="22-05-7038"/>
+<attribute name="OC_FARNELL" value="9731610"/>
 </part>
 <part name="SUPPLY3" library="supply2" deviceset="+12V" device=""/>
 <part name="C4" library="rcl" deviceset="C-EU" device="C0805" value="1uF">
@@ -20069,27 +20083,91 @@ Various fiducial points for machine vision alignment.</description>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
-<part name="DC1" library="dc-dc-converter" deviceset="MEE3" device="" technology="S1205SC"/>
-<part name="DC2" library="dc-dc-converter" deviceset="MEE3" device="" technology="S1205SC"/>
+<part name="DC1" library="dc-dc-converter" deviceset="MEE3" device="" technology="S1205SC">
+<attribute name="MF" value="MURATA POWER SOLUTIONS"/>
+<attribute name="MPN" value="MEE3S1205SC"/>
+<attribute name="OC_FARNELL" value="2083742"/>
+</part>
+<part name="DC2" library="dc-dc-converter" deviceset="MEE3" device="" technology="S1205SC">
+<attribute name="MF" value="MURATA POWER SOLUTIONS"/>
+<attribute name="MPN" value="MEE3S1205SC"/>
+<attribute name="OC_FARNELL" value="2083742"/>
+</part>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="+12V" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="GND1" device=""/>
-<part name="L1" library="murata-inductance" deviceset="84103C" device="" value="10uH"/>
-<part name="L2" library="murata-inductance" deviceset="84103C" device="" value="10uH"/>
-<part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="4.7uF"/>
-<part name="C2" library="rcl" deviceset="C-EU" device="C0603" value="4.7uF"/>
+<part name="L1" library="murata-inductance" deviceset="84103C" device="" value="10uH">
+<attribute name="MF" value="WURTH ELEKTRONIK"/>
+<attribute name="MPN" value="744045100"/>
+<attribute name="OC_FARNELL" value="1800409"/>
+</part>
+<part name="L2" library="murata-inductance" deviceset="84103C" device="" value="10uH">
+<attribute name="MF" value="WURTH ELEKTRONIK"/>
+<attribute name="MPN" value="744045100"/>
+<attribute name="OC_FARNELL" value="1800409"/>
+</part>
+<part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="4.7uF">
+<attribute name="MF" value="MULTICOMP"/>
+<attribute name="MPN" value="MC0603X475K6R3CT"/>
+<attribute name="OC_FARNELL" value="2320811"/>
+</part>
+<part name="C2" library="rcl" deviceset="C-EU" device="C0603" value="4.7uF">
+<attribute name="MF" value="MULTICOMP"/>
+<attribute name="MPN" value="MC0603X475K6R3CT"/>
+<attribute name="OC_FARNELL" value="2320811"/>
+</part>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="FI1" library="SparkFun" deviceset="FIDUCIAL" device="1X2"/>
-<part name="FI2" library="SparkFun" deviceset="FIDUCIAL" device="1X2"/>
-<part name="FI3" library="SparkFun" deviceset="FIDUCIAL" device="1X2"/>
-<part name="FI4" library="SparkFun" deviceset="FIDUCIAL" device="1X2"/>
-<part name="FI5" library="SparkFun" deviceset="FIDUCIAL" device="1X2"/>
-<part name="FI6" library="SparkFun" deviceset="FIDUCIAL" device="1X2"/>
-<part name="FI7" library="SparkFun" deviceset="FIDUCIAL" device="1X2"/>
-<part name="FI8" library="SparkFun" deviceset="FIDUCIAL" device="1X2"/>
-<part name="U$1" library="exmachina" deviceset="EXMACHINA-LOGO" device="-NAME"/>
-<part name="U$2" library="cc-by-sa" deviceset="CC-BY-SA" device=""/>
+<part name="FI1" library="SparkFun" deviceset="FIDUCIAL" device="1X2">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_FARNELL" value="unknown"/>
+</part>
+<part name="FI2" library="SparkFun" deviceset="FIDUCIAL" device="1X2">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_FARNELL" value="unknown"/>
+</part>
+<part name="FI3" library="SparkFun" deviceset="FIDUCIAL" device="1X2">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_FARNELL" value="unknown"/>
+</part>
+<part name="FI4" library="SparkFun" deviceset="FIDUCIAL" device="1X2">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_FARNELL" value="unknown"/>
+</part>
+<part name="FI5" library="SparkFun" deviceset="FIDUCIAL" device="1X2">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_FARNELL" value="unknown"/>
+</part>
+<part name="FI6" library="SparkFun" deviceset="FIDUCIAL" device="1X2">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_FARNELL" value="unknown"/>
+</part>
+<part name="FI7" library="SparkFun" deviceset="FIDUCIAL" device="1X2">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_FARNELL" value="unknown"/>
+</part>
+<part name="FI8" library="SparkFun" deviceset="FIDUCIAL" device="1X2">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_FARNELL" value="unknown"/>
+</part>
+<part name="U$1" library="exmachina" deviceset="EXMACHINA-LOGO" device="-NAME">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_FARNELL" value="unknown"/>
+</part>
+<part name="U$2" library="cc-by-sa" deviceset="CC-BY-SA" device="">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_FARNELL" value="unknown"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -20242,27 +20320,91 @@ Various fiducial points for machine vision alignment.</description>
 <instance part="+3V1" gate="G$1" x="287.02" y="93.98"/>
 <instance part="+3V2" gate="G$1" x="129.54" y="144.78"/>
 <instance part="+3V3" gate="G$1" x="167.64" y="142.24"/>
-<instance part="DC1" gate="G$1" x="238.76" y="236.22"/>
-<instance part="DC2" gate="G$1" x="238.76" y="210.82"/>
+<instance part="DC1" gate="G$1" x="238.76" y="236.22">
+<attribute name="OC_FARNELL" x="238.76" y="236.22" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="238.76" y="236.22" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="238.76" y="236.22" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="DC2" gate="G$1" x="238.76" y="210.82">
+<attribute name="OC_FARNELL" x="238.76" y="210.82" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="238.76" y="210.82" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="238.76" y="210.82" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="P+4" gate="1" x="320.04" y="246.38"/>
 <instance part="GND3" gate="1" x="304.8" y="193.04" rot="MR0"/>
 <instance part="SUPPLY4" gate="+12V" x="200.66" y="248.92"/>
 <instance part="SUPPLY5" gate="G$1" x="208.28" y="195.58"/>
-<instance part="L1" gate="L$1" x="276.86" y="238.76"/>
-<instance part="L2" gate="L$1" x="276.86" y="213.36"/>
-<instance part="C1" gate="G$1" x="304.8" y="233.68"/>
-<instance part="C2" gate="G$1" x="304.8" y="208.28"/>
+<instance part="L1" gate="L$1" x="276.86" y="238.76">
+<attribute name="OC_FARNELL" x="276.86" y="238.76" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="276.86" y="238.76" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="276.86" y="238.76" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="L2" gate="L$1" x="276.86" y="213.36">
+<attribute name="OC_FARNELL" x="276.86" y="213.36" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="276.86" y="213.36" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="276.86" y="213.36" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C1" gate="G$1" x="304.8" y="233.68">
+<attribute name="OC_FARNELL" x="304.8" y="233.68" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="304.8" y="233.68" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="304.8" y="233.68" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C2" gate="G$1" x="304.8" y="208.28">
+<attribute name="OC_FARNELL" x="304.8" y="208.28" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="304.8" y="208.28" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="304.8" y="208.28" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND4" gate="1" x="304.8" y="220.98" rot="MR0"/>
-<instance part="FI1" gate="G$1" x="289.56" y="27.94"/>
-<instance part="FI2" gate="G$1" x="294.64" y="27.94"/>
-<instance part="FI3" gate="G$1" x="299.72" y="27.94"/>
-<instance part="FI4" gate="G$1" x="304.8" y="27.94"/>
-<instance part="FI5" gate="G$1" x="309.88" y="27.94"/>
-<instance part="FI6" gate="G$1" x="314.96" y="27.94"/>
-<instance part="FI7" gate="G$1" x="320.04" y="27.94"/>
-<instance part="FI8" gate="G$1" x="325.12" y="27.94"/>
-<instance part="U$1" gate="G$1" x="358.14" y="30.48"/>
-<instance part="U$2" gate="A" x="269.24" y="10.16"/>
+<instance part="FI1" gate="G$1" x="289.56" y="27.94">
+<attribute name="OC_FARNELL" x="289.56" y="27.94" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="289.56" y="27.94" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="289.56" y="27.94" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="FI2" gate="G$1" x="294.64" y="27.94">
+<attribute name="OC_FARNELL" x="294.64" y="27.94" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="294.64" y="27.94" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="294.64" y="27.94" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="FI3" gate="G$1" x="299.72" y="27.94">
+<attribute name="OC_FARNELL" x="299.72" y="27.94" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="299.72" y="27.94" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="299.72" y="27.94" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="FI4" gate="G$1" x="304.8" y="27.94">
+<attribute name="OC_FARNELL" x="304.8" y="27.94" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="304.8" y="27.94" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="304.8" y="27.94" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="FI5" gate="G$1" x="309.88" y="27.94">
+<attribute name="OC_FARNELL" x="309.88" y="27.94" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="309.88" y="27.94" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="309.88" y="27.94" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="FI6" gate="G$1" x="314.96" y="27.94">
+<attribute name="OC_FARNELL" x="314.96" y="27.94" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="314.96" y="27.94" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="314.96" y="27.94" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="FI7" gate="G$1" x="320.04" y="27.94">
+<attribute name="OC_FARNELL" x="320.04" y="27.94" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="320.04" y="27.94" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="320.04" y="27.94" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="FI8" gate="G$1" x="325.12" y="27.94">
+<attribute name="OC_FARNELL" x="325.12" y="27.94" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="325.12" y="27.94" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="325.12" y="27.94" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U$1" gate="G$1" x="358.14" y="30.48">
+<attribute name="OC_FARNELL" x="358.14" y="30.48" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="358.14" y="30.48" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="358.14" y="30.48" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U$2" gate="A" x="269.24" y="10.16">
+<attribute name="OC_FARNELL" x="269.24" y="10.16" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="269.24" y="10.16" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="269.24" y="10.16" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
