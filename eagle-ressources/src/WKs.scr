@@ -6,7 +6,7 @@
 # DIM grid matches Seeed Studio Fusion board sizes (5cm grid)
 GRID = DIM  mm 10 5 lines on alt mm 1;
 # Otherwise, use a 50mil grid
-GRID = BRD  mil 50 2 dots on alt mil 25;
+GRID = BRD  mil 25 2 dots on alt mil 5;
 GRID = SCH  mil 100 1 dots on alt mil 50;
 GRID = FINE mil 50 2 dots on alt mil 1;
 
