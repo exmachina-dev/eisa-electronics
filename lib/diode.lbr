@@ -449,6 +449,138 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <text x="3.175" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="3.175" y="-1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="DIODE_DO-214AC">
+<smd name="1" x="-1.7018" y="0" dx="1.651" dy="2.1844" layer="1" rot="R90"/>
+<smd name="2" x="1.7018" y="0" dx="1.651" dy="2.1844" layer="1" rot="R90"/>
+<wire x1="2.7686" y1="1.1684" x2="2.7686" y2="1.524" width="0.1524" layer="51"/>
+<wire x1="-2.7686" y1="-1.1684" x2="-2.7686" y2="-1.524" width="0.1524" layer="51"/>
+<wire x1="-3.1496" y1="0" x2="-4.1656" y2="0" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-4.4196" y2="0" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0.635" x2="-4.1656" y2="0" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-4.1656" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="0.508" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="0.381" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="0.254" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="0.127" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="-0.508" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="-0.127" width="0.1524" layer="51"/>
+<wire x1="-3.4036" y1="0.635" x2="-3.4036" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="-2.7686" y1="-1.524" x2="2.7686" y2="-1.524" width="0.1524" layer="51"/>
+<wire x1="2.7686" y1="-1.524" x2="2.7686" y2="-1.1684" width="0.1524" layer="51"/>
+<wire x1="2.7686" y1="1.524" x2="-2.7686" y2="1.524" width="0.1524" layer="51"/>
+<wire x1="-2.7686" y1="1.524" x2="-2.7686" y2="1.1684" width="0.1524" layer="51"/>
+<wire x1="-3.1496" y1="0" x2="-4.1656" y2="0" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-4.4196" y2="0" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0.635" x2="-4.1656" y2="0" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-4.1656" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="0.508" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="0.381" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="0.254" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="0.127" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="-0.508" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="-0.381" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="-0.127" width="0.1524" layer="21"/>
+<wire x1="-3.4036" y1="0.635" x2="-3.4036" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-2.6416" y1="-1.397" x2="2.6416" y2="-1.397" width="0.1524" layer="21"/>
+<wire x1="2.6416" y1="-1.397" x2="2.6416" y2="1.397" width="0.1524" layer="21"/>
+<wire x1="2.6416" y1="1.397" x2="-2.6416" y2="1.397" width="0.1524" layer="21"/>
+<wire x1="-2.6416" y1="1.397" x2="-2.6416" y2="-1.397" width="0.1524" layer="21"/>
+</package>
+<package name="DIODE_DO-214AC-M">
+<smd name="1" x="-1.6002" y="0" dx="1.651" dy="2.5908" layer="1" rot="R90"/>
+<smd name="2" x="1.6002" y="0" dx="1.651" dy="2.5908" layer="1" rot="R90"/>
+<wire x1="2.7686" y1="1.1684" x2="2.7686" y2="1.524" width="0.1524" layer="51"/>
+<wire x1="-2.7686" y1="-1.1684" x2="-2.7686" y2="-1.524" width="0.1524" layer="51"/>
+<wire x1="-3.2258" y1="0" x2="-4.1656" y2="0" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-4.4196" y2="0" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0.635" x2="-4.1656" y2="0" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-4.1656" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="0.508" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="0.381" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="0.254" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="0.127" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="-0.508" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="-0.127" width="0.1524" layer="51"/>
+<wire x1="-3.4036" y1="0.635" x2="-3.4036" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="-2.7686" y1="-1.524" x2="2.7686" y2="-1.524" width="0.1524" layer="51"/>
+<wire x1="2.7686" y1="-1.524" x2="2.7686" y2="-1.1684" width="0.1524" layer="51"/>
+<wire x1="2.7686" y1="1.524" x2="-2.7686" y2="1.524" width="0.1524" layer="51"/>
+<wire x1="-2.7686" y1="1.524" x2="-2.7686" y2="1.1684" width="0.1524" layer="51"/>
+<wire x1="-3.1496" y1="0" x2="-4.1656" y2="0" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-4.4196" y2="0" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0.635" x2="-4.1656" y2="0" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-4.1656" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="0.508" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="0.381" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="0.254" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="0.127" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="-0.508" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="-0.381" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="-0.127" width="0.1524" layer="21"/>
+<wire x1="-3.4036" y1="0.635" x2="-3.4036" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-2.6416" y1="-1.397" x2="2.6416" y2="-1.397" width="0.1524" layer="21"/>
+<wire x1="2.6416" y1="-1.397" x2="2.6416" y2="1.397" width="0.1524" layer="21"/>
+<wire x1="2.6416" y1="1.397" x2="-2.6416" y2="1.397" width="0.1524" layer="21"/>
+<wire x1="-2.6416" y1="1.397" x2="-2.6416" y2="-1.397" width="0.1524" layer="21"/>
+</package>
+<package name="DIODE_DO-214AC-L">
+<smd name="1" x="-1.8161" y="0" dx="1.651" dy="1.8034" layer="1" rot="R90"/>
+<smd name="2" x="1.8161" y="0" dx="1.651" dy="1.8034" layer="1" rot="R90"/>
+<wire x1="2.7686" y1="1.143" x2="2.7686" y2="1.524" width="0.1524" layer="51"/>
+<wire x1="-2.7686" y1="-1.143" x2="-2.7686" y2="-1.524" width="0.1524" layer="51"/>
+<wire x1="-3.1496" y1="0" x2="-4.1656" y2="0" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-4.4196" y2="0" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0.635" x2="-4.1656" y2="0" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-4.1656" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="0.508" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="0.381" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="0.254" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="0.127" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="-0.508" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="-0.127" width="0.1524" layer="51"/>
+<wire x1="-3.4036" y1="0.635" x2="-3.4036" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="-2.7686" y1="-1.524" x2="2.7686" y2="-1.524" width="0.1524" layer="51"/>
+<wire x1="2.7686" y1="-1.524" x2="2.7686" y2="-1.143" width="0.1524" layer="51"/>
+<wire x1="2.7686" y1="1.524" x2="-2.7686" y2="1.524" width="0.1524" layer="51"/>
+<wire x1="-2.7686" y1="1.524" x2="-2.7686" y2="1.143" width="0.1524" layer="51"/>
+<wire x1="-3.1496" y1="0" x2="-4.1656" y2="0" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-4.4196" y2="0" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0.635" x2="-4.1656" y2="0" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-4.1656" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="0.508" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="0.381" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="0.254" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="0.127" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="-0.508" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="-0.381" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="-4.1656" y1="0" x2="-3.4036" y2="-0.127" width="0.1524" layer="21"/>
+<wire x1="-3.4036" y1="0.635" x2="-3.4036" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-2.6416" y1="-1.397" x2="2.6416" y2="-1.397" width="0.1524" layer="21"/>
+<wire x1="2.6416" y1="-1.397" x2="2.6416" y2="1.397" width="0.1524" layer="21"/>
+<wire x1="2.6416" y1="1.397" x2="-2.6416" y2="1.397" width="0.1524" layer="21"/>
+<wire x1="-2.6416" y1="1.397" x2="-2.6416" y2="-1.397" width="0.1524" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="DIODE">
@@ -460,6 +592,18 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 <text x="-2.3114" y="2.6416" size="1.778" layer="95">&gt;NAME</text>
 <text x="-2.5654" y="-4.4958" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="21" x="0" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="12" x="10.16" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<wire x1="3.81" y1="1.905" x2="3.81" y2="0" width="0.2032" layer="94"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="-1.905" width="0.2032" layer="94"/>
+<wire x1="2.54" y1="0" x2="3.81" y2="0" width="0.2032" layer="94"/>
+<wire x1="6.35" y1="-1.905" x2="6.35" y2="0" width="0.2032" layer="94"/>
+<wire x1="6.35" y1="0" x2="6.35" y2="1.905" width="0.2032" layer="94"/>
+<wire x1="6.35" y1="0" x2="7.62" y2="0" width="0.2032" layer="94"/>
+<wire x1="6.35" y1="0" x2="3.81" y2="1.905" width="0.2032" layer="94"/>
+<wire x1="3.81" y1="-1.905" x2="6.35" y2="0" width="0.2032" layer="94"/>
+<text x="-3.8862" y="-9.3472" size="3.4798" layer="96" ratio="10" rot="SR0">&gt;Value</text>
+<text x="-2.8194" y="2.6924" size="3.4798" layer="95" ratio="10" rot="SR0">&gt;Name</text>
 </symbol>
 <symbol name="SCHOTTKY">
 <wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
@@ -475,6 +619,20 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 <text x="-2.286" y="1.905" size="1.778" layer="95">&gt;NAME</text>
 <text x="-2.286" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="DIODEV">
+<pin name="2" x="0" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<pin name="1" x="0" y="10.16" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<wire x1="-1.905" y1="3.81" x2="0" y2="3.81" width="0.2032" layer="94"/>
+<wire x1="0" y1="3.81" x2="1.905" y2="3.81" width="0.2032" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="3.81" width="0.2032" layer="94"/>
+<wire x1="1.905" y1="6.35" x2="0" y2="6.35" width="0.2032" layer="94"/>
+<wire x1="0" y1="6.35" x2="-1.905" y2="6.35" width="0.2032" layer="94"/>
+<wire x1="0" y1="6.35" x2="0" y2="7.62" width="0.2032" layer="94"/>
+<wire x1="0" y1="6.35" x2="-1.905" y2="3.81" width="0.2032" layer="94"/>
+<wire x1="1.905" y1="3.81" x2="0" y2="6.35" width="0.2032" layer="94"/>
+<text x="2.54" y="5.2324" size="3.4798" layer="95" ratio="10" rot="SR0">&gt;Name</text>
+<text x="2.54" y="-1.1176" size="3.4798" layer="96" ratio="10" rot="SR0">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -649,6 +807,31 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <attribute name="MP" value="STMICROELECTRONICS" constant="no"/>
 <attribute name="MPN" value="STPS3L40UF" constant="no"/>
 <attribute name="OC_FARNELL" value="2341599" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SMAJ33A-E3/61" prefix="CR">
+<gates>
+<gate name="A" symbol="SCHOTTKY" x="0" y="0" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="DIODE_DO-214AC">
+<connects>
+<connect gate="A" pin="A" pad="2"/>
+<connect gate="A" pin="C" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="COPYRIGHT" value="Copyright (C) 2015 Accelerated Designs. All rights reserved" constant="no"/>
+<attribute name="FAMILY" value="TVS" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Vishay" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="SMAJ33A-E3/61" constant="no"/>
+<attribute name="RSPARTNUMBER" value="7103462" constant="no"/>
+<attribute name="SECTION" value="Discretes" constant="no"/>
+<attribute name="SUPERSECTION" value="Semiconductors" constant="no"/>
+<attribute name="VENDOR" value="Vishay" constant="no"/>
 </technology>
 </technologies>
 </device>
