@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -185,6 +185,17 @@
 <text x="-1.27" y="1.27" size="0.6096" layer="25">&gt;NAME</text>
 <text x="-1.27" y="-1.905" size="0.6096" layer="27">&gt;VALUE</text>
 </package>
+<package name="ABLSG">
+<wire x1="-2.413" y1="-5.715" x2="2.413" y2="-5.715" width="0.127" layer="21"/>
+<wire x1="2.413" y1="-5.715" x2="2.413" y2="5.715" width="0.127" layer="21"/>
+<wire x1="2.413" y1="5.715" x2="-2.413" y2="5.715" width="0.127" layer="21"/>
+<wire x1="-2.413" y1="5.715" x2="-2.413" y2="-5.715" width="0.127" layer="21"/>
+<text x="-3.81" y="-2.54" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<smd name="1" x="0" y="4.7498" dx="2.1082" dy="5.588" layer="1"/>
+<smd name="3" x="1.0541" y="0" dx="2.1082" dy="3.9878" layer="1" rot="R90"/>
+<smd name="2" x="0" y="-4.7498" dx="2.1082" dy="5.588" layer="1" rot="R180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="Q">
@@ -310,6 +321,23 @@
 <attribute name="OC_FARNELL" value="2467877" constant="no"/>
 <attribute name="VALUE" value="25MHz" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ABLSG-?">
+<gates>
+<gate name="G$1" symbol="Q+G" x="0" y="0"/>
+</gates>
+<devices>
+<device name="25.000MHZ-D2Y-F-T" package="ABLSG">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+<connect gate="G$1" pin="3" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
