@@ -19683,6 +19683,11 @@ Connect R32</text>
 <label x="358.14" y="111.76" size="1.27" layer="95" rot="MR0" xref="yes"/>
 <pinref part="JP1" gate="A" pin="3"/>
 </segment>
+<segment>
+<pinref part="R36" gate="G$1" pin="2"/>
+<wire x1="358.14" y1="76.2" x2="363.22" y2="76.2" width="0.1524" layer="91"/>
+<label x="363.22" y="76.2" size="1.27" layer="95" rot="MR180" xref="yes"/>
+</segment>
 </net>
 <net name="SPIS-N_CPU" class="0">
 <segment>
@@ -19694,13 +19699,6 @@ Connect R32</text>
 <pinref part="R40" gate="G$1" pin="2"/>
 <wire x1="358.14" y1="35.56" x2="363.22" y2="35.56" width="0.1524" layer="91"/>
 <label x="363.22" y="35.56" size="1.27" layer="95" rot="MR180" xref="yes"/>
-</segment>
-</net>
-<net name="SPA_CPU" class="0">
-<segment>
-<pinref part="R36" gate="G$1" pin="2"/>
-<wire x1="358.14" y1="76.2" x2="363.22" y2="76.2" width="0.1524" layer="91"/>
-<label x="363.22" y="76.2" size="1.27" layer="95" rot="MR180" xref="yes"/>
 </segment>
 </net>
 <net name="SDA" class="0">
