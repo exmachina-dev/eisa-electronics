@@ -196,6 +196,17 @@
 <smd name="3" x="1.0541" y="0" dx="2.1082" dy="3.9878" layer="1" rot="R90"/>
 <smd name="2" x="0" y="-4.7498" dx="2.1082" dy="5.588" layer="1" rot="R180"/>
 </package>
+<package name="SMD2.5X2">
+<wire x1="-1.25" y1="1" x2="1.25" y2="1" width="0.127" layer="21"/>
+<wire x1="1.25" y1="1" x2="1.25" y2="-1" width="0.127" layer="21"/>
+<wire x1="1.25" y1="-1" x2="-1.25" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1.25" y1="-1" x2="-1.25" y2="1" width="0.127" layer="21"/>
+<smd name="4" x="-0.925" y="0.775" dx="1" dy="0.9" layer="1"/>
+<smd name="3" x="0.925" y="0.775" dx="1" dy="0.9" layer="1"/>
+<smd name="2" x="0.925" y="-0.775" dx="1" dy="0.9" layer="1"/>
+<smd name="1" x="-0.925" y="-0.775" dx="1" dy="0.9" layer="1"/>
+<circle x="-0.9" y="-0.6" radius="0.065" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="Q">
@@ -338,6 +349,23 @@
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="8Z" prefix="-25.000MHZMAAJ-T">
+<gates>
+<gate name="G$1" symbol="Q+G" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SMD2.5X2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2 4"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="-25.000MHZMAAJ-T"/>
 </technologies>
 </device>
 </devices>

@@ -17080,16 +17080,16 @@ at 30/07/2012 11:08:17</description>
 </library>
 <library name="crystal">
 <packages>
-<package name="ABLSG">
-<wire x1="-2.413" y1="-5.715" x2="2.413" y2="-5.715" width="0.127" layer="21"/>
-<wire x1="2.413" y1="-5.715" x2="2.413" y2="5.715" width="0.127" layer="21"/>
-<wire x1="2.413" y1="5.715" x2="-2.413" y2="5.715" width="0.127" layer="21"/>
-<wire x1="-2.413" y1="5.715" x2="-2.413" y2="-5.715" width="0.127" layer="21"/>
-<text x="-3.81" y="-2.54" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="5.08" y="-2.54" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<smd name="1" x="0" y="4.7498" dx="2.1082" dy="5.588" layer="1"/>
-<smd name="3" x="1.0541" y="0" dx="2.1082" dy="3.9878" layer="1" rot="R90"/>
-<smd name="2" x="0" y="-4.7498" dx="2.1082" dy="5.588" layer="1" rot="R180"/>
+<package name="SMD2.5X2">
+<wire x1="-1.25" y1="1" x2="1.25" y2="1" width="0.127" layer="21"/>
+<wire x1="1.25" y1="1" x2="1.25" y2="-1" width="0.127" layer="21"/>
+<wire x1="1.25" y1="-1" x2="-1.25" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1.25" y1="-1" x2="-1.25" y2="1" width="0.127" layer="21"/>
+<smd name="4" x="-0.925" y="0.775" dx="1" dy="0.9" layer="1"/>
+<smd name="3" x="0.925" y="0.775" dx="1" dy="0.9" layer="1"/>
+<smd name="2" x="0.925" y="-0.775" dx="1" dy="0.9" layer="1"/>
+<smd name="1" x="-0.925" y="-0.775" dx="1" dy="0.9" layer="1"/>
+<circle x="-0.9" y="-0.6" radius="0.065" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -17116,19 +17116,19 @@ at 30/07/2012 11:08:17</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ABLSG-?">
+<deviceset name="8Z" prefix="-25.000MHZMAAJ-T">
 <gates>
 <gate name="G$1" symbol="Q+G" x="0" y="0"/>
 </gates>
 <devices>
-<device name="25.000MHZ-D2Y-F-T" package="ABLSG">
+<device name="" package="SMD2.5X2">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="3"/>
-<connect gate="G$1" pin="3" pad="2"/>
+<connect gate="G$1" pin="2" pad="2 4"/>
+<connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="-25.000MHZMAAJ-T"/>
 </technologies>
 </device>
 </devices>
@@ -17760,7 +17760,7 @@ at 30/07/2012 11:08:17</description>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
-<part name="Y1" library="crystal" deviceset="ABLSG-?" device="25.000MHZ-D2Y-F-T"/>
+<part name="Y1" library="crystal" deviceset="8Z" device="" technology="-25.000MHZMAAJ-T"/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
 <part name="C41" library="rcl" deviceset="C-EU" device="C0603" value="18p"/>
 <part name="C42" library="rcl" deviceset="C-EU" device="C0603" value="18p"/>
