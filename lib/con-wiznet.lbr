@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -59,7 +59,7 @@
 <packages>
 <package name="WIZNET_RB1-125BAG1A">
 <text x="-7.620790625" y="11.239" size="1.27" layer="25">&gt;NAME</text>
-<text x="-7.620790625" y="-9.666040625" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-7.620790625" y="-12.841040625" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-6.349659375" y1="1.752859375" x2="-5.149659375" y2="5.527859375" layer="51"/>
 <rectangle x1="5.148209375" y1="1.75295" x2="6.348209375" y2="5.52795" layer="51"/>
 <rectangle x1="-1.5" y1="-6.9" x2="1.5" y2="-5.4" layer="51"/>
@@ -79,6 +79,10 @@
 <pad name="L4" x="-6.32453125" y="-4.89963125" drill="0.9"/>
 <pad name="L3" x="-3.78638125" y="-3.37913125" drill="0.9"/>
 <pad name="L2" x="3.78361875" y="-4.89913125" drill="0.9"/>
+<wire x1="-7.875" y1="-10.89" x2="7.875" y2="-10.89" width="0.127" layer="21"/>
+<wire x1="7.875" y1="-10.89" x2="7.875" y2="10.89" width="0.127" layer="21"/>
+<wire x1="7.875" y1="10.89" x2="-7.875" y2="10.89" width="0.127" layer="21"/>
+<wire x1="-7.875" y1="10.89" x2="-7.875" y2="-10.89" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
