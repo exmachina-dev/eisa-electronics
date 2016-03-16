@@ -564,7 +564,7 @@ Based on the following sources:&lt;p&gt;
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="eC_2Layer_PClass6_BaseCopperO18_eCDefault">
+<designrules name="eC_2Layer_PClass6_BaseCopperO18_eCDefault *">
 <description language="de">
 
 &lt;p&gt;
@@ -673,7 +673,7 @@ Your Eurocircuits Team
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
 <param name="checkGrid" value="0"/>
-<param name="checkAngle" value="0"/>
+<param name="checkAngle" value="1"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
 <param name="useDiameter" value="13"/>
@@ -1073,8 +1073,6 @@ Your Eurocircuits Team
 <via x="36.02" y="12.62" extent="1-16" drill="0.35"/>
 <wire x1="32.704" y1="12.299" x2="32.729" y2="12.274" width="0.3048" layer="16"/>
 <wire x1="32.729" y1="12.274" x2="35.004" y2="12.274" width="0.3048" layer="16"/>
-<wire x1="35.004" y1="12.274" x2="35.258" y2="12.62" width="0.3048" layer="16"/>
-<wire x1="35.258" y1="12.62" x2="36.02" y2="12.62" width="0.3048" layer="16"/>
 <wire x1="33.445" y1="15.75" x2="33.395" y2="15.8" width="0.1778" layer="1"/>
 <wire x1="33.395" y1="15.8" x2="32.1" y2="15.8" width="0.1778" layer="1"/>
 <wire x1="32.1" y1="15.8" x2="31.9" y2="15.6" width="0.1778" layer="1"/>
@@ -1084,6 +1082,8 @@ Your Eurocircuits Team
 <wire x1="32.7" y1="13.4" x2="32.85" y2="13.25" width="0.1778" layer="1"/>
 <wire x1="32.85" y1="13.25" x2="33.445" y2="13.25" width="0.1778" layer="1"/>
 <contactref element="TP1" pad="TP"/>
+<wire x1="35.004" y1="12.274" x2="35.674" y2="12.274" width="0.3048" layer="16"/>
+<wire x1="35.674" y1="12.274" x2="36.02" y2="12.62" width="0.3048" layer="16"/>
 </signal>
 <signal name="N$3">
 <contactref element="R6" pad="1"/>
