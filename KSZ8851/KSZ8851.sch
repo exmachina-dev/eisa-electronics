@@ -13416,8 +13416,8 @@ Various fiducial points for machine vision alignment.</description>
 <part name="R9" library="rcl" deviceset="R-EU_" device="R0603" value="4.7K"/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="-25.000MHZMAAJ-T1" library="crystal" deviceset="8Z" device="" technology="-25.000MHZMAAJ-T"/>
-<part name="C5" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
-<part name="C6" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
+<part name="C5" library="rcl" deviceset="C-EU" device="C0603" value="18pF"/>
+<part name="C6" library="rcl" deviceset="C-EU" device="C0603" value="18pF"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="JP1" library="pinhead" deviceset="PINHD-2X5" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
