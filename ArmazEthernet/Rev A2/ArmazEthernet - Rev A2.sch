@@ -8,24 +8,24 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -34,8 +34,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -43,16 +43,16 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -19605,13 +19605,13 @@ at 30/07/2012 11:08:17</description>
 </part>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R0603" value="240">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0063W06031240R"/>
+<attribute name="OC_NEWARK" value="94W5763"/>
 </part>
 <part name="R2" library="rcl" deviceset="R-EU_" device="R0603" value="390">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MF" value="Multicomp Passives"/>
+<attribute name="MPN" value="MC0063W06031390R"/>
+<attribute name="OC_NEWARK" value="58K4586"/>
 </part>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="10uF">
 <attribute name="MF" value=""/>
@@ -19620,26 +19620,26 @@ at 30/07/2012 11:08:17</description>
 </part>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0603" value="1uF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603B105K160CT"/>
+<attribute name="OC_NEWARK" value="06X6171"/>
 </part>
 <part name="C3" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603B104K160CT"/>
+<attribute name="OC_NEWARK" value="06R4923"/>
 </part>
 <part name="U2" library="ti" deviceset="LM317MDCY" device="">
 <attribute name="MF" value="TEXAS INSTRUMENTS"/>
 </part>
 <part name="R3" library="rcl" deviceset="R-EU_" device="R0603" value="240">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0063W06031240R"/>
+<attribute name="OC_NEWARK" value="94W5763"/>
 </part>
 <part name="R4" library="rcl" deviceset="R-EU_" device="R0603" value="100">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MF" value="Multicomp Passives"/>
+<attribute name="MPN" value="MC0063W06031100R"/>
+<attribute name="OC_NEWARK" value="58K4446"/>
 </part>
 <part name="C4" library="rcl" deviceset="C-EU" device="C0603" value="10uF">
 <attribute name="MF" value=""/>
@@ -19648,13 +19648,13 @@ at 30/07/2012 11:08:17</description>
 </part>
 <part name="C5" library="rcl" deviceset="C-EU" device="C0603" value="1uF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603B105K160CT"/>
+<attribute name="OC_NEWARK" value="06X6171"/>
 </part>
 <part name="C6" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603B104K160CT"/>
+<attribute name="OC_NEWARK" value="06R4923"/>
 </part>
 <part name="C7" library="rcl" deviceset="C-EU" device="C0603" value="10uF">
 <attribute name="MF" value=""/>
@@ -19670,17 +19670,18 @@ at 30/07/2012 11:08:17</description>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="J1" library="con-molex" deviceset="22-?-02" device="05-7028"/>
+<part name="J1" library="con-molex" deviceset="22-?-02" device="05-7028">
+<attribute name="MPN" value="22-05-7028"/>
+<attribute name="OC_NEWARK" value="25M1728"/>
+</part>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="X1" library="con-neutrik_ag" deviceset="NE8" device="FAV">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="OC_NEWARK" value="01M8373"/>
 </part>
 <part name="X2" library="con-neutrik_ag" deviceset="NE8" device="FAV">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="OC_NEWARK" value="01M8373"/>
 </part>
 <part name="P1" library="con-wiznet" deviceset="RB1-125BAG1A" device="">
 <attribute name="MF" value=""/>
@@ -19688,159 +19689,159 @@ at 30/07/2012 11:08:17</description>
 <attribute name="OC_NEWARK" value="unknown"/>
 </part>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="T1" library="pulse" deviceset="H1102FNL" device="">
+<part name="T1" library="pulse" deviceset="H1102FNL" device="" value="H1102FNL">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_NEWARK" value="unknown"/>
 </part>
-<part name="T2" library="pulse" deviceset="H1102FNL" device="">
+<part name="T2" library="pulse" deviceset="H1102FNL" device="" value="H1102FNL">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_NEWARK" value="unknown"/>
 </part>
 <part name="R9" library="rcl" deviceset="R-EU_" device="R0603" value="51">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MF" value="Multicomp Passives"/>
+<attribute name="MPN" value="MC0063W0603151R"/>
+<attribute name="OC_NEWARK" value="58K4614"/>
 </part>
 <part name="R12" library="rcl" deviceset="R-EU_" device="R0603" value="51">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MF" value="Multicomp Passives"/>
+<attribute name="MPN" value="MC0063W0603151R"/>
+<attribute name="OC_NEWARK" value="58K4614"/>
 </part>
 <part name="R13" library="rcl" deviceset="R-EU_" device="R0603" value="75">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MF" value="Multicomp Passives"/>
+<attribute name="MPN" value="MC0063W0603175R"/>
+<attribute name="OC_NEWARK" value="58K4654"/>
 </part>
 <part name="C11" library="rcl" deviceset="C-EU" device="C1206" value="1000pF, 2kV">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC1206B102K202CT"/>
+<attribute name="OC_NEWARK" value="21T9879"/>
 </part>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="R0603" value="75">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MF" value="Multicomp Passives"/>
+<attribute name="MPN" value="MC0063W0603175R"/>
+<attribute name="OC_NEWARK" value="58K4654"/>
 </part>
 <part name="C12" library="rcl" deviceset="C-EU" device="C1206" value="1000pF, 2kV">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC1206B102K202CT"/>
+<attribute name="OC_NEWARK" value="21T9879"/>
 </part>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="R7" library="rcl" deviceset="R-EU_" device="R0603" value="51">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MF" value="Multicomp Passives"/>
+<attribute name="MPN" value="MC0063W0603151R"/>
+<attribute name="OC_NEWARK" value="58K4614"/>
 </part>
 <part name="R14" library="rcl" deviceset="R-EU_" device="R0603" value="51">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MF" value="Multicomp Passives"/>
+<attribute name="MPN" value="MC0063W0603151R"/>
+<attribute name="OC_NEWARK" value="58K4614"/>
 </part>
 <part name="R15" library="rcl" deviceset="R-EU_" device="R0603" value="51">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MF" value="Multicomp Passives"/>
+<attribute name="MPN" value="MC0063W0603151R"/>
+<attribute name="OC_NEWARK" value="58K4614"/>
 </part>
 <part name="R16" library="rcl" deviceset="R-EU_" device="R0603" value="51">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MF" value="Multicomp Passives"/>
+<attribute name="MPN" value="MC0063W0603151R"/>
+<attribute name="OC_NEWARK" value="58K4614"/>
 </part>
 <part name="R5" library="rcl" deviceset="R-EU_" device="R0603" value="51">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MF" value="Multicomp Passives"/>
+<attribute name="MPN" value="MC0063W0603151R"/>
+<attribute name="OC_NEWARK" value="58K4614"/>
 </part>
 <part name="R8" library="rcl" deviceset="R-EU_" device="R0603" value="51">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MF" value="Multicomp Passives"/>
+<attribute name="MPN" value="MC0063W0603151R"/>
+<attribute name="OC_NEWARK" value="58K4614"/>
 </part>
 <part name="R10" library="rcl" deviceset="R-EU_" device="R0603" value="51">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MF" value="Multicomp Passives"/>
+<attribute name="MPN" value="MC0063W0603151R"/>
+<attribute name="OC_NEWARK" value="58K4614"/>
 </part>
 <part name="R11" library="rcl" deviceset="R-EU_" device="R0603" value="51">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MF" value="Multicomp Passives"/>
+<attribute name="MPN" value="MC0063W0603151R"/>
+<attribute name="OC_NEWARK" value="58K4614"/>
 </part>
 <part name="R17" library="rcl" deviceset="R-EU_" device="R0603" value="51">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MF" value="Multicomp Passives"/>
+<attribute name="MPN" value="MC0063W0603151R"/>
+<attribute name="OC_NEWARK" value="58K4614"/>
 </part>
 <part name="R18" library="rcl" deviceset="R-EU_" device="R0603" value="51">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MF" value="Multicomp Passives"/>
+<attribute name="MPN" value="MC0063W0603151R"/>
+<attribute name="OC_NEWARK" value="58K4614"/>
 </part>
 <part name="R19" library="rcl" deviceset="R-EU_" device="R0603" value="49.9">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603SAF499JT5E"/>
+<attribute name="OC_NEWARK" value="79M5983"/>
 </part>
 <part name="R20" library="rcl" deviceset="R-EU_" device="R0603" value="49.9">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603SAF499JT5E"/>
+<attribute name="OC_NEWARK" value="79M5983"/>
 </part>
 <part name="R21" library="rcl" deviceset="R-EU_" device="R0603" value="49.9">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603SAF499JT5E"/>
+<attribute name="OC_NEWARK" value="79M5983"/>
 </part>
 <part name="R22" library="rcl" deviceset="R-EU_" device="R0603" value="49.9">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603SAF499JT5E"/>
+<attribute name="OC_NEWARK" value="79M5983"/>
 </part>
 <part name="C9" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603B104K160CT"/>
+<attribute name="OC_NEWARK" value="06R4923"/>
 </part>
 <part name="C10" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603B104K160CT"/>
+<attribute name="OC_NEWARK" value="06R4923"/>
 </part>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="R23" library="rcl" deviceset="R-EU_" device="R0603" value="49.9">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603SAF499JT5E"/>
+<attribute name="OC_NEWARK" value="79M5983"/>
 </part>
 <part name="R24" library="rcl" deviceset="R-EU_" device="R0603" value="49.9">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603SAF499JT5E"/>
+<attribute name="OC_NEWARK" value="79M5983"/>
 </part>
 <part name="R25" library="rcl" deviceset="R-EU_" device="R0603" value="49.9">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603SAF499JT5E"/>
+<attribute name="OC_NEWARK" value="79M5983"/>
 </part>
 <part name="R26" library="rcl" deviceset="R-EU_" device="R0603" value="49.9">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603SAF499JT5E"/>
+<attribute name="OC_NEWARK" value="79M5983"/>
 </part>
 <part name="C13" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603B104K160CT"/>
+<attribute name="OC_NEWARK" value="06R4923"/>
 </part>
 <part name="C14" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603B104K160CT"/>
+<attribute name="OC_NEWARK" value="06R4923"/>
 </part>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
@@ -19848,36 +19849,36 @@ at 30/07/2012 11:08:17</description>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="C15" library="rcl" deviceset="CPOL-EU" device="CT3216" value="4.7uF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MCCTA475M010"/>
+<attribute name="OC_NEWARK" value="01M8221"/>
 </part>
 <part name="C16" library="rcl" deviceset="CPOL-EU" device="CT3216" value="4.7uF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MCCTA475M010"/>
+<attribute name="OC_NEWARK" value="01M8221"/>
 </part>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="C17" library="rcl" deviceset="CPOL-EU" device="CT3216" value="4.7uF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MCCTA475M010"/>
+<attribute name="OC_NEWARK" value="01M8221"/>
 </part>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="L1" library="rcl" deviceset="L-EU" device="L4532C" value="15uH_10%">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="LQH43CN150K03L"/>
+<attribute name="OC_NEWARK" value="74M2809"/>
 </part>
 <part name="L2" library="rcl" deviceset="L-EU" device="L4532C" value="15uH_10%">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="LQH43CN150K03L"/>
+<attribute name="OC_NEWARK" value="74M2809"/>
 </part>
 <part name="L3" library="rcl" deviceset="L-EU" device="L4532C" value="15uH_10%">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="LQH43CN150K03L"/>
+<attribute name="OC_NEWARK" value="74M2809"/>
 </part>
 <part name="C18" library="rcl" deviceset="C-EU" device="C0603" value="10uF">
 <attribute name="MF" value=""/>
@@ -19886,8 +19887,8 @@ at 30/07/2012 11:08:17</description>
 </part>
 <part name="C19" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603B104K160CT"/>
+<attribute name="OC_NEWARK" value="06R4923"/>
 </part>
 <part name="C20" library="rcl" deviceset="C-EU" device="C0603" value="10uF">
 <attribute name="MF" value=""/>
@@ -19896,75 +19897,75 @@ at 30/07/2012 11:08:17</description>
 </part>
 <part name="C21" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603B104K160CT"/>
+<attribute name="OC_NEWARK" value="06R4923"/>
 </part>
 <part name="CR1" library="diode" deviceset="SMAJ33A-E3/61" device="">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="SMAJ33A-E3/61"/>
+<attribute name="OC_NEWARK" value="08R3790"/>
 </part>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="C22" library="rcl" deviceset="C-EU" device="C0603" value="1uF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603B105K160CT"/>
+<attribute name="OC_NEWARK" value="06X6171"/>
 </part>
 <part name="C23" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603B104K160CT"/>
+<attribute name="OC_NEWARK" value="06R4923"/>
 </part>
 <part name="C24" library="rcl" deviceset="C-EU" device="C0603" value="1uF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603B105K160CT"/>
+<attribute name="OC_NEWARK" value="06X6171"/>
 </part>
 <part name="C25" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603B104K160CT"/>
+<attribute name="OC_NEWARK" value="06R4923"/>
 </part>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="LED1" library="led" deviceset="LED" device="CHIP-LED0603" value="Green">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="OVS-0604"/>
+<attribute name="OC_NEWARK" value="15R2206"/>
 </part>
 <part name="R27" library="rcl" deviceset="R-EU_" device="R0603" value="1k5">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MF" value="Multicomp Passives"/>
+<attribute name="MPN" value="MC0063W060311K5"/>
+<attribute name="OC_NEWARK" value="58K4488"/>
 </part>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
 <part name="LED2" library="led" deviceset="LED" device="CHIP-LED0603" value="Green">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="OVS-0604"/>
+<attribute name="OC_NEWARK" value="15R2206"/>
 </part>
 <part name="R28" library="rcl" deviceset="R-EU_" device="R0603" value="1k">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MCMR06X1001FTL"/>
+<attribute name="OC_NEWARK" value="86T3505"/>
 </part>
 <part name="LED3" library="led" deviceset="LED" device="CHIP-LED0603" value="Green">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="OVS-0604"/>
+<attribute name="OC_NEWARK" value="15R2206"/>
 </part>
 <part name="R29" library="rcl" deviceset="R-EU_" device="R0603" value="560">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MCMR06X1501FTL"/>
+<attribute name="OC_NEWARK" value="86T3542"/>
 </part>
 <part name="FRAME2" library="frames" deviceset="A3L-LOC" device=""/>
 <part name="U3" library="Micrel_By_element14_Batch_1" deviceset="KSZ8995MA" device="">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="KSZ8995MA"/>
+<attribute name="OC_NEWARK" value="70Y9044"/>
 </part>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
@@ -19975,91 +19976,91 @@ at 30/07/2012 11:08:17</description>
 <part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
 <part name="R30" library="rcl" deviceset="R-EU_" device="R0603" value="10K, DNI">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MF" value="Multicomp Passives"/>
+<attribute name="MPN" value="MC0063W0603110K"/>
+<attribute name="OC_NEWARK" value="58K4450"/>
 </part>
 <part name="R31" library="rcl" deviceset="R-EU_" device="R0603" value="10K, DNI">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MF" value="Multicomp Passives"/>
+<attribute name="MPN" value="MC0063W0603110K"/>
+<attribute name="OC_NEWARK" value="58K4450"/>
 </part>
 <part name="+3V13" library="supply1" deviceset="+3V3" device=""/>
 <part name="R34" library="rcl" deviceset="R-EU_" device="R0603" value="3k01">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0063W060313K01"/>
+<attribute name="OC_NEWARK" value="94W5780"/>
 </part>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="C26" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603B104K160CT"/>
+<attribute name="OC_NEWARK" value="06R4923"/>
 </part>
 <part name="C27" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603B104K160CT"/>
+<attribute name="OC_NEWARK" value="06R4923"/>
 </part>
 <part name="C28" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603B104K160CT"/>
+<attribute name="OC_NEWARK" value="06R4923"/>
 </part>
 <part name="C29" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603B104K160CT"/>
+<attribute name="OC_NEWARK" value="06R4923"/>
 </part>
 <part name="C30" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603B104K160CT"/>
+<attribute name="OC_NEWARK" value="06R4923"/>
 </part>
 <part name="C31" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603B104K160CT"/>
+<attribute name="OC_NEWARK" value="06R4923"/>
 </part>
 <part name="C32" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603B104K160CT"/>
+<attribute name="OC_NEWARK" value="06R4923"/>
 </part>
 <part name="C34" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603B104K160CT"/>
+<attribute name="OC_NEWARK" value="06R4923"/>
 </part>
 <part name="C35" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603B104K160CT"/>
+<attribute name="OC_NEWARK" value="06R4923"/>
 </part>
 <part name="C36" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603B104K160CT"/>
+<attribute name="OC_NEWARK" value="06R4923"/>
 </part>
 <part name="C37" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603B104K160CT"/>
+<attribute name="OC_NEWARK" value="06R4923"/>
 </part>
 <part name="C38" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603B104K160CT"/>
+<attribute name="OC_NEWARK" value="06R4923"/>
 </part>
 <part name="C39" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603B104K160CT"/>
+<attribute name="OC_NEWARK" value="06R4923"/>
 </part>
 <part name="C40" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603B104K160CT"/>
+<attribute name="OC_NEWARK" value="06R4923"/>
 </part>
 <part name="+3V14" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V15" library="supply1" deviceset="+3V3" device=""/>
@@ -20070,19 +20071,19 @@ at 30/07/2012 11:08:17</description>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
 <part name="Y1" library="crystal" deviceset="8Z" device="" technology="-25.000MHZMAAJ-T">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="8Z-25.000MAAJ-T"/>
+<attribute name="OC_NEWARK" value="84R5794"/>
 </part>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
 <part name="C41" library="rcl" deviceset="C-EU" device="C0603" value="18pF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603N180J500CT"/>
+<attribute name="OC_NEWARK" value="06R5138"/>
 </part>
 <part name="C42" library="rcl" deviceset="C-EU" device="C0603" value="18pF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603N180J500CT"/>
+<attribute name="OC_NEWARK" value="06R5138"/>
 </part>
 <part name="U4" library="atmel" deviceset="AT24C02C-SSHM-B" device="">
 <attribute name="MF" value=""/>
@@ -20091,70 +20092,70 @@ at 30/07/2012 11:08:17</description>
 <part name="+3V19" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V20" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND28" library="supply1" deviceset="GND" device=""/>
-<part name="C43" library="rcl" deviceset="C-EU" device="C0603" value="100nF">
+<part name="C43" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603B104K160CT"/>
+<attribute name="OC_NEWARK" value="06R4923"/>
 </part>
 <part name="GND29" library="supply1" deviceset="GND" device=""/>
 <part name="R35" library="rcl" deviceset="R-EU_" device="R0603" value="0, DNI">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MF" value="Multicomp Passives"/>
+<attribute name="MPN" value="MC0603WG00000T5E-TC"/>
+<attribute name="OC_NEWARK" value="58K4684"/>
 </part>
 <part name="R36" library="rcl" deviceset="R-EU_" device="R0603" value="0, DNI">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MF" value="Multicomp Passives"/>
+<attribute name="MPN" value="MC0603WG00000T5E-TC"/>
+<attribute name="OC_NEWARK" value="58K4684"/>
 </part>
 <part name="R37" library="rcl" deviceset="R-EU_" device="R0603" value="0, DNI">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MF" value="Multicomp Passives"/>
+<attribute name="MPN" value="MC0603WG00000T5E-TC"/>
+<attribute name="OC_NEWARK" value="58K4684"/>
 </part>
 <part name="R38" library="rcl" deviceset="R-EU_" device="R0603" value="0, DNI">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MF" value="Multicomp Passives"/>
+<attribute name="MPN" value="MC0603WG00000T5E-TC"/>
+<attribute name="OC_NEWARK" value="58K4684"/>
 </part>
 <part name="R39" library="rcl" deviceset="R-EU_" device="R0603" value="0, DNI">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MF" value="Multicomp Passives"/>
+<attribute name="MPN" value="MC0603WG00000T5E-TC"/>
+<attribute name="OC_NEWARK" value="58K4684"/>
 </part>
 <part name="R40" library="rcl" deviceset="R-EU_" device="R0603" value="0, DNI">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MF" value="Multicomp Passives"/>
+<attribute name="MPN" value="MC0603WG00000T5E-TC"/>
+<attribute name="OC_NEWARK" value="58K4684"/>
 </part>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X5" device="">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="M20-9990545"/>
+<attribute name="OC_NEWARK" value="97K6210"/>
 </part>
-<part name="JP2" library="pinhead" deviceset="PINHD-1X8" device="">
+<part name="JP2" library="pinhead" deviceset="PINHD-1X8" device="" value="Male">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="2211S-08G"/>
+<attribute name="OC_NEWARK" value="08N6749"/>
 </part>
-<part name="JP3" library="pinhead" deviceset="PINHD-1X8" device="">
+<part name="JP3" library="pinhead" deviceset="PINHD-1X8" device="" value="Female">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="2212S-08SG-85"/>
+<attribute name="OC_NEWARK" value="08N6773"/>
 </part>
 <part name="+3V21" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V22" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND30" library="supply1" deviceset="GND" device=""/>
 <part name="GND31" library="supply1" deviceset="GND" device=""/>
-<part name="JP4" library="pinhead" deviceset="PINHD-1X8" device="">
+<part name="JP4" library="pinhead" deviceset="PINHD-1X8" device="" value="Male">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="2211S-08G"/>
+<attribute name="OC_NEWARK" value="08N6749"/>
 </part>
-<part name="JP5" library="pinhead" deviceset="PINHD-1X8" device="">
+<part name="JP5" library="pinhead" deviceset="PINHD-1X8" device="" value="Female">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="2212S-08SG-85"/>
+<attribute name="OC_NEWARK" value="08N6773"/>
 </part>
 <part name="+3V23" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V24" library="supply1" deviceset="+3V3" device=""/>
@@ -20190,43 +20191,43 @@ at 30/07/2012 11:08:17</description>
 </part>
 <part name="LED4" library="led" deviceset="LED" device="CHIP-LED0603" value="Blue">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="OVS-0603"/>
+<attribute name="OC_NEWARK" value="15R2205"/>
 </part>
 <part name="R41" library="rcl" deviceset="R-EU_" device="R0603" value="1k">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MCMR06X1001FTL"/>
+<attribute name="OC_NEWARK" value="86T3505"/>
 </part>
 <part name="LED5" library="led" deviceset="LED" device="CHIP-LED0603" value="Blue">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="OVS-0603"/>
+<attribute name="OC_NEWARK" value="15R2205"/>
 </part>
 <part name="R42" library="rcl" deviceset="R-EU_" device="R0603" value="1k">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MCMR06X1001FTL"/>
+<attribute name="OC_NEWARK" value="86T3505"/>
 </part>
 <part name="LED6" library="led" deviceset="LED" device="CHIP-LED0603" value="Blue">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="OVS-0603"/>
+<attribute name="OC_NEWARK" value="15R2205"/>
 </part>
 <part name="R43" library="rcl" deviceset="R-EU_" device="R0603" value="1k">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MCMR06X1001FTL"/>
+<attribute name="OC_NEWARK" value="86T3505"/>
 </part>
 <part name="LED7" library="led" deviceset="LED" device="CHIP-LED0603" value="Blue">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="OVS-0603"/>
+<attribute name="OC_NEWARK" value="15R2205"/>
 </part>
 <part name="R44" library="rcl" deviceset="R-EU_" device="R0603" value="1k">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MCMR06X1001FTL"/>
+<attribute name="OC_NEWARK" value="86T3505"/>
 </part>
 <part name="GND34" library="supply1" deviceset="GND" device=""/>
 <part name="GND35" library="supply1" deviceset="GND" device=""/>
@@ -20249,45 +20250,45 @@ at 30/07/2012 11:08:17</description>
 </part>
 <part name="R32" library="rcl" deviceset="R-EU_" device="R0603" value="49.9">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603SAF499JT5E"/>
+<attribute name="OC_NEWARK" value="79M5983"/>
 </part>
 <part name="R33" library="rcl" deviceset="R-EU_" device="R0603" value="49.9">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603SAF499JT5E"/>
+<attribute name="OC_NEWARK" value="79M5983"/>
 </part>
 <part name="C33" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603B104K160CT"/>
+<attribute name="OC_NEWARK" value="06R4923"/>
 </part>
 <part name="GND38" library="supply1" deviceset="GND" device=""/>
 <part name="R45" library="rcl" deviceset="R-EU_" device="R0603" value="49.9">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603SAF499JT5E"/>
+<attribute name="OC_NEWARK" value="79M5983"/>
 </part>
 <part name="R46" library="rcl" deviceset="R-EU_" device="R0603" value="49.9">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603SAF499JT5E"/>
+<attribute name="OC_NEWARK" value="79M5983"/>
 </part>
 <part name="C44" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC0603B104K160CT"/>
+<attribute name="OC_NEWARK" value="06R4923"/>
 </part>
 <part name="GND39" library="supply1" deviceset="GND" device=""/>
 <part name="R47" library="rcl" deviceset="R-EU_" device="R0603" value="220">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MF" value="Multicomp Passives"/>
+<attribute name="MPN" value="MC0063W06031220R"/>
+<attribute name="OC_NEWARK" value="58K4526"/>
 </part>
 <part name="R48" library="rcl" deviceset="R-EU_" device="R0603" value="220">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MF" value="Multicomp Passives"/>
+<attribute name="MPN" value="MC0063W06031220R"/>
+<attribute name="OC_NEWARK" value="58K4526"/>
 </part>
 <part name="C45" library="rcl" deviceset="C-EU" device="C0603" value="10uF">
 <attribute name="MF" value=""/>
@@ -20296,32 +20297,48 @@ at 30/07/2012 11:08:17</description>
 </part>
 <part name="GND40" library="supply1" deviceset="GND" device=""/>
 <part name="R49" library="rcl" deviceset="R-EU_" device="R0603" value="10K">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MF" value="Multicomp Passives"/>
+<attribute name="MPN" value="MC0063W0603110K"/>
+<attribute name="OC_NEWARK" value="58K4450"/>
 </part>
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
 <part name="U$9" library="diode" deviceset="1N4148W" device="">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="1N4148W"/>
+<attribute name="OC_NEWARK" value="01P4213"/>
 </part>
 <part name="C46" library="rcl" deviceset="C-EU" device="C1206" value="1000pF, 2kV">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC1206B102K202CT"/>
+<attribute name="OC_NEWARK" value="21T9879"/>
 </part>
 <part name="C47" library="rcl" deviceset="C-EU" device="C1206" value="1000pF, 2kV">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_NEWARK" value="unknown"/>
+<attribute name="MPN" value="MC1206B102K202CT"/>
+<attribute name="OC_NEWARK" value="21T9879"/>
 </part>
 <part name="GND41" library="supply1" deviceset="GND" device=""/>
 <part name="GND42" library="supply1" deviceset="GND" device=""/>
-<part name="U$7" library="diode" deviceset="GF1A" device=""/>
-<part name="U$11" library="diode" deviceset="GF1A" device=""/>
-<part name="U$12" library="diode" deviceset="GF1A" device=""/>
-<part name="U$13" library="diode" deviceset="GF1A" device=""/>
+<part name="U$7" library="diode" deviceset="GF1A" device="">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value="GF1B-E3/67A"/>
+<attribute name="OC_NEWARK" value="05R5601"/>
+</part>
+<part name="U$11" library="diode" deviceset="GF1A" device="">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value="GF1B-E3/67A"/>
+<attribute name="OC_NEWARK" value="05R5601"/>
+</part>
+<part name="U$12" library="diode" deviceset="GF1A" device="">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value="GF1B-E3/67A"/>
+<attribute name="OC_NEWARK" value="05R5601"/>
+</part>
+<part name="U$13" library="diode" deviceset="GF1A" device="">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value="GF1B-E3/67A"/>
+<attribute name="OC_NEWARK" value="05R5601"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -20857,10 +20874,26 @@ at 30/07/2012 11:08:17</description>
 </instance>
 <instance part="GND41" gate="1" x="20.32" y="78.74" rot="MR0"/>
 <instance part="GND42" gate="1" x="20.32" y="10.16" rot="MR0"/>
-<instance part="U$7" gate="G$1" x="177.8" y="251.46" rot="R90"/>
-<instance part="U$11" gate="G$1" x="210.82" y="220.98"/>
-<instance part="U$12" gate="G$1" x="210.82" y="165.1"/>
-<instance part="U$13" gate="G$1" x="180.34" y="195.58" rot="R90"/>
+<instance part="U$7" gate="G$1" x="177.8" y="251.46" rot="R90">
+<attribute name="OC_NEWARK" x="177.8" y="251.46" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="177.8" y="251.46" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="177.8" y="251.46" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U$11" gate="G$1" x="210.82" y="220.98">
+<attribute name="OC_NEWARK" x="210.82" y="220.98" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="210.82" y="220.98" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="210.82" y="220.98" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U$12" gate="G$1" x="210.82" y="165.1">
+<attribute name="OC_NEWARK" x="210.82" y="165.1" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="210.82" y="165.1" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="210.82" y="165.1" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U$13" gate="G$1" x="180.34" y="195.58" rot="R90">
+<attribute name="OC_NEWARK" x="180.34" y="195.58" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="180.34" y="195.58" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="180.34" y="195.58" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
