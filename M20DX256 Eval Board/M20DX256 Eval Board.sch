@@ -5509,10 +5509,7 @@ Source: VISHAY wscwsn.pdf</description>
 <wire x1="-3.175" y1="2.5" x2="3.175" y2="2.5" width="0.127" layer="21"/>
 <wire x1="3.175" y1="2.5" x2="3.175" y2="-2.5" width="0.127" layer="21"/>
 <wire x1="3.175" y1="-2.5" x2="-3.175" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="-3.175" y1="2.5" x2="3.175" y2="2.5" width="0.127" layer="41"/>
 <wire x1="3.175" y1="2.5" x2="3.175" y2="-2.5" width="0.127" layer="41"/>
-<wire x1="3.175" y1="-2.5" x2="-3.175" y2="-2.5" width="0.127" layer="41"/>
-<wire x1="-3.175" y1="-2.5" x2="-3.175" y2="2.5" width="0.127" layer="41"/>
 <circle x="-4.318" y="1.524" radius="0.359209375" width="0.762" layer="21"/>
 </package>
 </packages>
@@ -5778,7 +5775,11 @@ Source: VISHAY wscwsn.pdf</description>
 <pinref part="U$1" gate="J$1" pin="5"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="22.86" y1="195.58" x2="30.48" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="195.58" x2="30.48" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="195.58" x2="30.48" y2="187.96" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="J$1" pin="S"/>
+<wire x1="30.48" y1="187.96" x2="30.48" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="187.96" x2="30.48" y2="187.96" width="0.1524" layer="91"/>
+<junction x="30.48" y="187.96"/>
 </segment>
 <segment>
 <pinref part="J1" gate="J1" pin="3"/>
