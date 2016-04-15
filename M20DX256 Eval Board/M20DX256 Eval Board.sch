@@ -5560,6 +5560,105 @@ Source: VISHAY wscwsn.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="con-custom">
+<packages>
+<package name="CUSTOM">
+<wire x1="-26.67" y1="1.27" x2="26.67" y2="1.27" width="0.127" layer="51" style="shortdash"/>
+<wire x1="26.67" y1="1.27" x2="26.67" y2="-1.27" width="0.127" layer="51" style="shortdash"/>
+<wire x1="26.67" y1="-1.27" x2="-26.67" y2="-1.27" width="0.127" layer="51" style="shortdash"/>
+<wire x1="-26.67" y1="-1.27" x2="-26.67" y2="1.27" width="0.127" layer="51" style="shortdash"/>
+<pad name="P$1" x="-25.4" y="1.27" drill="1" shape="offset" rot="R270"/>
+<pad name="P$2" x="-22.86" y="1.27" drill="1" shape="offset" rot="R270"/>
+<pad name="P$3" x="-20.32" y="1.27" drill="1" shape="offset" rot="R270"/>
+<pad name="P$4" x="-17.78" y="1.27" drill="1" shape="offset" rot="R270"/>
+<pad name="P$5" x="-15.24" y="1.27" drill="1" shape="offset" rot="R270"/>
+<pad name="P$6" x="-12.7" y="1.27" drill="1" shape="offset" rot="R270"/>
+<pad name="P$7" x="-10.16" y="1.27" drill="1" shape="offset" rot="R270"/>
+<pad name="P$8" x="-7.62" y="1.27" drill="1" shape="offset" rot="R270"/>
+<pad name="P$9" x="-5.08" y="1.27" drill="1" shape="offset" rot="R270"/>
+<pad name="P$10" x="-2.54" y="1.27" drill="1" shape="offset" rot="R270"/>
+<pad name="P$11" x="0" y="1.27" drill="1" shape="offset" rot="R270"/>
+<pad name="P$12" x="2.54" y="1.27" drill="1" shape="offset" rot="R270"/>
+<pad name="P$13" x="5.08" y="1.27" drill="1" shape="offset" rot="R270"/>
+<pad name="P$14" x="7.62" y="1.27" drill="1" shape="offset" rot="R270"/>
+<pad name="P$15" x="10.16" y="1.27" drill="1" shape="offset" rot="R270"/>
+<pad name="P$16" x="12.7" y="1.27" drill="1" shape="offset" rot="R270"/>
+<pad name="P$17" x="15.24" y="1.27" drill="1" shape="offset" rot="R270"/>
+<pad name="P$18" x="17.78" y="1.27" drill="1" shape="offset" rot="R270"/>
+<pad name="P$19" x="20.32" y="1.27" drill="1" shape="offset" rot="R270"/>
+<pad name="P$20" x="22.86" y="1.27" drill="1" shape="offset" rot="R270"/>
+<pad name="P$21" x="25.4" y="1.27" drill="1" shape="offset" rot="R270"/>
+</package>
+</packages>
+<symbols>
+<symbol name="21_PIN">
+<pin name="1" x="-12.7" y="25.4" length="middle"/>
+<pin name="2" x="-12.7" y="22.86" length="middle"/>
+<pin name="3" x="-12.7" y="20.32" length="middle"/>
+<pin name="4" x="-12.7" y="17.78" length="middle"/>
+<pin name="5" x="-12.7" y="15.24" length="middle"/>
+<pin name="6" x="-12.7" y="12.7" length="middle"/>
+<pin name="7" x="-12.7" y="10.16" length="middle"/>
+<pin name="8" x="-12.7" y="7.62" length="middle"/>
+<pin name="9" x="-12.7" y="5.08" length="middle"/>
+<pin name="10" x="-12.7" y="2.54" length="middle"/>
+<pin name="11" x="-12.7" y="0" length="middle"/>
+<pin name="12" x="-12.7" y="-2.54" length="middle"/>
+<pin name="13" x="-12.7" y="-5.08" length="middle"/>
+<pin name="14" x="-12.7" y="-7.62" length="middle"/>
+<pin name="15" x="-12.7" y="-10.16" length="middle"/>
+<pin name="16" x="-12.7" y="-12.7" length="middle"/>
+<pin name="17" x="-12.7" y="-15.24" length="middle"/>
+<pin name="18" x="-12.7" y="-17.78" length="middle"/>
+<pin name="19" x="-12.7" y="-20.32" length="middle"/>
+<pin name="20" x="-12.7" y="-22.86" length="middle"/>
+<pin name="21" x="-12.7" y="-25.4" length="middle"/>
+<wire x1="-7.62" y1="27.94" x2="-7.62" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-27.94" x2="5.08" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-27.94" x2="5.08" y2="27.94" width="0.254" layer="94"/>
+<wire x1="5.08" y1="27.94" x2="-7.62" y2="27.94" width="0.254" layer="94"/>
+<text x="-7.62" y="30.48" size="1.27" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-33.02" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="21_PIN" prefix="J">
+<gates>
+<gate name="G$1" symbol="21_PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CUSTOM">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="10" pad="P$10"/>
+<connect gate="G$1" pin="11" pad="P$11"/>
+<connect gate="G$1" pin="12" pad="P$12"/>
+<connect gate="G$1" pin="13" pad="P$13"/>
+<connect gate="G$1" pin="14" pad="P$14"/>
+<connect gate="G$1" pin="15" pad="P$15"/>
+<connect gate="G$1" pin="16" pad="P$16"/>
+<connect gate="G$1" pin="17" pad="P$17"/>
+<connect gate="G$1" pin="18" pad="P$18"/>
+<connect gate="G$1" pin="19" pad="P$19"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="20" pad="P$20"/>
+<connect gate="G$1" pin="21" pad="P$21"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+<connect gate="G$1" pin="5" pad="P$5"/>
+<connect gate="G$1" pin="6" pad="P$6"/>
+<connect gate="G$1" pin="7" pad="P$7"/>
+<connect gate="G$1" pin="8" pad="P$8"/>
+<connect gate="G$1" pin="9" pad="P$9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5598,6 +5697,8 @@ Source: VISHAY wscwsn.pdf</description>
 <part name="J1" library="con-harwin" deviceset="M52-040000S0545" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
+<part name="J2" library="con-custom" deviceset="21_PIN" device=""/>
+<part name="J3" library="con-custom" deviceset="21_PIN" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5643,6 +5744,8 @@ Source: VISHAY wscwsn.pdf</description>
 <instance part="J1" gate="J1" x="370.84" y="236.22"/>
 <instance part="GND7" gate="1" x="350.52" y="218.44"/>
 <instance part="+3V7" gate="G$1" x="350.52" y="254"/>
+<instance part="J2" gate="G$1" x="370.84" y="167.64"/>
+<instance part="J3" gate="G$1" x="370.84" y="88.9"/>
 </instances>
 <busses>
 </busses>
@@ -5910,6 +6013,62 @@ Source: VISHAY wscwsn.pdf</description>
 <pinref part="J1" gate="J1" pin="2"/>
 <wire x1="358.14" y1="246.38" x2="347.98" y2="246.38" width="0.1524" layer="91"/>
 <label x="347.98" y="246.38" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="1" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="PTB0/LLWU_P5"/>
+<wire x1="137.16" y1="170.18" x2="129.54" y2="170.18" width="0.1524" layer="91"/>
+<label x="129.54" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="2" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="PTB1"/>
+<wire x1="137.16" y1="167.64" x2="129.54" y2="167.64" width="0.1524" layer="91"/>
+<label x="129.54" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="3" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="PTB2"/>
+<wire x1="137.16" y1="165.1" x2="129.54" y2="165.1" width="0.1524" layer="91"/>
+<label x="129.54" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="4" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="PTB3"/>
+<wire x1="137.16" y1="162.56" x2="129.54" y2="162.56" width="0.1524" layer="91"/>
+<label x="129.54" y="162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="5" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="PTB16"/>
+<wire x1="137.16" y1="160.02" x2="129.54" y2="160.02" width="0.1524" layer="91"/>
+<label x="129.54" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="6" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="PTB17"/>
+<wire x1="137.16" y1="157.48" x2="129.54" y2="157.48" width="0.1524" layer="91"/>
+<label x="129.54" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="7" class="0">
+<segment>
+<pinref part="U1" gate="B" pin="PTB18"/>
+<wire x1="162.56" y1="86.36" x2="147.32" y2="86.36" width="0.1524" layer="91"/>
+<label x="147.32" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="8" class="0">
+<segment>
+<pinref part="U1" gate="B" pin="PTB19"/>
+<wire x1="162.56" y1="83.82" x2="147.32" y2="83.82" width="0.1524" layer="91"/>
+<label x="147.32" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
