@@ -5492,6 +5492,77 @@ Source: VISHAY wscwsn.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="con-harwin">
+<packages>
+<package name="5X2SMT">
+<smd name="5" x="0" y="2.425" dx="0.74" dy="3.75" layer="1"/>
+<smd name="6" x="0" y="-2.425" dx="0.74" dy="3.75" layer="1"/>
+<smd name="7" x="1.27" y="2.425" dx="0.74" dy="3.75" layer="1"/>
+<smd name="9" x="2.54" y="2.425" dx="0.74" dy="3.75" layer="1"/>
+<smd name="3" x="-1.27" y="2.425" dx="0.74" dy="3.75" layer="1"/>
+<smd name="1" x="-2.54" y="2.425" dx="0.74" dy="3.75" layer="1"/>
+<smd name="8" x="1.27" y="-2.425" dx="0.74" dy="3.75" layer="1"/>
+<smd name="10" x="2.54" y="-2.425" dx="0.74" dy="3.75" layer="1"/>
+<smd name="4" x="-1.27" y="-2.425" dx="0.74" dy="3.75" layer="1"/>
+<smd name="2" x="-2.54" y="-2.425" dx="0.74" dy="3.75" layer="1"/>
+<wire x1="-3.175" y1="-2.5" x2="-3.175" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="2.5" x2="3.175" y2="2.5" width="0.127" layer="21"/>
+<wire x1="3.175" y1="2.5" x2="3.175" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-2.5" x2="-3.175" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="2.5" x2="3.175" y2="2.5" width="0.127" layer="41"/>
+<wire x1="3.175" y1="2.5" x2="3.175" y2="-2.5" width="0.127" layer="41"/>
+<wire x1="3.175" y1="-2.5" x2="-3.175" y2="-2.5" width="0.127" layer="41"/>
+<wire x1="-3.175" y1="-2.5" x2="-3.175" y2="2.5" width="0.127" layer="41"/>
+<circle x="-4.318" y="1.524" radius="0.359209375" width="0.762" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="10_CONTACT">
+<wire x1="-7.62" y1="15.24" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="15.24" width="0.254" layer="94"/>
+<wire x1="7.62" y1="15.24" x2="-7.62" y2="15.24" width="0.254" layer="94"/>
+<pin name="1" x="-12.7" y="12.7" length="middle"/>
+<pin name="2" x="-12.7" y="10.16" length="middle"/>
+<pin name="3" x="-12.7" y="7.62" length="middle"/>
+<pin name="4" x="-12.7" y="5.08" length="middle"/>
+<pin name="5" x="-12.7" y="2.54" length="middle"/>
+<pin name="6" x="-12.7" y="0" length="middle"/>
+<pin name="7" x="-12.7" y="-2.54" length="middle"/>
+<pin name="8" x="-12.7" y="-5.08" length="middle"/>
+<pin name="9" x="-12.7" y="-7.62" length="middle"/>
+<pin name="10" x="-12.7" y="-10.16" length="middle"/>
+<text x="-7.62" y="-15.24" size="1.27" layer="96">&gt;VALUE</text>
+<text x="-7.62" y="16.51" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="M52-040000S0545" prefix="J">
+<gates>
+<gate name="J1" symbol="10_CONTACT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="5X2SMT">
+<connects>
+<connect gate="J1" pin="1" pad="1"/>
+<connect gate="J1" pin="10" pad="10"/>
+<connect gate="J1" pin="2" pad="2"/>
+<connect gate="J1" pin="3" pad="3"/>
+<connect gate="J1" pin="4" pad="4"/>
+<connect gate="J1" pin="5" pad="5"/>
+<connect gate="J1" pin="6" pad="6"/>
+<connect gate="J1" pin="7" pad="7"/>
+<connect gate="J1" pin="8" pad="8"/>
+<connect gate="J1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5526,6 +5597,10 @@ Source: VISHAY wscwsn.pdf</description>
 <part name="R2" library="rcl" deviceset="R-EU_" device="R0603" value="33"/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
+<part name="C6" library="rcl" deviceset="C-EU" device="C0603"/>
+<part name="J1" library="con-harwin" deviceset="M52-040000S0545" device=""/>
+<part name="GND7" library="supply1" deviceset="GND" device=""/>
+<part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5533,6 +5608,7 @@ Source: VISHAY wscwsn.pdf</description>
 <text x="12.7" y="223.52" size="1.778" layer="97">VDD</text>
 <text x="33.02" y="223.52" size="1.778" layer="97">VDA</text>
 <text x="45.72" y="223.52" size="1.778" layer="97">VREF</text>
+<text x="360.68" y="213.36" size="1.27" layer="97">JTAG/SWD Port</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -5566,6 +5642,10 @@ Source: VISHAY wscwsn.pdf</description>
 </instance>
 <instance part="P+2" gate="1" x="116.84" y="248.92"/>
 <instance part="+3V6" gate="G$1" x="325.12" y="248.92"/>
+<instance part="C6" gate="G$1" x="55.88" y="243.84"/>
+<instance part="J1" gate="J1" x="370.84" y="236.22"/>
+<instance part="GND7" gate="1" x="350.52" y="218.44"/>
+<instance part="+3V7" gate="G$1" x="350.52" y="254"/>
 </instances>
 <busses>
 </busses>
@@ -5610,8 +5690,13 @@ Source: VISHAY wscwsn.pdf</description>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="246.38" x2="48.26" y2="251.46" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="246.38" x2="48.26" y2="248.92" width="0.1524" layer="91"/>
 <pinref part="+3V4" gate="G$1" pin="+3V3"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="48.26" y1="248.92" x2="48.26" y2="251.46" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="248.92" x2="55.88" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="248.92" x2="55.88" y2="246.38" width="0.1524" layer="91"/>
+<junction x="48.26" y="248.92"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="1"/>
@@ -5622,7 +5707,17 @@ Source: VISHAY wscwsn.pdf</description>
 <pinref part="U1" gate="A" pin="VOUT33"/>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
 <wire x1="304.8" y1="220.98" x2="325.12" y2="220.98" width="0.1524" layer="91"/>
-<wire x1="325.12" y1="220.98" x2="325.12" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="220.98" x2="325.12" y2="233.68" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="VREF_OUT/CMP1_IN5/CMP0_IN5/ADC1_SE18"/>
+<wire x1="325.12" y1="233.68" x2="325.12" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="233.68" x2="325.12" y2="233.68" width="0.1524" layer="91"/>
+<junction x="325.12" y="233.68"/>
+</segment>
+<segment>
+<pinref part="J1" gate="J1" pin="1"/>
+<wire x1="358.14" y1="248.92" x2="350.52" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="350.52" y1="248.92" x2="350.52" y2="251.46" width="0.1524" layer="91"/>
+<pinref part="+3V7" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -5666,8 +5761,13 @@ Source: VISHAY wscwsn.pdf</description>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="48.26" y1="238.76" x2="48.26" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="238.76" x2="48.26" y2="236.22" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="48.26" y1="236.22" x2="48.26" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="238.76" x2="55.88" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="236.22" x2="48.26" y2="236.22" width="0.1524" layer="91"/>
+<junction x="48.26" y="236.22"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="2"/>
@@ -5679,6 +5779,24 @@ Source: VISHAY wscwsn.pdf</description>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="22.86" y1="195.58" x2="30.48" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="195.58" x2="30.48" y2="185.42" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J1" gate="J1" pin="3"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="358.14" y1="243.84" x2="350.52" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="350.52" y1="243.84" x2="350.52" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="J1" gate="J1" pin="5"/>
+<wire x1="350.52" y1="238.76" x2="350.52" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="350.52" y1="233.68" x2="350.52" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="350.52" y1="228.6" x2="350.52" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="358.14" y1="238.76" x2="350.52" y2="238.76" width="0.1524" layer="91"/>
+<junction x="350.52" y="238.76"/>
+<pinref part="J1" gate="J1" pin="7"/>
+<wire x1="358.14" y1="233.68" x2="350.52" y2="233.68" width="0.1524" layer="91"/>
+<junction x="350.52" y="233.68"/>
+<pinref part="J1" gate="J1" pin="9"/>
+<wire x1="358.14" y1="228.6" x2="350.52" y2="228.6" width="0.1524" layer="91"/>
+<junction x="350.52" y="228.6"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -5731,6 +5849,66 @@ Source: VISHAY wscwsn.pdf</description>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="45.72" y1="203.2" x2="53.34" y2="203.2" width="0.1524" layer="91"/>
 <label x="53.34" y="203.2" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="TCK/SWDCLK" class="0">
+<segment>
+<pinref part="J1" gate="J1" pin="4"/>
+<wire x1="358.14" y1="241.3" x2="347.98" y2="241.3" width="0.1524" layer="91"/>
+<label x="347.98" y="241.3" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="PTA0"/>
+<wire x1="137.16" y1="198.12" x2="124.46" y2="198.12" width="0.1524" layer="91"/>
+<label x="124.46" y="198.12" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="TDO" class="0">
+<segment>
+<pinref part="J1" gate="J1" pin="6"/>
+<wire x1="358.14" y1="236.22" x2="347.98" y2="236.22" width="0.1524" layer="91"/>
+<label x="347.98" y="236.22" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="PTA2"/>
+<wire x1="137.16" y1="193.04" x2="124.46" y2="193.04" width="0.1524" layer="91"/>
+<label x="124.46" y="193.04" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="TDI" class="0">
+<segment>
+<pinref part="J1" gate="J1" pin="8"/>
+<wire x1="358.14" y1="231.14" x2="347.98" y2="231.14" width="0.1524" layer="91"/>
+<label x="347.98" y="231.14" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="PTA1"/>
+<wire x1="137.16" y1="195.58" x2="124.46" y2="195.58" width="0.1524" layer="91"/>
+<label x="124.46" y="195.58" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="XRES" class="0">
+<segment>
+<pinref part="J1" gate="J1" pin="10"/>
+<wire x1="358.14" y1="226.06" x2="347.98" y2="226.06" width="0.1524" layer="91"/>
+<label x="347.98" y="226.06" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="PTA5"/>
+<wire x1="137.16" y1="185.42" x2="124.46" y2="185.42" width="0.1524" layer="91"/>
+<label x="124.46" y="185.42" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="TMS/SWDIO" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="PTA3"/>
+<wire x1="137.16" y1="190.5" x2="124.46" y2="190.5" width="0.1524" layer="91"/>
+<label x="124.46" y="190.5" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J1" gate="J1" pin="2"/>
+<wire x1="358.14" y1="246.38" x2="347.98" y2="246.38" width="0.1524" layer="91"/>
+<label x="347.98" y="246.38" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
