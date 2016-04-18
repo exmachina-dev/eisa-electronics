@@ -8088,13 +8088,6 @@ Source: www.kingbright.com</description>
 <label x="124.46" y="195.58" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="XRES" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="PTA5"/>
-<wire x1="137.16" y1="185.42" x2="124.46" y2="185.42" width="0.1524" layer="91"/>
-<label x="124.46" y="185.42" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="TMS/SWDIO" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="PTA3"/>
@@ -8498,9 +8491,9 @@ Source: www.kingbright.com</description>
 <label x="129.54" y="203.2" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="358.14" y1="154.94" x2="353.06" y2="154.94" width="0.1524" layer="91"/>
-<label x="353.06" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J2" gate="G$1" pin="15"/>
+<wire x1="358.14" y1="152.4" x2="353.06" y2="152.4" width="0.1524" layer="91"/>
+<label x="353.06" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="16"/>
 </segment>
 </net>
 <net name="PGA1_P" class="0">
@@ -8510,9 +8503,9 @@ Source: www.kingbright.com</description>
 <label x="129.54" y="205.74" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="358.14" y1="152.4" x2="353.06" y2="152.4" width="0.1524" layer="91"/>
-<label x="353.06" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J2" gate="G$1" pin="16"/>
+<wire x1="358.14" y1="149.86" x2="353.06" y2="149.86" width="0.1524" layer="91"/>
+<label x="353.06" y="149.86" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="17"/>
 </segment>
 </net>
 <net name="PGA0_N" class="0">
@@ -8522,9 +8515,9 @@ Source: www.kingbright.com</description>
 <label x="129.54" y="208.28" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="358.14" y1="149.86" x2="353.06" y2="149.86" width="0.1524" layer="91"/>
-<label x="353.06" y="149.86" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J2" gate="G$1" pin="17"/>
+<wire x1="358.14" y1="147.32" x2="353.06" y2="147.32" width="0.1524" layer="91"/>
+<label x="353.06" y="147.32" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="18"/>
 </segment>
 </net>
 <net name="PGA0_P" class="0">
@@ -8534,9 +8527,9 @@ Source: www.kingbright.com</description>
 <label x="129.54" y="210.82" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="358.14" y1="147.32" x2="353.06" y2="147.32" width="0.1524" layer="91"/>
-<label x="353.06" y="147.32" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J2" gate="G$1" pin="18"/>
+<wire x1="358.14" y1="144.78" x2="353.06" y2="144.78" width="0.1524" layer="91"/>
+<label x="353.06" y="144.78" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="19"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -8597,6 +8590,11 @@ Source: www.kingbright.com</description>
 <wire x1="358.14" y1="226.06" x2="347.98" y2="226.06" width="0.1524" layer="91"/>
 <label x="347.98" y="226.06" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U1" gate="A" pin="PTA5"/>
+<wire x1="137.16" y1="185.42" x2="124.46" y2="185.42" width="0.1524" layer="91"/>
+<label x="124.46" y="185.42" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="N$7" class="0">
 <segment>
@@ -8620,9 +8618,9 @@ Source: www.kingbright.com</description>
 <label x="147.32" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="19"/>
-<wire x1="358.14" y1="144.78" x2="353.06" y2="144.78" width="0.1524" layer="91"/>
-<label x="353.06" y="144.78" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="358.14" y1="154.94" x2="353.06" y2="154.94" width="0.1524" layer="91"/>
+<label x="353.06" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="15"/>
 </segment>
 </net>
 </nets>
