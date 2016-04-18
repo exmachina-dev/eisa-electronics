@@ -5659,6 +5659,61 @@ Source: VISHAY wscwsn.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="Switch_SMT">
+<packages>
+<package name="KM_SERIE">
+<wire x1="-2.3" y1="1.4" x2="2.3" y2="1.4" width="0.127" layer="21"/>
+<wire x1="2.3" y1="1.4" x2="2.3" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="2.3" y1="-1.4" x2="-2.3" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="-2.3" y1="-1.4" x2="-2.3" y2="1.4" width="0.127" layer="21"/>
+<smd name="1" x="-2.05" y="0.75" dx="1" dy="0.9" layer="1"/>
+<smd name="3" x="-2.05" y="-0.75" dx="1" dy="0.9" layer="1"/>
+<smd name="4" x="2.05" y="-0.75" dx="1" dy="0.9" layer="1"/>
+<smd name="2" x="2.05" y="0.75" dx="1" dy="0.9" layer="1"/>
+<circle x="0" y="0" radius="1.05" width="0.127" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="DS">
+<wire x1="-3.81" y1="1.905" x2="-2.54" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="1.905" x2="-3.81" y2="0" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-1.905" x2="-5.08" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="0" x2="-1.905" y2="0" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="0" x2="-3.81" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-0.762" y2="0" width="0.1524" layer="94"/>
+<wire x1="0.254" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-3.175" x2="2.54" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-1.905" x2="1.905" y2="0" width="0.254" layer="94"/>
+<wire x1="1.905" y1="0" x2="1.27" y2="1.905" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.905" x2="2.54" y2="3.175" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.905" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.762" y1="0" x2="-0.254" y2="-0.762" width="0.1524" layer="94"/>
+<wire x1="-0.254" y1="-0.762" x2="0.254" y2="0" width="0.1524" layer="94"/>
+<text x="-3.81" y="3.175" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="-1.27" y="3.175" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="2" x="2.54" y="-5.08" visible="pad" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<pin name="1" x="2.54" y="5.08" visible="pad" length="short" direction="pas" swaplevel="1" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="KMR211G" prefix="SW">
+<gates>
+<gate name="G$1" symbol="DS" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="KM_SERIE">
+<connects>
+<connect gate="G$1" pin="1" pad="3 4"/>
+<connect gate="G$1" pin="2" pad="1 2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5671,17 +5726,17 @@ Source: VISHAY wscwsn.pdf</description>
 <parts>
 <part name="FRAME1" library="frames" deviceset="A3L-LOC" device=""/>
 <part name="U1" library="freescale" deviceset="MK20DX256VLH7" device=""/>
-<part name="C1" library="rcl" deviceset="C-EU" device="C0603"/>
-<part name="C2" library="rcl" deviceset="C-EU" device="C0603"/>
-<part name="C3" library="rcl" deviceset="C-EU" device="C0603"/>
-<part name="C4" library="rcl" deviceset="C-EU" device="C0603"/>
+<part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
+<part name="C2" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
+<part name="C3" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
+<part name="C4" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="C5" library="rcl" deviceset="C-EU" device="C0603"/>
+<part name="C5" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
@@ -5693,7 +5748,7 @@ Source: VISHAY wscwsn.pdf</description>
 <part name="R2" library="rcl" deviceset="R-EU_" device="R0603" value="33"/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
-<part name="C6" library="rcl" deviceset="C-EU" device="C0603"/>
+<part name="C6" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="J1" library="con-harwin" deviceset="M52-040000S0545" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
@@ -5702,6 +5757,11 @@ Source: VISHAY wscwsn.pdf</description>
 <part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
+<part name="C7" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
+<part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
+<part name="GND9" library="supply1" deviceset="GND" device=""/>
+<part name="SW1" library="Switch_SMT" deviceset="KMR211G" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5752,6 +5812,14 @@ Source: VISHAY wscwsn.pdf</description>
 <instance part="+3V8" gate="G$1" x="353.06" y="198.12"/>
 <instance part="P+3" gate="1" x="340.36" y="119.38"/>
 <instance part="GND8" gate="1" x="350.52" y="134.62"/>
+<instance part="R3" gate="G$1" x="15.24" y="165.1" rot="R90"/>
+<instance part="C7" gate="G$1" x="15.24" y="152.4"/>
+<instance part="+3V9" gate="G$1" x="15.24" y="175.26"/>
+<instance part="GND9" gate="1" x="15.24" y="137.16"/>
+<instance part="SW1" gate="G$1" x="30.48" y="149.86" smashed="yes">
+<attribute name="NAME" x="30.48" y="151.765" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="36.83" y="142.875" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -5831,6 +5899,11 @@ Source: VISHAY wscwsn.pdf</description>
 <pinref part="+3V8" gate="G$1" pin="+3V3"/>
 <wire x1="358.14" y1="193.04" x2="353.06" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="353.06" y1="193.04" x2="353.06" y2="195.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="+3V9" gate="G$1" pin="+3V3"/>
+<wire x1="15.24" y1="170.18" x2="15.24" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -5920,6 +5993,16 @@ Source: VISHAY wscwsn.pdf</description>
 <pinref part="J2" gate="G$1" pin="21"/>
 <wire x1="350.52" y1="137.16" x2="350.52" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="350.52" y1="142.24" x2="358.14" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C7" gate="G$1" pin="2"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+<wire x1="15.24" y1="147.32" x2="15.24" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="SW1" gate="G$1" pin="2"/>
+<wire x1="15.24" y1="142.24" x2="15.24" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="144.78" x2="33.02" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="142.24" x2="15.24" y2="142.24" width="0.1524" layer="91"/>
+<junction x="15.24" y="142.24"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -6026,6 +6109,19 @@ Source: VISHAY wscwsn.pdf</description>
 <pinref part="U1" gate="A" pin="PTA5"/>
 <wire x1="137.16" y1="185.42" x2="124.46" y2="185.42" width="0.1524" layer="91"/>
 <label x="124.46" y="185.42" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="15.24" y1="160.02" x2="15.24" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="157.48" x2="15.24" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="157.48" x2="33.02" y2="157.48" width="0.1524" layer="91"/>
+<junction x="15.24" y="157.48"/>
+<label x="35.56" y="157.48" size="1.27" layer="95" xref="yes"/>
+<pinref part="SW1" gate="G$1" pin="1"/>
+<wire x1="33.02" y1="157.48" x2="35.56" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="154.94" x2="33.02" y2="157.48" width="0.1524" layer="91"/>
+<junction x="33.02" y="157.48"/>
 </segment>
 </net>
 <net name="TMS/SWDIO" class="0">
