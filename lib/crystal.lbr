@@ -260,15 +260,15 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ABS07-?">
+<deviceset name="ABS07-?" prefix="Y">
 <gates>
-<gate name="G$1" symbol="Q" x="0" y="0"/>
+<gate name="Y$1" symbol="Q" x="0" y="0"/>
 </gates>
 <devices>
 <device name="32.768KHZ" package="ABS07">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="Y$1" pin="1" pad="1"/>
+<connect gate="Y$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
