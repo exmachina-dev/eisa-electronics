@@ -6114,6 +6114,71 @@ Small SMD resonator. This is the itty bitty 10/20MHz resonators with built in ca
 </deviceset>
 </devicesets>
 </library>
+<library name="crystal">
+<packages>
+<package name="ABS07">
+<wire x1="1.6002" y1="0.7493" x2="-1.6002" y2="0.7493" width="0.127" layer="48"/>
+<wire x1="-1.6002" y1="0.7493" x2="-1.6002" y2="-0.7493" width="0.127" layer="48"/>
+<wire x1="-1.6002" y1="-0.7493" x2="1.6002" y2="-0.7493" width="0.127" layer="48"/>
+<wire x1="1.6002" y1="-0.7493" x2="1.6002" y2="0.7493" width="0.127" layer="48"/>
+<wire x1="0.635" y1="0.7493" x2="-0.635" y2="0.7493" width="0.127" layer="21"/>
+<wire x1="0.635" y1="-0.7493" x2="-0.635" y2="-0.7493" width="0.127" layer="21"/>
+<wire x1="-0.6604" y1="0" x2="-0.3302" y2="0" width="0.0635" layer="51"/>
+<wire x1="-0.3302" y1="0" x2="-0.3302" y2="0.4064" width="0.0635" layer="51"/>
+<wire x1="-0.3302" y1="0" x2="-0.3302" y2="-0.4064" width="0.0635" layer="51"/>
+<wire x1="0.6604" y1="0" x2="0.3302" y2="0" width="0.0635" layer="51"/>
+<wire x1="0.3302" y1="0" x2="0.3302" y2="0.4064" width="0.0635" layer="51"/>
+<wire x1="0.3302" y1="0" x2="0.3302" y2="-0.4064" width="0.0635" layer="51"/>
+<wire x1="-0.1778" y1="0.4064" x2="0.1778" y2="0.4064" width="0.0635" layer="51"/>
+<wire x1="0.1778" y1="0.4064" x2="0.1778" y2="-0.4064" width="0.0635" layer="51"/>
+<wire x1="0.1778" y1="-0.4064" x2="-0.1778" y2="-0.4064" width="0.0635" layer="51"/>
+<wire x1="-0.1778" y1="-0.4064" x2="-0.1778" y2="0.4064" width="0.0635" layer="51"/>
+<smd name="1" x="-1.27" y="0" dx="1.0922" dy="1.905" layer="1"/>
+<smd name="2" x="1.27" y="0" dx="1.0922" dy="1.905" layer="1"/>
+<text x="-1.27" y="1.27" size="0.6096" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-1.905" size="0.6096" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="Q">
+<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.778" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
+<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<text x="2.54" y="1.016" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.159" y="-1.143" size="0.8636" layer="93">1</text>
+<text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ABS07-?" prefix="Y">
+<gates>
+<gate name="Y$1" symbol="Q" x="0" y="0"/>
+</gates>
+<devices>
+<device name="32.768KHZ" package="ABS07">
+<connects>
+<connect gate="Y$1" pin="1" pad="1"/>
+<connect gate="Y$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="OC_FARNELL" value="2101347" constant="no"/>
+<attribute name="VALUE" value="32.768kHz, 12.5pF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6164,6 +6229,7 @@ Small SMD resonator. This is the itty bitty 10/20MHz resonators with built in ca
 <part name="SW1" library="Switch_SMT" deviceset="KMR211G" device=""/>
 <part name="Y1" library="resonator" deviceset="RESONATOR" device="SMD" value="8MHz"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
+<part name="Y2" library="crystal" deviceset="ABS07-?" device="32.768KHZ" value="32.768kHz, 12.5pF"/>
 </parts>
 <sheets>
 <sheet>
@@ -6224,6 +6290,7 @@ Small SMD resonator. This is the itty bitty 10/20MHz resonators with built in ca
 </instance>
 <instance part="Y1" gate="G$1" x="106.68" y="167.64"/>
 <instance part="GND10" gate="1" x="106.68" y="152.4"/>
+<instance part="Y2" gate="Y$1" x="124.46" y="96.52" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -7005,6 +7072,22 @@ Small SMD resonator. This is the itty bitty 10/20MHz resonators with built in ca
 <wire x1="101.6" y1="177.8" x2="101.6" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="Y1" gate="G$1" pin="1"/>
 <wire x1="101.6" y1="167.64" x2="104.14" y2="167.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="U1" gate="B" pin="XTAL32"/>
+<wire x1="124.46" y1="99.06" x2="162.56" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="Y2" gate="Y$1" pin="2"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="U1" gate="B" pin="EXTAL32"/>
+<wire x1="162.56" y1="96.52" x2="139.7" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="96.52" x2="139.7" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="93.98" x2="124.46" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="Y2" gate="Y$1" pin="1"/>
 </segment>
 </net>
 </nets>
