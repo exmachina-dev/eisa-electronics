@@ -45,7 +45,7 @@
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -117,10 +117,17 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="60" y2="0" width="0" layer="20"/>
-<wire x1="60" y1="0" x2="60" y2="30" width="0" layer="20"/>
-<wire x1="60" y1="30" x2="0" y2="30" width="0" layer="20"/>
-<wire x1="0" y1="30" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="57" y1="30" x2="3" y2="30" width="0" layer="20"/>
+<wire x1="3" y1="30" x2="0" y2="27" width="0" layer="20" curve="90"/>
+<wire x1="0" y1="27" x2="0" y2="3" width="0" layer="20"/>
+<wire x1="0" y1="3" x2="3" y2="0" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="0" x2="57" y2="0" width="0" layer="20"/>
+<wire x1="57" y1="0" x2="60" y2="3" width="0" layer="20" curve="90"/>
+<wire x1="60" y1="3" x2="60" y2="27" width="0" layer="20"/>
+<wire x1="60" y1="27" x2="57" y2="30" width="0" layer="20" curve="90"/>
+<text x="7.874" y="8.509" size="0.8128" layer="21">+3V3</text>
+<text x="7.874" y="6.096" size="0.8128" layer="21">+5V</text>
+<text x="2.286" y="1.524" size="0.8128" layer="21">GND</text>
 </plain>
 <libraries>
 <library name="rcl">
@@ -678,6 +685,19 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 </package>
 </packages>
 </library>
+<library name="testpad">
+<packages>
+<package name="B1,27">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<wire x1="-0.635" y1="0" x2="0.635" y2="0" width="0.0024" layer="37"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.0024" layer="37"/>
+<smd name="TP" x="0" y="0" dx="1.27" dy="1.27" layer="1" roundness="100" cream="no"/>
+<text x="-0.635" y="1.016" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-0.635" y="-0.762" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="-0.635" y="-1.905" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -931,6 +951,15 @@ Your Eurocircuits Team
 <element name="R6" library="rcl" package="R0603" value="1k5" x="5.461" y="5.08"/>
 <element name="LED2" library="led" package="CHIP-LED0603" value="" x="2.413" y="7.62" rot="R90"/>
 <element name="LED3" library="led" package="CHIP-LED0603" value="" x="2.413" y="5.08" rot="R90"/>
+<element name="TP1" library="testpad" package="B1,27" value="TPB1,27" x="7.874" y="7.62">
+<attribute name="TP_SIGNAL_NAME" value="" x="7.874" y="7.62" size="1.778" layer="27" display="off"/>
+</element>
+<element name="TP2" library="testpad" package="B1,27" value="TPB1,27" x="7.874" y="5.08">
+<attribute name="TP_SIGNAL_NAME" value="" x="7.874" y="5.08" size="1.778" layer="27" display="off"/>
+</element>
+<element name="TP3" library="testpad" package="B1,27" value="TPB1,27" x="1.651" y="2.921">
+<attribute name="TP_SIGNAL_NAME" value="" x="1.651" y="2.921" size="0.8128" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="VBAT">
@@ -961,6 +990,7 @@ Your Eurocircuits Team
 <vertex x="0" y="0"/>
 </polygon>
 <contactref element="R5" pad="2"/>
+<contactref element="TP1" pad="TP"/>
 <wire x1="67.31" y1="26.25" x2="72.771" y2="26.123" width="0" layer="19" extent="1-1"/>
 <wire x1="57.035" y1="21.35" x2="67.31" y2="26.25" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -1058,6 +1088,9 @@ Your Eurocircuits Team
 <wire x1="1.663" y1="5.08" x2="1.663" y2="7.62" width="0.4064" layer="1"/>
 <wire x1="1.663" y1="7.62" x2="1.663" y2="11.164" width="0.4064" layer="1"/>
 <wire x1="1.663" y1="11.164" x2="1.627" y2="11.2" width="0.4064" layer="1"/>
+<contactref element="TP3" pad="TP"/>
+<via x="3.048" y="2.921" extent="1-16" drill="0.5"/>
+<wire x1="1.651" y1="2.921" x2="3.048" y2="2.921" width="0.4064" layer="1"/>
 <wire x1="67.31" y1="24.55" x2="72.771" y2="24.423" width="0" layer="19" extent="1-1"/>
 <wire x1="57.035" y1="20.08" x2="67.31" y2="24.55" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -1084,6 +1117,8 @@ Your Eurocircuits Team
 <contactref element="R6" pad="2"/>
 <wire x1="5.87" y1="0" x2="5.87" y2="4.639" width="0.4064" layer="1"/>
 <wire x1="5.87" y1="4.639" x2="6.311" y2="5.08" width="0.4064" layer="1"/>
+<contactref element="TP2" pad="TP"/>
+<wire x1="6.311" y1="5.08" x2="7.874" y2="5.08" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="U$1" pad="2"/>
