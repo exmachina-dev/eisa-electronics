@@ -5509,7 +5509,6 @@ Source: VISHAY wscwsn.pdf</description>
 <wire x1="-3.175" y1="2.5" x2="3.175" y2="2.5" width="0.127" layer="21"/>
 <wire x1="3.175" y1="2.5" x2="3.175" y2="-2.5" width="0.127" layer="21"/>
 <wire x1="3.175" y1="-2.5" x2="-3.175" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="3.175" y1="2.5" x2="3.175" y2="-2.5" width="0.127" layer="41"/>
 <circle x="-4.318" y="1.524" radius="0.359209375" width="0.762" layer="21"/>
 </package>
 </packages>
