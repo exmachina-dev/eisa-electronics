@@ -119,15 +119,15 @@
 <plain>
 <wire x1="57" y1="30" x2="3" y2="30" width="0" layer="20"/>
 <wire x1="3" y1="30" x2="0" y2="27" width="0" layer="20" curve="90"/>
-<wire x1="0" y1="27" x2="0" y2="3" width="0" layer="20"/>
-<wire x1="0" y1="3" x2="3" y2="0" width="0" layer="20" curve="90"/>
+<wire x1="0" y1="27" x2="0" y2="3.889" width="0" layer="20"/>
+<wire x1="0" y1="3.889" x2="3" y2="0" width="0" layer="20" curve="90"/>
 <wire x1="3" y1="0" x2="57" y2="0" width="0" layer="20"/>
 <wire x1="57" y1="0" x2="60" y2="3" width="0" layer="20" curve="90"/>
 <wire x1="60" y1="3" x2="60" y2="27" width="0" layer="20"/>
 <wire x1="60" y1="27" x2="57" y2="30" width="0" layer="20" curve="90"/>
-<text x="7.874" y="8.509" size="0.8128" layer="21">+3V3</text>
-<text x="7.874" y="6.096" size="0.8128" layer="21">+5V</text>
-<text x="2.286" y="1.524" size="0.8128" layer="21">GND</text>
+<text x="8.636" y="8.763" size="0.8128" layer="21">+3V3</text>
+<text x="8.636" y="6.223" size="0.8128" layer="21">+5V</text>
+<text x="3.683" y="3.556" size="0.8128" layer="21">GND</text>
 </plain>
 <libraries>
 <library name="rcl">
@@ -698,6 +698,14 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 </package>
 </packages>
 </library>
+<library name="SparkFun">
+<packages>
+<package name="FIDUCIAL-1X2">
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
+<text x="-0.635" y="0.635" size="0.6096" layer="25">&gt;NAME</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -947,19 +955,23 @@ Your Eurocircuits Team
 </element>
 <element name="LED1" library="led" package="CHIP-LED0603" value="" x="9.525" y="20.574" rot="R270"/>
 <element name="R4" library="rcl" package="R0603" value="1k" x="6.35" y="20.574" rot="R180"/>
-<element name="R5" library="rcl" package="R0603" value="1k" x="5.461" y="7.62"/>
-<element name="R6" library="rcl" package="R0603" value="1k5" x="5.461" y="5.08"/>
-<element name="LED2" library="led" package="CHIP-LED0603" value="" x="2.413" y="7.62" rot="R90"/>
-<element name="LED3" library="led" package="CHIP-LED0603" value="" x="2.413" y="5.08" rot="R90"/>
-<element name="TP1" library="testpad" package="B1,27" value="TPB1,27" x="7.874" y="7.62">
-<attribute name="TP_SIGNAL_NAME" value="" x="7.874" y="7.62" size="1.778" layer="27" display="off"/>
+<element name="R5" library="rcl" package="R0603" value="1k" x="5.461" y="8.509"/>
+<element name="R6" library="rcl" package="R0603" value="1k5" x="5.461" y="5.969"/>
+<element name="LED2" library="led" package="CHIP-LED0603" value="" x="2.413" y="8.509" rot="R90"/>
+<element name="LED3" library="led" package="CHIP-LED0603" value="" x="2.413" y="5.969" rot="R90"/>
+<element name="TP1" library="testpad" package="B1,27" value="TPB1,27" x="7.874" y="8.509">
+<attribute name="TP_SIGNAL_NAME" value="" x="7.874" y="8.509" size="1.778" layer="27" display="off"/>
 </element>
-<element name="TP2" library="testpad" package="B1,27" value="TPB1,27" x="7.874" y="5.08">
-<attribute name="TP_SIGNAL_NAME" value="" x="7.874" y="5.08" size="1.778" layer="27" display="off"/>
+<element name="TP2" library="testpad" package="B1,27" value="TPB1,27" x="7.874" y="5.969">
+<attribute name="TP_SIGNAL_NAME" value="" x="7.874" y="5.969" size="1.778" layer="27" display="off"/>
 </element>
-<element name="TP3" library="testpad" package="B1,27" value="TPB1,27" x="1.651" y="2.921">
-<attribute name="TP_SIGNAL_NAME" value="" x="1.651" y="2.921" size="0.8128" layer="27" display="off"/>
+<element name="TP3" library="testpad" package="B1,27" value="TPB1,27" x="1.651" y="3.81">
+<attribute name="TP_SIGNAL_NAME" value="" x="1.651" y="3.81" size="0.8128" layer="27" display="off"/>
 </element>
+<element name="JP1" library="SparkFun" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="2" y="2"/>
+<element name="JP2" library="SparkFun" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="58" y="2"/>
+<element name="JP3" library="SparkFun" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="2" y="28"/>
+<element name="JP4" library="SparkFun" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="58" y="28"/>
 </elements>
 <signals>
 <signal name="VBAT">
@@ -1085,12 +1097,12 @@ Your Eurocircuits Team
 <contactref element="J3" pad="P$20"/>
 <contactref element="LED2" pad="C"/>
 <contactref element="LED3" pad="C"/>
-<wire x1="1.663" y1="5.08" x2="1.663" y2="7.62" width="0.4064" layer="1"/>
-<wire x1="1.663" y1="7.62" x2="1.663" y2="11.164" width="0.4064" layer="1"/>
+<wire x1="1.663" y1="5.969" x2="1.663" y2="8.509" width="0.4064" layer="1"/>
+<wire x1="1.663" y1="8.509" x2="1.663" y2="11.164" width="0.4064" layer="1"/>
 <wire x1="1.663" y1="11.164" x2="1.627" y2="11.2" width="0.4064" layer="1"/>
 <contactref element="TP3" pad="TP"/>
-<via x="3.048" y="2.921" extent="1-16" drill="0.5"/>
-<wire x1="1.651" y1="2.921" x2="3.048" y2="2.921" width="0.4064" layer="1"/>
+<via x="3.048" y="3.81" extent="1-16" drill="0.5"/>
+<wire x1="1.651" y1="3.81" x2="3.048" y2="3.81" width="0.4064" layer="1"/>
 <wire x1="67.31" y1="24.55" x2="72.771" y2="24.423" width="0" layer="19" extent="1-1"/>
 <wire x1="57.035" y1="20.08" x2="67.31" y2="24.55" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -1115,10 +1127,10 @@ Your Eurocircuits Team
 <wire x1="24.4006" y1="15.24" x2="25.908" y2="15.24" width="0.254" layer="1"/>
 <via x="25.908" y="15.24" extent="1-16" drill="0.5"/>
 <contactref element="R6" pad="2"/>
-<wire x1="5.87" y1="0" x2="5.87" y2="4.639" width="0.4064" layer="1"/>
-<wire x1="5.87" y1="4.639" x2="6.311" y2="5.08" width="0.4064" layer="1"/>
+<wire x1="5.87" y1="0" x2="5.87" y2="5.528" width="0.4064" layer="1"/>
+<wire x1="5.87" y1="5.528" x2="6.311" y2="5.969" width="0.4064" layer="1"/>
 <contactref element="TP2" pad="TP"/>
-<wire x1="6.311" y1="5.08" x2="7.874" y2="5.08" width="0.4064" layer="1"/>
+<wire x1="6.311" y1="5.969" x2="7.874" y2="5.969" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="U$1" pad="2"/>
@@ -1740,12 +1752,12 @@ Your Eurocircuits Team
 <signal name="N$9">
 <contactref element="LED3" pad="A"/>
 <contactref element="R6" pad="1"/>
-<wire x1="4.611" y1="5.08" x2="3.163" y2="5.08" width="0.1778" layer="1"/>
+<wire x1="4.611" y1="5.969" x2="3.163" y2="5.969" width="0.1778" layer="1"/>
 </signal>
 <signal name="N$10">
 <contactref element="LED2" pad="A"/>
 <contactref element="R5" pad="1"/>
-<wire x1="4.611" y1="7.62" x2="3.163" y2="7.62" width="0.1778" layer="1"/>
+<wire x1="4.611" y1="8.509" x2="3.163" y2="8.509" width="0.1778" layer="1"/>
 </signal>
 </signals>
 <errors>
