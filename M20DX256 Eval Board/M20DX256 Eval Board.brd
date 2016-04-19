@@ -986,7 +986,6 @@ Your Eurocircuits Team
 <contactref element="SW1" pad="2"/>
 <contactref element="SW1" pad="1"/>
 <contactref element="Y1" pad="2"/>
-<contactref element="J2" pad="P$20"/>
 <polygon width="0.4064" layer="16">
 <vertex x="0" y="30"/>
 <vertex x="60" y="30"/>
@@ -1048,15 +1047,17 @@ Your Eurocircuits Team
 <wire x1="22.0704" y1="17.2606" x2="24.3866" y2="17.2606" width="0.1778" layer="1"/>
 <wire x1="35.6134" y1="18.2512" x2="37.6432" y2="18.2512" width="0.1778" layer="1"/>
 <wire x1="37.6432" y1="18.2512" x2="38.227" y2="18.835" width="0.1778" layer="1"/>
+<contactref element="J3" pad="P$20"/>
 <wire x1="67.31" y1="24.55" x2="72.771" y2="24.423" width="0" layer="19" extent="1-1"/>
 <wire x1="57.035" y1="20.08" x2="67.31" y2="24.55" width="0" layer="19" extent="1-1"/>
+<wire x1="54.13" y1="30" x2="57.035" y2="20.08" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+5V">
 <contactref element="U$1" pad="1"/>
 <contactref element="U1" pad="8"/>
-<contactref element="J3" pad="P$20"/>
-<wire x1="24.3866" y1="15.254" x2="54.13" y2="30" width="0" layer="19" extent="1-1"/>
+<contactref element="J2" pad="P$20"/>
 <wire x1="4.177" y1="16.3" x2="24.3866" y2="15.254" width="0" layer="19" extent="1-1"/>
+<wire x1="5.87" y1="0" x2="4.177" y2="16.3" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="U$1" pad="2"/>
