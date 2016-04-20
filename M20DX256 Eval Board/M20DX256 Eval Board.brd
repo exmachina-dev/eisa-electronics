@@ -17,7 +17,7 @@
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
@@ -36,16 +36,16 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -2314,7 +2314,7 @@ Your Eurocircuits Team
 <via x="3.048" y="3.81" extent="1-16" drill="0.5"/>
 <wire x1="1.651" y1="3.81" x2="3.048" y2="3.81" width="0.4064" layer="1"/>
 <contactref element="C4" pad="2"/>
-<wire x1="37.6432" y1="18.2512" x2="38.227" y2="18.835" width="0" layer="19" extent="1-1"/>
+<wire x1="37.6432" y1="18.2512" x2="38.227" y2="18.835" width="0.1778" layer="1"/>
 </signal>
 <signal name="+5V">
 <contactref element="U$1" pad="1"/>
@@ -2503,28 +2503,6 @@ Your Eurocircuits Team
 <wire x1="36.35" y1="0" x2="36.35" y2="2.441" width="0.15" layer="16"/>
 <wire x1="36.35" y1="2.441" x2="37.465" y2="3.556" width="0.15" layer="16"/>
 <wire x1="37.465" y1="3.556" x2="37.465" y2="4.699" width="0.15" layer="16"/>
-</signal>
-<signal name="PTB4">
-<contactref element="U1" pad="39"/>
-<contactref element="J2" pad="P$7"/>
-<wire x1="35.6134" y1="14.238" x2="40.245" y2="14.238" width="0.15" layer="1"/>
-<wire x1="40.245" y1="14.238" x2="40.767" y2="13.716" width="0.15" layer="1"/>
-<wire x1="40.767" y1="13.716" x2="40.767" y2="6.604" width="0.15" layer="1"/>
-<wire x1="40.767" y1="6.604" x2="38.862" y2="4.699" width="0.15" layer="1"/>
-<via x="38.862" y="4.699" extent="1-16" drill="0.35"/>
-<wire x1="38.862" y1="4.699" x2="38.862" y2="0.028" width="0.15" layer="16"/>
-<wire x1="38.862" y1="0.028" x2="38.89" y2="0" width="0.15" layer="16"/>
-</signal>
-<signal name="PTB5">
-<contactref element="U1" pad="40"/>
-<contactref element="J2" pad="P$6"/>
-<wire x1="35.6134" y1="14.746" x2="40.372" y2="14.746" width="0.15" layer="1"/>
-<wire x1="40.372" y1="14.746" x2="41.275" y2="13.843" width="0.15" layer="1"/>
-<via x="41.402" y="4.699" extent="1-16" drill="0.35"/>
-<wire x1="41.402" y1="4.699" x2="41.402" y2="0.028" width="0.15" layer="16"/>
-<wire x1="41.402" y1="0.028" x2="41.43" y2="0" width="0.15" layer="16"/>
-<wire x1="41.275" y1="13.843" x2="41.275" y2="4.826" width="0.15" layer="1"/>
-<wire x1="41.275" y1="4.826" x2="41.402" y2="4.699" width="0.15" layer="1"/>
 </signal>
 <signal name="PTB18">
 <contactref element="U1" pad="41"/>
@@ -2969,6 +2947,28 @@ Your Eurocircuits Team
 <contactref element="R5" pad="1"/>
 <wire x1="4.611" y1="8.509" x2="3.163" y2="8.509" width="0.1778" layer="1"/>
 </signal>
+<signal name="PTB17">
+<contactref element="J2" pad="P$6"/>
+<contactref element="U1" pad="40"/>
+<wire x1="35.6134" y1="14.746" x2="40.372" y2="14.746" width="0.15" layer="1"/>
+<wire x1="40.372" y1="14.746" x2="41.275" y2="13.843" width="0.15" layer="1"/>
+<via x="41.402" y="4.699" extent="1-16" drill="0.35"/>
+<wire x1="41.402" y1="4.699" x2="41.402" y2="0.028" width="0.15" layer="16"/>
+<wire x1="41.275" y1="13.843" x2="41.275" y2="4.826" width="0.15" layer="1"/>
+<wire x1="41.275" y1="4.826" x2="41.402" y2="4.699" width="0.15" layer="1"/>
+<wire x1="41.43" y1="0" x2="41.402" y2="0.028" width="0.15" layer="16"/>
+</signal>
+<signal name="PTB16">
+<contactref element="U1" pad="39"/>
+<contactref element="J2" pad="P$7"/>
+<wire x1="40.245" y1="14.238" x2="40.767" y2="13.716" width="0.15" layer="1"/>
+<wire x1="40.767" y1="13.716" x2="40.767" y2="6.604" width="0.15" layer="1"/>
+<wire x1="40.767" y1="6.604" x2="38.862" y2="4.699" width="0.15" layer="1"/>
+<via x="38.862" y="4.699" extent="1-16" drill="0.35"/>
+<wire x1="38.862" y1="4.699" x2="38.862" y2="0.028" width="0.15" layer="16"/>
+<wire x1="38.862" y1="0.028" x2="38.89" y2="0" width="0.15" layer="16"/>
+<wire x1="40.245" y1="14.238" x2="35.6134" y2="14.238" width="0.15" layer="1"/>
+</signal>
 </signals>
 <errors>
 <approved hash="4,1,65d06d80781f6837"/>
@@ -3112,26 +3112,6 @@ Your Eurocircuits Team
 <approved hash="4,1,80b77bd805d9065e"/>
 <approved hash="4,1,1bab94d870367642"/>
 <approved hash="4,1,b3582dd861c967b1"/>
-<approved hash="4,16,d94452d875f976ad"/>
-<approved hash="4,16,7078ebd865c86691"/>
-<approved hash="4,16,8b6d04d871c97684"/>
-<approved hash="4,16,22619dd841ba4688"/>
-<approved hash="4,16,451636d875da8efc"/>
-<approved hash="4,16,dc0a4fd865c96ee3"/>
-<approved hash="4,16,773ee8d869c86ed7"/>
-<approved hash="4,16,8e3301d809d90eda"/>
-<approved hash="4,16,21279ad8453e46ce"/>
-<approved hash="4,16,b8d433d875d9763d"/>
-<approved hash="4,16,d3c84cd861c96621"/>
-<approved hash="4,16,6afce5d871c87615"/>
-<approved hash="4,16,8df17ed805d90e18"/>
-<approved hash="4,16,24e597d875ba4e0c"/>
-<approved hash="4,16,bf9a30d869c96e73"/>
-<approved hash="4,16,d68e49d869c96e67"/>
-<approved hash="4,16,6982e2d875f8766b"/>
-<approved hash="4,16,80b77bd805d9065e"/>
-<approved hash="4,16,1bab94d870367642"/>
-<approved hash="4,16,b3582dd861c967b1"/>
 <approved hash="4,16,bf71db96f5471968"/>
 <approved hash="4,16,064d72a7e5470954"/>
 <approved hash="4,16,e95889a6f5471d41"/>
@@ -3152,6 +3132,26 @@ Your Eurocircuits Team
 <approved hash="4,16,968282b68547699b"/>
 <approved hash="4,16,799e1859f5471d87"/>
 <approved hash="4,16,c16db0a6e5470c74"/>
+<approved hash="4,16,d94452d875f976ad"/>
+<approved hash="4,16,7078ebd865c86691"/>
+<approved hash="4,16,8b6d04d871c97684"/>
+<approved hash="4,16,22619dd841ba4688"/>
+<approved hash="4,16,451636d875da8efc"/>
+<approved hash="4,16,dc0a4fd865c96ee3"/>
+<approved hash="4,16,773ee8d869c86ed7"/>
+<approved hash="4,16,8e3301d809d90eda"/>
+<approved hash="4,16,21279ad8453e46ce"/>
+<approved hash="4,16,b8d433d875d9763d"/>
+<approved hash="4,16,d3c84cd861c96621"/>
+<approved hash="4,16,6afce5d871c87615"/>
+<approved hash="4,16,8df17ed805d90e18"/>
+<approved hash="4,16,24e597d875ba4e0c"/>
+<approved hash="4,16,bf9a30d869c96e73"/>
+<approved hash="4,16,d68e49d869c96e67"/>
+<approved hash="4,16,6982e2d875f8766b"/>
+<approved hash="4,16,80b77bd805d9065e"/>
+<approved hash="4,16,1bab94d870367642"/>
+<approved hash="4,16,b3582dd861c967b1"/>
 </errors>
 </board>
 </drawing>

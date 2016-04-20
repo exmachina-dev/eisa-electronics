@@ -10328,30 +10328,6 @@ Various fiducial points for machine vision alignment.</description>
 <pinref part="J2" gate="G$1" pin="8"/>
 </segment>
 </net>
-<net name="PTB4" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="PTB16"/>
-<wire x1="137.16" y1="160.02" x2="129.54" y2="160.02" width="0.1524" layer="91"/>
-<label x="129.54" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<wire x1="358.14" y1="175.26" x2="353.06" y2="175.26" width="0.1524" layer="91"/>
-<label x="353.06" y="175.26" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J2" gate="G$1" pin="7"/>
-</segment>
-</net>
-<net name="PTB5" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="PTB17"/>
-<wire x1="137.16" y1="157.48" x2="129.54" y2="157.48" width="0.1524" layer="91"/>
-<label x="129.54" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<wire x1="358.14" y1="177.8" x2="353.06" y2="177.8" width="0.1524" layer="91"/>
-<label x="353.06" y="177.8" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J2" gate="G$1" pin="6"/>
-</segment>
-</net>
 <net name="PTB18" class="0">
 <segment>
 <pinref part="U1" gate="B" pin="PTB18"/>
@@ -10815,6 +10791,30 @@ Various fiducial points for machine vision alignment.</description>
 <pinref part="LED2" gate="G$1" pin="A"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="15.24" y1="104.14" x2="15.24" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PTB17" class="0">
+<segment>
+<wire x1="358.14" y1="177.8" x2="353.06" y2="177.8" width="0.1524" layer="91"/>
+<label x="353.06" y="177.8" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="6"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="PTB17"/>
+<wire x1="137.16" y1="157.48" x2="129.54" y2="157.48" width="0.1524" layer="91"/>
+<label x="129.54" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="PTB16" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="PTB16"/>
+<wire x1="137.16" y1="160.02" x2="129.54" y2="160.02" width="0.1524" layer="91"/>
+<label x="129.54" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="358.14" y1="175.26" x2="353.06" y2="175.26" width="0.1524" layer="91"/>
+<label x="353.06" y="175.26" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="7"/>
 </segment>
 </net>
 </nets>
