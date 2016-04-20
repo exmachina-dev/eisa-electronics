@@ -1120,6 +1120,38 @@ Source: www.neutrik.com/... 210_257601.pdf</description>
 </package>
 </packages>
 </library>
+<library name="midas">
+<packages>
+<package name="CONNECTOR">
+<pad name="1" x="-33.5" y="0" drill="1" diameter="1.6" shape="offset" rot="R90" first="yes"/>
+<pad name="2" x="-30.96" y="0" drill="1" diameter="1.6" shape="offset" rot="R90"/>
+<pad name="3" x="-28.42" y="0" drill="1" diameter="1.6" shape="offset" rot="R90"/>
+<pad name="4" x="-25.88" y="0" drill="1" diameter="1.6" shape="offset" rot="R90"/>
+<pad name="5" x="-23.34" y="0" drill="1" diameter="1.6" shape="offset" rot="R90"/>
+<pad name="6" x="-20.8" y="0" drill="1" diameter="1.6" shape="offset" rot="R90"/>
+<pad name="7" x="-18.26" y="0" drill="1" diameter="1.6" shape="offset" rot="R90"/>
+<pad name="8" x="-15.72" y="0" drill="1" diameter="1.6" shape="offset" rot="R90"/>
+<pad name="9" x="-13.18" y="0" drill="1" diameter="1.6" shape="offset" rot="R90"/>
+<pad name="10" x="-10.64" y="0" drill="1" diameter="1.6" shape="offset" rot="R90"/>
+<pad name="11" x="-8.1" y="0" drill="1" diameter="1.6" shape="offset" rot="R90"/>
+<pad name="12" x="-5.56" y="0" drill="1" diameter="1.6" shape="offset" rot="R90"/>
+<pad name="13" x="-3.02" y="0" drill="1" diameter="1.6" shape="offset" rot="R90"/>
+<pad name="14" x="-0.48" y="0" drill="1" diameter="1.6" shape="offset" rot="R90"/>
+<pad name="15" x="2.06" y="0" drill="1" diameter="1.6" shape="offset" rot="R90"/>
+<pad name="16" x="4.6" y="0" drill="1" diameter="1.6" shape="offset" rot="R90"/>
+<pad name="33" x="-41" y="0" drill="2.7" diameter="5"/>
+<pad name="36" x="41" y="0" drill="2.7" diameter="5"/>
+<wire x1="-43.5" y1="2.5" x2="-43.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-43.5" y1="-2.5" x2="43.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="43.5" y1="-2.5" x2="43.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="43.5" y1="2.5" x2="-43.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-43.5" y1="-2.5" x2="-43.5" y2="2.5" width="0.127" layer="39"/>
+<wire x1="-43.5" y1="2.5" x2="43.5" y2="2.5" width="0.127" layer="39"/>
+<wire x1="43.5" y1="2.5" x2="43.5" y2="-2.5" width="0.127" layer="39"/>
+<wire x1="43.5" y1="-2.5" x2="-43.5" y2="-2.5" width="0.127" layer="39"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1864,6 +1896,7 @@ Your Eurocircuits Team
 <element name="R49" library="rcl" package="R0603" value="1k" x="-93.98" y="-165.735"/>
 <element name="R50" library="rcl" package="R0603" value="1k" x="-93.98" y="-170.815"/>
 <element name="R51" library="rcl" package="R0603" value="1k" x="-93.98" y="-175.895"/>
+<element name="LCD1" library="midas" package="CONNECTOR" value="MC41605A12W" x="-52.07" y="-181.61"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -2016,10 +2049,16 @@ Your Eurocircuits Team
 <contactref element="LED8" pad="C"/>
 <contactref element="LED7" pad="C"/>
 <contactref element="LED6" pad="C"/>
+<contactref element="LCD1" pad="1"/>
+<contactref element="LCD1" pad="5"/>
+<contactref element="LCD1" pad="16"/>
 <wire x1="-88.265" y1="-155.46" x2="-93.345" y2="-155.46" width="0" layer="19" extent="1-1"/>
 <wire x1="-83.185" y1="-155.46" x2="-88.265" y2="-155.46" width="0" layer="19" extent="1-1"/>
 <wire x1="-78.105" y1="-155.46" x2="-83.185" y2="-155.46" width="0" layer="19" extent="1-1"/>
 <wire x1="-72.81" y1="-155.575" x2="-78.105" y2="-155.46" width="0" layer="19" extent="1-1"/>
+<wire x1="-75.41" y1="-181.61" x2="-72.81" y2="-155.575" width="0" layer="19" extent="1-1"/>
+<wire x1="-85.57" y1="-181.61" x2="-75.41" y2="-181.61" width="0" layer="19" extent="1-1"/>
+<wire x1="-47.47" y1="-181.61" x2="-75.41" y2="-181.61" width="0" layer="19" extent="1-1"/>
 <wire x1="-62.865" y1="-101.27" x2="-72.81" y2="-155.575" width="0" layer="19" extent="1-1"/>
 <wire x1="-62.865" y1="-91.77" x2="-62.865" y2="-101.27" width="0" layer="19" extent="1-1"/>
 <wire x1="-64.135" y1="-91.77" x2="-62.865" y2="-91.77" width="0" layer="19" extent="1-1"/>
@@ -2089,6 +2128,12 @@ Your Eurocircuits Team
 <contactref element="R29" pad="2"/>
 <contactref element="R26" pad="2"/>
 <contactref element="R25" pad="2"/>
+<contactref element="LCD1" pad="2"/>
+<contactref element="LCD1" pad="6"/>
+<contactref element="LCD1" pad="4"/>
+<wire x1="-77.95" y1="-181.61" x2="-72.87" y2="-181.61" width="0" layer="19" extent="1-1"/>
+<wire x1="-83.03" y1="-181.61" x2="-77.95" y2="-181.61" width="0" layer="19" extent="1-1"/>
+<wire x1="-72.81" y1="-140.335" x2="-72.87" y2="-181.61" width="0" layer="19" extent="1-1"/>
 <wire x1="-72.81" y1="-135.255" x2="-72.81" y2="-140.335" width="0" layer="19" extent="1-1"/>
 <wire x1="-72.81" y1="-130.175" x2="-72.81" y2="-135.255" width="0" layer="19" extent="1-1"/>
 <wire x1="-72.81" y1="-125.095" x2="-72.81" y2="-130.175" width="0" layer="19" extent="1-1"/>
@@ -2355,11 +2400,15 @@ Your Eurocircuits Team
 <signal name="VO">
 <contactref element="C5" pad="1"/>
 <contactref element="R5" pad="1"/>
+<contactref element="LCD1" pad="3"/>
 <wire x1="-74.51" y1="-70.485" x2="-74.51" y2="-78.105" width="0" layer="19" extent="1-1"/>
+<wire x1="-80.49" y1="-181.61" x2="-74.51" y2="-78.105" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VEE">
 <contactref element="U1" pad="4"/>
 <contactref element="C10" pad="1"/>
+<contactref element="LCD1" pad="15"/>
+<wire x1="-74.51" y1="-88.265" x2="-50.01" y2="-181.61" width="0" layer="19" extent="1-1"/>
 <wire x1="-71.12" y1="-49.022" x2="-74.51" y2="-88.265" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PWM_CONTRASTE">
@@ -2368,41 +2417,57 @@ Your Eurocircuits Team
 <signal name="D0">
 <contactref element="U4" pad="1"/>
 <contactref element="R6" pad="1"/>
+<contactref element="LCD1" pad="7"/>
+<wire x1="-74.51" y1="-104.775" x2="-70.33" y2="-181.61" width="0" layer="19" extent="1-1"/>
 <wire x1="-74.295" y1="-101.27" x2="-74.51" y2="-104.775" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D1">
 <contactref element="U4" pad="2"/>
 <contactref element="R25" pad="1"/>
+<contactref element="LCD1" pad="8"/>
+<wire x1="-74.51" y1="-109.855" x2="-67.79" y2="-181.61" width="0" layer="19" extent="1-1"/>
 <wire x1="-73.025" y1="-101.27" x2="-74.51" y2="-109.855" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D2">
 <contactref element="U4" pad="3"/>
 <contactref element="R26" pad="1"/>
+<contactref element="LCD1" pad="9"/>
+<wire x1="-74.51" y1="-114.935" x2="-65.25" y2="-181.61" width="0" layer="19" extent="1-1"/>
 <wire x1="-71.755" y1="-101.27" x2="-74.51" y2="-114.935" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D3">
 <contactref element="U4" pad="4"/>
 <contactref element="R29" pad="1"/>
+<contactref element="LCD1" pad="10"/>
+<wire x1="-74.51" y1="-120.015" x2="-62.71" y2="-181.61" width="0" layer="19" extent="1-1"/>
 <wire x1="-70.485" y1="-101.27" x2="-74.51" y2="-120.015" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D4">
 <contactref element="U4" pad="5"/>
 <contactref element="R30" pad="1"/>
+<contactref element="LCD1" pad="11"/>
+<wire x1="-74.51" y1="-125.095" x2="-60.17" y2="-181.61" width="0" layer="19" extent="1-1"/>
 <wire x1="-69.215" y1="-101.27" x2="-74.51" y2="-125.095" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D5">
 <contactref element="U4" pad="6"/>
 <contactref element="R31" pad="1"/>
+<contactref element="LCD1" pad="12"/>
+<wire x1="-74.51" y1="-130.175" x2="-57.63" y2="-181.61" width="0" layer="19" extent="1-1"/>
 <wire x1="-67.945" y1="-101.27" x2="-74.51" y2="-130.175" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D6">
 <contactref element="U4" pad="7"/>
 <contactref element="R44" pad="1"/>
+<contactref element="LCD1" pad="13"/>
+<wire x1="-74.51" y1="-135.255" x2="-55.09" y2="-181.61" width="0" layer="19" extent="1-1"/>
 <wire x1="-66.675" y1="-101.27" x2="-74.51" y2="-135.255" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D7">
 <contactref element="U4" pad="8"/>
 <contactref element="R45" pad="1"/>
+<contactref element="LCD1" pad="14"/>
+<wire x1="-74.51" y1="-140.335" x2="-52.55" y2="-181.61" width="0" layer="19" extent="1-1"/>
 <wire x1="-65.405" y1="-101.27" x2="-74.51" y2="-140.335" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SDA">
