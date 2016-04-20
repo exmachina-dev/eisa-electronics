@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="7.5.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<packages>
+<package name="SOT163-1">
+<smd name="16" x="-0.635" y="4.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="15" x="0.635" y="4.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="17" x="-1.905" y="4.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="18" x="-3.175" y="4.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="19" x="-4.445" y="4.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="20" x="-5.715" y="4.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="14" x="1.905" y="4.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="13" x="3.175" y="4.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="12" x="4.445" y="4.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="11" x="5.715" y="4.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="5" x="-0.635" y="-4.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="6" x="0.635" y="-4.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="7" x="1.905" y="-4.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="8" x="3.175" y="-4.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="9" x="4.445" y="-4.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="10" x="5.715" y="-4.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="4" x="-1.905" y="-4.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="3" x="-3.175" y="-4.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="2" x="-4.445" y="-4.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="1" x="-5.715" y="-4.75" dx="0.6" dy="1.5" layer="1"/>
+<wire x1="6.7" y1="-5.7" x2="-6.7" y2="-5.7" width="0.127" layer="39"/>
+<wire x1="-6.7" y1="-5.7" x2="-6.7" y2="5.7" width="0.127" layer="39"/>
+<wire x1="-6.7" y1="5.7" x2="6.7" y2="5.7" width="0.127" layer="39"/>
+<wire x1="6.7" y1="5.7" x2="6.7" y2="-5.7" width="0.127" layer="39"/>
+<wire x1="-6.35" y1="4" x2="6.5" y2="4" width="0.127" layer="21"/>
+<wire x1="6.5" y1="4" x2="6.5" y2="-4" width="0.127" layer="21"/>
+<wire x1="6.5" y1="-4" x2="-6.35" y2="-4" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-4" x2="-6.35" y2="4" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="0" x2="-6.35" y2="-1.27" width="0.127" layer="21" curve="-90"/>
+<wire x1="-5.08" y1="0" x2="-6.35" y2="1.27" width="0.127" layer="21" curve="90"/>
+<text x="7.62" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<text x="7.62" y="0" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="PCA9665">
+<wire x1="-10.16" y1="-30.48" x2="-10.16" y2="25.4" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="25.4" x2="10.16" y2="25.4" width="0.254" layer="94"/>
+<wire x1="10.16" y1="25.4" x2="10.16" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-30.48" x2="-10.16" y2="-30.48" width="0.254" layer="94"/>
+<pin name="VDD" x="-15.24" y="22.86" length="middle" direction="pwr"/>
+<pin name="VSS" x="-15.24" y="-27.94" length="middle" direction="pwr"/>
+<pin name="A1" x="-15.24" y="-20.32" length="middle" direction="in"/>
+<pin name="A0" x="-15.24" y="-17.78" length="middle" direction="in"/>
+<pin name="!WR" x="-15.24" y="-10.16" length="middle" direction="in"/>
+<pin name="!RD" x="-15.24" y="-7.62" length="middle" direction="in"/>
+<pin name="!CE" x="-15.24" y="-5.08" length="middle" direction="in"/>
+<pin name="!INT" x="-15.24" y="2.54" length="middle" direction="out"/>
+<pin name="!RESET" x="-15.24" y="5.08" length="middle" direction="in"/>
+<pin name="SCL" x="-15.24" y="12.7" length="middle"/>
+<pin name="SDA" x="-15.24" y="15.24" length="middle"/>
+<pin name="D0" x="15.24" y="17.78" length="middle" rot="R180"/>
+<pin name="D1" x="15.24" y="12.7" length="middle" rot="R180"/>
+<pin name="D2" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="D3" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="D4" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="D5" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="D6" x="15.24" y="-12.7" length="middle" rot="R180"/>
+<pin name="D7" x="15.24" y="-17.78" length="middle" rot="R180"/>
+<pin name="I.C" x="15.24" y="-27.94" length="middle" direction="nc" rot="R180"/>
+<text x="-10.16" y="29.21" size="1.27" layer="95">&gt;NAME</text>
+<text x="-10.16" y="26.67" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PCA9665D" prefix="U">
+<gates>
+<gate name="G$1" symbol="PCA9665" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT163-1">
+<connects>
+<connect gate="G$1" pin="!CE" pad="13"/>
+<connect gate="G$1" pin="!INT" pad="16"/>
+<connect gate="G$1" pin="!RD" pad="12"/>
+<connect gate="G$1" pin="!RESET" pad="17"/>
+<connect gate="G$1" pin="!WR" pad="11"/>
+<connect gate="G$1" pin="A0" pad="14"/>
+<connect gate="G$1" pin="A1" pad="15"/>
+<connect gate="G$1" pin="D0" pad="1"/>
+<connect gate="G$1" pin="D1" pad="2"/>
+<connect gate="G$1" pin="D2" pad="3"/>
+<connect gate="G$1" pin="D3" pad="4"/>
+<connect gate="G$1" pin="D4" pad="5"/>
+<connect gate="G$1" pin="D5" pad="6"/>
+<connect gate="G$1" pin="D6" pad="7"/>
+<connect gate="G$1" pin="D7" pad="8"/>
+<connect gate="G$1" pin="I.C" pad="9"/>
+<connect gate="G$1" pin="SCL" pad="18"/>
+<connect gate="G$1" pin="SDA" pad="19"/>
+<connect gate="G$1" pin="VDD" pad="20"/>
+<connect gate="G$1" pin="VSS" pad="10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>
