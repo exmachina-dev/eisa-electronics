@@ -745,6 +745,10 @@ Source: www.neutrik.com/... 210_257601.pdf</description>
 <wire x1="-2.413" y1="1.905" x2="2.413" y2="1.905" width="0.127" layer="20"/>
 <wire x1="2.413" y1="1.905" x2="2.413" y2="-1.905" width="0.127" layer="20"/>
 <wire x1="-2.413" y1="-1.27" x2="2.413" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-2.413" y1="1.905" x2="2.413" y2="1.905" width="0.127" layer="39"/>
+<wire x1="2.413" y1="1.905" x2="2.413" y2="-1.905" width="0.127" layer="39"/>
+<wire x1="2.413" y1="-1.905" x2="-2.413" y2="-1.905" width="0.127" layer="39"/>
+<wire x1="-2.413" y1="-1.905" x2="-2.413" y2="1.905" width="0.127" layer="39"/>
 </package>
 </packages>
 </library>
@@ -1455,7 +1459,6 @@ Your Eurocircuits Team
 </elements>
 <signals>
 <signal name="GND">
-<contactref element="OK2" pad="3"/>
 <contactref element="SJ5" pad="1"/>
 <contactref element="X7" pad="1"/>
 <contactref element="X7" pad="3"/>
@@ -1483,6 +1486,7 @@ Your Eurocircuits Team
 </polygon>
 <contactref element="X7" pad="10"/>
 <contactref element="X6" pad="1"/>
+<contactref element="OK2" pad="3"/>
 <wire x1="45.055" y1="15.435" x2="51.0494" y2="16.705" width="0" layer="19" extent="16-16"/>
 <wire x1="45.055" y1="12.895" x2="45.055" y2="15.435" width="0" layer="19" extent="16-16"/>
 <wire x1="45.055" y1="10.355" x2="45.055" y2="12.895" width="0" layer="19" extent="16-16"/>

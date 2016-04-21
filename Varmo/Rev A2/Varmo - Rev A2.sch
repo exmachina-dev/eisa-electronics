@@ -652,13 +652,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <packages>
 </packages>
 <symbols>
-<symbol name="GND">
-<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<text x="-1.905" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
 <symbol name="+05V/1">
 <circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
 <wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="94"/>
@@ -675,19 +668,6 @@ In this library the device names are the same as the pin names of the symbols, t
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="GND" prefix="SUPPLY">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="GND" symbol="GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="+5V/1" prefix="SUPPLY">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
@@ -7806,6 +7786,10 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <wire x1="-2.413" y1="1.905" x2="2.413" y2="1.905" width="0.127" layer="20"/>
 <wire x1="2.413" y1="1.905" x2="2.413" y2="-1.905" width="0.127" layer="20"/>
 <wire x1="-2.413" y1="-1.27" x2="2.413" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-2.413" y1="1.905" x2="2.413" y2="1.905" width="0.127" layer="39"/>
+<wire x1="2.413" y1="1.905" x2="2.413" y2="-1.905" width="0.127" layer="39"/>
+<wire x1="2.413" y1="-1.905" x2="-2.413" y2="-1.905" width="0.127" layer="39"/>
+<wire x1="-2.413" y1="-1.905" x2="-2.413" y2="1.905" width="0.127" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -8205,7 +8189,6 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <part name="SUPPLY9" library="supply2" deviceset="GND1" device=""/>
 <part name="SUPPLY10" library="supply2" deviceset="+5V/1" device=""/>
 <part name="SUPPLY11" library="supply2" deviceset="GND1" device=""/>
-<part name="SUPPLY12" library="supply2" deviceset="GND" device=""/>
 <part name="L1" library="murata-inductance" deviceset="82473C" device="" value="47uH">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value="82473C"/>
@@ -8526,6 +8509,7 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
+<part name="GND10" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8588,7 +8572,6 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <instance part="SUPPLY9" gate="G$1" x="157.48" y="170.18"/>
 <instance part="SUPPLY10" gate="G$1" x="149.86" y="134.62"/>
 <instance part="SUPPLY11" gate="G$1" x="149.86" y="114.3"/>
-<instance part="SUPPLY12" gate="GND" x="111.76" y="114.3"/>
 <instance part="L1" gate="G$1" x="165.1" y="236.22">
 <attribute name="OC_NEWARK" x="165.1" y="236.22" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="165.1" y="236.22" size="1.778" layer="96" display="off"/>
@@ -8850,17 +8833,12 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <instance part="GND7" gate="1" x="7.62" y="152.4"/>
 <instance part="GND8" gate="1" x="48.26" y="139.7"/>
 <instance part="GND9" gate="1" x="48.26" y="218.44"/>
+<instance part="GND10" gate="1" x="111.76" y="114.3"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
-<segment>
-<pinref part="SUPPLY12" gate="GND" pin="GND"/>
-<pinref part="OK2" gate="A" pin="C"/>
-<wire x1="111.76" y1="116.84" x2="111.76" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="121.92" x2="121.92" y2="121.92" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <pinref part="SJ5" gate="1" pin="1"/>
 <wire x1="25.4" y1="210.82" x2="25.4" y2="208.28" width="0.1524" layer="91"/>
@@ -8959,6 +8937,12 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <junction x="48.26" y="223.52"/>
 <pinref part="X6" gate="-1" pin="1"/>
 <pinref part="GND9" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="OK2" gate="A" pin="C"/>
+<wire x1="111.76" y1="116.84" x2="111.76" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="121.92" x2="121.92" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="GND10" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="ESW3_RX_ISO" class="0">
