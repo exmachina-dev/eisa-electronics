@@ -7806,10 +7806,6 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <wire x1="-2.413" y1="1.905" x2="2.413" y2="1.905" width="0.127" layer="20"/>
 <wire x1="2.413" y1="1.905" x2="2.413" y2="-1.905" width="0.127" layer="20"/>
 <wire x1="-2.413" y1="-1.27" x2="2.413" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-2.413" y1="1.905" x2="2.413" y2="1.905" width="0.127" layer="39"/>
-<wire x1="2.413" y1="1.905" x2="2.413" y2="-1.905" width="0.127" layer="39"/>
-<wire x1="2.413" y1="-1.905" x2="-2.413" y2="-1.905" width="0.127" layer="39"/>
-<wire x1="-2.413" y1="-1.905" x2="-2.413" y2="1.905" width="0.127" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -8102,8 +8098,8 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <pad name="14" x="-0.48" y="0" drill="1" diameter="1.6" shape="offset" rot="R90"/>
 <pad name="15" x="2.06" y="0" drill="1" diameter="1.6" shape="offset" rot="R90"/>
 <pad name="16" x="4.6" y="0" drill="1" diameter="1.6" shape="offset" rot="R90"/>
-<pad name="33" x="-41" y="0" drill="2.7" diameter="5"/>
-<pad name="36" x="41" y="0" drill="2.7" diameter="5"/>
+<pad name="33" x="-41" y="0" drill="2.7" diameter="4.5"/>
+<pad name="36" x="41" y="0" drill="2.7" diameter="4.5"/>
 <wire x1="-43.5" y1="2.5" x2="-43.5" y2="-2.5" width="0.127" layer="21"/>
 <wire x1="-43.5" y1="-2.5" x2="43.5" y2="-2.5" width="0.127" layer="21"/>
 <wire x1="43.5" y1="-2.5" x2="43.5" y2="2.5" width="0.127" layer="21"/>
