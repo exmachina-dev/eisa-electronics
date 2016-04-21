@@ -5433,8 +5433,8 @@ Source: VISHAY wscwsn.pdf</description>
 <smd name="9" x="-1.125" y="0" dx="1.75" dy="1.9" layer="1"/>
 <smd name="10" x="1.125" y="0" dx="1.75" dy="1.9" layer="1"/>
 <wire x1="-3.7" y1="-1.45" x2="3.7" y2="-1.45" width="0.127" layer="51" style="shortdash"/>
-<pad name="11" x="-3.7" y="0.1" drill="1.25" diameter="1.9" rot="R270"/>
-<pad name="12" x="3.8" y="0.1" drill="1.25" diameter="1.9" rot="R270"/>
+<pad name="11" x="-3.575" y="0" drill="1.25" diameter="1.9" rot="R270"/>
+<pad name="12" x="3.575" y="0" drill="1.25" diameter="1.9" rot="R270"/>
 </package>
 </packages>
 <symbols>

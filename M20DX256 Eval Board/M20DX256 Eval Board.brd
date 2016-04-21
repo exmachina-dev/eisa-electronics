@@ -17,7 +17,7 @@
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
@@ -190,8 +190,8 @@
 <smd name="9" x="-1.125" y="0" dx="1.75" dy="1.9" layer="1"/>
 <smd name="10" x="1.125" y="0" dx="1.75" dy="1.9" layer="1"/>
 <wire x1="-3.7" y1="-1.45" x2="3.7" y2="-1.45" width="0.127" layer="51" style="shortdash"/>
-<pad name="11" x="-3.7" y="0.1" drill="1.25" diameter="1.9" rot="R270"/>
-<pad name="12" x="3.8" y="0.1" drill="1.25" diameter="1.9" rot="R270"/>
+<pad name="11" x="-3.575" y="0" drill="1.25" diameter="1.9" rot="R270"/>
+<pad name="12" x="3.575" y="0" drill="1.25" diameter="1.9" rot="R270"/>
 </package>
 </packages>
 </library>
@@ -2058,10 +2058,10 @@ Your Eurocircuits Team
 <attribute name="MF" value="" x="7.239" y="14.351" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="MCMR06X33R0FTL" x="7.239" y="14.351" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U$1" library="con-GlobalConnectorTechnology" package="USB_MICROB_SMT" value="USB3075-30-A" x="1.527" y="15" rot="R270">
-<attribute name="OC_NEWARK" value="58T0863" x="1.527" y="15" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="" x="1.527" y="15" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="USB3075-30-A" x="1.527" y="15" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="U$1" library="con-GlobalConnectorTechnology" package="USB_MICROB_SMT" value="USB3075-30-A" x="1.45" y="15" rot="R270">
+<attribute name="OC_NEWARK" value="58T0863" x="1.45" y="15" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="1.45" y="15" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="USB3075-30-A" x="1.45" y="15" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="U1" library="freescale" package="QFP50P1200X1200X160-64N" value="MK20DX256VLH7" x="30" y="15">
 <attribute name="OC_FARNELL" value="2133577" x="30" y="15" size="1.778" layer="27" display="off"/>
@@ -2308,13 +2308,13 @@ Your Eurocircuits Team
 <contactref element="LED2" pad="C"/>
 <contactref element="LED3" pad="C"/>
 <wire x1="1.663" y1="5.969" x2="1.663" y2="8.509" width="0.4064" layer="1"/>
-<wire x1="1.663" y1="8.509" x2="1.663" y2="11.164" width="0.4064" layer="1"/>
-<wire x1="1.663" y1="11.164" x2="1.627" y2="11.2" width="0.4064" layer="1"/>
 <contactref element="TP3" pad="TP"/>
 <via x="3.048" y="3.81" extent="1-16" drill="0.5"/>
 <wire x1="1.651" y1="3.81" x2="3.048" y2="3.81" width="0.4064" layer="1"/>
 <contactref element="C4" pad="2"/>
 <wire x1="37.6432" y1="18.2512" x2="38.227" y2="18.835" width="0.1778" layer="1"/>
+<wire x1="1.663" y1="8.509" x2="1.663" y2="11.212" width="0.4064" layer="1"/>
+<wire x1="1.663" y1="11.212" x2="1.45" y2="11.425" width="0.4064" layer="1"/>
 </signal>
 <signal name="+5V">
 <contactref element="U$1" pad="1"/>
@@ -2330,8 +2330,6 @@ Your Eurocircuits Team
 <vertex x="6.985" y="18.669"/>
 <vertex x="4.445" y="18.669"/>
 </polygon>
-<wire x1="4.177" y1="16.3" x2="5.334" y2="17.457" width="0.4064" layer="1"/>
-<wire x1="5.334" y1="17.457" x2="5.334" y2="17.78" width="0.4064" layer="1"/>
 <via x="5.334" y="17.78" extent="1-16" drill="0.5"/>
 <wire x1="24.3866" y1="15.254" x2="24.4006" y2="15.24" width="0.254" layer="1"/>
 <wire x1="24.4006" y1="15.24" x2="25.908" y2="15.24" width="0.254" layer="1"/>
@@ -2341,17 +2339,20 @@ Your Eurocircuits Team
 <wire x1="5.87" y1="5.528" x2="6.311" y2="5.969" width="0.4064" layer="1"/>
 <contactref element="TP2" pad="TP"/>
 <wire x1="6.311" y1="5.969" x2="7.874" y2="5.969" width="0.4064" layer="1"/>
+<wire x1="4.1" y1="16.3" x2="4.87" y2="16.3" width="0.4064" layer="1"/>
+<wire x1="4.87" y1="16.3" x2="5.334" y2="16.764" width="0.4064" layer="1"/>
+<wire x1="5.334" y1="16.764" x2="5.334" y2="17.78" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="U$1" pad="2"/>
 <contactref element="R1" pad="1"/>
-<wire x1="4.177" y1="15.65" x2="5.656" y2="15.65" width="0.1778" layer="1"/>
+<wire x1="4.1" y1="15.65" x2="5.656" y2="15.65" width="0.1778" layer="1"/>
 <wire x1="5.656" y1="15.65" x2="6.389" y2="16.383" width="0.1778" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="U$1" pad="3"/>
 <contactref element="R2" pad="1"/>
-<wire x1="4.177" y1="15" x2="5.74" y2="15" width="0.1778" layer="1"/>
+<wire x1="4.1" y1="15" x2="5.74" y2="15" width="0.1778" layer="1"/>
 <wire x1="5.74" y1="15" x2="6.389" y2="14.351" width="0.1778" layer="1"/>
 </signal>
 <signal name="USB_P">
