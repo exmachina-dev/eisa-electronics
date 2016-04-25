@@ -21542,30 +21542,30 @@ Do not connect R30 and R31</text>
 <nets>
 <net name="RX3_ISO_P" class="0">
 <segment>
-<wire x1="157.48" y1="205.74" x2="149.86" y2="205.74" width="0.1524" layer="91"/>
-<label x="149.86" y="205.74" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U3" gate="A" pin="RXP3"/>
+<wire x1="157.48" y1="220.98" x2="147.32" y2="220.98" width="0.1524" layer="91"/>
+<label x="147.32" y="220.98" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U3" gate="A" pin="RXP2"/>
 </segment>
 </net>
 <net name="RX3_ISO_N" class="0">
 <segment>
-<wire x1="157.48" y1="203.2" x2="149.86" y2="203.2" width="0.1524" layer="91"/>
-<label x="149.86" y="203.2" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U3" gate="A" pin="RXM3"/>
+<wire x1="157.48" y1="218.44" x2="147.32" y2="218.44" width="0.1524" layer="91"/>
+<label x="147.32" y="218.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U3" gate="A" pin="RXM2"/>
 </segment>
 </net>
 <net name="TX3_ISO_N" class="0">
 <segment>
-<wire x1="238.76" y1="172.72" x2="246.38" y2="172.72" width="0.1524" layer="91"/>
-<label x="246.38" y="172.72" size="1.27" layer="95" xref="yes"/>
-<pinref part="U3" gate="A" pin="TXM3"/>
+<wire x1="238.76" y1="165.1" x2="246.38" y2="165.1" width="0.1524" layer="91"/>
+<label x="246.38" y="165.1" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="A" pin="TXM2"/>
 </segment>
 </net>
 <net name="TX3_ISO_P" class="0">
 <segment>
-<wire x1="238.76" y1="170.18" x2="246.38" y2="170.18" width="0.1524" layer="91"/>
-<label x="246.38" y="170.18" size="1.27" layer="95" xref="yes"/>
-<pinref part="U3" gate="A" pin="TXP3"/>
+<wire x1="238.76" y1="162.56" x2="246.38" y2="162.56" width="0.1524" layer="91"/>
+<label x="246.38" y="162.56" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="A" pin="TXP2"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -21799,16 +21799,16 @@ Do not connect R30 and R31</text>
 </net>
 <net name="L3-1" class="0">
 <segment>
-<pinref part="U3" gate="B" pin="LED3-0"/>
-<wire x1="241.3" y1="78.74" x2="251.46" y2="78.74" width="0.1524" layer="91"/>
-<label x="251.46" y="78.74" size="1.27" layer="95" xref="yes"/>
+<wire x1="241.3" y1="91.44" x2="251.46" y2="91.44" width="0.1524" layer="91"/>
+<label x="251.46" y="91.44" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="B" pin="LED2-0"/>
 </segment>
 </net>
 <net name="L3-2" class="0">
 <segment>
-<pinref part="U3" gate="B" pin="LED3-1"/>
-<wire x1="241.3" y1="76.2" x2="251.46" y2="76.2" width="0.1524" layer="91"/>
-<label x="251.46" y="76.2" size="1.27" layer="95" xref="yes"/>
+<wire x1="241.3" y1="88.9" x2="251.46" y2="88.9" width="0.1524" layer="91"/>
+<label x="251.46" y="88.9" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="B" pin="LED2-1"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -22211,86 +22211,86 @@ Do not connect R30 and R31</text>
 </net>
 <net name="L1-1" class="0">
 <segment>
-<pinref part="U3" gate="B" pin="LED1-0"/>
-<wire x1="241.3" y1="99.06" x2="251.46" y2="99.06" width="0.1524" layer="91"/>
-<label x="251.46" y="99.06" size="1.27" layer="95" xref="yes"/>
+<wire x1="241.3" y1="78.74" x2="251.46" y2="78.74" width="0.1524" layer="91"/>
+<label x="251.46" y="78.74" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="B" pin="LED3-0"/>
 </segment>
 </net>
 <net name="L1-2" class="0">
 <segment>
-<pinref part="U3" gate="B" pin="LED1-1"/>
-<wire x1="241.3" y1="96.52" x2="251.46" y2="96.52" width="0.1524" layer="91"/>
-<label x="251.46" y="96.52" size="1.27" layer="95" xref="yes"/>
+<wire x1="241.3" y1="76.2" x2="251.46" y2="76.2" width="0.1524" layer="91"/>
+<label x="251.46" y="76.2" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="B" pin="LED3-1"/>
 </segment>
 </net>
 <net name="L2-1" class="0">
 <segment>
-<pinref part="U3" gate="B" pin="LED2-0"/>
-<wire x1="241.3" y1="91.44" x2="251.46" y2="91.44" width="0.1524" layer="91"/>
-<label x="251.46" y="91.44" size="1.27" layer="95" xref="yes"/>
+<wire x1="241.3" y1="99.06" x2="251.46" y2="99.06" width="0.1524" layer="91"/>
+<label x="251.46" y="99.06" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="B" pin="LED1-0"/>
 </segment>
 </net>
 <net name="L2-2" class="0">
 <segment>
-<pinref part="U3" gate="B" pin="LED2-1"/>
-<wire x1="241.3" y1="88.9" x2="251.46" y2="88.9" width="0.1524" layer="91"/>
-<label x="251.46" y="88.9" size="1.27" layer="95" xref="yes"/>
+<wire x1="241.3" y1="96.52" x2="251.46" y2="96.52" width="0.1524" layer="91"/>
+<label x="251.46" y="96.52" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="B" pin="LED1-1"/>
 </segment>
 </net>
 <net name="RX1_ISO_P" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="RXP1"/>
-<wire x1="157.48" y1="231.14" x2="149.86" y2="231.14" width="0.1524" layer="91"/>
-<label x="149.86" y="231.14" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="157.48" y1="205.74" x2="147.32" y2="205.74" width="0.1524" layer="91"/>
+<label x="147.32" y="205.74" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U3" gate="A" pin="RXP3"/>
 </segment>
 </net>
 <net name="RX1_ISO_N" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="RXM1"/>
-<wire x1="157.48" y1="228.6" x2="149.86" y2="228.6" width="0.1524" layer="91"/>
-<label x="149.86" y="228.6" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="157.48" y1="203.2" x2="147.32" y2="203.2" width="0.1524" layer="91"/>
+<label x="147.32" y="203.2" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U3" gate="A" pin="RXM3"/>
 </segment>
 </net>
 <net name="RX2_ISO_P" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="RXP2"/>
-<wire x1="157.48" y1="220.98" x2="149.86" y2="220.98" width="0.1524" layer="91"/>
-<label x="149.86" y="220.98" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="157.48" y1="231.14" x2="147.32" y2="231.14" width="0.1524" layer="91"/>
+<label x="147.32" y="231.14" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U3" gate="A" pin="RXP1"/>
 </segment>
 </net>
 <net name="RX2_ISO_N" class="0">
 <segment>
-<wire x1="157.48" y1="218.44" x2="149.86" y2="218.44" width="0.1524" layer="91"/>
-<label x="149.86" y="218.44" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U3" gate="A" pin="RXM2"/>
+<wire x1="157.48" y1="228.6" x2="147.32" y2="228.6" width="0.1524" layer="91"/>
+<label x="147.32" y="228.6" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U3" gate="A" pin="RXM1"/>
 </segment>
 </net>
 <net name="TX2_ISO_N" class="0">
-<segment>
-<pinref part="U3" gate="A" pin="TXM2"/>
-<wire x1="238.76" y1="165.1" x2="246.38" y2="165.1" width="0.1524" layer="91"/>
-<label x="246.38" y="165.1" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="TX2_ISO_P" class="0">
-<segment>
-<wire x1="238.76" y1="162.56" x2="246.38" y2="162.56" width="0.1524" layer="91"/>
-<label x="246.38" y="162.56" size="1.27" layer="95" xref="yes"/>
-<pinref part="U3" gate="A" pin="TXP2"/>
-</segment>
-</net>
-<net name="TX1_ISO_N" class="0">
 <segment>
 <wire x1="238.76" y1="160.02" x2="246.38" y2="160.02" width="0.1524" layer="91"/>
 <label x="246.38" y="160.02" size="1.27" layer="95" xref="yes"/>
 <pinref part="U3" gate="A" pin="TXM1"/>
 </segment>
 </net>
-<net name="TX1_ISO_P" class="0">
+<net name="TX2_ISO_P" class="0">
 <segment>
 <wire x1="238.76" y1="157.48" x2="246.38" y2="157.48" width="0.1524" layer="91"/>
 <label x="246.38" y="157.48" size="1.27" layer="95" xref="yes"/>
 <pinref part="U3" gate="A" pin="TXP1"/>
+</segment>
+</net>
+<net name="TX1_ISO_N" class="0">
+<segment>
+<wire x1="238.76" y1="172.72" x2="246.38" y2="172.72" width="0.1524" layer="91"/>
+<label x="246.38" y="172.72" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="A" pin="TXM3"/>
+</segment>
+</net>
+<net name="TX1_ISO_P" class="0">
+<segment>
+<wire x1="238.76" y1="170.18" x2="246.38" y2="170.18" width="0.1524" layer="91"/>
+<label x="246.38" y="170.18" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="A" pin="TXP3"/>
 </segment>
 </net>
 </nets>
