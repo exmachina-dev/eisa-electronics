@@ -10261,6 +10261,114 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="encoder">
+<packages>
+<package name="RKJXT1F">
+<pad name="C" x="1.5" y="7.8" drill="1"/>
+<pad name="ENCODERCOM" x="-1.5" y="7.8" drill="1"/>
+<pad name="COM" x="-1" y="5.78" drill="1"/>
+<pad name="D" x="-7.8" y="1.5" drill="1"/>
+<pad name="ENCODERA" x="-7.8" y="-1.5" drill="1"/>
+<pad name="LUG" x="-3.8" y="-1.5" drill="1"/>
+<pad name="ENCODERB" x="7.8" y="1.5" drill="1"/>
+<pad name="GND" x="6.86" y="-3.75" drill="1"/>
+<pad name="B" x="7.8" y="-1.5" drill="1"/>
+<pad name="PUSH" x="1" y="-6.98" drill="1"/>
+<pad name="A" x="-1.5" y="-7.8" drill="1"/>
+<circle x="0" y="0" radius="9.3" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="1.25" width="0.127" layer="21"/>
+<wire x1="-1.1" y1="0.55" x2="1.1" y2="0.55" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="7.25" width="0.127" layer="21"/>
+<wire x1="0" y1="2" x2="0" y2="3.8" width="0.127" layer="21"/>
+<wire x1="0" y1="3.8" x2="0.4" y2="3.4" width="0.127" layer="21"/>
+<wire x1="0" y1="3.8" x2="-0.4" y2="3.4" width="0.127" layer="21"/>
+<wire x1="2.5" y1="0" x2="4.3" y2="0" width="0.127" layer="21"/>
+<wire x1="4.3" y1="0" x2="3.9" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="4.3" y1="0" x2="3.9" y2="0.4" width="0.127" layer="21"/>
+<text x="0.2" y="2.3" size="0.8128" layer="21">A</text>
+<text x="2.8" y="0.2" size="0.8128" layer="21">D</text>
+<wire x1="0" y1="-2" x2="0" y2="-3.8" width="0.127" layer="21"/>
+<wire x1="0" y1="-3.8" x2="-0.4" y2="-3.4" width="0.127" layer="21"/>
+<wire x1="0" y1="-3.8" x2="0.4" y2="-3.4" width="0.127" layer="21"/>
+<text x="0.2" y="-3.1" size="0.8128" layer="21">C</text>
+<text x="-2.8" y="1" size="0.8128" layer="21" rot="R180">B</text>
+<wire x1="-2.5" y1="0" x2="-4.3" y2="0" width="0.127" layer="21"/>
+<wire x1="-4.3" y1="0" x2="-3.9" y2="0.4" width="0.127" layer="21"/>
+<wire x1="-4.3" y1="0" x2="-3.9" y2="-0.4" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="STICK_SWITCH">
+<wire x1="12.7" y1="10.16" x2="17.78" y2="10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="5.08" x2="17.78" y2="5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="0" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-5.08" x2="17.78" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-10.16" x2="-2.54" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-10.16" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="2.54" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="2.54" x2="-17.78" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="12.7" x2="-17.78" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-12.7" x2="17.78" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-12.7" x2="17.78" y2="12.7" width="0.254" layer="94"/>
+<wire x1="17.78" y1="12.7" x2="-17.78" y2="12.7" width="0.254" layer="94"/>
+<pin name="COM" x="-22.86" y="2.54" visible="pad" length="middle"/>
+<pin name="A" x="22.86" y="10.16" visible="pad" length="middle" rot="R180"/>
+<pin name="B" x="22.86" y="5.08" visible="pad" length="middle" rot="R180"/>
+<pin name="C" x="22.86" y="0" visible="pad" length="middle" rot="R180"/>
+<pin name="D" x="22.86" y="-5.08" visible="pad" length="middle" rot="R180"/>
+<pin name="PUSH" x="22.86" y="-10.16" visible="pad" length="middle" rot="R180"/>
+</symbol>
+<symbol name="ENCODER">
+<wire x1="-2.54" y1="2.54" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="12.7" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="12.7" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-7.62" x2="-12.7" y2="0" width="0.254" layer="94"/>
+<pin name="COM" x="-17.78" y="0" visible="pad" length="middle"/>
+<pin name="A" x="17.78" y="2.54" visible="pad" length="middle" rot="R180"/>
+<pin name="B" x="17.78" y="-2.54" visible="pad" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="0" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="-7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="0" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="0" x2="-12.7" y2="0" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="RKJXTF" prefix="ENC">
+<description>4-directional Stick Switch (with Encoder + Center-push Function)</description>
+<gates>
+<gate name="G$1" symbol="STICK_SWITCH" x="2.54" y="20.32"/>
+<gate name="G$2" symbol="ENCODER" x="0" y="-7.62"/>
+</gates>
+<devices>
+<device name="" package="RKJXT1F">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="B" pad="B"/>
+<connect gate="G$1" pin="C" pad="C"/>
+<connect gate="G$1" pin="COM" pad="COM"/>
+<connect gate="G$1" pin="D" pad="D"/>
+<connect gate="G$1" pin="PUSH" pad="PUSH"/>
+<connect gate="G$2" pin="A" pad="ENCODERA"/>
+<connect gate="G$2" pin="B" pad="ENCODERB"/>
+<connect gate="G$2" pin="COM" pad="ENCODERCOM"/>
+</connects>
+<technologies>
+<technology name="42001"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -10568,6 +10676,10 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <part name="J8" library="con-molex" deviceset="22-?-02" device="05-7028"/>
 <part name="J9" library="con-molex" deviceset="22-?-03" device="05-7038"/>
 <part name="U$1" library="cc-by-sa" deviceset="CC-BY-NC-SA" device=""/>
+<part name="ENC1" library="encoder" deviceset="RKJXTF" device="" technology="42001"/>
+<part name="X2" library="Molex_By_element14_Batch_1" deviceset="90814-0210" device="">
+<attribute name="MF" value=""/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -10591,8 +10703,7 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <wire x1="253" y1="56" x2="311.15" y2="56" width="0.1524" layer="94"/>
 <wire x1="311.15" y1="24.13" x2="311.15" y2="56" width="0.1524" layer="94"/>
 <text x="113.64" y="197.58" size="1.778" layer="97">SIGNAL ISOLATION</text>
-<text x="6.96" y="98.52" size="1.778" layer="97">MICROCONTROLLER</text>
-<text x="177.14" y="98.52" size="1.778" layer="97">ENCODER</text>
+<text x="6.96" y="98.52" size="1.778" layer="97">ENCODER</text>
 <text x="202.54" y="179.8" size="1.778" layer="97">SELECTOR &amp; PUSH BUTTON</text>
 <text x="6.96" y="250.92" size="1.778" layer="97">CONNECTOR</text>
 <wire x1="311.15" y1="56" x2="383.54" y2="56" width="0.1524" layer="94"/>
@@ -10848,6 +10959,11 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <instance part="J9" gate="-2" x="347.98" y="241.3"/>
 <instance part="J9" gate="-3" x="347.98" y="236.22"/>
 <instance part="U$1" gate="G$1" x="305.816" y="8.89"/>
+<instance part="ENC1" gate="G$1" x="55.88" y="81.28"/>
+<instance part="ENC1" gate="G$2" x="55.88" y="55.88"/>
+<instance part="X2" gate="A" x="55.88" y="35.56">
+<attribute name="MF" x="55.88" y="35.56" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
