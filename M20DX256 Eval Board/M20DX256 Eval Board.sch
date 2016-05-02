@@ -10044,7 +10044,11 @@ Various fiducial points for machine vision alignment.</description>
 <attribute name="MPN" value=""/>
 <attribute name="OC_NEWARK" value="unknown"/>
 </part>
-<part name="U$4" library="cc-by-sa" deviceset="CC-BY-NC-SA" device=""/>
+<part name="U$4" library="cc-by-sa" deviceset="CC-BY-NC-SA" device="">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_NEWARK" value="unknown"/>
+</part>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
@@ -10235,7 +10239,11 @@ Various fiducial points for machine vision alignment.</description>
 <attribute name="MF" x="311.404" y="18.796" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="311.404" y="18.796" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="U$4" gate="G$1" x="256.54" y="15.24"/>
+<instance part="U$4" gate="G$1" x="256.54" y="15.24">
+<attribute name="OC_NEWARK" x="256.54" y="15.24" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="256.54" y="15.24" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="256.54" y="15.24" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="+3V4" gate="G$1" x="335.28" y="203.2"/>
 <instance part="GND5" gate="1" x="335.28" y="185.42"/>
 <instance part="+3V5" gate="G$1" x="342.9" y="78.74"/>
