@@ -10725,6 +10725,10 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <part name="SUPPLY40" library="supply2" deviceset="+5V/1" device=""/>
 <part name="SUPPLY42" library="supply2" deviceset="GND1" device=""/>
 <part name="SUPPLY44" library="supply2" deviceset="GND1" device=""/>
+<part name="MP5" library="holes" deviceset="MOUNT-PAD" device="2.5"/>
+<part name="MP6" library="holes" deviceset="MOUNT-PAD" device="2.5"/>
+<part name="MP7" library="holes" deviceset="MOUNT-PAD" device="2.5"/>
+<part name="MP8" library="holes" deviceset="MOUNT-PAD" device="2.5"/>
 </parts>
 <sheets>
 <sheet>
@@ -11054,6 +11058,10 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <instance part="SUPPLY40" gate="G$1" x="127" y="35.56"/>
 <instance part="SUPPLY42" gate="G$1" x="170.18" y="12.7"/>
 <instance part="SUPPLY44" gate="G$1" x="127" y="10.16"/>
+<instance part="MP5" gate="1" x="167.64" y="93.98"/>
+<instance part="MP6" gate="1" x="154.94" y="93.98"/>
+<instance part="MP7" gate="1" x="142.24" y="93.98"/>
+<instance part="MP8" gate="1" x="132.08" y="93.98"/>
 </instances>
 <busses>
 </busses>
@@ -12527,14 +12535,14 @@ MK20DX256</description>
 <label x="45.72" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U5" gate="A" pin="6"/>
-<wire x1="71.12" y1="228.6" x2="78.74" y2="228.6" width="0.1524" layer="91"/>
-<label x="78.74" y="228.6" size="1.27" layer="95" xref="yes"/>
+<wire x1="71.12" y1="226.06" x2="78.74" y2="226.06" width="0.1524" layer="91"/>
+<label x="78.74" y="226.06" size="1.27" layer="95" xref="yes"/>
+<pinref part="U5" gate="A" pin="8"/>
 </segment>
 <segment>
-<pinref part="U6" gate="A" pin="6"/>
-<wire x1="71.12" y1="71.12" x2="78.74" y2="71.12" width="0.1524" layer="91"/>
-<label x="78.74" y="71.12" size="1.27" layer="95" xref="yes"/>
+<wire x1="71.12" y1="68.58" x2="81.28" y2="68.58" width="0.1524" layer="91"/>
+<label x="81.28" y="68.58" size="1.27" layer="95" xref="yes"/>
+<pinref part="U6" gate="A" pin="8"/>
 </segment>
 </net>
 <net name="LED_STATUS_3" class="0">
@@ -12545,14 +12553,14 @@ MK20DX256</description>
 <label x="45.72" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U5" gate="A" pin="8"/>
-<wire x1="71.12" y1="226.06" x2="78.74" y2="226.06" width="0.1524" layer="91"/>
-<label x="78.74" y="226.06" size="1.27" layer="95" xref="yes"/>
+<wire x1="71.12" y1="228.6" x2="78.74" y2="228.6" width="0.1524" layer="91"/>
+<label x="78.74" y="228.6" size="1.27" layer="95" xref="yes"/>
+<pinref part="U5" gate="A" pin="6"/>
 </segment>
 <segment>
-<pinref part="U6" gate="A" pin="8"/>
-<wire x1="71.12" y1="68.58" x2="78.74" y2="68.58" width="0.1524" layer="91"/>
-<label x="78.74" y="68.58" size="1.27" layer="95" xref="yes"/>
+<wire x1="71.12" y1="71.12" x2="81.28" y2="71.12" width="0.1524" layer="91"/>
+<label x="81.28" y="71.12" size="1.27" layer="95" xref="yes"/>
+<pinref part="U6" gate="A" pin="6"/>
 </segment>
 </net>
 <net name="LED_STATUS_4" class="0">
@@ -12563,14 +12571,14 @@ MK20DX256</description>
 <label x="45.72" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U5" gate="A" pin="10"/>
-<wire x1="71.12" y1="223.52" x2="78.74" y2="223.52" width="0.1524" layer="91"/>
-<label x="78.74" y="223.52" size="1.27" layer="95" xref="yes"/>
+<wire x1="71.12" y1="231.14" x2="78.74" y2="231.14" width="0.1524" layer="91"/>
+<label x="78.74" y="231.14" size="1.27" layer="95" xref="yes"/>
+<pinref part="U5" gate="A" pin="4"/>
 </segment>
 <segment>
-<pinref part="U6" gate="A" pin="10"/>
-<wire x1="71.12" y1="66.04" x2="78.74" y2="66.04" width="0.1524" layer="91"/>
-<label x="78.74" y="66.04" size="1.27" layer="95" xref="yes"/>
+<wire x1="71.12" y1="73.66" x2="81.28" y2="73.66" width="0.1524" layer="91"/>
+<label x="81.28" y="73.66" size="1.27" layer="95" xref="yes"/>
+<pinref part="U6" gate="A" pin="4"/>
 </segment>
 </net>
 <net name="LED_STATUS_1" class="0">
@@ -12581,14 +12589,14 @@ MK20DX256</description>
 <label x="45.72" y="162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U5" gate="A" pin="4"/>
-<wire x1="71.12" y1="231.14" x2="78.74" y2="231.14" width="0.1524" layer="91"/>
-<label x="78.74" y="231.14" size="1.27" layer="95" xref="yes"/>
+<wire x1="71.12" y1="223.52" x2="78.74" y2="223.52" width="0.1524" layer="91"/>
+<label x="78.74" y="223.52" size="1.27" layer="95" xref="yes"/>
+<pinref part="U5" gate="A" pin="10"/>
 </segment>
 <segment>
-<pinref part="U6" gate="A" pin="4"/>
-<wire x1="71.12" y1="73.66" x2="78.74" y2="73.66" width="0.1524" layer="91"/>
-<label x="78.74" y="73.66" size="1.27" layer="95" xref="yes"/>
+<wire x1="71.12" y1="66.04" x2="81.28" y2="66.04" width="0.1524" layer="91"/>
+<label x="81.28" y="66.04" size="1.27" layer="95" xref="yes"/>
+<pinref part="U6" gate="A" pin="10"/>
 </segment>
 </net>
 </nets>
