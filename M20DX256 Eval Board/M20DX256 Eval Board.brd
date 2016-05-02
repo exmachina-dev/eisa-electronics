@@ -132,9 +132,9 @@
 <text x="2.342" y="26.454" size="0.8128" layer="21">1</text>
 <text x="52.094" y="26.454" size="0.8128" layer="21">21</text>
 <text x="52.602" y="2.8" size="0.8128" layer="21">1</text>
-<text x="6.223" y="2.3" size="0.8128" layer="21">20</text>
-<text x="-0.198" y="28.486" size="0.8128" layer="21">J3</text>
-<text x="54.634" y="1.022" size="0.8128" layer="21">J2</text>
+<text x="2.323" y="2.9" size="0.8128" layer="21">21</text>
+<text x="0.402" y="28.086" size="0.8128" layer="21">J3</text>
+<text x="53.934" y="1.222" size="0.8128" layer="21">J2</text>
 </plain>
 <libraries>
 <library name="rcl">
