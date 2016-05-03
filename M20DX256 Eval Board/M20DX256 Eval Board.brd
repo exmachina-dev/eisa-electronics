@@ -128,7 +128,7 @@
 <text x="8.636" y="8.763" size="0.8128" layer="21">+3V3</text>
 <text x="8.636" y="6.223" size="0.8128" layer="21">+5V</text>
 <text x="3.683" y="4.556" size="0.8128" layer="21">GND</text>
-<text x="14.37" y="21.709" size="0.8128" layer="21">KZDX256 Proto Board Rev A1</text>
+<text x="13.87" y="21.709" size="0.8128" layer="21">KZDX256 Proto Board Rev A1</text>
 <text x="2.342" y="26.454" size="0.8128" layer="21">1</text>
 <text x="52.094" y="26.454" size="0.8128" layer="21">21</text>
 <text x="52.602" y="2.8" size="0.8128" layer="21">1</text>
@@ -2455,15 +2455,15 @@ Your Eurocircuits Team
 <attribute name="MF" value="" x="53.75" y="26.5" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="53.75" y="26.5" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U$3" library="exmachina" package="EXM-LOGO-BASELINE" value="EXMACHINA-LOGO-NAME" x="10.592" y="22.217">
-<attribute name="OC_NEWARK" value="unknown" x="10.592" y="22.217" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="" x="10.592" y="22.217" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="10.592" y="22.217" size="1.778" layer="27" display="off"/>
+<element name="U$3" library="exmachina" package="EXM-LOGO-BASELINE" value="EXMACHINA-LOGO-NAME" x="9.992" y="22.017">
+<attribute name="OC_NEWARK" value="unknown" x="9.992" y="22.017" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="9.992" y="22.017" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="9.992" y="22.017" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U$4" library="cc-by-sa" package="CC-BY-NC-SA" value="CC-BY-NC-SA" x="37.746" y="23.405">
-<attribute name="OC_NEWARK" value="unknown" x="37.746" y="23.405" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="" x="37.746" y="23.405" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="37.746" y="23.405" size="1.778" layer="27" display="off"/>
+<element name="U$4" library="cc-by-sa" package="CC-BY-NC-SA" value="CC-BY-NC-SA" x="39.746" y="23.005">
+<attribute name="OC_NEWARK" value="unknown" x="39.746" y="23.005" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="39.746" y="23.005" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="39.746" y="23.005" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>
