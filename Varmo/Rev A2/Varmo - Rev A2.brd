@@ -156,7 +156,7 @@
 <hole x="60.25" y="76.125" drill="0.5"/>
 <wire x1="62" y1="87" x2="62" y2="77" width="0" layer="20"/>
 <text x="23.25" y="33.5" size="1.4224" layer="21">ON</text>
-<text x="57.535" y="37.465" size="1.4224" layer="21" ratio="10" rot="SR270" align="top-left">Varmo
+<text x="73.435" y="5.935" size="1.4224" layer="21" ratio="10" rot="SR0" align="top-left">Varmo
 Rev A1</text>
 <wire x1="62" y1="0" x2="102" y2="0" width="0" layer="20"/>
 <wire x1="102" y1="0" x2="102" y2="8" width="0" layer="20"/>
@@ -3196,7 +3196,7 @@ Your Eurocircuits Team
 <attribute name="OC_NEWARK" value="86T3500" x="38.75" y="27" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="38.75" y="27" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="U$6" library="exmachina" package="EXM-LOGO-BASELINE" value="EXMACHINA-LOGO-NAME" x="57.535" y="41.275" rot="SR270"/>
+<element name="U$6" library="exmachina" package="EXM-LOGO-BASELINE" value="EXMACHINA-LOGO-NAME" x="84.225" y="9.335" rot="SR0"/>
 <element name="U1" library="lineartechnology" package="SOIC8" value="LT1813CS8" x="88.29" y="77.075" rot="R90"/>
 <element name="T1" library="transistor" package="SOT−23" value="MMBT2222AL" x="93.365" y="77.51" rot="R270"/>
 <element name="R1" library="rcl" package="R0603" value="100R" x="95.295" y="73.94" rot="R90"/>
@@ -3284,31 +3284,31 @@ Your Eurocircuits Team
 <element name="MP2" library="holes" package="P2.5" value="MOUNT-PAD2.5" x="3" y="84"/>
 <element name="MP3" library="holes" package="P2.5" value="MOUNT-PAD2.5" x="57" y="3"/>
 <element name="MP4" library="holes" package="P2.5" value="MOUNT-PAD2.5" x="57" y="84"/>
-<element name="J6" library="con-molex" package="7395-03" value="22-05-7038-03" x="5.5" y="51.5" rot="R270">
-<attribute name="OC_NEWARK" value="unknown" x="23.5" y="61.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_FARNELL" value="9731610 " x="23.5" y="61.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="" x="23.5" y="61.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="" x="23.5" y="61.5" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="J6" library="con-molex" package="7395-03" value="22-05-7038-03" x="5.2" y="72.5" rot="R270">
+<attribute name="OC_NEWARK" value="unknown" x="23.2" y="82.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="9731610 " x="23.2" y="82.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="23.2" y="82.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="23.2" y="82.5" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="J7" library="con-molex" package="7395-02" value="22-05-7028-02" x="5.5" y="42.5" rot="R270">
-<attribute name="OC_NEWARK" value="unknown" x="23" y="50.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_FARNELL" value="9731601" x="23" y="50.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="" x="23" y="50.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="" x="23" y="50.5" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="J7" library="con-molex" package="7395-02" value="22-05-7028-02" x="5.2" y="63.5" rot="R270">
+<attribute name="OC_NEWARK" value="unknown" x="22.7" y="71.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="9731601" x="22.7" y="71.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="22.7" y="71.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="22.7" y="71.5" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="J8" library="con-molex" package="7395-02" value="22-05-7028-02" x="5.5" y="25" rot="R270">
-<attribute name="OC_NEWARK" value="unknown" x="23" y="33" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_FARNELL" value="9731601" x="23" y="33" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="" x="23" y="33" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="" x="23" y="33" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="J8" library="con-molex" package="7395-02" value="22-05-7028-02" x="5.2" y="46" rot="R270">
+<attribute name="OC_NEWARK" value="unknown" x="22.7" y="54" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="9731601" x="22.7" y="54" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="22.7" y="54" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="22.7" y="54" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="J9" library="con-molex" package="7395-03" value="22-05-7038-03" x="5.5" y="33" rot="R270">
-<attribute name="OC_NEWARK" value="unknown" x="23.5" y="43" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_FARNELL" value="9731610 " x="23.5" y="43" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="" x="23.5" y="43" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="" x="23.5" y="43" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="J9" library="con-molex" package="7395-03" value="22-05-7038-03" x="5.2" y="54" rot="R270">
+<attribute name="OC_NEWARK" value="unknown" x="23.2" y="64" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="9731610 " x="23.2" y="64" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="23.2" y="64" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="23.2" y="64" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="U$1" library="cc-by-sa" package="CC-BY-NC-SA" value="CC-BY-NC-SA" x="51.5" y="32.5" rot="R270"/>
+<element name="U$1" library="cc-by-sa" package="CC-BY-NC-SA" value="CC-BY-NC-SA" x="92.7" y="4.3"/>
 <element name="ENC1" library="encoder" package="RKJXT1F" value="RKJXTF42001" x="117.5" y="56.4"/>
 <element name="X2" library="Molex_By_element14_Batch_1" package="MOLEX_90814-0210" value="90814-0210" x="123.6" y="79" rot="MR0">
 <attribute name="MF" value="" x="123.6" y="79" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -3353,13 +3353,13 @@ Your Eurocircuits Team
 <attribute name="OC_NEWARK" value="86T3500" x="125.6" y="43.4" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="MCMR06X000 PTL" x="125.6" y="43.4" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="X1" library="Molex_By_element14_Batch_1" package="MOLEX_90814-0210" value="90814-0210" x="2.5" y="59.5" rot="MR90">
-<attribute name="MF" value="" x="22" y="41.5" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="OC_NEWARK" value="34R6217" x="22" y="41.5" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="PACKAGE" value="CONN-10POS" x="22" y="41.5" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="MPN" value="90814-0210" x="22" y="41.5" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="SUPPLIER" value="Molex" x="22" y="41.5" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="OC_FARNELL" value="1757026" x="22" y="41.5" size="1.778" layer="28" rot="MR90" display="off"/>
+<element name="X1" library="Molex_By_element14_Batch_1" package="MOLEX_90814-0210" value="90814-0210" x="56.2" y="43.1" rot="MR270">
+<attribute name="MF" value="" x="36.7" y="61.1" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="OC_NEWARK" value="34R6217" x="36.7" y="61.1" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="PACKAGE" value="CONN-10POS" x="36.7" y="61.1" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MPN" value="90814-0210" x="36.7" y="61.1" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="SUPPLIER" value="Molex" x="36.7" y="61.1" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="OC_FARNELL" value="1757026" x="36.7" y="61.1" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="MP5" library="holes" package="P2.5" value="MOUNT-PAD2.5" x="107.5" y="75.2"/>
 <element name="MP6" library="holes" package="P2.5" value="MOUNT-PAD2.5" x="107.1" y="39"/>
@@ -3646,8 +3646,8 @@ Your Eurocircuits Team
 <wire x1="15.75" y1="73.5454" x2="20.35" y2="74.25" width="0" layer="19" extent="1-1"/>
 <wire x1="13" y1="73.1" x2="15.75" y2="73.5454" width="0" layer="19" extent="1-1"/>
 <wire x1="9.9" y1="74.25" x2="13" y2="73.1" width="0" layer="19" extent="1-1"/>
-<wire x1="8.4944" y1="70.93" x2="9.9" y2="74.25" width="0" layer="19" extent="1-16"/>
-<wire x1="64.5" y1="66.84" x2="56" y2="55.88" width="0" layer="19" extent="16-16"/>
+<wire x1="21.02" y1="82" x2="20.35" y2="74.25" width="0" layer="19" extent="1-1"/>
+<wire x1="64.5" y1="38.9" x2="56.2" y2="38.02" width="0" layer="19" extent="16-16"/>
 <wire x1="112.17" y1="84.9944" x2="95.8" y2="78.35" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="+5V/1">
@@ -3699,9 +3699,9 @@ Your Eurocircuits Team
 <contactref element="U7" pad="1"/>
 <contactref element="C17" pad="1"/>
 <wire x1="64.5" y1="64.3" x2="56" y2="63.5" width="0" layer="19" extent="16-16"/>
+<wire x1="56.2" y1="43.1" x2="68.965" y2="39.56" width="0" layer="19" extent="1-16"/>
 <wire x1="49" y1="82" x2="64.5" y2="74.46" width="0" layer="19" extent="1-1"/>
 <wire x1="110.6" y1="42.55" x2="91.7" y2="28" width="0" layer="19" extent="1-1"/>
-<wire x1="2.5" y1="59.5" x2="17.4004" y2="34.8886" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="ESW3_TX_ISO">
 <contactref element="R40" pad="2"/>
@@ -4299,7 +4299,7 @@ Your Eurocircuits Team
 <wire x1="125.3" y1="57.9" x2="126.6" y2="56.6" width="0.1778" layer="1"/>
 <wire x1="121.06" y1="79" x2="121.1" y2="78.96" width="0.1778" layer="16"/>
 <wire x1="121.1" y1="78.96" x2="121.1" y2="65.95" width="0.1778" layer="16"/>
-<wire x1="2.5" y1="62.04" x2="121.1" y2="65.95" width="0" layer="19" extent="16-16"/>
+<wire x1="56.2" y1="40.56" x2="125.6" y2="44.25" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="ENCODER_A">
 <contactref element="ENC1" pad="ENCODERA"/>
@@ -4317,7 +4317,7 @@ Your Eurocircuits Team
 <wire x1="108" y1="56.6" x2="108" y2="58.6" width="0.1778" layer="16"/>
 <wire x1="108" y1="58.6" x2="112.1" y2="62.7" width="0.1778" layer="16"/>
 <wire x1="112.1" y1="62.7" x2="112.1" y2="68.95" width="0.1778" layer="16"/>
-<wire x1="8.4944" y1="60.77" x2="108" y2="58.6" width="0" layer="19" extent="16-16"/>
+<wire x1="50.2056" y1="41.83" x2="108" y2="56.6" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="DIR_A">
 <contactref element="ENC1" pad="A"/>
@@ -4332,7 +4332,7 @@ Your Eurocircuits Team
 <wire x1="116" y1="52.8" x2="117.8" y2="54.6" width="0.1778" layer="16"/>
 <wire x1="117.25" y1="84.9944" x2="117.25" y2="63.45" width="0.1778" layer="16"/>
 <wire x1="117.25" y1="63.45" x2="117.8" y2="62.9" width="0.1778" layer="16"/>
-<wire x1="8.4944" y1="65.85" x2="116" y2="52.8" width="0" layer="19" extent="16-16"/>
+<wire x1="50.2056" y1="36.75" x2="115.6" y2="44.25" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="DIR_B">
 <contactref element="ENC1" pad="B"/>
@@ -4353,7 +4353,7 @@ Your Eurocircuits Team
 <wire x1="124.6" y1="54.9" x2="125.3" y2="54.9" width="0.1778" layer="16"/>
 <wire x1="116.1" y1="67.7" x2="116.1" y2="78.88" width="0.1778" layer="16"/>
 <wire x1="116.1" y1="78.88" x2="115.98" y2="79" width="0.1778" layer="16"/>
-<wire x1="2.5" y1="67.12" x2="116.1" y2="67.7" width="0" layer="19" extent="16-16"/>
+<wire x1="56.2" y1="35.48" x2="123.1" y2="44.25" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="DIR_C">
 <contactref element="ENC1" pad="C"/>
@@ -4368,7 +4368,7 @@ Your Eurocircuits Team
 <wire x1="120.6" y1="62.6" x2="119" y2="64.2" width="0.1778" layer="1"/>
 <wire x1="118.5" y1="66.7" x2="119" y2="66.2" width="0.1778" layer="1"/>
 <wire x1="119" y1="66.2" x2="119" y2="64.2" width="0.1778" layer="1"/>
-<wire x1="8.4944" y1="68.39" x2="114.71" y2="66.84" width="0" layer="19" extent="16-16"/>
+<wire x1="50.2056" y1="34.21" x2="120.6" y2="44.25" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="DIR_D">
 <contactref element="ENC1" pad="D"/>
@@ -4382,7 +4382,7 @@ Your Eurocircuits Team
 <wire x1="111.8" y1="46.7" x2="113.1" y2="45.4" width="0.1778" layer="1"/>
 <wire x1="109.7" y1="57.9" x2="113.44" y2="61.64" width="0.1778" layer="16"/>
 <wire x1="109.7" y1="57.8" x2="109.7" y2="57.9" width="0.1778" layer="1"/>
-<wire x1="2.5" y1="69.66" x2="109.7" y2="57.9" width="0" layer="19" extent="16-16"/>
+<wire x1="56.2" y1="32.94" x2="111.8" y2="46.7" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="PUSH">
 <contactref element="ENC1" pad="PUSH"/>
@@ -4397,7 +4397,7 @@ Your Eurocircuits Team
 <wire x1="118.5" y1="61.85" x2="120.05" y2="63.4" width="0.1778" layer="16"/>
 <wire x1="119.79" y1="70.49" x2="119.79" y2="84.9944" width="0.1778" layer="16"/>
 <wire x1="119.79" y1="70.49" x2="120.05" y2="70.23" width="0.1778" layer="16"/>
-<wire x1="8.4944" y1="63.31" x2="118.5" y2="61.85" width="0" layer="19" extent="16-16"/>
+<wire x1="50.2056" y1="39.29" x2="118.1" y2="44.25" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$40">
 <contactref element="ENC1" pad="COM"/>
@@ -4591,10 +4591,10 @@ Your Eurocircuits Team
 <approved hash="2,20,63532b7e39aa077c"/>
 <approved hash="2,20,99bab44731bf32b9"/>
 <approved hash="2,20,1b532b73eca2f279"/>
-<approved hash="2,20,e9bab49fd862dbba"/>
-<approved hash="2,20,6b42696e46ab1a7a"/>
-<approved hash="2,20,f53bea72858ec43a"/>
 <approved hash="2,20,6b532bab057f1b7a"/>
+<approved hash="2,20,e9bab49fd862dbba"/>
+<approved hash="2,20,f53bea72858ec43a"/>
+<approved hash="2,20,6b42696e46ab1a7a"/>
 <approved hash="2,20,634269643ba3c779"/>
 <approved hash="2,20,e1bab495a56a06b9"/>
 <approved hash="2,20,63532ba17877c679"/>
@@ -4602,8 +4602,8 @@ Your Eurocircuits Team
 <approved hash="2,20,789b667ef023803d"/>
 <approved hash="2,20,fcb8e78236c44305"/>
 <approved hash="2,20,fd3beaa7b95bd83c"/>
-<approved hash="2,20,634269bb7a7e067c"/>
 <approved hash="2,20,62b2c7d4d4e1077c"/>
+<approved hash="2,20,634269bb7a7e067c"/>
 <approved hash="2,20,e35d411813c2c77c"/>
 <approved hash="2,20,789b6672432a6f3e"/>
 <approved hash="2,20,fcb8e78e85cdac06"/>
@@ -4613,8 +4613,8 @@ Your Eurocircuits Team
 <approved hash="2,20,1ab2c7d901e9f279"/>
 <approved hash="2,20,d250710d285d76d2"/>
 <approved hash="2,20,dcca7bd02f387b5c"/>
-<approved hash="2,20,abca0cd3947bc01c"/>
 <approved hash="2,20,a550060e931ecd92"/>
+<approved hash="2,20,abca0cd3947bc01c"/>
 </errors>
 </board>
 </drawing>

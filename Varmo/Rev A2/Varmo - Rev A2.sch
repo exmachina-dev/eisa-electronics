@@ -11632,7 +11632,7 @@ Small SMD resonator. This is the itty bitty 10/20MHz resonators with built in ca
 <instance part="MP5" gate="1" x="167.64" y="93.98"/>
 <instance part="MP6" gate="1" x="154.94" y="93.98"/>
 <instance part="MP7" gate="1" x="142.24" y="93.98"/>
-<instance part="MP8" gate="1" x="132.08" y="93.98"/>
+<instance part="MP8" gate="1" x="116.84" y="93.98"/>
 <instance part="U7" gate="A" x="264.16" y="233.68"/>
 <instance part="C17" gate="G$1" x="226.06" y="223.52">
 <attribute name="OC_NEWARK" x="226.06" y="223.52" size="1.778" layer="96" display="off"/>
