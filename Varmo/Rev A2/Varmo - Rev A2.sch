@@ -10834,6 +10834,94 @@ Small SMD resonator. This is the itty bitty 10/20MHz resonators with built in ca
 </deviceset>
 </devicesets>
 </library>
+<library name="microchip-6">
+<packages>
+<package name="SOT230P700X180-4N">
+<smd name="1" x="-3.2004" y="2.3114" dx="1.6256" dy="0.889" layer="1"/>
+<smd name="2" x="-3.2004" y="0" dx="1.6256" dy="0.889" layer="1"/>
+<smd name="3" x="-3.2004" y="-2.3114" dx="1.6256" dy="0.889" layer="1"/>
+<smd name="4" x="3.2004" y="0" dx="1.6256" dy="3.175" layer="1"/>
+<wire x1="1.8542" y1="-3.3528" x2="1.8542" y2="-1.5748" width="0.1524" layer="51"/>
+<wire x1="1.8542" y1="1.5748" x2="1.8542" y2="3.3528" width="0.1524" layer="51"/>
+<wire x1="-1.8542" y1="3.3528" x2="-1.8542" y2="2.7432" width="0.1524" layer="51"/>
+<text x="-4.0132" y="2.3876" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
+<wire x1="-1.8542" y1="1.8796" x2="-1.8542" y2="0.4318" width="0.1524" layer="51"/>
+<wire x1="-1.8542" y1="-0.4318" x2="-1.8542" y2="-1.8796" width="0.1524" layer="51"/>
+<wire x1="-1.8542" y1="-2.7432" x2="-1.8542" y2="-3.3528" width="0.1524" layer="51"/>
+<text x="-4.0132" y="2.3876" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
+<text x="-4.8006" y="3.556" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-5.715" y="-5.8674" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
+<wire x1="-1.8542" y1="1.8796" x2="-1.8542" y2="2.7432" width="0.1524" layer="51"/>
+<wire x1="-1.8542" y1="2.7432" x2="-3.6576" y2="2.7432" width="0.1524" layer="51"/>
+<wire x1="-3.6576" y1="2.7432" x2="-3.6576" y2="1.8796" width="0.1524" layer="51"/>
+<wire x1="-3.6576" y1="1.8796" x2="-1.8542" y2="1.8796" width="0.1524" layer="51"/>
+<wire x1="-1.8542" y1="-0.4318" x2="-1.8542" y2="0.4318" width="0.1524" layer="51"/>
+<wire x1="-1.8542" y1="0.4318" x2="-3.6576" y2="0.4318" width="0.1524" layer="51"/>
+<wire x1="-3.6576" y1="0.4318" x2="-3.6576" y2="-0.4318" width="0.1524" layer="51"/>
+<wire x1="-3.6576" y1="-0.4318" x2="-1.8542" y2="-0.4318" width="0.1524" layer="51"/>
+<wire x1="-1.8542" y1="-2.7432" x2="-1.8542" y2="-1.8796" width="0.1524" layer="51"/>
+<wire x1="-1.8542" y1="-1.8796" x2="-3.6576" y2="-1.8796" width="0.1524" layer="51"/>
+<wire x1="-3.6576" y1="-1.8796" x2="-3.6576" y2="-2.7432" width="0.1524" layer="51"/>
+<wire x1="-3.6576" y1="-2.7432" x2="-1.8542" y2="-2.7432" width="0.1524" layer="51"/>
+<wire x1="1.8542" y1="-1.5748" x2="3.6576" y2="-1.5748" width="0.1524" layer="51"/>
+<wire x1="3.6576" y1="-1.5748" x2="3.6576" y2="1.6002" width="0.1524" layer="51"/>
+<wire x1="3.6576" y1="1.6002" x2="1.8542" y2="1.5748" width="0.1524" layer="51"/>
+<wire x1="-1.8542" y1="-3.3528" x2="1.8542" y2="-3.3528" width="0.1524" layer="51"/>
+<wire x1="1.8542" y1="-1.5748" x2="1.8542" y2="1.5748" width="0.1524" layer="51"/>
+<wire x1="1.8542" y1="3.3528" x2="-1.8542" y2="3.3528" width="0.1524" layer="51"/>
+<wire x1="-1.8542" y1="2.7432" x2="-1.8542" y2="-2.7432" width="0.1524" layer="51"/>
+<text x="-4.0132" y="2.3876" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
+<wire x1="-1.8542" y1="-3.3528" x2="1.8542" y2="-3.3528" width="0.1524" layer="21"/>
+<wire x1="1.8542" y1="-3.3528" x2="1.8542" y2="3.3528" width="0.1524" layer="21"/>
+<wire x1="1.8542" y1="3.3528" x2="-1.8542" y2="3.3528" width="0.1524" layer="21"/>
+<wire x1="-1.8542" y1="3.3528" x2="-1.8542" y2="-3.3528" width="0.1524" layer="21"/>
+<text x="-4.0132" y="2.3876" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
+<text x="-4.8006" y="3.556" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-5.715" y="-5.8674" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="TC1262">
+<pin name="VIN" x="-22.86" y="0" length="middle" direction="in"/>
+<pin name="GND" x="-22.86" y="-5.08" length="middle" direction="pas"/>
+<pin name="GND_2" x="-22.86" y="-7.62" length="middle" direction="pas"/>
+<pin name="VOUT" x="22.86" y="-5.08" length="middle" direction="out" rot="R180"/>
+<wire x1="-17.78" y1="5.08" x2="-17.78" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="-17.78" y1="-12.7" x2="17.78" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="17.78" y1="-12.7" x2="17.78" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="17.78" y1="5.08" x2="-17.78" y2="5.08" width="0.4064" layer="94"/>
+<text x="-4.5974" y="6.2992" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-5.588" y="-15.3416" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TC1262-3.3" prefix="U">
+<description>IC, 500mA Fixed Output CMOS LDO,3.3V,SOT-223, 3-lead</description>
+<gates>
+<gate name="A" symbol="TC1262" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT230P700X180-4N">
+<connects>
+<connect gate="A" pin="GND" pad="2"/>
+<connect gate="A" pin="GND_2" pad="4"/>
+<connect gate="A" pin="VIN" pad="1"/>
+<connect gate="A" pin="VOUT" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="TC1262-3.3VDB" constant="no"/>
+<attribute name="OC_FARNELL" value="1852183" constant="no"/>
+<attribute name="OC_NEWARK" value="53R0370" constant="no"/>
+<attribute name="PACKAGE" value="SOT-223-3" constant="no"/>
+<attribute name="SUPPLIER" value="Microchip" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -11197,6 +11285,21 @@ Small SMD resonator. This is the itty bitty 10/20MHz resonators with built in ca
 <part name="Y1" library="crystal" deviceset="ABS07-?" device="32.768KHZ" value="32.768kHz, 12.5pF"/>
 <part name="Y2" library="resonator" deviceset="RESONATOR" device="SMD" value="8MHz"/>
 <part name="SUPPLY46" library="supply2" deviceset="GND1" device=""/>
+<part name="U7" library="microchip-6" deviceset="TC1262-3.3" device=""/>
+<part name="C17" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value="MC0603X475K100CT"/>
+<attribute name="OC_NEWARK" value="06X6198"/>
+</part>
+<part name="C18" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value="MC0603X475K100CT"/>
+<attribute name="OC_NEWARK" value="06X6198"/>
+</part>
+<part name="+3V12" library="supply1" deviceset="+3V3" device=""/>
+<part name="SUPPLY48" library="supply2" deviceset="GND1" device=""/>
+<part name="SUPPLY49" library="supply2" deviceset="GND1" device=""/>
+<part name="SUPPLY50" library="supply2" deviceset="+5V/1" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11530,6 +11633,21 @@ Small SMD resonator. This is the itty bitty 10/20MHz resonators with built in ca
 <instance part="MP6" gate="1" x="154.94" y="93.98"/>
 <instance part="MP7" gate="1" x="142.24" y="93.98"/>
 <instance part="MP8" gate="1" x="132.08" y="93.98"/>
+<instance part="U7" gate="A" x="264.16" y="233.68"/>
+<instance part="C17" gate="G$1" x="226.06" y="223.52">
+<attribute name="OC_NEWARK" x="226.06" y="223.52" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="226.06" y="223.52" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="226.06" y="223.52" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C18" gate="G$1" x="297.18" y="223.52">
+<attribute name="OC_NEWARK" x="297.18" y="223.52" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="297.18" y="223.52" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="297.18" y="223.52" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="+3V12" gate="G$1" x="297.18" y="238.76"/>
+<instance part="SUPPLY48" gate="G$1" x="297.18" y="210.82"/>
+<instance part="SUPPLY49" gate="G$1" x="226.06" y="210.82"/>
+<instance part="SUPPLY50" gate="G$1" x="226.06" y="243.84"/>
 </instances>
 <busses>
 </busses>
@@ -11851,6 +11969,26 @@ Small SMD resonator. This is the itty bitty 10/20MHz resonators with built in ca
 <wire x1="127" y1="12.7" x2="127" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="127" y1="25.4" x2="129.54" y2="25.4" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="SUPPLY49" gate="G$1" pin="GND1"/>
+<pinref part="C17" gate="G$1" pin="2"/>
+<wire x1="226.06" y1="213.36" x2="226.06" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="U7" gate="A" pin="GND"/>
+<wire x1="226.06" y1="215.9" x2="226.06" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="228.6" x2="236.22" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="228.6" x2="236.22" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="226.06" x2="236.22" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="215.9" x2="226.06" y2="215.9" width="0.1524" layer="91"/>
+<junction x="226.06" y="215.9"/>
+<pinref part="U7" gate="A" pin="GND_2"/>
+<wire x1="241.3" y1="226.06" x2="236.22" y2="226.06" width="0.1524" layer="91"/>
+<junction x="236.22" y="226.06"/>
+</segment>
+<segment>
+<pinref part="C18" gate="G$1" pin="2"/>
+<pinref part="SUPPLY48" gate="G$1" pin="GND1"/>
+<wire x1="297.18" y1="218.44" x2="297.18" y2="213.36" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+5V/1" class="0">
 <segment>
@@ -11934,6 +12072,15 @@ Small SMD resonator. This is the itty bitty 10/20MHz resonators with built in ca
 <pinref part="SUPPLY40" gate="G$1" pin="+5V/1"/>
 <wire x1="129.54" y1="30.48" x2="127" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="127" y1="30.48" x2="127" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U7" gate="A" pin="VIN"/>
+<pinref part="SUPPLY50" gate="G$1" pin="+5V/1"/>
+<wire x1="241.3" y1="233.68" x2="226.06" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="233.68" x2="226.06" y2="241.3" width="0.1524" layer="91"/>
+<pinref part="C17" gate="G$1" pin="1"/>
+<wire x1="226.06" y1="226.06" x2="226.06" y2="233.68" width="0.1524" layer="91"/>
+<junction x="226.06" y="233.68"/>
 </segment>
 </net>
 <net name="ESW3_TX_ISO" class="0">
@@ -12208,6 +12355,15 @@ Small SMD resonator. This is the itty bitty 10/20MHz resonators with built in ca
 <pinref part="C16" gate="G$1" pin="1"/>
 <wire x1="302.26" y1="124.46" x2="302.26" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="+3V11" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="U7" gate="A" pin="VOUT"/>
+<pinref part="C18" gate="G$1" pin="1"/>
+<wire x1="287.02" y1="228.6" x2="297.18" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="228.6" x2="297.18" y2="226.06" width="0.1524" layer="91"/>
+<pinref part="+3V12" gate="G$1" pin="+3V3"/>
+<wire x1="297.18" y1="236.22" x2="297.18" y2="228.6" width="0.1524" layer="91"/>
+<junction x="297.18" y="228.6"/>
 </segment>
 </net>
 <net name="ENCODER_B" class="0">
