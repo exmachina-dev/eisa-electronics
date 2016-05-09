@@ -168,7 +168,7 @@
 <vertex x="0.40131875" y="0.251459375"/>
 <vertex x="2.839721875" y="0.327659375"/>
 </polygon>
-<text x="3.81" y="0.889" size="1.27" layer="21" font="vector" ratio="10">ExMachina</text>
+<text x="3.81" y="0.889" size="1.27" layer="21" font="vector" ratio="10" rot="SR0">ExMachina</text>
 </package>
 <package name="EXM-LOGO-BIG">
 <description>ExMachina logo</description>
