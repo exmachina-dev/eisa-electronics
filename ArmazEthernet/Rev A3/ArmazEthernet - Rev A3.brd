@@ -9,19 +9,19 @@
 <grid distance="7" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -44,7 +44,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
@@ -53,7 +53,7 @@
 <layer number="95" name="Names" color="7" fill="1" visible="no" active="no"/>
 <layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="38" fill="1" visible="no" active="yes"/>
-<layer number="3" name="Route3" color="16" fill="1" visible="yes" active="yes"/>
+<layer number="3" name="Route3" color="16" fill="1" visible="no" active="yes"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
@@ -160,7 +160,7 @@
 <hole x="63" y="39.25" drill="0.5"/>
 <hole x="62.325" y="39.25" drill="0.5"/>
 <hole x="63.675" y="39.25" drill="0.5"/>
-<text x="88.2" y="74.4" size="1.016" layer="21">ArmazEthernet
+<text x="48.5506" y="67.9992" size="1.016" layer="22" rot="MR0">ArmazEthernet
 Rev A2</text>
 <text x="33" y="34" size="1.016" layer="21">ArmazEthernet
 Rev A2</text>
@@ -3336,10 +3336,10 @@ Your Eurocircuits Team
 </element>
 <element name="U$3" library="mentor" package="1275.100" value="" x="31" y="28" rot="R180"/>
 <element name="U$4" library="mentor" package="1275.100" value="" x="31" y="22.5" rot="R180"/>
-<element name="U$5" library="exmachina" package="EXM-LOGO-BASELINE" value="EXMACHINA-LOGO-NAME" x="84.3" y="76.9">
-<attribute name="OC_NEWARK" value="unknown" x="84.3" y="76.9" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="" x="84.3" y="76.9" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="84.3" y="76.9" size="1.778" layer="27" display="off"/>
+<element name="U$5" library="exmachina" package="EXM-LOGO-BASELINE" value="EXMACHINA-LOGO-NAME" x="52.1182" y="70.1436" rot="MR0">
+<attribute name="OC_NEWARK" value="unknown" x="52.1182" y="70.1436" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MF" value="" x="52.1182" y="70.1436" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="" x="52.1182" y="70.1436" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="U$8" library="exmachina" package="EXM-LOGO-BASELINE" value="EXMACHINA-LOGO-NAME" x="29.4" y="36">
 <attribute name="OC_NEWARK" value="unknown" x="29.4" y="36" size="1.778" layer="27" display="off"/>
