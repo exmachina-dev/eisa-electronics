@@ -209,6 +209,10 @@ Rev A2</text>
 <vertex x="19" y="62.6"/>
 <vertex x="0.49" y="62.6"/>
 </polygon>
+<text x="56.76" y="72.78" size="0.8128" layer="21" rot="SR180">+5V</text>
+<text x="53.45" y="72.78" size="0.8128" layer="21" rot="SR180">+1V8</text>
+<text x="49.74" y="72.78" size="0.8128" layer="21" rot="SR180">+3V3</text>
+<text x="46.6" y="72.78" size="0.8128" layer="21" rot="SR180">GND</text>
 </plain>
 <libraries>
 <library name="rcl">
