@@ -138,7 +138,7 @@
 <wire x1="12.5" y1="20.5" x2="12.5" y2="25.5" width="0" layer="100"/>
 <dimension x1="5.5" y1="2" x2="19.5" y2="2" x3="12.5" y3="-2.5" textsize="0.6096" textratio="10" layer="100" dtype="horizontal" extoffset="3"/>
 <dimension x1="19.5" y1="2" x2="19.5" y2="44" x3="41" y3="23" textsize="0.6096" textratio="10" layer="100" dtype="vertical" extoffset="3"/>
-<text x="14.25" y="26.5" size="1.016" layer="22" ratio="10" rot="MR0">VarmoLed
+<text x="14.25" y="26.5" size="1.016" layer="22" ratio="10" rot="MR0">LampLed
 Rev A1</text>
 <text x="-1" y="2.5" size="1.016" layer="1" ratio="10" rot="R90">1</text>
 <text x="-1" y="3.5" size="1.016" layer="16" ratio="10" rot="R90">2</text>
@@ -1698,7 +1698,10 @@ Your Eurocircuits Team
 <attribute name="NAME" x="13.0456" y="27.04" size="0.6096" layer="25" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="10.2956" y="30.805" size="0.4064" layer="27" ratio="10" rot="SR0"/>
 </element>
-<element name="R6" library="rcl" package="R0603" value="100" x="14.25" y="32.25" rot="R180"/>
+<element name="R6" library="rcl" package="R0603" value="100" x="14.25" y="32.25" smashed="yes" rot="R180">
+<attribute name="NAME" x="13.115" y="33.385" size="0.6096" layer="25" ratio="10"/>
+<attribute name="VALUE" x="14.365" y="33.345" size="0.4064" layer="27" ratio="10"/>
+</element>
 </elements>
 <signals>
 <signal name="N$1">
