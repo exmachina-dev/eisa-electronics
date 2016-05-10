@@ -4012,6 +4012,9 @@ Your Eurocircuits Team
 <signal name="N$40">
 <contactref element="ENC1" pad="COM"/>
 </signal>
+<signal name="N$15">
+<contactref element="U8" pad="10"/>
+</signal>
 </signals>
 <errors>
 <approved hash="6,16,09413502e068dc2b"/>

@@ -11713,6 +11713,12 @@ MK20DX256</description>
 <busses>
 </busses>
 <nets>
+<net name="N$15" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="PTC11"/>
+<wire x1="109.22" y1="205.74" x2="116.84" y2="205.74" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
