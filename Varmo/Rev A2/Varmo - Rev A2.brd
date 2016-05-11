@@ -4051,7 +4051,15 @@ Your Eurocircuits Team
 <wire x1="114" y1="46" x2="118" y2="50" width="0.1778" layer="1"/>
 <wire x1="118" y1="50" x2="118" y2="52.2" width="0.1778" layer="1"/>
 <wire x1="118" y1="52.2" x2="115.3" y2="54.9" width="0.1778" layer="1"/>
-<wire x1="4.4" y1="50.96" x2="111.1" y2="59.95" width="0" layer="19" extent="1-16"/>
+<contactref element="U8" pad="14"/>
+<wire x1="4.4" y1="50.96" x2="5.96" y2="50.96" width="0.1778" layer="1"/>
+<wire x1="5.96" y1="50.96" x2="8" y2="53" width="0.1778" layer="1"/>
+<wire x1="8" y1="53" x2="8" y2="63" width="0.1778" layer="1"/>
+<via x="8" y="63" extent="1-16" drill="0.35"/>
+<wire x1="8" y1="63" x2="23" y2="63" width="0.1778" layer="16"/>
+<wire x1="23" y1="63" x2="24.73" y2="64.73" width="0.1778" layer="16"/>
+<wire x1="24.73" y1="64.73" x2="24.73" y2="77.04" width="0.1778" layer="16"/>
+<wire x1="24.73" y1="77.04" x2="111.06" y2="72" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="ENCODER_A">
 <contactref element="ENC1" pad="ENCODERA"/>
@@ -4070,7 +4078,15 @@ Your Eurocircuits Team
 <wire x1="100.1" y1="39.5" x2="101" y2="40.4" width="0.1778" layer="1"/>
 <wire x1="101" y1="40.4" x2="101" y2="50.6" width="0.1778" layer="1"/>
 <wire x1="101" y1="50.6" x2="99.7" y2="51.9" width="0.1778" layer="1"/>
-<wire x1="10.3944" y1="52.23" x2="98" y2="53.6" width="0" layer="19" extent="1-16"/>
+<contactref element="U8" pad="13"/>
+<wire x1="10.3944" y1="52.23" x2="13.23" y2="52.23" width="0.1778" layer="1"/>
+<wire x1="13.23" y1="52.23" x2="14" y2="53" width="0.1778" layer="1"/>
+<wire x1="14" y1="53" x2="14" y2="61" width="0.1778" layer="1"/>
+<via x="14" y="61" extent="1-16" drill="0.35"/>
+<wire x1="14" y1="61" x2="23" y2="61" width="0.1778" layer="16"/>
+<wire x1="23" y1="61" x2="27.27" y2="65.27" width="0.1778" layer="16"/>
+<wire x1="27.27" y1="65.27" x2="27.27" y2="77.04" width="0.1778" layer="16"/>
+<wire x1="27.27" y1="65.27" x2="98" y2="55.6" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="DIR_A">
 <contactref element="ENC1" pad="A"/>
@@ -4084,7 +4100,15 @@ Your Eurocircuits Team
 <wire x1="107.25" y1="60.45" x2="107.8" y2="59.9" width="0.1778" layer="16"/>
 <wire x1="105.1" y1="39.5" x2="106" y2="40.4" width="0.1778" layer="1"/>
 <wire x1="106" y1="40.4" x2="106" y2="45.6" width="0.1778" layer="1"/>
-<wire x1="10.3944" y1="47.15" x2="105.1" y2="39.5" width="0" layer="19" extent="1-1"/>
+<contactref element="U8" pad="11"/>
+<wire x1="10.3944" y1="47.15" x2="15.15" y2="47.15" width="0.1778" layer="1"/>
+<wire x1="15.15" y1="47.15" x2="18" y2="50" width="0.1778" layer="1"/>
+<wire x1="18" y1="50" x2="18" y2="57" width="0.1778" layer="1"/>
+<via x="18" y="57" extent="1-16" drill="0.35"/>
+<wire x1="18" y1="57" x2="24" y2="57" width="0.1778" layer="16"/>
+<wire x1="24" y1="57" x2="32.35" y2="65.35" width="0.1778" layer="16"/>
+<wire x1="32.35" y1="65.35" x2="32.35" y2="77.04" width="0.1778" layer="16"/>
+<wire x1="32.35" y1="77.04" x2="107.25" y2="77.9944" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="DIR_B">
 <contactref element="ENC1" pad="B"/>
@@ -4103,7 +4127,16 @@ Your Eurocircuits Team
 <wire x1="106.1" y1="64.7" x2="106.1" y2="71.88" width="0.1778" layer="16"/>
 <wire x1="106.1" y1="71.88" x2="105.98" y2="72" width="0.1778" layer="16"/>
 <wire x1="112.6" y1="39.5" x2="112.6" y2="50.4" width="0.1778" layer="1"/>
-<wire x1="4.4" y1="45.88" x2="106.1" y2="64.7" width="0" layer="19" extent="1-16"/>
+<contactref element="U8" pad="10"/>
+<wire x1="4.4" y1="45.88" x2="4.52" y2="46" width="0.1778" layer="1"/>
+<wire x1="4.52" y1="46" x2="17" y2="46" width="0.1778" layer="1"/>
+<wire x1="17" y1="46" x2="20" y2="49" width="0.1778" layer="1"/>
+<wire x1="20" y1="49" x2="20" y2="55" width="0.1778" layer="1"/>
+<via x="20" y="55" extent="1-16" drill="0.35"/>
+<wire x1="20" y1="55" x2="25" y2="55" width="0.1778" layer="16"/>
+<wire x1="25" y1="55" x2="34.89" y2="64.89" width="0.1778" layer="16"/>
+<wire x1="34.89" y1="64.89" x2="34.89" y2="77.04" width="0.1778" layer="16"/>
+<wire x1="34.89" y1="64.89" x2="106.1" y2="64.7" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="DIR_C">
 <contactref element="ENC1" pad="C"/>
@@ -4118,7 +4151,15 @@ Your Eurocircuits Team
 <wire x1="109" y1="63.2" x2="109" y2="61.2" width="0.1778" layer="1"/>
 <wire x1="110.1" y1="39.5" x2="110.1" y2="60.1" width="0.1778" layer="1"/>
 <wire x1="110.1" y1="60.1" x2="109" y2="61.2" width="0.1778" layer="1"/>
-<wire x1="10.3944" y1="44.61" x2="104.71" y2="63.84" width="0" layer="19" extent="1-16"/>
+<contactref element="U8" pad="9"/>
+<wire x1="10.3944" y1="44.61" x2="17.61" y2="44.61" width="0.1778" layer="1"/>
+<wire x1="17.61" y1="44.61" x2="22" y2="49" width="0.1778" layer="1"/>
+<wire x1="22" y1="49" x2="22" y2="53" width="0.1778" layer="1"/>
+<via x="22" y="53" extent="1-16" drill="0.35"/>
+<wire x1="22" y1="53" x2="26" y2="53" width="0.1778" layer="16"/>
+<wire x1="26" y1="53" x2="37.43" y2="64.43" width="0.1778" layer="16"/>
+<wire x1="37.43" y1="64.43" x2="37.43" y2="77.04" width="0.1778" layer="16"/>
+<wire x1="37.43" y1="77.04" x2="104.71" y2="77.9944" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="DIR_D">
 <contactref element="ENC1" pad="D"/>
@@ -4130,7 +4171,15 @@ Your Eurocircuits Team
 <wire x1="99.7" y1="54.9" x2="102" y2="52.6" width="0.1778" layer="1"/>
 <wire x1="102" y1="52.6" x2="102" y2="40.1" width="0.1778" layer="1"/>
 <wire x1="102.6" y1="39.5" x2="102" y2="40.1" width="0.1778" layer="1"/>
-<wire x1="4.4" y1="43.34" x2="99.7" y2="54.9" width="0" layer="19" extent="1-16"/>
+<contactref element="U8" pad="8"/>
+<wire x1="4.4" y1="43.34" x2="19.34" y2="43.34" width="0.1778" layer="1"/>
+<wire x1="19.34" y1="43.34" x2="24" y2="48" width="0.1778" layer="1"/>
+<wire x1="24" y1="48" x2="24" y2="51" width="0.1778" layer="1"/>
+<via x="24" y="51" extent="1-16" drill="0.35"/>
+<wire x1="24" y1="51" x2="27" y2="51" width="0.1778" layer="16"/>
+<wire x1="27" y1="51" x2="39.97" y2="63.97" width="0.1778" layer="16"/>
+<wire x1="39.97" y1="63.97" x2="39.97" y2="77.04" width="0.1778" layer="16"/>
+<wire x1="39.97" y1="63.97" x2="99.7" y2="54.9" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="PUSH">
 <contactref element="ENC1" pad="PUSH"/>
@@ -4145,7 +4194,15 @@ Your Eurocircuits Team
 <wire x1="109.79" y1="67.49" x2="110.05" y2="67.23" width="0.1778" layer="16"/>
 <wire x1="107.6" y1="39.5" x2="107.6" y2="42.7" width="0.1778" layer="1"/>
 <wire x1="107.6" y1="42.7" x2="108.5" y2="43.6" width="0.1778" layer="1"/>
-<wire x1="10.3944" y1="49.69" x2="107.6" y2="42.7" width="0" layer="19" extent="1-1"/>
+<contactref element="U8" pad="12"/>
+<wire x1="10.3944" y1="49.69" x2="13.69" y2="49.69" width="0.1778" layer="1"/>
+<wire x1="13.69" y1="49.69" x2="16" y2="52" width="0.1778" layer="1"/>
+<wire x1="16" y1="52" x2="16" y2="59" width="0.1778" layer="1"/>
+<via x="16" y="59" extent="1-16" drill="0.35"/>
+<wire x1="16" y1="59" x2="23" y2="59" width="0.1778" layer="16"/>
+<wire x1="23" y1="59" x2="29.81" y2="65.81" width="0.1778" layer="16"/>
+<wire x1="29.81" y1="65.81" x2="29.81" y2="77.04" width="0.1778" layer="16"/>
+<wire x1="29.81" y1="65.81" x2="108.5" y2="58.85" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$40">
 <contactref element="ENC1" pad="COM"/>

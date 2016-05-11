@@ -12165,6 +12165,55 @@ MK20DX256</description>
 <label x="170.18" y="208.28" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
+<net name="DIR_D" class="0">
+<segment>
+<wire x1="116.84" y1="210.82" x2="104.14" y2="210.82" width="0.1524" layer="91"/>
+<label x="104.14" y="210.82" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="PTD1"/>
+</segment>
+</net>
+<net name="ENCODER_A" class="0">
+<segment>
+<wire x1="116.84" y1="198.12" x2="106.68" y2="198.12" width="0.1524" layer="91"/>
+<label x="106.68" y="198.12" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="PTC8"/>
+</segment>
+</net>
+<net name="ENCODER_B" class="0">
+<segment>
+<wire x1="116.84" y1="195.58" x2="106.68" y2="195.58" width="0.1524" layer="91"/>
+<label x="106.68" y="195.58" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="PTC7"/>
+</segment>
+</net>
+<net name="PUSH" class="0">
+<segment>
+<wire x1="116.84" y1="200.66" x2="106.68" y2="200.66" width="0.1524" layer="91"/>
+<label x="106.68" y="200.66" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="PTC9"/>
+</segment>
+</net>
+<net name="DIR_A" class="0">
+<segment>
+<wire x1="116.84" y1="203.2" x2="104.14" y2="203.2" width="0.1524" layer="91"/>
+<label x="104.14" y="203.2" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="PTC10"/>
+</segment>
+</net>
+<net name="DIR_B" class="0">
+<segment>
+<wire x1="116.84" y1="205.74" x2="104.14" y2="205.74" width="0.1524" layer="91"/>
+<label x="104.14" y="205.74" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="PTC11"/>
+</segment>
+</net>
+<net name="DIR_C" class="0">
+<segment>
+<wire x1="116.84" y1="208.28" x2="104.14" y2="208.28" width="0.1524" layer="91"/>
+<label x="104.14" y="208.28" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="PTD0"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
