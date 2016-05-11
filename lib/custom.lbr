@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -487,8 +487,8 @@
 <pin name="PTC4" x="-20.32" y="-15.24" length="middle"/>
 <pin name="PTC3" x="-20.32" y="-17.78" length="middle"/>
 <pin name="PTC2" x="-20.32" y="-20.32" length="middle"/>
-<pin name="+3V3" x="22.86" y="25.4" length="middle" direction="pwr" rot="R180"/>
-<pin name="+5V" x="22.86" y="22.86" length="middle" direction="pwr" rot="R180"/>
+<pin name="VDD1" x="22.86" y="25.4" length="middle" direction="pwr" rot="R180"/>
+<pin name="VDD2" x="22.86" y="22.86" length="middle" direction="pwr" rot="R180"/>
 <pin name="PGA0_P" x="22.86" y="-20.32" length="middle" rot="R180"/>
 <pin name="PTC1" x="-20.32" y="-22.86" length="middle"/>
 <pin name="PTC0" x="22.86" y="20.32" length="middle" rot="R180"/>
@@ -507,7 +507,7 @@
 <pin name="PGA1_N" x="22.86" y="-12.7" length="middle" rot="R180"/>
 <pin name="PGA1_P" x="22.86" y="-15.24" length="middle" rot="R180"/>
 <pin name="PGA0_N" x="22.86" y="-17.78" length="middle" rot="R180"/>
-<pin name="GND" x="22.86" y="-22.86" length="middle" direction="pwr" rot="R180"/>
+<pin name="VSS" x="22.86" y="-22.86" length="middle" direction="pwr" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -589,10 +589,7 @@
 <devices>
 <device name="" package="MK_CUSTOM">
 <connects>
-<connect gate="G$1" pin="+3V3" pad="21 22"/>
-<connect gate="G$1" pin="+5V" pad="42"/>
 <connect gate="G$1" pin="DAC_OUT" pad="37"/>
-<connect gate="G$1" pin="GND" pad="20 23"/>
 <connect gate="G$1" pin="PGA0_N" pad="40"/>
 <connect gate="G$1" pin="PGA0_P" pad="41"/>
 <connect gate="G$1" pin="PGA1_N" pad="38"/>
@@ -629,6 +626,9 @@
 <connect gate="G$1" pin="PTD7" pad="3"/>
 <connect gate="G$1" pin="PTE0" pad="2"/>
 <connect gate="G$1" pin="PTE1" pad="1"/>
+<connect gate="G$1" pin="VDD1" pad="21 22"/>
+<connect gate="G$1" pin="VDD2" pad="42"/>
+<connect gate="G$1" pin="VSS" pad="20 23"/>
 </connects>
 <technologies>
 <technology name=""/>
