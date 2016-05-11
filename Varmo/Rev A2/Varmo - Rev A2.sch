@@ -12151,6 +12151,20 @@ MK20DX256</description>
 <pinref part="U8" gate="G$1" pin="PTC1"/>
 </segment>
 </net>
+<net name="JOGWHEEL_1" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="PTB3"/>
+<wire x1="160.02" y1="210.82" x2="170.18" y2="210.82" width="0.1524" layer="91"/>
+<label x="170.18" y="210.82" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="JOGWHEEL_2" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="PTB2"/>
+<wire x1="160.02" y1="208.28" x2="170.18" y2="208.28" width="0.1524" layer="91"/>
+<label x="170.18" y="208.28" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
