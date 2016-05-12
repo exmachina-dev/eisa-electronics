@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -72,6 +72,35 @@
 <text x="2.2" y="0.7" size="1.27" layer="21">&gt;NAME</text>
 <text x="2.2" y="-1.5" size="1.27" layer="21">&gt;VALUE</text>
 </package>
+<package name="RK097">
+<wire x1="-7.05" y1="-4.75" x2="0" y2="-4.75" width="0.127" layer="21"/>
+<wire x1="0" y1="-4.75" x2="0" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="0" y1="-3.5" x2="0" y2="-3" width="0.127" layer="21"/>
+<wire x1="0" y1="-3" x2="0" y2="3" width="0.127" layer="21"/>
+<wire x1="0" y1="3" x2="0" y2="3.5" width="0.127" layer="21"/>
+<wire x1="0" y1="3.5" x2="0" y2="4.75" width="0.127" layer="21"/>
+<wire x1="0" y1="4.75" x2="-7.05" y2="4.75" width="0.127" layer="21"/>
+<wire x1="-7.05" y1="4.75" x2="-7.05" y2="-4.75" width="0.127" layer="21"/>
+<wire x1="0" y1="3.5" x2="6.5" y2="3.5" width="0.127" layer="21"/>
+<wire x1="6.5" y1="3.5" x2="7" y2="3" width="0.127" layer="21"/>
+<wire x1="7" y1="3" x2="7" y2="-3" width="0.127" layer="21"/>
+<wire x1="7" y1="-3" x2="6.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="6.5" y1="-3.5" x2="0" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="7" y1="-3" x2="8" y2="-3" width="0.127" layer="21"/>
+<wire x1="8" y1="-3" x2="19" y2="-3" width="0.127" layer="21"/>
+<wire x1="19" y1="-3" x2="20" y2="-2" width="0.127" layer="21"/>
+<wire x1="20" y1="-2" x2="20" y2="2" width="0.127" layer="21"/>
+<wire x1="20" y1="2" x2="19" y2="3" width="0.127" layer="21"/>
+<wire x1="19" y1="3" x2="8" y2="3" width="0.127" layer="21"/>
+<wire x1="8" y1="3" x2="7" y2="3" width="0.127" layer="21"/>
+<wire x1="19" y1="3" x2="19" y2="-3" width="0.127" layer="21"/>
+<wire x1="7" y1="-3" x2="0" y2="-3" width="0.127" layer="21"/>
+<wire x1="7" y1="3" x2="0" y2="3" width="0.127" layer="21"/>
+<wire x1="8" y1="3" x2="8" y2="-3" width="0.127" layer="21"/>
+<pad name="2" x="-5" y="0" drill="1"/>
+<pad name="3" x="-5" y="2.5" drill="1"/>
+<pad name="1" x="-5" y="-2.5" drill="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="POT_EU-">
@@ -109,6 +138,24 @@
 <technologies>
 <technology name=""/>
 <technology name="-1-203E"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RK097?" prefix="R">
+<gates>
+<gate name="G$1" symbol="POT_EU-" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RK097">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="E" pad="3"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+<technology name="1110D88"/>
 </technologies>
 </device>
 </devices>
