@@ -2419,6 +2419,14 @@ Source: www.neutrik.com/... 210_257601.pdf</description>
 </package>
 </packages>
 </library>
+<library name="SparkFun">
+<packages>
+<package name="FIDUCIAL-1X2">
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
+<text x="-0.635" y="0.635" size="0.6096" layer="25">&gt;NAME</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3057,6 +3065,10 @@ Your Eurocircuits Team
 <element name="U$7" library="exmachina" package="EXM-LOGO-BASELINE" value="EXMACHINA-LOGO-NAME" x="76.2" y="10.1"/>
 <element name="U$3" library="exmachina" package="EXM-LOGO-BASELINE" value="EXMACHINA-LOGO-NAME" x="101.9" y="77.3"/>
 <element name="U$4" library="cc-by-sa" package="CC-BY-NC-SA" value="CC-BY-NC-SA" x="108" y="70"/>
+<element name="JP1" library="SparkFun" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="8" y="2"/>
+<element name="JP2" library="SparkFun" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="8" y="86"/>
+<element name="JP3" library="SparkFun" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="118" y="2"/>
+<element name="JP4" library="SparkFun" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="118" y="78"/>
 </elements>
 <signals>
 <signal name="GND">

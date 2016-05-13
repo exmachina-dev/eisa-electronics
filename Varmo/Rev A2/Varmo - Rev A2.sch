@@ -10265,6 +10265,55 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun">
+<packages>
+<package name="FIDUCIAL-1.5X3">
+<circle x="0" y="0" radius="0.9055" width="1.27" layer="29"/>
+<smd name="1" x="0" y="0" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="FIDUCIAL-1X2">
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
+<text x="-0.635" y="0.635" size="0.6096" layer="25">&gt;NAME</text>
+</package>
+<package name="FIDUCIAL-1X2.5">
+<circle x="0" y="0" radius="0.9" width="1.27" layer="29"/>
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
+</package>
+</packages>
+<symbols>
+<symbol name="FIDUCIAL">
+<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0.762" x2="-0.762" y2="-0.762" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="FIDUCIAL" prefix="JP">
+<description>&lt;b&gt;Fiducial Alignment Points&lt;/b&gt;
+Various fiducial points for machine vision alignment.</description>
+<gates>
+<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="1.5X3" package="FIDUCIAL-1.5X3">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1X2" package="FIDUCIAL-1X2">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1X2.5" package="FIDUCIAL-1X2.5">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -10643,6 +10692,10 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <part name="FRAME4" library="frames" deviceset="A3L-LOC" device=""/>
 <part name="U$3" library="exmachina" deviceset="EXMACHINA-LOGO" device="-NAME"/>
 <part name="U$4" library="cc-by-sa" deviceset="CC-BY-NC-SA" device=""/>
+<part name="JP1" library="SparkFun" deviceset="FIDUCIAL" device="1X2"/>
+<part name="JP2" library="SparkFun" deviceset="FIDUCIAL" device="1X2"/>
+<part name="JP3" library="SparkFun" deviceset="FIDUCIAL" device="1X2"/>
+<part name="JP4" library="SparkFun" deviceset="FIDUCIAL" device="1X2"/>
 </parts>
 <sheets>
 <sheet>
@@ -10931,6 +10984,10 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <instance part="MP2" gate="1" x="215.9" y="10.16"/>
 <instance part="MP3" gate="1" x="238.76" y="10.16"/>
 <instance part="MP4" gate="1" x="261.62" y="10.16"/>
+<instance part="JP1" gate="G$1" x="344.932" y="21.844"/>
+<instance part="JP2" gate="G$1" x="348.742" y="21.844"/>
+<instance part="JP3" gate="G$1" x="352.552" y="21.844"/>
+<instance part="JP4" gate="G$1" x="356.616" y="21.844"/>
 </instances>
 <busses>
 </busses>
