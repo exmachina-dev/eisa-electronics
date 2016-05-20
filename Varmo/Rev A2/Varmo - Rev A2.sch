@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5517,8 +5517,7 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 </package>
 </packages>
 <symbols>
-<symbol name="0601">
-<circle x="3.175" y="1.27" radius="0.635" width="0.1524" layer="94"/>
+<symbol name="0201">
 <wire x1="-5.715" y1="2.54" x2="-6.985" y2="0" width="0.254" layer="94"/>
 <wire x1="-6.985" y1="0" x2="-8.255" y2="2.54" width="0.254" layer="94"/>
 <wire x1="-5.715" y1="0" x2="-6.985" y2="0" width="0.254" layer="94"/>
@@ -5534,25 +5533,16 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <wire x1="-6.985" y1="2.54" x2="-8.255" y2="2.54" width="0.254" layer="94"/>
 <wire x1="-6.985" y1="2.54" x2="-6.985" y2="5.08" width="0.1524" layer="94"/>
 <wire x1="-10.16" y1="5.08" x2="-6.985" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="7.747" y1="0" x2="10.16" y2="0" width="0.1524" layer="94"/>
 <wire x1="-10.16" y1="-2.54" x2="-6.985" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="-6.985" y1="-2.54" x2="-6.985" y2="0" width="0.1524" layer="94"/>
 <wire x1="-9.525" y1="7.62" x2="-9.525" y2="-5.08" width="0.4064" layer="94"/>
 <wire x1="9.525" y1="7.62" x2="9.525" y2="-5.08" width="0.4064" layer="94"/>
 <wire x1="9.525" y1="7.62" x2="-9.525" y2="7.62" width="0.4064" layer="94"/>
 <wire x1="9.525" y1="-5.08" x2="-9.525" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="6.477" y1="5.08" x2="10.16" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="5.08" x2="-1.27" y2="-2.54" width="0.4064" layer="94" curve="-180"/>
-<wire x1="-1.27" y1="5.08" x2="-1.27" y2="3.81" width="0.4064" layer="94"/>
-<wire x1="3.81" y1="1.27" x2="5.08" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="1.27" x2="5.08" y2="0" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="0" x2="7.62" y2="0" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="3.81" x2="-2.54" y2="3.81" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="3.81" x2="-1.27" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="-2.54" y1="3.81" x2="-2.54" y2="6.35" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="6.35" x2="5.08" y2="6.35" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="6.35" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="10.16" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="5.08" x2="2.54" y2="1.27" width="0.4064" layer="94" curve="-90"/>
+<wire x1="2.54" y1="1.27" x2="-1.27" y2="-2.54" width="0.4064" layer="94" curve="-90"/>
+<wire x1="2.54" y1="1.27" x2="2.667" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="5.08" x2="-1.27" y2="-2.54" width="0.4064" layer="94"/>
 <wire x1="5.08" y1="-2.54" x2="5.08" y2="-3.81" width="0.1524" layer="94"/>
 <wire x1="-3.81" y1="-3.81" x2="5.08" y2="-3.81" width="0.1524" layer="94"/>
 <wire x1="-3.81" y1="-3.81" x2="-3.81" y2="-1.27" width="0.1524" layer="94"/>
@@ -5564,16 +5554,15 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <pin name="C" x="-12.7" y="-2.54" visible="pad" length="short" direction="pas"/>
 <pin name="GND" x="12.7" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
 <pin name="VCC" x="12.7" y="5.08" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="VE" x="12.7" y="2.54" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="VO" x="12.7" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="VO" x="12.7" y="1.27" visible="pad" length="short" direction="pas" rot="R180"/>
 <text x="-9.525" y="8.255" size="1.778" layer="95">&gt;NAME</text>
 <text x="-9.525" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 <text x="6.477" y="5.334" size="0.8128" layer="93">Vcc</text>
 <text x="6.477" y="-2.286" size="0.8128" layer="93">GND</text>
 <text x="-7.62" y="5.334" size="0.8128" layer="93">A</text>
 <text x="-7.62" y="-3.556" size="0.8128" layer="93">C</text>
-<text x="6.477" y="2.794" size="0.8128" layer="93">Ve</text>
 <text x="6.477" y="0.254" size="0.8128" layer="93">Vo</text>
+<wire x1="2.667" y1="1.27" x2="10.16" y2="1.27" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="0631">
 <circle x="3.175" y="1.27" radius="0.635" width="0.1524" layer="94"/>
@@ -5661,28 +5650,21 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="HCPL0601" prefix="OK">
-<description>&lt;b&gt;HEWLETT PACKARD OPTO COUPLER&lt;/b&gt;</description>
+<deviceset name="HCPL0201" prefix="U">
 <gates>
-<gate name="A" symbol="0601" x="0" y="0"/>
+<gate name="G$1" symbol="0201" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="SOIC08">
 <connects>
-<connect gate="A" pin="A" pad="2"/>
-<connect gate="A" pin="C" pad="3"/>
-<connect gate="A" pin="GND" pad="5"/>
-<connect gate="A" pin="VCC" pad="8"/>
-<connect gate="A" pin="VE" pad="7"/>
-<connect gate="A" pin="VO" pad="6"/>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="3"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+<connect gate="G$1" pin="VO" pad="7"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="MF" value="AGILENT TECHNOLOGIES" constant="no"/>
-<attribute name="MPN" value="HCPL-0601-000E" constant="no"/>
-<attribute name="OC_FARNELL" value="9995102" constant="no"/>
-<attribute name="OC_NEWARK" value="88H7776" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -10502,7 +10484,7 @@ Various fiducial points for machine vision alignment.</description>
 <attribute name="OC_NEWARK" value="86T3500"/>
 </part>
 <part name="SUPPLY59" library="supply2" deviceset="+5V/1" device=""/>
-<part name="OK2" library="optocoupler" deviceset="HCPL0601" device=""/>
+<part name="OK2" library="optocoupler" deviceset="HCPL0201" device=""/>
 <part name="R41" library="rcl" deviceset="R-EU_" device="R0603" value="1k5">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value="MCMR06X000 PTL"/>
@@ -10702,7 +10684,7 @@ Various fiducial points for machine vision alignment.</description>
 <plain>
 <text x="113.64" y="197.58" size="1.778" layer="97">SIGNAL ISOLATION</text>
 <text x="105.38" y="252.38" size="1.778" layer="97">DC-DC convertor</text>
-<wire x1="169.92" y1="103" x2="100.84" y2="103" width="0.1524" layer="94"/>
+<wire x1="200.38" y1="103" x2="100.84" y2="103" width="0.1524" layer="94"/>
 <wire x1="100.84" y1="103" x2="3.746" y2="103" width="0.1524" layer="94"/>
 <wire x1="100.84" y1="103" x2="100.84" y2="202" width="0.1524" layer="94"/>
 <wire x1="100.84" y1="202" x2="100.84" y2="256.508" width="0.1524" layer="94"/>
@@ -10710,7 +10692,6 @@ Various fiducial points for machine vision alignment.</description>
 <wire x1="200.38" y1="202" x2="200.38" y2="256.508" width="0.1524" layer="94"/>
 <wire x1="200.38" y1="202" x2="200.38" y2="182.92" width="0.1524" layer="94"/>
 <wire x1="200.38" y1="182.92" x2="200.38" y2="103" width="0.1524" layer="94"/>
-<wire x1="200.38" y1="103" x2="169.92" y2="103" width="0.1524" layer="94"/>
 <wire x1="383.492" y1="182.92" x2="200.38" y2="182.92" width="0.1524" layer="94"/>
 <text x="113.64" y="197.58" size="1.778" layer="97">SIGNAL ISOLATION</text>
 <text x="202.54" y="179.8" size="1.778" layer="97">SELECTOR &amp; PUSH BUTTON</text>
@@ -10895,7 +10876,7 @@ Various fiducial points for machine vision alignment.</description>
 <attribute name="MPN" x="157.48" y="134.62" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="SUPPLY59" gate="G$1" x="157.48" y="139.7"/>
-<instance part="OK2" gate="A" x="134.62" y="124.46"/>
+<instance part="OK2" gate="G$1" x="134.62" y="124.46"/>
 <instance part="R41" gate="G$1" x="116.84" y="129.54">
 <attribute name="OC_NEWARK" x="116.84" y="129.54" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="MF" x="116.84" y="129.54" size="1.778" layer="96" rot="R90" display="off"/>
@@ -10971,10 +10952,10 @@ Various fiducial points for machine vision alignment.</description>
 <instance part="SUPPLY60" gate="G$1" x="325.12" y="218.44"/>
 <instance part="SUPPLY65" gate="G$1" x="309.88" y="246.38"/>
 <instance part="SUPPLY66" gate="G$1" x="355.6" y="246.38"/>
-<instance part="R27" gate="G$1" x="165.1" y="124.46">
-<attribute name="OC_NEWARK" x="165.1" y="124.46" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="MF" x="165.1" y="124.46" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="MPN" x="165.1" y="124.46" size="1.778" layer="96" rot="R90" display="off"/>
+<instance part="R27" gate="G$1" x="165.1" y="125.73">
+<attribute name="OC_NEWARK" x="165.1" y="125.73" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MF" x="165.1" y="125.73" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MPN" x="165.1" y="125.73" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="U8" gate="G$1" x="81.28" y="53.34"/>
 <instance part="SUPPLY46" gate="G$1" x="124.46" y="88.9"/>
@@ -11090,7 +11071,7 @@ Various fiducial points for machine vision alignment.</description>
 <pinref part="GND9" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="OK2" gate="A" pin="C"/>
+<pinref part="OK2" gate="G$1" pin="C"/>
 <wire x1="111.76" y1="116.84" x2="111.76" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="121.92" x2="121.92" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
@@ -11269,7 +11250,7 @@ Various fiducial points for machine vision alignment.</description>
 </segment>
 <segment>
 <pinref part="SUPPLY11" gate="G$1" pin="GND1"/>
-<pinref part="OK2" gate="A" pin="GND"/>
+<pinref part="OK2" gate="G$1" pin="GND"/>
 <wire x1="149.86" y1="116.84" x2="149.86" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="121.92" x2="147.32" y2="121.92" width="0.1524" layer="91"/>
 </segment>
@@ -11327,7 +11308,7 @@ Various fiducial points for machine vision alignment.</description>
 <wire x1="192.66" y1="131.08" x2="192.66" y2="128.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="OK2" gate="A" pin="VCC"/>
+<pinref part="OK2" gate="G$1" pin="VCC"/>
 <pinref part="SUPPLY10" gate="G$1" pin="+5V/1"/>
 <wire x1="147.32" y1="129.54" x2="149.86" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="129.54" x2="149.86" y2="132.08" width="0.1524" layer="91"/>
@@ -11377,8 +11358,8 @@ Various fiducial points for machine vision alignment.</description>
 <net name="ESW3_TX_ISO" class="0">
 <segment>
 <pinref part="R27" gate="G$1" pin="2"/>
-<wire x1="170.18" y1="124.46" x2="172.72" y2="124.46" width="0.1524" layer="91"/>
-<label x="172.72" y="124.46" size="1.27" layer="95" xref="yes"/>
+<wire x1="170.18" y1="125.73" x2="172.72" y2="125.73" width="0.1524" layer="91"/>
+<label x="172.72" y="125.73" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U8" gate="G$1" pin="PTB16"/>
@@ -11621,7 +11602,7 @@ Various fiducial points for machine vision alignment.</description>
 <net name="N$39" class="0">
 <segment>
 <pinref part="R41" gate="G$1" pin="2"/>
-<pinref part="OK2" gate="A" pin="A"/>
+<pinref part="OK2" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -11759,13 +11740,13 @@ Various fiducial points for machine vision alignment.</description>
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="OK2" gate="A" pin="VO"/>
+<pinref part="OK2" gate="G$1" pin="VO"/>
 <pinref part="R27" gate="G$1" pin="1"/>
-<wire x1="147.32" y1="124.46" x2="157.48" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="125.73" x2="157.48" y2="125.73" width="0.1524" layer="91"/>
 <pinref part="R40" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="124.46" x2="160.02" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="129.54" x2="157.48" y2="124.46" width="0.1524" layer="91"/>
-<junction x="157.48" y="124.46"/>
+<wire x1="157.48" y1="125.73" x2="160.02" y2="125.73" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="129.54" x2="157.48" y2="125.73" width="0.1524" layer="91"/>
+<junction x="157.48" y="125.73"/>
 </segment>
 </net>
 <net name="SCL" class="0">

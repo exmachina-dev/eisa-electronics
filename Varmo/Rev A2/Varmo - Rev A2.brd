@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="dots" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="25" unitdist="mil" unit="mil" style="dots" multiple="2" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="17" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="19" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="38" fill="1" visible="yes" active="yes"/>
-<layer number="17" name="Pads" color="10" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="10" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="62" fill="1" visible="no" active="yes"/>
+<layer number="17" name="Pads" color="18" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="38" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="48" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="48" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="55" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="54" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="55" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="54" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="54" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="53" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="52" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="52" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -49,7 +49,7 @@
 <layer number="49" name="Reference" color="48" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="55" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="54" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="54" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -2869,19 +2869,14 @@ Your Eurocircuits Team
 <attribute name="NAME" x="28.975" y="3.14" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="31.405" y="4.115" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R40" library="rcl" package="R0603" value="4k7" x="17.5" y="24.5" smashed="yes">
-<attribute name="OC_NEWARK" value="86T3500" x="17.5" y="24.5" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="" x="17.5" y="24.5" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="MCMR06X000 PTL" x="17.5" y="24.5" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="16.865" y="25.135" size="1.27" layer="25"/>
-<attribute name="VALUE" x="16.865" y="22.595" size="1.27" layer="27"/>
+<element name="R40" library="rcl" package="R0603" value="4k7" x="16.23" y="24.5" smashed="yes">
+<attribute name="OC_NEWARK" value="86T3500" x="16.23" y="24.5" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="16.23" y="24.5" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="MCMR06X000 PTL" x="16.23" y="24.5" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="15.595" y="25.135" size="1.27" layer="25"/>
+<attribute name="VALUE" x="15.595" y="22.595" size="1.27" layer="27"/>
 </element>
-<element name="OK2" library="optocoupler" package="SOIC08" value="HCPL0601" x="17.775" y="17.75">
-<attribute name="MPN" value="HCPL-0601-000E" x="17.775" y="17.75" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="9995102" x="17.775" y="17.75" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="88H7776" x="17.775" y="17.75" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="AGILENT TECHNOLOGIES" x="17.775" y="17.75" size="1.778" layer="27" display="off"/>
-</element>
+<element name="OK2" library="optocoupler" package="SOIC08" value="HCPL0201" x="17.775" y="17.75"/>
 <element name="R41" library="rcl" package="R0603" value="1k5" x="17.25" y="11.75" rot="R90">
 <attribute name="MPN" value="MCMR06X000 PTL" x="17.25" y="11.75" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_NEWARK" value="86T3500" x="17.25" y="11.75" size="1.778" layer="27" rot="R90" display="off"/>
@@ -3056,10 +3051,10 @@ Your Eurocircuits Team
 <attribute name="MPN" value="" x="5" y="32" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="U$2" library="encoder" package="EC20A" value="EC20AE" x="107.5" y="53.4" rot="R315"/>
-<element name="R27" library="rcl" package="R0603" value="1k5" x="18.4" y="29.2" rot="R90">
-<attribute name="MPN" value="MCMR06X000 PTL" x="18.4" y="29.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_NEWARK" value="86T3500" x="18.4" y="29.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="" x="18.4" y="29.2" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="R27" library="rcl" package="R0603" value="1k5" x="17.13" y="29.2" rot="R90">
+<attribute name="MPN" value="MCMR06X000 PTL" x="17.13" y="29.2" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_NEWARK" value="86T3500" x="17.13" y="29.2" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="" x="17.13" y="29.2" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="U$5" library="cc-by-sa" package="CC-BY-NC-SA" value="CC-BY-NC-SA" x="81" y="4"/>
 <element name="U$7" library="exmachina" package="EXM-LOGO-BASELINE" value="EXMACHINA-LOGO-NAME" x="76.2" y="10.1"/>
@@ -3375,11 +3370,11 @@ Your Eurocircuits Team
 <signal name="ESW3_TX_ISO">
 <contactref element="U8" pad="29"/>
 <via x="24.5" y="42.25" extent="1-16" drill="0.35"/>
-<wire x1="18.4" y1="36.15" x2="24.5" y2="42.25" width="0.1778" layer="1"/>
+<wire x1="17.13" y1="34.88" x2="24.5" y2="42.25" width="0.1778" layer="1"/>
 <wire x1="24.5" y1="42.25" x2="24.5" y2="46.33" width="0.1778" layer="16"/>
 <wire x1="24.5" y1="46.33" x2="24.73" y2="46.56" width="0.1778" layer="16"/>
 <contactref element="R27" pad="2"/>
-<wire x1="18.4" y1="30.05" x2="18.4" y2="36.15" width="0.1778" layer="1"/>
+<wire x1="17.13" y1="30.05" x2="17.13" y2="34.88" width="0.1778" layer="1"/>
 </signal>
 <signal name="DIRECTION_2">
 <contactref element="U2" pad="4"/>
@@ -4313,13 +4308,13 @@ Your Eurocircuits Team
 <wire x1="29.81" y1="46.56" x2="29.81" y2="33.81" width="0.1778" layer="16"/>
 </signal>
 <signal name="N$15">
-<contactref element="OK2" pad="6"/>
+<contactref element="OK2" pad="7"/>
 <contactref element="R27" pad="1"/>
 <contactref element="R40" pad="2"/>
-<wire x1="18.4" y1="28.35" x2="18.4" y2="24.55" width="0.1778" layer="1"/>
-<wire x1="18.4" y1="24.55" x2="18.35" y2="24.5" width="0.1778" layer="1"/>
-<wire x1="18.35" y1="24.5" x2="18.35" y2="20.8834" width="0.1778" layer="1"/>
-<wire x1="18.35" y1="20.8834" x2="18.41" y2="20.8234" width="0.1778" layer="1"/>
+<wire x1="17.13" y1="28.35" x2="17.13" y2="24.55" width="0.1778" layer="1"/>
+<wire x1="17.13" y1="24.55" x2="17.08" y2="24.5" width="0.1778" layer="1"/>
+<wire x1="17.14" y1="20.8234" x2="17.08" y2="20.8234" width="0.1778" layer="1"/>
+<wire x1="17.08" y1="20.8234" x2="17.08" y2="24.5" width="0.1778" layer="1"/>
 </signal>
 </signals>
 <errors>
