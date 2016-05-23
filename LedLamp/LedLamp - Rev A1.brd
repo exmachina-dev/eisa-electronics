@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -133,7 +133,6 @@
 <wire x1="4" y1="46" x2="3.5" y2="45.5" width="0" layer="20"/>
 <wire x1="3.5" y1="45.5" x2="2" y2="45.5" width="0" layer="20"/>
 <wire x1="2" y1="45.5" x2="0" y2="43.5" width="0" layer="20" curve="90"/>
-<circle x="12.5" y="23" radius="11" width="0.001" layer="100"/>
 <wire x1="10" y1="23" x2="15" y2="23" width="0" layer="100"/>
 <wire x1="12.5" y1="20.5" x2="12.5" y2="25.5" width="0" layer="100"/>
 <dimension x1="5.5" y1="2" x2="19.5" y2="2" x3="12.5" y3="-2.5" textsize="0.6096" textratio="10" layer="100" dtype="horizontal" extoffset="3"/>
@@ -144,6 +143,7 @@ Rev A1</text>
 <text x="-1" y="3.5" size="1.016" layer="16" ratio="10" rot="R90">2</text>
 <hole x="12.5" y="37.5" drill="6.3"/>
 <hole x="12.5" y="8.5" drill="6.3"/>
+<circle x="12.5" y="23" radius="5.5" width="11" layer="21"/>
 </plain>
 <libraries>
 <library name="rcl">
