@@ -11872,7 +11872,7 @@ Various fiducial points for machine vision alignment.</description>
 <text x="7.62" y="182.88" size="1.778" layer="97">LED STATUS</text>
 <text x="105.664" y="183.896" size="1.778" layer="97">I2C TO DATA BUS</text>
 <text x="292.1" y="251.46" size="1.778" layer="97">LCD</text>
-<text x="10.16" y="93.98" size="1.778" layer="97">LCD CONTRAST</text>
+<text x="10.16" y="93.98" size="1.778" layer="97">CONNECTOR ON THE CPU PANEL</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
@@ -12561,6 +12561,10 @@ Various fiducial points for machine vision alignment.</description>
 <wire x1="241.3" y1="96.52" x2="241.3" y2="180.34" width="0" layer="94"/>
 <wire x1="241.3" y1="180.34" x2="241.3" y2="256.54" width="0" layer="94"/>
 <wire x1="147.32" y1="180.34" x2="241.3" y2="180.34" width="0" layer="94"/>
+<text x="7.62" y="251.46" size="1.778" layer="97">JOYSTICK FOR VARMO STAND</text>
+<text x="7.62" y="132.08" size="1.778" layer="97">ENCODER FOR VARMO LITE</text>
+<text x="152.4" y="175.26" size="1.778" layer="97">CONNECTOR ON CPU BOARD</text>
+<text x="152.4" y="251.46" size="1.778" layer="97">CONNECTOR ON JOYSTICK PANEL</text>
 </plain>
 <instances>
 <instance part="ENC1" gate="G$1" x="45.72" y="205.74"/>
