@@ -121,7 +121,7 @@
 <wire x1="14" y1="70" x2="14" y2="24" width="0" layer="20"/>
 <wire x1="0" y1="24" x2="0" y2="70" width="0" layer="20"/>
 <wire x1="0" y1="70" x2="14" y2="70" width="0" layer="20"/>
-<text x="6.75" y="41.5" size="0.8128" layer="21" rot="R90">VARMO EXTANDED A1</text>
+<text x="6.75" y="41.5" size="0.8128" layer="21" rot="R90">JOGWE Rev A1</text>
 <wire x1="2" y1="22" x2="2" y2="24" width="0" layer="21"/>
 <wire x1="0" y1="22" x2="1.5" y2="22" width="0" layer="20"/>
 <wire x1="1.5" y1="22" x2="2" y2="22.5" width="0" layer="20" curve="90"/>
