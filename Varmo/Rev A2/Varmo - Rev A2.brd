@@ -3309,8 +3309,12 @@ Your Eurocircuits Team
 <wire x1="22.48" y1="22.48" x2="22.5" y2="22.5" width="0.4064" layer="1"/>
 <wire x1="30.235" y1="20.8234" x2="30.235" y2="23.065" width="0.4064" layer="1"/>
 <wire x1="30.235" y1="23.065" x2="30.2" y2="23.1" width="0.4064" layer="1"/>
-<wire x1="97.71661875" y1="51.45545625" x2="88.1" y2="51" width="0" layer="19" extent="1-1"/>
+<contactref element="OK1" pad="3"/>
+<contactref element="ENC1" pad="COM"/>
+<wire x1="107" y1="61.2" x2="107.5" y2="59.18" width="0" layer="19" extent="1-1"/>
+<wire x1="88.1" y1="51" x2="97.71661875" y2="51.45545625" width="0" layer="19" extent="1-1"/>
 <wire x1="57.15" y1="21.5" x2="69.415" y2="18.18" width="0" layer="19" extent="16-16"/>
+<wire x1="28.965" y1="20.8234" x2="30.235" y2="20.8234" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+5V/1">
 <contactref element="C1" pad="1"/>
@@ -4240,9 +4244,6 @@ Your Eurocircuits Team
 <wire x1="106.035534375" y1="47.4" x2="108.52" y2="47.4" width="0.1778" layer="16"/>
 <wire x1="108.52" y1="47.4" x2="109.5" y2="46.42" width="0.1778" layer="16"/>
 <wire x1="30.81" y1="68.01" x2="105.31801875" y2="46.682484375" width="0" layer="19" extent="16-16"/>
-</signal>
-<signal name="N$40">
-<contactref element="ENC1" pad="COM"/>
 </signal>
 <signal name="ESW3_TOR_ISO">
 <contactref element="U8" pad="34"/>
