@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -258,14 +258,14 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="RKJXTF" prefix="ENC">
+<deviceset name="RKJXT1F" prefix="ENC">
 <description>4-directional Stick Switch (with Encoder + Center-push Function)</description>
 <gates>
 <gate name="G$1" symbol="STICK_SWITCH" x="2.54" y="20.32"/>
 <gate name="G$2" symbol="ENCODER" x="0" y="-7.62"/>
 </gates>
 <devices>
-<device name="" package="RKJXT1F">
+<device name="42001" package="RKJXT1F">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="B" pad="B"/>
@@ -278,7 +278,7 @@
 <connect gate="G$2" pin="COM" pad="ENCODERCOM"/>
 </connects>
 <technologies>
-<technology name="42001"/>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -288,7 +288,7 @@
 <gate name="G$1" symbol="ENCODER_WITH_PUSH_BUTTON" x="0" y="0"/>
 </gates>
 <devices>
-<device name="E" package="EC20A">
+<device name="1824401" package="EC20A">
 <connects>
 <connect gate="G$1" pin="COM" pad="A"/>
 <connect gate="G$1" pin="COM_PUSH" pad="D"/>
