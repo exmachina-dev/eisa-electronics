@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -752,7 +752,7 @@ straight</description>
 <pad name="P$19" x="11.43" y="-1.27" drill="1.016"/>
 <pad name="P$20" x="11.43" y="1.27" drill="1.016"/>
 </package>
-<package name="5267-02A">
+<package name="5267-03A">
 <pad name="P1" x="-2.5" y="0" drill="0.8" shape="square"/>
 <pad name="P2" x="0" y="0" drill="0.8"/>
 <pad name="P3" x="2.5" y="0" drill="0.8"/>
@@ -1265,7 +1265,7 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <gate name="1" symbol="MV" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="03" package="5267-02A">
+<device name="03" package="5267-03A">
 <connects>
 <connect gate="1" pin="S" pad="P1"/>
 <connect gate="2" pin="S" pad="P2"/>
