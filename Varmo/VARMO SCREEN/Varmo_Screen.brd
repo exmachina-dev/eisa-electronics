@@ -2351,8 +2351,6 @@ Your Eurocircuits Team
 <contactref element="R46" pad="2"/>
 <contactref element="C9" pad="1"/>
 <contactref element="U5" pad="2"/>
-<wire x1="10.4094" y1="9.83" x2="25.33" y2="9.83" width="0.4064" layer="16"/>
-<wire x1="25.33" y1="9.83" x2="26.5" y2="11" width="0.4064" layer="16"/>
 <polygon width="0.4064" layer="16">
 <vertex x="24" y="86.5"/>
 <vertex x="24" y="11"/>
