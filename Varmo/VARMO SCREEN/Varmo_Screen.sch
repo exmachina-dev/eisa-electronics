@@ -8204,6 +8204,62 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="pot">
+<packages>
+<package name="3313J">
+<smd name="2" x="0" y="1.4" dx="1.6" dy="1.6" layer="1" rot="R180"/>
+<smd name="3" x="-1.1" y="-1.4" dx="1.6" dy="1.1" layer="1" rot="R90"/>
+<smd name="1" x="1.1" y="-1.4" dx="1.6" dy="1.1" layer="1" rot="R90"/>
+<wire x1="-1.6" y1="1.75" x2="-1.6" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="1.6" y1="1.75" x2="1.6" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="1.75" x2="1.6" y2="1.75" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-1.75" x2="1.6" y2="-1.75" width="0.127" layer="21"/>
+<text x="2.2" y="0.7" size="1.27" layer="21">&gt;NAME</text>
+<text x="2.2" y="-1.5" size="1.27" layer="21">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="POT_EU-">
+<wire x1="-0.762" y1="2.54" x2="-0.762" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="0.762" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.651" y1="0" x2="-1.8796" y2="1.7526" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="2.54" x2="-0.762" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-2.54" x2="0.762" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.1597" y1="1.2939" x2="-3.1989" y2="2.4495" width="0.1524" layer="94"/>
+<wire x1="-3.1989" y1="2.4495" x2="-1.7018" y2="2.2352" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-0.508" x2="-3.048" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-0.508" x2="-2.032" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="-2.1597" y1="1.2939" x2="-1.7018" y2="2.2352" width="0.1524" layer="94"/>
+<text x="-5.969" y="-3.81" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="-3.81" y="-3.81" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="A" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="E" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="S" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="3313J" prefix="R">
+<gates>
+<gate name="G$1" symbol="POT_EU-" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="3313J">
+<connects>
+<connect gate="G$1" pin="A" pad="3"/>
+<connect gate="G$1" pin="E" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="-1-103E"/>
+<technology name="-1-203E"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8265,6 +8321,8 @@ Source: www.kingbright.com</description>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="R8" library="rcl" deviceset="R-EU_" device="R0603" value="4.7k"/>
 <part name="R9" library="rcl" deviceset="R-EU_" device="R0603" value="4.7k"/>
+<part name="R1" library="pot" deviceset="3313J" device="" technology="-1-103E"/>
+<part name="SUPPLY4" library="supply2" deviceset="GND1" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8285,6 +8343,8 @@ Source: www.kingbright.com</description>
 <text x="105.664" y="183.896" size="1.778" layer="97">I2C TO DATA BUS</text>
 <text x="292.1" y="251.46" size="1.778" layer="97">LCD</text>
 <text x="175.26" y="132.08" size="1.778" layer="97">I2C Adresse : 20h</text>
+<text x="210.82" y="203.2" size="1.778" layer="97">I2C Adresse : 2Eh</text>
+<text x="266.7" y="223.52" size="1.778" layer="97">NC</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
@@ -8336,6 +8396,8 @@ Source: www.kingbright.com</description>
 <instance part="C1" gate="G$1" x="139.7" y="243.84"/>
 <instance part="R8" gate="G$1" x="175.26" y="233.68" rot="R90"/>
 <instance part="R9" gate="G$1" x="182.88" y="233.68" rot="R90"/>
+<instance part="R1" gate="G$1" x="264.16" y="228.6"/>
+<instance part="SUPPLY4" gate="G$1" x="264.16" y="213.36"/>
 </instances>
 <busses>
 </busses>
@@ -8350,6 +8412,11 @@ Source: www.kingbright.com</description>
 <wire x1="241.3" y1="226.06" x2="231.14" y2="226.06" width="0.1524" layer="91"/>
 <label x="241.3" y="226.06" size="1.27" layer="95" xref="yes"/>
 <pinref part="U3" gate="G$1" pin="W"/>
+</segment>
+<segment>
+<wire x1="274.32" y1="228.6" x2="269.24" y2="228.6" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="S"/>
+<label x="274.32" y="228.6" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="+5V/1" class="0">
@@ -8485,6 +8552,11 @@ Source: www.kingbright.com</description>
 <pinref part="SUPPLY3" gate="G$1" pin="GND1"/>
 <wire x1="139.7" y1="236.22" x2="139.7" y2="238.76" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="SUPPLY4" gate="G$1" pin="GND1"/>
+<pinref part="R1" gate="G$1" pin="A"/>
+<wire x1="264.16" y1="215.9" x2="264.16" y2="223.52" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VEE" class="0">
 <segment>
@@ -8496,6 +8568,12 @@ Source: www.kingbright.com</description>
 <wire x1="241.3" y1="233.68" x2="231.14" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="H"/>
 <label x="241.3" y="233.68" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="274.32" y1="241.3" x2="264.16" y2="241.3" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="E"/>
+<wire x1="264.16" y1="233.68" x2="264.16" y2="241.3" width="0.1524" layer="91"/>
+<label x="274.32" y="241.3" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PWM_CONTRASTE" class="0">
