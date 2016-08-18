@@ -29,6 +29,8 @@ SCH:
 Grid Default;
 Change Width 0.006;
 
+MENU 'Settings { WK colors : script WKcolors.scr; | Eagle Colors : script defaultcolors.scr; | Layers : script WKlayers.scr; | reload WKs : script WKs.scr; | Black : set palette Black; window; | White : set palette White; window; | Colored : set palette Colored; window; }';
+
 LBR:
 
 DEV:
