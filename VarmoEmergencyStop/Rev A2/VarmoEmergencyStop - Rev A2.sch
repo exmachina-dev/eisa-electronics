@@ -5617,6 +5617,7 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="LED" library="con-molex" deviceset="22-?-03" device="05-7038"/>
+<part name="U$3" library="exmachina" deviceset="EXMACHINA-LOGO" device="-NAME"/>
 </parts>
 <sheets>
 <sheet>
@@ -5645,6 +5646,7 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <instance part="LED" gate="-1" x="111.76" y="182.88" rot="R90"/>
 <instance part="LED" gate="-2" x="114.3" y="182.88" rot="R90"/>
 <instance part="LED" gate="-3" x="116.84" y="182.88" rot="R90"/>
+<instance part="U$3" gate="G$1" x="315.468" y="28.956"/>
 </instances>
 <busses>
 </busses>
