@@ -10593,10 +10593,10 @@ Various fiducial points for machine vision alignment.</description>
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V11" library="supply1" deviceset="+3V3" device=""/>
-<part name="MP1" library="holes" deviceset="MOUNT-PAD" device="2.5"/>
-<part name="MP2" library="holes" deviceset="MOUNT-PAD" device="2.5"/>
-<part name="MP3" library="holes" deviceset="MOUNT-PAD" device="2.5"/>
-<part name="MP4" library="holes" deviceset="MOUNT-PAD" device="2.5"/>
+<part name="MP1" library="holes" deviceset="MOUNT-PAD" device="3,0" value="MOUNT-PAD3,0"/>
+<part name="MP2" library="holes" deviceset="MOUNT-PAD" device="3,0" value="MOUNT-PAD3,0"/>
+<part name="MP3" library="holes" deviceset="MOUNT-PAD" device="3,0" value="MOUNT-PAD3,0"/>
+<part name="MP4" library="holes" deviceset="MOUNT-PAD" device="3,0" value="MOUNT-PAD3,0"/>
 <part name="J6" library="con-molex" deviceset="22-?-03" device="05-7038"/>
 <part name="J9" library="con-molex" deviceset="22-?-03" device="05-7038"/>
 <part name="U$1" library="cc-by-sa" deviceset="CC-BY-NC-SA" device=""/>
@@ -10652,10 +10652,10 @@ Various fiducial points for machine vision alignment.</description>
 <part name="SUPPLY40" library="supply2" deviceset="+5V/1" device=""/>
 <part name="SUPPLY42" library="supply2" deviceset="GND1" device=""/>
 <part name="SUPPLY44" library="supply2" deviceset="GND1" device=""/>
-<part name="MP5" library="holes" deviceset="MOUNT-PAD" device="2.5"/>
-<part name="MP6" library="holes" deviceset="MOUNT-PAD" device="2.5"/>
-<part name="MP7" library="holes" deviceset="MOUNT-PAD" device="2.5"/>
-<part name="MP8" library="holes" deviceset="MOUNT-PAD" device="2.5"/>
+<part name="MP5" library="holes" deviceset="MOUNT-PAD" device="3,0" value="MOUNT-PAD3,0"/>
+<part name="MP6" library="holes" deviceset="MOUNT-PAD" device="3,0" value="MOUNT-PAD3,0"/>
+<part name="MP7" library="holes" deviceset="MOUNT-PAD" device="3,0" value="MOUNT-PAD3,0"/>
+<part name="MP8" library="holes" deviceset="MOUNT-PAD" device="3,0" value="MOUNT-PAD3,0"/>
 <part name="U8" library="custom" deviceset="M20DX256" device=""/>
 <part name="SUPPLY46" library="supply2" deviceset="+5V/1" device=""/>
 <part name="SUPPLY52" library="supply2" deviceset="GND1" device=""/>
