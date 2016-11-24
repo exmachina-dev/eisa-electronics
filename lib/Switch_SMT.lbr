@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -72,6 +72,19 @@
 <smd name="2" x="2.05" y="0.75" dx="1" dy="0.9" layer="1"/>
 <circle x="0" y="0" radius="1.05" width="0.127" layer="51"/>
 </package>
+<package name="B3FS">
+<wire x1="-3.2" y1="-3.15" x2="3.2" y2="-3.15" width="0.127" layer="21"/>
+<wire x1="3.2" y1="-3.15" x2="3.2" y2="3.15" width="0.127" layer="21"/>
+<wire x1="3.2" y1="3.15" x2="-3.2" y2="3.15" width="0.127" layer="21"/>
+<wire x1="-3.2" y1="3.15" x2="-3.2" y2="-3.15" width="0.127" layer="21"/>
+<smd name="4" x="-4" y="2.25" dx="1.6" dy="1.4" layer="1" rot="R90"/>
+<smd name="3" x="4" y="2.25" dx="1.6" dy="1.4" layer="1" rot="R90"/>
+<smd name="1" x="4" y="-2.25" dx="1.6" dy="1.4" layer="1" rot="R90"/>
+<smd name="2" x="-4" y="-2.25" dx="1.6" dy="1.4" layer="1" rot="R90"/>
+<circle x="0" y="0" radius="1.5" width="0.127" layer="21"/>
+<text x="-2.54" y="3.81" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-5.08" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="SWITCH">
@@ -110,6 +123,31 @@
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="B3FS" prefix="SW">
+<description>Surface-mounting Switches Ideal for 
+High-density Mounting</description>
+<gates>
+<gate name="G$1" symbol="DS" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="B3FS">
+<connects>
+<connect gate="G$1" pin="1" pad="3 4"/>
+<connect gate="G$1" pin="2" pad="1 2"/>
+</connects>
+<technologies>
+<technology name="-1000"/>
+<technology name="-1002"/>
+<technology name="-1005"/>
+<technology name="-1010"/>
+<technology name="-1012"/>
+<technology name="-1015"/>
+<technology name="-1050"/>
+<technology name="-1052"/>
 </technologies>
 </device>
 </devices>

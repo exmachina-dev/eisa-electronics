@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -611,6 +611,35 @@ Source: Comchip CGRM4001-G.pdf</description>
 <wire x1="-2.3749" y1="-1.4478" x2="-2.3749" y2="1.4478" width="0.127" layer="21"/>
 <rectangle x1="-1.524" y1="-1.4478" x2="-1.016" y2="1.4478" layer="21"/>
 </package>
+<package name="SOD323-W">
+<description>&lt;b&gt;SOD323 Wave soldering&lt;/b&gt; Philips SC01_Mounting_1996.pdf</description>
+<wire x1="-1" y1="0.7" x2="1" y2="0.7" width="0.1524" layer="51"/>
+<wire x1="1" y1="0.7" x2="1" y2="-0.7" width="0.1524" layer="51"/>
+<wire x1="1" y1="-0.7" x2="-1" y2="-0.7" width="0.1524" layer="51"/>
+<wire x1="-1" y1="-0.7" x2="-1" y2="0.7" width="0.1524" layer="51"/>
+<wire x1="-0.5" y1="0" x2="0.1" y2="0.4" width="0.1524" layer="21"/>
+<wire x1="0.1" y1="0.4" x2="0.1" y2="-0.4" width="0.1524" layer="21"/>
+<wire x1="0.1" y1="-0.4" x2="-0.5" y2="0" width="0.1524" layer="21"/>
+<smd name="C" x="-1.45" y="0" dx="1.5" dy="1.2" layer="1"/>
+<smd name="A" x="1.45" y="0" dx="1.5" dy="1.2" layer="1"/>
+<text x="-1.1" y="1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.1" y="-2.3" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.7" y1="-0.7" x2="-0.5" y2="0.7" layer="51"/>
+</package>
+<package name="DO216AA">
+<description>&lt;b&gt;DIODE&lt;/b&gt;</description>
+<wire x1="-2" y1="1" x2="0" y2="1" width="0.254" layer="51"/>
+<wire x1="0" y1="1" x2="0" y2="-1" width="0.254" layer="51"/>
+<wire x1="0" y1="-1" x2="-2" y2="-1" width="0.254" layer="51"/>
+<wire x1="-2" y1="-1" x2="-2" y2="1" width="0.254" layer="51"/>
+<wire x1="-1.7" y1="0" x2="-0.45" y2="0.7" width="0.254" layer="21"/>
+<wire x1="-0.45" y1="0.7" x2="-0.45" y2="-0.7" width="0.254" layer="21"/>
+<wire x1="-0.45" y1="-0.7" x2="-1.7" y2="0" width="0.254" layer="21"/>
+<smd name="C" x="-1.665" y="0" dx="2.67" dy="2.574" layer="1"/>
+<smd name="A" x="0.7" y="0" dx="0.76" dy="1.27" layer="1"/>
+<text x="-2.64" y="1.436" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.64" y="-2.706" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="DIODE">
@@ -892,6 +921,38 @@ Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 <connects>
 <connect gate="G$1" pin="1" pad="C"/>
 <connect gate="G$1" pin="2" pad="A"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CMDSH2-3" prefix="D">
+<gates>
+<gate name="A" symbol="SCHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOD323-W">
+<connects>
+<connect gate="A" pin="A" pad="A"/>
+<connect gate="A" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="USB120" prefix="D">
+<gates>
+<gate name="A" symbol="SCHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DO216AA">
+<connects>
+<connect gate="A" pin="A" pad="A"/>
+<connect gate="A" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
