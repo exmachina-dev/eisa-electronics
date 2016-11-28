@@ -22121,6 +22121,7 @@ oeiwcsnts1.omron.com/.. D20G6K0100.pdf</description>
 <part name="R60" library="rcl" deviceset="R-EU_" device="R0603" value="100"/>
 <part name="R61" library="rcl" deviceset="R-EU_" device="R0603" value="4k7"/>
 <part name="C54" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
+<part name="P+21" library="supply3" deviceset="+24V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -22203,30 +22204,11 @@ oeiwcsnts1.omron.com/.. D20G6K0100.pdf</description>
 <instance part="J14" gate="-2" x="25.4" y="134.62" rot="MR0"/>
 <instance part="P+15" gate="1" x="35.56" y="147.32"/>
 <instance part="GND62" gate="1" x="35.56" y="129.54"/>
+<instance part="P+21" gate="1" x="96.52" y="83.82"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
-<segment>
-<pinref part="C1" gate="G$1" pin="1"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="106.68" y1="170.18" x2="106.68" y2="177.8" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="106.68" y1="177.8" x2="114.3" y2="177.8" width="0.1524" layer="91"/>
-<junction x="106.68" y="177.8"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="C2" gate="G$1" pin="1"/>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="124.46" y1="170.18" x2="124.46" y2="177.8" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="124.46" y1="177.8" x2="132.08" y2="177.8" width="0.1524" layer="91"/>
-<junction x="124.46" y="177.8"/>
-</segment>
-</net>
 <net name="ETH_TX_P" class="1">
 <segment>
 <pinref part="P1" gate="G$1" pin="TD+"/>
@@ -22463,6 +22445,24 @@ oeiwcsnts1.omron.com/.. D20G6K0100.pdf</description>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="71.12" y1="175.26" x2="78.74" y2="175.26" width="0.1524" layer="91"/>
 <junction x="78.74" y="175.26"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="106.68" y1="170.18" x2="106.68" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="106.68" y1="175.26" x2="106.68" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="177.8" x2="114.3" y2="177.8" width="0.1524" layer="91"/>
+<junction x="106.68" y="177.8"/>
+<wire x1="78.74" y1="175.26" x2="106.68" y2="175.26" width="0.1524" layer="91"/>
+<junction x="106.68" y="175.26"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="124.46" y1="170.18" x2="124.46" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="124.46" y1="175.26" x2="124.46" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="177.8" x2="132.08" y2="177.8" width="0.1524" layer="91"/>
+<junction x="124.46" y="177.8"/>
+<wire x1="106.68" y1="175.26" x2="124.46" y2="175.26" width="0.1524" layer="91"/>
+<junction x="124.46" y="175.26"/>
 </segment>
 <segment>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
@@ -22766,13 +22766,6 @@ oeiwcsnts1.omron.com/.. D20G6K0100.pdf</description>
 <label x="68.58" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="CAN_V+" class="0">
-<segment>
-<pinref part="U$5" gate="C" pin="9"/>
-<wire x1="91.44" y1="66.04" x2="99.06" y2="66.04" width="0.1524" layer="91"/>
-<label x="99.06" y="66.04" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="U$5" gate="S" pin="SHIELD"/>
@@ -22819,6 +22812,14 @@ oeiwcsnts1.omron.com/.. D20G6K0100.pdf</description>
 <pinref part="P+15" gate="1" pin="+5V"/>
 <wire x1="27.94" y1="139.7" x2="35.56" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="139.7" x2="35.56" y2="144.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+24V" class="0">
+<segment>
+<pinref part="U$5" gate="C" pin="9"/>
+<pinref part="P+21" gate="1" pin="+24V"/>
+<wire x1="91.44" y1="66.04" x2="96.52" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="66.04" x2="96.52" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -23289,9 +23290,8 @@ oeiwcsnts1.omron.com/.. D20G6K0100.pdf</description>
 <label x="93.98" y="40.64" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="P0[10]/TXD2/SDA2/MAT3[0]"/>
-<wire x1="132.08" y1="114.3" x2="124.46" y2="114.3" width="0.1524" layer="91"/>
-<label x="124.46" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="132.08" y1="172.72" x2="124.46" y2="172.72" width="0.1524" layer="91"/>
+<label x="124.46" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="EEPROM_SCL" class="0">
@@ -23305,65 +23305,22 @@ oeiwcsnts1.omron.com/.. D20G6K0100.pdf</description>
 <label x="93.98" y="33.02" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="P0[11]/RXD2/SCL2/MAT3[1]"/>
-<wire x1="132.08" y1="111.76" x2="124.46" y2="111.76" width="0.1524" layer="91"/>
-<label x="124.46" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="HMI_LCD_SCL" class="1">
-<segment>
-<pinref part="U1" gate="A" pin="P0[28]/SCL0/USB_SCL"/>
 <wire x1="132.08" y1="175.26" x2="124.46" y2="175.26" width="0.1524" layer="91"/>
 <label x="124.46" y="175.26" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
+<net name="HMI_LCD_SCL" class="1">
+<segment>
+<label x="124.46" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U1" gate="A" pin="P0[11]/RXD2/SCL2/MAT3[1]"/>
+<wire x1="132.08" y1="111.76" x2="124.46" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+</net>
 <net name="HMI_LCD_SDA" class="1">
 <segment>
-<pinref part="U1" gate="A" pin="P0[27]/SDA0/USB_SDA"/>
-<wire x1="132.08" y1="172.72" x2="124.46" y2="172.72" width="0.1524" layer="91"/>
-<label x="124.46" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="HMI_BUTTON_2" class="1">
-<segment>
-<pinref part="U1" gate="A" pin="P0[15]/TXD1/SCK0/SCK"/>
-<wire x1="314.96" y1="137.16" x2="320.04" y2="137.16" width="0.1524" layer="91"/>
-<label x="320.04" y="137.16" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="HMI_BUTTON_3" class="1">
-<segment>
-<pinref part="U1" gate="A" pin="P0[17]/CTS1/MISO0/MISO"/>
-<wire x1="314.96" y1="134.62" x2="320.04" y2="134.62" width="0.1524" layer="91"/>
-<label x="320.04" y="134.62" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="HMI_BUTTON_4" class="1">
-<segment>
-<pinref part="U1" gate="A" pin="P0[18]/DCD1/MOSI0/MOSI"/>
-<wire x1="314.96" y1="132.08" x2="320.04" y2="132.08" width="0.1524" layer="91"/>
-<label x="320.04" y="132.08" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="HMI_BUTTON_1" class="1">
-<segment>
-<pinref part="U1" gate="A" pin="P0[16]/RXD1/SSEL0/SSEL"/>
-<wire x1="314.96" y1="139.7" x2="320.04" y2="139.7" width="0.1524" layer="91"/>
-<label x="320.04" y="139.7" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="HMI_BUTTON_5" class="1">
-<segment>
-<pinref part="U1" gate="A" pin="P0[19]/DSR1/SDA1"/>
-<wire x1="314.96" y1="129.54" x2="320.04" y2="129.54" width="0.1524" layer="91"/>
-<label x="320.04" y="129.54" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="HMI_BUTTON_6" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="P0[20]/DTR1/SCL1"/>
-<wire x1="314.96" y1="127" x2="320.04" y2="127" width="0.1524" layer="91"/>
-<label x="320.04" y="127" size="1.27" layer="95" xref="yes"/>
+<label x="124.46" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U1" gate="A" pin="P0[10]/TXD2/SDA2/MAT3[0]"/>
+<wire x1="124.46" y1="114.3" x2="132.08" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="HMI_LED_2" class="1">
@@ -23516,6 +23473,48 @@ oeiwcsnts1.omron.com/.. D20G6K0100.pdf</description>
 <wire x1="314.96" y1="144.78" x2="320.04" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="P2[8]/TD2/TXD2"/>
 <label x="320.04" y="144.78" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="HMI_BUTTON_CPU_1" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="P0[16]/RXD1/SSEL0/SSEL"/>
+<wire x1="314.96" y1="139.7" x2="320.04" y2="139.7" width="0.1524" layer="91"/>
+<label x="320.04" y="139.7" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="HMI_BUTTON_CPU_2" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="P0[15]/TXD1/SCK0/SCK"/>
+<wire x1="314.96" y1="137.16" x2="320.04" y2="137.16" width="0.1524" layer="91"/>
+<label x="320.04" y="137.16" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="HMI_BUTTON_CPU_3" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="P0[17]/CTS1/MISO0/MISO"/>
+<wire x1="314.96" y1="134.62" x2="320.04" y2="134.62" width="0.1524" layer="91"/>
+<label x="320.04" y="134.62" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="HMI_BUTTON_CPU_4" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="P0[18]/DCD1/MOSI0/MOSI"/>
+<wire x1="314.96" y1="132.08" x2="320.04" y2="132.08" width="0.1524" layer="91"/>
+<label x="320.04" y="132.08" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="HMI_BUTTON_CPU_5" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="P0[19]/DSR1/SDA1"/>
+<wire x1="314.96" y1="129.54" x2="320.04" y2="129.54" width="0.1524" layer="91"/>
+<label x="320.04" y="129.54" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="HMI_BUTTON_CPU_6" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="P0[20]/DTR1/SCL1"/>
+<wire x1="314.96" y1="127" x2="320.04" y2="127" width="0.1524" layer="91"/>
+<label x="320.04" y="127" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
