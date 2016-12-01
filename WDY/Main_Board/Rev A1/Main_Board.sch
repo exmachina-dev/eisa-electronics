@@ -24864,31 +24864,37 @@ High-density Mounting</description>
 <pinref part="C25" gate="G$1" pin="1"/>
 <wire x1="205.74" y1="129.54" x2="213.36" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="129.54" x2="213.36" y2="127" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="129.54" x2="213.36" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="129.54" x2="213.36" y2="149.86" width="0.1524" layer="91"/>
 <junction x="213.36" y="129.54"/>
+<pinref part="U6" gate="A" pin="2A"/>
+<wire x1="220.98" y1="149.86" x2="213.36" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$39" class="0">
 <segment>
 <pinref part="R40" gate="G$1" pin="2"/>
-<wire x1="213.36" y1="160.02" x2="213.36" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="152.4" x2="213.36" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="172.72" x2="205.74" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="C26" gate="G$1" pin="1"/>
 <wire x1="205.74" y1="172.72" x2="203.2" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="170.18" x2="205.74" y2="172.72" width="0.1524" layer="91"/>
 <junction x="205.74" y="172.72"/>
+<pinref part="U6" gate="A" pin="1A"/>
+<wire x1="213.36" y1="152.4" x2="220.98" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BRAKE_SENSOR_1" class="0">
 <segment>
-<wire x1="259.08" y1="154.94" x2="261.62" y2="160.02" width="0.1524" layer="91"/>
-<label x="261.62" y="160.02" size="1.27" layer="95" xref="yes"/>
+<label x="261.62" y="157.48" size="1.27" layer="95" xref="yes"/>
+<pinref part="U6" gate="A" pin="1Y"/>
+<wire x1="261.62" y1="157.48" x2="256.54" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BRAKE_SENSOR_2" class="0">
 <segment>
-<wire x1="259.08" y1="152.4" x2="261.62" y2="157.48" width="0.1524" layer="91"/>
-<label x="261.62" y="157.48" size="1.27" layer="95" xref="yes"/>
+<label x="261.62" y="154.94" size="1.27" layer="95" xref="yes"/>
+<pinref part="U6" gate="A" pin="2Y"/>
+<wire x1="256.54" y1="154.94" x2="261.62" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$41" class="0">
