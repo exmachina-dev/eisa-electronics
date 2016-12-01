@@ -22473,7 +22473,6 @@ High-density Mounting</description>
 <part name="R65" library="rcl" deviceset="R-EU_" device="R0603" value="100"/>
 <part name="GND51" library="supply1" deviceset="GND" device=""/>
 <part name="R66" library="rcl" deviceset="R-EU_" device="R0603" value="4k7"/>
-<part name="SJ3" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="NC2"/>
 <part name="U$10" library="crystal" deviceset="ASE" device="" value="ASE-12"/>
 <part name="GND52" library="supply1" deviceset="GND" device=""/>
 <part name="GND73" library="supply1" deviceset="GND" device=""/>
@@ -23247,7 +23246,6 @@ High-density Mounting</description>
 <instance part="GND61" gate="1" x="10.16" y="165.1"/>
 <instance part="+3V34" gate="G$1" x="10.16" y="187.96"/>
 <instance part="R66" gate="G$1" x="22.86" y="33.02" rot="R90"/>
-<instance part="SJ3" gate="1" x="22.86" y="17.78" rot="R90"/>
 <instance part="U$10" gate="G$1" x="43.18" y="144.78"/>
 <instance part="GND52" gate="1" x="58.42" y="132.08"/>
 <instance part="GND73" gate="1" x="22.86" y="132.08"/>
@@ -23270,7 +23268,7 @@ High-density Mounting</description>
 <instance part="R69" gate="G$1" x="154.94" y="63.5"/>
 <instance part="U$14" gate="A" x="58.42" y="104.14" rot="R90"/>
 <instance part="GND89" gate="1" x="58.42" y="93.98"/>
-<instance part="JP1" gate="G$1" x="60.96" y="63.5"/>
+<instance part="JP1" gate="G$1" x="15.24" y="20.32"/>
 <instance part="R71" gate="G$1" x="279.4" y="71.12" rot="R180"/>
 <instance part="R72" gate="G$1" x="279.4" y="63.5" rot="R180"/>
 </instances>
@@ -23527,9 +23525,11 @@ High-density Mounting</description>
 <pinref part="U5" gate="A" pin="A2"/>
 <wire x1="40.64" y1="30.48" x2="30.48" y2="30.48" width="0.1524" layer="91"/>
 <junction x="30.48" y="30.48"/>
-<pinref part="SJ3" gate="1" pin="1"/>
-<wire x1="22.86" y1="12.7" x2="30.48" y2="12.7" width="0.1524" layer="91"/>
 <junction x="30.48" y="12.7"/>
+<pinref part="JP1" gate="G$1" pin="2"/>
+<wire x1="20.32" y1="17.78" x2="22.86" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="17.78" x2="22.86" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="12.7" x2="30.48" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C23" gate="G$1" pin="2"/>
@@ -23965,9 +23965,10 @@ High-density Mounting</description>
 <pinref part="U5" gate="A" pin="WP"/>
 <wire x1="22.86" y1="27.94" x2="22.86" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="25.4" x2="40.64" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="SJ3" gate="1" pin="2"/>
-<wire x1="22.86" y1="22.86" x2="22.86" y2="25.4" width="0.1524" layer="91"/>
 <junction x="22.86" y="25.4"/>
+<pinref part="JP1" gate="G$1" pin="1"/>
+<wire x1="20.32" y1="20.32" x2="22.86" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="20.32" x2="22.86" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RESET" class="0">
