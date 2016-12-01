@@ -22471,7 +22471,6 @@ High-density Mounting</description>
 <part name="R63" library="rcl" deviceset="R-EU_" device="R0603" value="100"/>
 <part name="R64" library="rcl" deviceset="R-EU_" device="R0603" value="100"/>
 <part name="R65" library="rcl" deviceset="R-EU_" device="R0603" value="100"/>
-<part name="GND51" library="supply1" deviceset="GND" device=""/>
 <part name="R66" library="rcl" deviceset="R-EU_" device="R0603" value="4k7"/>
 <part name="U$10" library="crystal" deviceset="ASE" device="" value="ASE-12"/>
 <part name="GND52" library="supply1" deviceset="GND" device=""/>
@@ -22506,6 +22505,7 @@ High-density Mounting</description>
 <part name="R71" library="rcl" deviceset="R-EU_" device="R0603" value="0R"/>
 <part name="R72" library="rcl" deviceset="R-EU_" device="R0603" value="0R"/>
 <part name="+3V30" library="supply1" deviceset="+3V3" device=""/>
+<part name="+3V44" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -22588,8 +22588,8 @@ High-density Mounting</description>
 <instance part="P+15" gate="1" x="35.56" y="147.32"/>
 <instance part="GND62" gate="1" x="35.56" y="129.54"/>
 <instance part="P+21" gate="1" x="96.52" y="83.82"/>
-<instance part="GND51" gate="1" x="360.68" y="124.46"/>
 <instance part="+3V30" gate="G$1" x="139.7" y="193.04"/>
+<instance part="+3V44" gate="G$1" x="360.68" y="144.78"/>
 </instances>
 <busses>
 </busses>
@@ -22817,12 +22817,6 @@ High-density Mounting</description>
 <wire x1="27.94" y1="134.62" x2="35.56" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="134.62" x2="35.56" y2="132.08" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="U$3" gate="G$1" pin="TRI"/>
-<pinref part="GND51" gate="1" pin="GND"/>
-<wire x1="358.14" y1="129.54" x2="360.68" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="360.68" y1="129.54" x2="360.68" y2="127" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="+3V3" class="2">
 <segment>
@@ -22923,6 +22917,12 @@ High-density Mounting</description>
 <pinref part="+3V9" gate="G$1" pin="+3V3"/>
 <wire x1="360.68" y1="68.58" x2="360.68" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="C13" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="TRI"/>
+<wire x1="358.14" y1="129.54" x2="360.68" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="+3V44" gate="G$1" pin="+3V3"/>
+<wire x1="360.68" y1="129.54" x2="360.68" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
