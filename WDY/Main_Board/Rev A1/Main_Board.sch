@@ -24096,14 +24096,14 @@ High-density Mounting</description>
 <instance part="J2" gate="-1" x="33.02" y="203.2" rot="R180"/>
 <instance part="J2" gate="-2" x="33.02" y="198.12" rot="R180"/>
 <instance part="R12" gate="G$1" x="40.64" y="228.6" rot="R90"/>
-<instance part="R13" gate="G$1" x="48.26" y="241.3" rot="R180"/>
+<instance part="R13" gate="G$1" x="48.26" y="236.22" rot="R180"/>
 <instance part="R14" gate="G$1" x="40.64" y="190.5" rot="R270"/>
-<instance part="R15" gate="G$1" x="48.26" y="203.2"/>
-<instance part="C15" gate="G$1" x="55.88" y="236.22"/>
-<instance part="C16" gate="G$1" x="55.88" y="198.12"/>
+<instance part="R15" gate="G$1" x="48.26" y="198.12"/>
+<instance part="C15" gate="G$1" x="55.88" y="231.14"/>
+<instance part="C16" gate="G$1" x="55.88" y="193.04"/>
 <instance part="GND22" gate="1" x="40.64" y="180.34"/>
-<instance part="GND23" gate="1" x="55.88" y="187.96"/>
-<instance part="GND24" gate="1" x="55.88" y="226.06"/>
+<instance part="GND23" gate="1" x="55.88" y="180.34"/>
+<instance part="GND24" gate="1" x="55.88" y="218.44"/>
 <instance part="GND25" gate="1" x="40.64" y="218.44"/>
 <instance part="J3" gate="-1" x="30.48" y="162.56" rot="MR0"/>
 <instance part="J3" gate="-2" x="30.48" y="157.48" rot="MR0"/>
@@ -24165,10 +24165,10 @@ High-density Mounting</description>
 <instance part="J11" gate="-1" x="312.42" y="154.94" rot="R180"/>
 <instance part="J11" gate="-2" x="312.42" y="149.86" rot="R180"/>
 <instance part="R43" gate="G$1" x="320.04" y="142.24" rot="R270"/>
-<instance part="R44" gate="G$1" x="327.66" y="154.94"/>
-<instance part="C24" gate="G$1" x="335.28" y="149.86"/>
+<instance part="R44" gate="G$1" x="330.2" y="149.86"/>
+<instance part="C24" gate="G$1" x="337.82" y="144.78"/>
 <instance part="GND47" gate="1" x="320.04" y="132.08"/>
-<instance part="GND48" gate="1" x="335.28" y="139.7"/>
+<instance part="GND48" gate="1" x="337.82" y="134.62"/>
 <instance part="P+10" gate="1" x="149.86" y="96.52"/>
 <instance part="R45" gate="G$1" x="154.94" y="83.82"/>
 <instance part="R46" gate="G$1" x="193.04" y="91.44" rot="R270"/>
@@ -24264,23 +24264,23 @@ High-density Mounting</description>
 <segment>
 <pinref part="R13" gate="G$1" pin="1"/>
 <pinref part="C15" gate="G$1" pin="1"/>
-<wire x1="53.34" y1="241.3" x2="55.88" y2="241.3" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="241.3" x2="55.88" y2="238.76" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="241.3" x2="71.12" y2="241.3" width="0.1524" layer="91"/>
-<junction x="55.88" y="241.3"/>
-<label x="71.12" y="241.3" size="1.27" layer="95" xref="yes"/>
+<wire x1="53.34" y1="236.22" x2="55.88" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="236.22" x2="55.88" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="236.22" x2="71.12" y2="236.22" width="0.1524" layer="91"/>
+<junction x="55.88" y="236.22"/>
+<label x="71.12" y="236.22" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GND" class="2">
 <segment>
 <pinref part="C16" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="193.04" x2="55.88" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="187.96" x2="55.88" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="GND23" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND24" gate="1" pin="GND"/>
 <pinref part="C15" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="228.6" x2="55.88" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="220.98" x2="55.88" y2="226.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J5" gate="G$1" pin="P$2"/>
@@ -24320,7 +24320,7 @@ High-density Mounting</description>
 </segment>
 <segment>
 <pinref part="C24" gate="G$1" pin="2"/>
-<wire x1="335.28" y1="144.78" x2="335.28" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="337.82" y1="139.7" x2="337.82" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="GND48" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -24521,11 +24521,11 @@ High-density Mounting</description>
 <segment>
 <pinref part="C16" gate="G$1" pin="1"/>
 <pinref part="R15" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="200.66" x2="55.88" y2="203.2" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="203.2" x2="53.34" y2="203.2" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="203.2" x2="71.12" y2="203.2" width="0.1524" layer="91"/>
-<junction x="55.88" y="203.2"/>
-<label x="71.12" y="203.2" size="1.27" layer="95" xref="yes"/>
+<wire x1="55.88" y1="195.58" x2="55.88" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="198.12" x2="53.34" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="198.12" x2="71.12" y2="198.12" width="0.1524" layer="91"/>
+<junction x="55.88" y="198.12"/>
+<label x="71.12" y="198.12" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="+24V" class="0">
@@ -24801,11 +24801,11 @@ High-density Mounting</description>
 <segment>
 <pinref part="C24" gate="G$1" pin="1"/>
 <pinref part="R44" gate="G$1" pin="2"/>
-<wire x1="335.28" y1="152.4" x2="335.28" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="335.28" y1="154.94" x2="332.74" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="335.28" y1="154.94" x2="342.9" y2="154.94" width="0.1524" layer="91"/>
-<junction x="335.28" y="154.94"/>
-<label x="342.9" y="154.94" size="1.27" layer="95" xref="yes"/>
+<wire x1="337.82" y1="147.32" x2="337.82" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="337.82" y1="149.86" x2="335.28" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="337.82" y1="149.86" x2="345.44" y2="149.86" width="0.1524" layer="91"/>
+<junction x="337.82" y="149.86"/>
+<label x="345.44" y="149.86" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$34" class="0">
@@ -25096,6 +25096,9 @@ High-density Mounting</description>
 <pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="35.56" y1="236.22" x2="40.64" y2="236.22" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="236.22" x2="40.64" y2="233.68" width="0.1524" layer="91"/>
+<pinref part="R13" gate="G$1" pin="2"/>
+<wire x1="40.64" y1="236.22" x2="43.18" y2="236.22" width="0.1524" layer="91"/>
+<junction x="40.64" y="236.22"/>
 </segment>
 </net>
 <net name="N$66" class="0">
@@ -25104,6 +25107,9 @@ High-density Mounting</description>
 <pinref part="R14" gate="G$1" pin="1"/>
 <wire x1="35.56" y1="198.12" x2="40.64" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="198.12" x2="40.64" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="R15" gate="G$1" pin="1"/>
+<wire x1="40.64" y1="198.12" x2="43.18" y2="198.12" width="0.1524" layer="91"/>
+<junction x="40.64" y="198.12"/>
 </segment>
 </net>
 <net name="N$67" class="0">
@@ -25112,35 +25118,29 @@ High-density Mounting</description>
 <pinref part="R43" gate="G$1" pin="1"/>
 <wire x1="314.96" y1="149.86" x2="320.04" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="320.04" y1="149.86" x2="320.04" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="R44" gate="G$1" pin="1"/>
+<wire x1="320.04" y1="149.86" x2="325.12" y2="149.86" width="0.1524" layer="91"/>
+<junction x="320.04" y="149.86"/>
 </segment>
 </net>
 <net name="AVDD" class="0">
 <segment>
-<pinref part="R44" gate="G$1" pin="1"/>
 <pinref part="J11" gate="-1" pin="S"/>
 <wire x1="314.96" y1="154.94" x2="320.04" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="U$13" gate="A" pin="AVDD"/>
-<wire x1="320.04" y1="154.94" x2="322.58" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="320.04" y1="154.94" x2="320.04" y2="165.1" width="0.1524" layer="91"/>
-<junction x="320.04" y="154.94"/>
 </segment>
 <segment>
-<pinref part="R15" gate="G$1" pin="1"/>
 <pinref part="J2" gate="-1" pin="S"/>
 <wire x1="35.56" y1="203.2" x2="40.64" y2="203.2" width="0.1524" layer="91"/>
 <pinref part="U$11" gate="A" pin="AVDD"/>
-<wire x1="40.64" y1="203.2" x2="43.18" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="203.2" x2="40.64" y2="208.28" width="0.1524" layer="91"/>
-<junction x="40.64" y="203.2"/>
 </segment>
 <segment>
-<pinref part="R13" gate="G$1" pin="2"/>
 <pinref part="J1" gate="-1" pin="S"/>
 <wire x1="35.56" y1="241.3" x2="40.64" y2="241.3" width="0.1524" layer="91"/>
 <pinref part="U$12" gate="A" pin="AVDD"/>
-<wire x1="40.64" y1="241.3" x2="43.18" y2="241.3" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="246.38" x2="40.64" y2="241.3" width="0.1524" layer="91"/>
-<junction x="40.64" y="241.3"/>
 </segment>
 </net>
 <net name="ISP_TXDO" class="1">
