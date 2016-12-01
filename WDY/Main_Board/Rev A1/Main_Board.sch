@@ -22506,6 +22506,7 @@ High-density Mounting</description>
 <part name="JP1" library="exmachina" deviceset="BC-2-?" device="P"/>
 <part name="R71" library="rcl" deviceset="R-EU_" device="R0603" value="0R"/>
 <part name="R72" library="rcl" deviceset="R-EU_" device="R0603" value="0R"/>
+<part name="+3V30" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -22589,6 +22590,7 @@ High-density Mounting</description>
 <instance part="GND62" gate="1" x="35.56" y="129.54"/>
 <instance part="P+21" gate="1" x="96.52" y="83.82"/>
 <instance part="GND51" gate="1" x="360.68" y="124.46"/>
+<instance part="+3V30" gate="G$1" x="139.7" y="193.04"/>
 </instances>
 <busses>
 </busses>
@@ -22825,20 +22827,22 @@ High-density Mounting</description>
 </net>
 <net name="+3V3" class="2">
 <segment>
-<pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="C3" gate="G$1" pin="+"/>
-<wire x1="71.12" y1="185.42" x2="78.74" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="185.42" x2="78.74" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
-<wire x1="78.74" y1="175.26" x2="78.74" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="185.42" x2="78.74" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="P1" gate="G$1" pin="CT"/>
 <wire x1="78.74" y1="200.66" x2="78.74" y2="248.92" width="0.1524" layer="91"/>
+<pinref part="P1" gate="G$1" pin="CT"/>
 <wire x1="53.34" y1="200.66" x2="78.74" y2="200.66" width="0.1524" layer="91"/>
 <junction x="78.74" y="200.66"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="71.12" y1="185.42" x2="78.74" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="185.42" x2="78.74" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="185.42" x2="78.74" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="175.26" x2="78.74" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="71.12" y1="175.26" x2="78.74" y2="175.26" width="0.1524" layer="91"/>
 <junction x="78.74" y="175.26"/>
+</segment>
+<segment>
 <pinref part="C1" gate="G$1" pin="1"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="170.18" x2="106.68" y2="175.26" width="0.1524" layer="91"/>
@@ -22846,7 +22850,6 @@ High-density Mounting</description>
 <wire x1="106.68" y1="175.26" x2="106.68" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="177.8" x2="114.3" y2="177.8" width="0.1524" layer="91"/>
 <junction x="106.68" y="177.8"/>
-<wire x1="78.74" y1="175.26" x2="106.68" y2="175.26" width="0.1524" layer="91"/>
 <junction x="106.68" y="175.26"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <pinref part="R5" gate="G$1" pin="1"/>
@@ -22857,6 +22860,9 @@ High-density Mounting</description>
 <junction x="124.46" y="177.8"/>
 <wire x1="106.68" y1="175.26" x2="124.46" y2="175.26" width="0.1524" layer="91"/>
 <junction x="124.46" y="175.26"/>
+<pinref part="+3V30" gate="G$1" pin="+3V3"/>
+<wire x1="124.46" y1="175.26" x2="139.7" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="175.26" x2="139.7" y2="190.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
