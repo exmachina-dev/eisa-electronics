@@ -24183,20 +24183,20 @@ High-density Mounting</description>
 <instance part="J13" gate="-1" x="144.78" y="43.18" rot="R180"/>
 <instance part="J13" gate="-2" x="144.78" y="38.1" rot="R180"/>
 <instance part="P+13" gate="1" x="195.58" y="55.88"/>
-<instance part="U6" gate="A" x="236.22" y="157.48" rot="MR0"/>
+<instance part="U6" gate="A" x="238.76" y="154.94"/>
 <instance part="C25" gate="G$1" x="213.36" y="124.46"/>
 <instance part="C26" gate="G$1" x="205.74" y="167.64"/>
 <instance part="GND43" gate="1" x="205.74" y="157.48"/>
 <instance part="GND44" gate="1" x="213.36" y="114.3"/>
-<instance part="+3V31" gate="G$1" x="256.54" y="175.26"/>
-<instance part="GND53" gate="1" x="256.54" y="139.7"/>
-<instance part="U7" gate="A" x="243.84" y="68.58" rot="MR0"/>
+<instance part="+3V31" gate="G$1" x="218.44" y="172.72" rot="MR0"/>
+<instance part="GND53" gate="1" x="218.44" y="137.16" rot="MR0"/>
+<instance part="U7" gate="A" x="246.38" y="71.12"/>
 <instance part="C27" gate="G$1" x="210.82" y="33.02"/>
 <instance part="C28" gate="G$1" x="210.82" y="78.74"/>
 <instance part="GND54" gate="1" x="210.82" y="68.58"/>
 <instance part="GND55" gate="1" x="210.82" y="22.86"/>
-<instance part="+3V32" gate="G$1" x="264.16" y="86.36"/>
-<instance part="GND56" gate="1" x="264.16" y="50.8"/>
+<instance part="+3V32" gate="G$1" x="226.06" y="88.9" rot="MR0"/>
+<instance part="GND56" gate="1" x="226.06" y="53.34" rot="MR0"/>
 <instance part="R56" gate="G$1" x="20.32" y="78.74" rot="R270"/>
 <instance part="R57" gate="G$1" x="38.1" y="60.96"/>
 <instance part="P+20" gate="1" x="20.32" y="93.98"/>
@@ -24336,8 +24336,8 @@ High-density Mounting</description>
 <segment>
 <pinref part="U6" gate="A" pin="GND"/>
 <pinref part="GND53" gate="1" pin="GND"/>
-<wire x1="254" y1="147.32" x2="256.54" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="256.54" y1="147.32" x2="256.54" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="144.78" x2="218.44" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="144.78" x2="218.44" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND54" gate="1" pin="GND"/>
@@ -24352,8 +24352,8 @@ High-density Mounting</description>
 <segment>
 <pinref part="U7" gate="A" pin="GND"/>
 <pinref part="GND56" gate="1" pin="GND"/>
-<wire x1="261.62" y1="58.42" x2="264.16" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="264.16" y1="58.42" x2="264.16" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="60.96" x2="226.06" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="60.96" x2="226.06" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C51" gate="G$1" pin="2"/>
@@ -24486,14 +24486,14 @@ High-density Mounting</description>
 <segment>
 <pinref part="U6" gate="A" pin="VCC"/>
 <pinref part="+3V31" gate="G$1" pin="+3V3"/>
-<wire x1="254" y1="160.02" x2="256.54" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="256.54" y1="160.02" x2="256.54" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="157.48" x2="218.44" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="157.48" x2="218.44" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U7" gate="A" pin="VCC"/>
 <pinref part="+3V32" gate="G$1" pin="+3V3"/>
-<wire x1="261.62" y1="71.12" x2="264.16" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="264.16" y1="71.12" x2="264.16" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="73.66" x2="226.06" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="73.66" x2="226.06" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="+3V40" gate="G$1" pin="+3V3"/>
@@ -24828,9 +24828,9 @@ High-density Mounting</description>
 </net>
 <net name="DRIVE_EN" class="0">
 <segment>
-<pinref part="U7" gate="A" pin="1A"/>
-<wire x1="261.62" y1="66.04" x2="269.24" y2="66.04" width="0.1524" layer="91"/>
-<label x="269.24" y="66.04" size="1.27" layer="95" xref="yes"/>
+<wire x1="264.16" y1="73.66" x2="271.78" y2="73.66" width="0.1524" layer="91"/>
+<label x="271.78" y="73.66" size="1.27" layer="95" xref="yes"/>
+<pinref part="U7" gate="A" pin="1Y"/>
 </segment>
 </net>
 <net name="N$36" class="0">
@@ -24853,9 +24853,9 @@ High-density Mounting</description>
 </net>
 <net name="DRIVE_ERR" class="0">
 <segment>
-<pinref part="U7" gate="A" pin="2A"/>
-<wire x1="261.62" y1="63.5" x2="269.24" y2="63.5" width="0.1524" layer="91"/>
-<label x="269.24" y="63.5" size="1.27" layer="95" xref="yes"/>
+<wire x1="264.16" y1="71.12" x2="271.78" y2="71.12" width="0.1524" layer="91"/>
+<label x="271.78" y="71.12" size="1.27" layer="95" xref="yes"/>
+<pinref part="U7" gate="A" pin="2Y"/>
 </segment>
 </net>
 <net name="N$38" class="0">
@@ -24864,17 +24864,13 @@ High-density Mounting</description>
 <pinref part="C25" gate="G$1" pin="1"/>
 <wire x1="205.74" y1="129.54" x2="213.36" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="129.54" x2="213.36" y2="127" width="0.1524" layer="91"/>
-<pinref part="U6" gate="A" pin="2Y"/>
 <wire x1="213.36" y1="129.54" x2="213.36" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="157.48" x2="218.44" y2="157.48" width="0.1524" layer="91"/>
 <junction x="213.36" y="129.54"/>
 </segment>
 </net>
 <net name="N$39" class="0">
 <segment>
-<pinref part="U6" gate="A" pin="1Y"/>
 <pinref part="R40" gate="G$1" pin="2"/>
-<wire x1="218.44" y1="160.02" x2="213.36" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="160.02" x2="213.36" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="172.72" x2="205.74" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="C26" gate="G$1" pin="1"/>
@@ -24885,42 +24881,40 @@ High-density Mounting</description>
 </net>
 <net name="BRAKE_SENSOR_1" class="0">
 <segment>
-<pinref part="U6" gate="A" pin="1A"/>
-<wire x1="254" y1="154.94" x2="259.08" y2="154.94" width="0.1524" layer="91"/>
-<label x="259.08" y="154.94" size="1.27" layer="95" xref="yes"/>
+<wire x1="259.08" y1="154.94" x2="261.62" y2="160.02" width="0.1524" layer="91"/>
+<label x="261.62" y="160.02" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="BRAKE_SENSOR_2" class="0">
 <segment>
-<pinref part="U6" gate="A" pin="2A"/>
-<wire x1="254" y1="152.4" x2="259.08" y2="152.4" width="0.1524" layer="91"/>
-<label x="259.08" y="152.4" size="1.27" layer="95" xref="yes"/>
+<wire x1="259.08" y1="152.4" x2="261.62" y2="157.48" width="0.1524" layer="91"/>
+<label x="261.62" y="157.48" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$41" class="0">
 <segment>
-<pinref part="U7" gate="A" pin="1Y"/>
-<wire x1="226.06" y1="71.12" x2="220.98" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="71.12" x2="220.98" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="68.58" x2="220.98" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="83.82" x2="210.82" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="C28" gate="G$1" pin="1"/>
 <wire x1="210.82" y1="81.28" x2="210.82" y2="83.82" width="0.1524" layer="91"/>
 <junction x="210.82" y="83.82"/>
 <pinref part="R47" gate="G$1" pin="2"/>
 <wire x1="205.74" y1="83.82" x2="210.82" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="U7" gate="A" pin="1A"/>
+<wire x1="220.98" y1="68.58" x2="228.6" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$42" class="0">
 <segment>
-<pinref part="U7" gate="A" pin="2Y"/>
-<wire x1="220.98" y1="68.58" x2="226.06" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="C27" gate="G$1" pin="1"/>
 <wire x1="210.82" y1="38.1" x2="210.82" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="R50" gate="G$1" pin="2"/>
 <wire x1="208.28" y1="38.1" x2="210.82" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="68.58" x2="220.98" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="66.04" x2="220.98" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="38.1" x2="210.82" y2="38.1" width="0.1524" layer="91"/>
 <junction x="210.82" y="38.1"/>
+<pinref part="U7" gate="A" pin="2A"/>
+<wire x1="228.6" y1="66.04" x2="220.98" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ENCODER_A" class="0">
