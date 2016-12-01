@@ -22504,6 +22504,8 @@ High-density Mounting</description>
 <part name="GND90" library="supply1" deviceset="GND" device=""/>
 <part name="TP3" library="testpad" deviceset="TP" device="B1,27"/>
 <part name="JP1" library="exmachina" deviceset="BC-2-?" device="P"/>
+<part name="R71" library="rcl" deviceset="R-EU_" device="R0603" value="0R"/>
+<part name="R72" library="rcl" deviceset="R-EU_" device="R0603" value="0R"/>
 </parts>
 <sheets>
 <sheet>
@@ -23263,6 +23265,8 @@ High-density Mounting</description>
 <instance part="U$14" gate="A" x="58.42" y="104.14" rot="R90"/>
 <instance part="GND89" gate="1" x="58.42" y="93.98"/>
 <instance part="JP1" gate="G$1" x="60.96" y="63.5"/>
+<instance part="R71" gate="G$1" x="279.4" y="71.12" rot="R180"/>
+<instance part="R72" gate="G$1" x="279.4" y="63.5" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -23711,22 +23715,6 @@ High-density Mounting</description>
 <label x="320.04" y="228.6" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="BOOT_SELECT" class="1">
-<segment>
-<pinref part="U1" gate="A" pin="P2[10]/*EINT0/NMI"/>
-<wire x1="314.96" y1="114.3" x2="320.04" y2="114.3" width="0.1524" layer="91"/>
-<label x="320.04" y="114.3" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="R67" gate="G$1" pin="1"/>
-<pinref part="SW2" gate="G$1" pin="1"/>
-<wire x1="248.92" y1="73.66" x2="248.92" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="71.12" x2="248.92" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="71.12" x2="266.7" y2="71.12" width="0.1524" layer="91"/>
-<junction x="248.92" y="71.12"/>
-<label x="266.7" y="71.12" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="EEPROM_SDA" class="0">
 <segment>
 <pinref part="U5" gate="A" pin="SDA"/>
@@ -24023,6 +24011,46 @@ High-density Mounting</description>
 <pinref part="R69" gate="G$1" pin="2"/>
 <wire x1="160.02" y1="63.5" x2="162.56" y2="63.5" width="0.1524" layer="91"/>
 <label x="162.56" y="63.5" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$5" class="1">
+<segment>
+<pinref part="SW2" gate="G$1" pin="1"/>
+<pinref part="R67" gate="G$1" pin="1"/>
+<wire x1="248.92" y1="73.66" x2="248.92" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="R71" gate="G$1" pin="2"/>
+<wire x1="248.92" y1="71.12" x2="248.92" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="71.12" x2="269.24" y2="71.12" width="0.1524" layer="91"/>
+<junction x="248.92" y="71.12"/>
+<pinref part="R72" gate="G$1" pin="2"/>
+<wire x1="269.24" y1="71.12" x2="248.92" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="63.5" x2="269.24" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="63.5" x2="269.24" y2="71.12" width="0.1524" layer="91"/>
+<junction x="269.24" y="71.12"/>
+</segment>
+</net>
+<net name="BOOT_SELECT_P2_12" class="1">
+<segment>
+<pinref part="R72" gate="G$1" pin="1"/>
+<wire x1="284.48" y1="63.5" x2="297.18" y2="63.5" width="0.1524" layer="91"/>
+<label x="297.18" y="63.5" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="P2[12]/*EINT2/I2STX_WS"/>
+<wire x1="314.96" y1="109.22" x2="320.04" y2="109.22" width="0.1524" layer="91"/>
+<label x="320.04" y="109.22" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="BOOT_SELECT_P2_10" class="1">
+<segment>
+<label x="297.18" y="71.12" size="1.27" layer="95" xref="yes"/>
+<pinref part="R71" gate="G$1" pin="1"/>
+<wire x1="284.48" y1="71.12" x2="297.18" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="P2[10]/*EINT0/NMI"/>
+<wire x1="314.96" y1="114.3" x2="320.04" y2="114.3" width="0.1524" layer="91"/>
+<label x="320.04" y="114.3" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
