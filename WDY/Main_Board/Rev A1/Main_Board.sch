@@ -22473,7 +22473,6 @@ High-density Mounting</description>
 <part name="R65" library="rcl" deviceset="R-EU_" device="R0603" value="100"/>
 <part name="R66" library="rcl" deviceset="R-EU_" device="R0603" value="4k7"/>
 <part name="U$10" library="crystal" deviceset="ASE" device="" value="ASE-12"/>
-<part name="GND52" library="supply1" deviceset="GND" device=""/>
 <part name="GND73" library="supply1" deviceset="GND" device=""/>
 <part name="+3V39" library="supply1" deviceset="+3V3" device=""/>
 <part name="C55" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
@@ -22506,6 +22505,7 @@ High-density Mounting</description>
 <part name="R72" library="rcl" deviceset="R-EU_" device="R0603" value="0R"/>
 <part name="+3V30" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V44" library="supply1" deviceset="+3V3" device=""/>
+<part name="+3V45" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -23247,7 +23247,6 @@ High-density Mounting</description>
 <instance part="+3V34" gate="G$1" x="10.16" y="187.96"/>
 <instance part="R66" gate="G$1" x="22.86" y="33.02" rot="R90"/>
 <instance part="U$10" gate="G$1" x="43.18" y="144.78"/>
-<instance part="GND52" gate="1" x="58.42" y="132.08"/>
 <instance part="GND73" gate="1" x="22.86" y="132.08"/>
 <instance part="+3V39" gate="G$1" x="22.86" y="157.48"/>
 <instance part="C55" gate="G$1" x="10.16" y="144.78"/>
@@ -23271,6 +23270,7 @@ High-density Mounting</description>
 <instance part="JP1" gate="G$1" x="15.24" y="20.32"/>
 <instance part="R71" gate="G$1" x="279.4" y="71.12" rot="R180"/>
 <instance part="R72" gate="G$1" x="279.4" y="63.5" rot="R180"/>
+<instance part="+3V45" gate="G$1" x="58.42" y="157.48"/>
 </instances>
 <busses>
 </busses>
@@ -23473,6 +23473,12 @@ High-density Mounting</description>
 <pinref part="R67" gate="G$1" pin="2"/>
 <wire x1="248.92" y1="88.9" x2="248.92" y2="83.82" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$10" gate="G$1" pin="TRI"/>
+<wire x1="55.88" y1="139.7" x2="58.42" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="+3V45" gate="G$1" pin="+3V3"/>
+<wire x1="58.42" y1="139.7" x2="58.42" y2="154.94" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="GND" class="2">
 <segment>
@@ -23588,12 +23594,6 @@ High-density Mounting</description>
 <pinref part="U$10" gate="G$1" pin="GND"/>
 <wire x1="22.86" y1="134.62" x2="22.86" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="139.7" x2="30.48" y2="139.7" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$10" gate="G$1" pin="TRI"/>
-<pinref part="GND52" gate="1" pin="GND"/>
-<wire x1="55.88" y1="139.7" x2="58.42" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="139.7" x2="58.42" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND85" gate="1" pin="GND"/>
@@ -23865,9 +23865,9 @@ High-density Mounting</description>
 <label x="124.46" y="180.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<label x="60.96" y="144.78" size="1.27" layer="95" xref="yes"/>
+<label x="63.5" y="144.78" size="1.27" layer="95" xref="yes"/>
 <pinref part="U$10" gate="G$1" pin="OUT"/>
-<wire x1="55.88" y1="144.78" x2="60.96" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="144.78" x2="63.5" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="AVDD" class="0">
