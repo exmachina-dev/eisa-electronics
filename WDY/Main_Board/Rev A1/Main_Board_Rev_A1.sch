@@ -22208,6 +22208,55 @@ High-density Mounting</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun">
+<packages>
+<package name="FIDUCIAL-1.5X3">
+<circle x="0" y="0" radius="0.9055" width="1.27" layer="29"/>
+<smd name="1" x="0" y="0" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="FIDUCIAL-1X2">
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
+<text x="-0.635" y="0.635" size="0.6096" layer="25">&gt;NAME</text>
+</package>
+<package name="FIDUCIAL-1X2.5">
+<circle x="0" y="0" radius="0.9" width="1.27" layer="29"/>
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
+</package>
+</packages>
+<symbols>
+<symbol name="FIDUCIAL">
+<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0.762" x2="-0.762" y2="-0.762" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="FIDUCIAL" prefix="JP">
+<description>&lt;b&gt;Fiducial Alignment Points&lt;/b&gt;
+Various fiducial points for machine vision alignment.</description>
+<gates>
+<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="1.5X3" package="FIDUCIAL-1.5X3">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1X2" package="FIDUCIAL-1X2">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1X2.5" package="FIDUCIAL-1X2.5">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -22632,6 +22681,10 @@ High-density Mounting</description>
 <part name="J11" library="con-samtec" deviceset="FTSH-105-01-L-DV" device=""/>
 <part name="+3V48" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND91" library="supply1" deviceset="GND" device=""/>
+<part name="JP2" library="SparkFun" deviceset="FIDUCIAL" device="1.5X3"/>
+<part name="JP3" library="SparkFun" deviceset="FIDUCIAL" device="1.5X3"/>
+<part name="JP4" library="SparkFun" deviceset="FIDUCIAL" device="1.5X3"/>
+<part name="JP5" library="SparkFun" deviceset="FIDUCIAL" device="1.5X3"/>
 </parts>
 <sheets>
 <sheet>
@@ -22716,6 +22769,10 @@ High-density Mounting</description>
 <instance part="P+21" gate="1" x="96.52" y="83.82"/>
 <instance part="+3V30" gate="G$1" x="139.7" y="193.04"/>
 <instance part="+3V44" gate="G$1" x="360.68" y="144.78"/>
+<instance part="JP2" gate="G$1" x="344.678" y="21.59"/>
+<instance part="JP3" gate="G$1" x="348.488" y="21.59"/>
+<instance part="JP4" gate="G$1" x="352.298" y="21.59"/>
+<instance part="JP5" gate="G$1" x="356.362" y="21.59"/>
 </instances>
 <busses>
 </busses>
