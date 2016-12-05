@@ -12304,22 +12304,22 @@ SOurce: www.abracon.com</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MCP2561-E/SN">
+<deviceset name="MCP2561-E/SN" prefix="U">
 <description>High-Speed CAN Transceiver</description>
 <gates>
-<gate name="G$1" symbol="MCP2561-E/SN" x="0" y="5.08"/>
+<gate name="G" symbol="MCP2561-E/SN" x="0" y="5.08"/>
 </gates>
 <devices>
 <device name="" package="SOIC127P600X175-8N">
 <connects>
-<connect gate="G$1" pin="CANH" pad="7"/>
-<connect gate="G$1" pin="CANL" pad="6"/>
-<connect gate="G$1" pin="RXD" pad="4"/>
-<connect gate="G$1" pin="SPLIT" pad="5"/>
-<connect gate="G$1" pin="STBY" pad="8"/>
-<connect gate="G$1" pin="TXD" pad="1"/>
-<connect gate="G$1" pin="VDD" pad="3"/>
-<connect gate="G$1" pin="VSS" pad="2"/>
+<connect gate="G" pin="CANH" pad="7"/>
+<connect gate="G" pin="CANL" pad="6"/>
+<connect gate="G" pin="RXD" pad="4"/>
+<connect gate="G" pin="SPLIT" pad="5"/>
+<connect gate="G" pin="STBY" pad="8"/>
+<connect gate="G" pin="TXD" pad="1"/>
+<connect gate="G" pin="VDD" pad="3"/>
+<connect gate="G" pin="VSS" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
@@ -22502,7 +22502,7 @@ Various fiducial points for machine vision alignment.</description>
 <part name="R52" library="rcl" deviceset="R-EU_" device="R0603" value="4k7"/>
 <part name="LED3" library="led" deviceset="LED" device="CHIPLED_0603" value="Red"/>
 <part name="GND63" library="supply1" deviceset="GND" device=""/>
-<part name="D1" library="diode" deviceset="STPS3L40?" device="UF"/>
+<part name="D1" library="diode" deviceset="STPS3L40?" device="UF" value="Green"/>
 <part name="GND64" library="supply1" deviceset="GND" device=""/>
 <part name="TP1" library="testpad" deviceset="TP" device="B1,27"/>
 <part name="P+16" library="supply3" deviceset="+24V" device=""/>
@@ -22749,7 +22749,7 @@ Various fiducial points for machine vision alignment.</description>
 <instance part="C12" gate="G$1" x="312.42" y="134.62"/>
 <instance part="+3V8" gate="G$1" x="327.66" y="71.12"/>
 <instance part="GND16" gate="1" x="327.66" y="38.1"/>
-<instance part="U$4" gate="G$1" x="304.8" y="58.42" rot="MR0"/>
+<instance part="U$4" gate="G" x="304.8" y="58.42" rot="MR0"/>
 <instance part="GND17" gate="1" x="360.68" y="45.72"/>
 <instance part="+3V9" gate="G$1" x="360.68" y="71.12"/>
 <instance part="C13" gate="G$1" x="360.68" y="58.42"/>
@@ -22966,9 +22966,9 @@ Various fiducial points for machine vision alignment.</description>
 <segment>
 <pinref part="GND16" gate="1" pin="GND"/>
 <wire x1="327.66" y1="45.72" x2="327.66" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="VSS"/>
+<pinref part="U$4" gate="G" pin="VSS"/>
 <wire x1="327.66" y1="45.72" x2="322.58" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="STBY"/>
+<pinref part="U$4" gate="G" pin="STBY"/>
 <wire x1="327.66" y1="50.8" x2="322.58" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="327.66" y1="45.72" x2="327.66" y2="50.8" width="0.1524" layer="91"/>
 <junction x="327.66" y="45.72"/>
@@ -23091,7 +23091,7 @@ Various fiducial points for machine vision alignment.</description>
 <pinref part="C12" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="VDD"/>
+<pinref part="U$4" gate="G" pin="VDD"/>
 <pinref part="+3V8" gate="G$1" pin="+3V3"/>
 <wire x1="322.58" y1="63.5" x2="327.66" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="327.66" y1="63.5" x2="327.66" y2="68.58" width="0.1524" layer="91"/>
@@ -23244,21 +23244,21 @@ Various fiducial points for machine vision alignment.</description>
 </net>
 <net name="CAN_RX" class="1">
 <segment>
-<pinref part="U$4" gate="G$1" pin="RXD"/>
+<pinref part="U$4" gate="G" pin="RXD"/>
 <wire x1="322.58" y1="55.88" x2="330.2" y2="55.88" width="0.1524" layer="91"/>
 <label x="330.2" y="55.88" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CAN_TX" class="1">
 <segment>
-<pinref part="U$4" gate="G$1" pin="TXD"/>
+<pinref part="U$4" gate="G" pin="TXD"/>
 <wire x1="322.58" y1="58.42" x2="330.2" y2="58.42" width="0.1524" layer="91"/>
 <label x="330.2" y="58.42" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CAN_L" class="1">
 <segment>
-<pinref part="U$4" gate="G$1" pin="CANL"/>
+<pinref part="U$4" gate="G" pin="CANL"/>
 <wire x1="287.02" y1="53.34" x2="279.4" y2="53.34" width="0.1524" layer="91"/>
 <label x="279.4" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -23275,7 +23275,7 @@ Various fiducial points for machine vision alignment.</description>
 </net>
 <net name="CAN_H" class="1">
 <segment>
-<pinref part="U$4" gate="G$1" pin="CANH"/>
+<pinref part="U$4" gate="G" pin="CANH"/>
 <wire x1="287.02" y1="50.8" x2="279.4" y2="50.8" width="0.1524" layer="91"/>
 <label x="279.4" y="50.8" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -23292,7 +23292,7 @@ Various fiducial points for machine vision alignment.</description>
 </net>
 <net name="CAN_SPLIT" class="1">
 <segment>
-<pinref part="U$4" gate="G$1" pin="SPLIT"/>
+<pinref part="U$4" gate="G" pin="SPLIT"/>
 <wire x1="287.02" y1="60.96" x2="279.4" y2="60.96" width="0.1524" layer="91"/>
 <label x="279.4" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>

@@ -2867,7 +2867,7 @@ Your Eurocircuits Team
 <element name="R51" library="rcl" package="R0603" value="4k7" x="121.5" y="41.5" rot="R180"/>
 <element name="R52" library="rcl" package="R0603" value="4k7" x="121.5" y="38" rot="R180"/>
 <element name="LED3" library="led" package="CHIPLED_0603" value="Red" x="125" y="38" rot="R270"/>
-<element name="D1" library="diode" package="SMB" value="" x="122.5" y="46.5" rot="MR180">
+<element name="D1" library="diode" package="SMB" value="Green" x="122.5" y="46.5" rot="MR180">
 <attribute name="OC_FARNELL" value="2341599" x="122.5" y="46.5" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MP" value="STMICROELECTRONICS" x="122.5" y="46.5" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MPN" value="STPS3L40UF" x="122.5" y="46.5" size="1.778" layer="28" rot="MR180" display="off"/>
@@ -3053,10 +3053,10 @@ Your Eurocircuits Team
 <element name="R74" library="rcl" package="R0603" value="1k2" x="15" y="18.5" rot="R90"/>
 <element name="C24" library="rcl" package="C0603" value="0.1uF" x="11.5" y="20.5" rot="MR0"/>
 <element name="J11" library="con-samtec" package="FTSH-105-01-L-DV" value="FTSH-105-01-L-DV" x="37.5" y="24.5" rot="R270"/>
-<element name="JP2" library="SparkFun" package="FIDUCIAL-1.5X3" value="FIDUCIAL1.5X3" x="-19.5" y="-24"/>
-<element name="JP3" library="SparkFun" package="FIDUCIAL-1.5X3" value="FIDUCIAL1.5X3" x="-19.5" y="-27.5"/>
-<element name="JP4" library="SparkFun" package="FIDUCIAL-1.5X3" value="FIDUCIAL1.5X3" x="-19.5" y="-31"/>
-<element name="JP5" library="SparkFun" package="FIDUCIAL-1.5X3" value="FIDUCIAL1.5X3" x="-19.5" y="-34.5"/>
+<element name="JP2" library="SparkFun" package="FIDUCIAL-1.5X3" value="FIDUCIAL1.5X3" x="1.5" y="7.5"/>
+<element name="JP3" library="SparkFun" package="FIDUCIAL-1.5X3" value="FIDUCIAL1.5X3" x="128.5" y="7.5"/>
+<element name="JP4" library="SparkFun" package="FIDUCIAL-1.5X3" value="FIDUCIAL1.5X3" x="1.5" y="62.5"/>
+<element name="JP5" library="SparkFun" package="FIDUCIAL-1.5X3" value="FIDUCIAL1.5X3" x="128" y="62.5"/>
 </elements>
 <signals>
 <signal name="ETH_TX_P" class="1">
