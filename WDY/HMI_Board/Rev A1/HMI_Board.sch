@@ -5338,24 +5338,18 @@ Various fiducial points for machine vision alignment.</description>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
-<clearance class="0" value="0.205"/>
 </class>
 <class number="1" name="signal" width="0.1778" drill="0.35">
-<clearance class="0" value="0.205"/>
-<clearance class="1" value="0.205"/>
 </class>
 <class number="2" name="supply" width="0.4064" drill="0.5">
-<clearance class="0" value="0.205"/>
-<clearance class="1" value="0.205"/>
-<clearance class="2" value="0.205"/>
 </class>
 </classes>
 <parts>
 <part name="FRAME1" library="frames" deviceset="A3L-LOC" device=""/>
-<part name="LED1" library="led" deviceset="LED" device="SML0603"/>
-<part name="LED2" library="led" deviceset="LED" device="SML0603"/>
-<part name="LED3" library="led" deviceset="LED" device="SML0603"/>
-<part name="LED4" library="led" deviceset="LED" device="SML0603"/>
+<part name="LED1" library="led" deviceset="LED" device="SML0603" value="Blue"/>
+<part name="LED2" library="led" deviceset="LED" device="SML0603" value="Blue"/>
+<part name="LED3" library="led" deviceset="LED" device="SML0603" value="Blue"/>
+<part name="LED4" library="led" deviceset="LED" device="SML0603" value="Blue"/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
 <part name="R2" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
@@ -5473,7 +5467,7 @@ Various fiducial points for machine vision alignment.</description>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="0">
+<net name="GND" class="2">
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
 <pinref part="LED1" gate="G$1" pin="C"/>
