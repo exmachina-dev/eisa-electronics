@@ -5212,6 +5212,141 @@ High-density Mounting</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="exmachina">
+<packages>
+<package name="EXM-LOGO">
+<description>ExMachina logo</description>
+<wire x1="-1" y1="0" x2="1" y2="0" width="0.001" layer="21"/>
+<polygon width="0.001" layer="25">
+<vertex x="2.651759375" y="0.027940625"/>
+<vertex x="1.33858125" y="-2.461259375"/>
+<vertex x="-1.330959375" y="-2.453640625"/>
+<vertex x="-2.68478125" y="0.01778125"/>
+<vertex x="-1.28778125" y="2.512059375"/>
+<vertex x="1.33858125" y="2.5019"/>
+<vertex x="0.0254" y="0.1016"/>
+<vertex x="-1.287778125" y="2.5120625"/>
+<vertex x="-0.124459375" y="0.066040625"/>
+<vertex x="-2.06248125" y="0.03301875"/>
+<vertex x="-0.12191875" y="-0.08381875"/>
+<vertex x="-0.535940625" y="-1.021078125"/>
+<vertex x="-0.01015625" y="-0.12191875"/>
+<vertex x="1.338584375" y="-2.458725"/>
+<vertex x="0.1016" y="-0.048259375"/>
+</polygon>
+<polygon width="0.001" layer="25">
+<vertex x="1.6383" y="2.5781"/>
+<vertex x="0.40131875" y="0.251459375"/>
+<vertex x="2.839721875" y="0.327659375"/>
+</polygon>
+</package>
+<package name="EXM-LOGO-BASELINE">
+<description>ExMachina logo</description>
+<wire x1="-1" y1="0" x2="1" y2="0" width="0.001" layer="21"/>
+<polygon width="0.001" layer="21">
+<vertex x="2.651759375" y="0.027940625"/>
+<vertex x="1.33858125" y="-2.461259375"/>
+<vertex x="-1.330959375" y="-2.453640625"/>
+<vertex x="-2.68478125" y="0.01778125"/>
+<vertex x="-1.28778125" y="2.512059375"/>
+<vertex x="1.33858125" y="2.5019"/>
+<vertex x="0.0254" y="0.1016"/>
+<vertex x="-1.287778125" y="2.5120625"/>
+<vertex x="-0.124459375" y="0.066040625"/>
+<vertex x="-2.06248125" y="0.03301875"/>
+<vertex x="-0.12191875" y="-0.08381875"/>
+<vertex x="-0.535940625" y="-1.021078125"/>
+<vertex x="-0.01015625" y="-0.12191875"/>
+<vertex x="1.338584375" y="-2.458725"/>
+<vertex x="0.1016" y="-0.048259375"/>
+</polygon>
+<polygon width="0.001" layer="21">
+<vertex x="1.6383" y="2.5781"/>
+<vertex x="0.40131875" y="0.251459375"/>
+<vertex x="2.839721875" y="0.327659375"/>
+</polygon>
+<text x="3.81" y="0.889" size="1.27" layer="21" font="vector" ratio="10" rot="SR0">ExMachina</text>
+</package>
+</packages>
+<symbols>
+<symbol name="EXMACHINA-LOGO">
+<wire x1="-22.86" y1="5.08" x2="-22.86" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="-5.08" x2="22.86" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-5.08" x2="22.86" y2="5.08" width="0.254" layer="94"/>
+<wire x1="22.86" y1="5.08" x2="-22.86" y2="5.08" width="0.254" layer="94"/>
+<text x="0" y="0" size="0.0508" layer="94" font="vector">Replicape Logo</text>
+<text x="-19.558" y="-2.54" size="5.08" layer="94" font="vector">ExMachina</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="EXMACHINA-LOGO">
+<gates>
+<gate name="G$1" symbol="EXMACHINA-LOGO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="EXM-LOGO">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-NAME" package="EXM-LOGO-BASELINE">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="SparkFun">
+<packages>
+<package name="FIDUCIAL-1.5X3">
+<circle x="0" y="0" radius="0.9055" width="1.27" layer="29"/>
+<smd name="1" x="0" y="0" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="FIDUCIAL-1X2">
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
+<text x="-0.635" y="0.635" size="0.6096" layer="25">&gt;NAME</text>
+</package>
+<package name="FIDUCIAL-1X2.5">
+<circle x="0" y="0" radius="0.9" width="1.27" layer="29"/>
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
+</package>
+</packages>
+<symbols>
+<symbol name="FIDUCIAL">
+<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0.762" x2="-0.762" y2="-0.762" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="FIDUCIAL" prefix="JP">
+<description>&lt;b&gt;Fiducial Alignment Points&lt;/b&gt;
+Various fiducial points for machine vision alignment.</description>
+<gates>
+<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="1.5X3" package="FIDUCIAL-1.5X3">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1X2" package="FIDUCIAL-1X2">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1X2.5" package="FIDUCIAL-1X2.5">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5223,7 +5358,6 @@ High-density Mounting</description>
 <class number="1" name="signal" width="0.1778" drill="0.35">
 </class>
 <class number="2" name="supply" width="0.4064" drill="0.5">
-<clearance class="2" value="0.127"/>
 </class>
 </classes>
 <parts>
@@ -5278,6 +5412,11 @@ High-density Mounting</description>
 <part name="H6" library="holes" deviceset="MOUNT-HOLE" device="3.0"/>
 <part name="TP1" library="testpad" deviceset="TP" device="B2,54"/>
 <part name="TP2" library="testpad" deviceset="TP" device="B2,54"/>
+<part name="U$1" library="exmachina" deviceset="EXMACHINA-LOGO" device="-NAME"/>
+<part name="JP1" library="SparkFun" deviceset="FIDUCIAL" device="1X2"/>
+<part name="JP2" library="SparkFun" deviceset="FIDUCIAL" device="1X2"/>
+<part name="JP3" library="SparkFun" deviceset="FIDUCIAL" device="1X2"/>
+<part name="JP4" library="SparkFun" deviceset="FIDUCIAL" device="1X2"/>
 </parts>
 <sheets>
 <sheet>
@@ -5327,14 +5466,19 @@ High-density Mounting</description>
 <instance part="U2" gate="A" x="50.8" y="220.98"/>
 <instance part="+3V8" gate="G$1" x="27.94" y="228.6"/>
 <instance part="GND12" gate="1" x="73.66" y="208.28"/>
-<instance part="H1" gate="G$1" x="292.1" y="20.32"/>
-<instance part="H2" gate="G$1" x="302.26" y="20.32"/>
-<instance part="H3" gate="G$1" x="312.42" y="20.32"/>
-<instance part="H4" gate="G$1" x="292.1" y="12.7"/>
-<instance part="H5" gate="G$1" x="304.8" y="12.7"/>
-<instance part="H6" gate="G$1" x="314.96" y="12.7"/>
+<instance part="H1" gate="G$1" x="304.8" y="35.56"/>
+<instance part="H2" gate="G$1" x="330.2" y="35.56"/>
+<instance part="H3" gate="G$1" x="355.6" y="35.56"/>
+<instance part="H4" gate="G$1" x="304.8" y="27.94"/>
+<instance part="H5" gate="G$1" x="330.2" y="27.94"/>
+<instance part="H6" gate="G$1" x="355.6" y="27.94"/>
 <instance part="TP1" gate="G$1" x="30.48" y="228.6"/>
 <instance part="TP2" gate="G$1" x="81.28" y="205.74" rot="R180"/>
+<instance part="U$1" gate="G$1" x="311.15" y="19.05"/>
+<instance part="JP1" gate="G$1" x="344.932" y="21.844"/>
+<instance part="JP2" gate="G$1" x="348.488" y="21.844"/>
+<instance part="JP3" gate="G$1" x="352.044" y="21.844"/>
+<instance part="JP4" gate="G$1" x="355.6" y="21.844"/>
 </instances>
 <busses>
 </busses>
