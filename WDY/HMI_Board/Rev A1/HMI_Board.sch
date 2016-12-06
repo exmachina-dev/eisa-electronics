@@ -5392,7 +5392,6 @@ Various fiducial points for machine vision alignment.</description>
 <part name="H2" library="holes" deviceset="MOUNT-HOLE" device="3.0"/>
 <part name="H3" library="holes" deviceset="MOUNT-HOLE" device="3.0"/>
 <part name="H4" library="holes" deviceset="MOUNT-HOLE" device="3.0"/>
-<part name="H5" library="holes" deviceset="MOUNT-HOLE" device="3.0"/>
 <part name="H6" library="holes" deviceset="MOUNT-HOLE" device="3.0"/>
 <part name="TP1" library="testpad" deviceset="TP" device="B2,54"/>
 <part name="TP2" library="testpad" deviceset="TP" device="B2,54"/>
@@ -5454,7 +5453,6 @@ Various fiducial points for machine vision alignment.</description>
 <instance part="H2" gate="G$1" x="330.2" y="35.56"/>
 <instance part="H3" gate="G$1" x="355.6" y="35.56"/>
 <instance part="H4" gate="G$1" x="304.8" y="27.94"/>
-<instance part="H5" gate="G$1" x="330.2" y="27.94"/>
 <instance part="H6" gate="G$1" x="355.6" y="27.94"/>
 <instance part="TP1" gate="G$1" x="30.48" y="228.6"/>
 <instance part="TP2" gate="G$1" x="81.28" y="205.74" rot="R180"/>
