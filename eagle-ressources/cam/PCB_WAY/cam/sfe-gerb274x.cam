@@ -1,5 +1,5 @@
 [CAM Processor Job]
-Description[en]="\n\n\n\n\n\n\n\n\n<b>SparkFun Gerber Generator</b><p>\n\nThis CAM job creates the seven needed files to have a PCB created. Based on the original Eagle gerb274x.cam file.<p><p>\nYou will get seven gerber files that contain data for:<br>\n<b>g</b>erber <b>t</b>op <b>l</b>ayer (copper layer): *.GTL<br>\n<b>g</b>erber <b>t</b>op <b>o</b>verlay (silkscreen layer): *.GTO<br>\n<b>g</b>erber <b>t</b>op <b>s</b>oldermask (soldermask layer): *.GTS<br>\n\n<b>g</b>erber <b>b</b>ottom <b>l</b>ayer (copper layer): *.GBL<br>\n<b>g</b>erber <b>b</b>ottom <b>o</b>verlay (silkscreen layer): *.GBO<br>\n<b>g</b>erber <b>b</b>ottom <b>s</b>oldermask (soldermask layer): *.GBS<br>\n\nExcellon Drill File: *.TXT<br><br>\nThese files, zipped together, are the only 7 files you need to have a PCB made at nearly any fab house.\n"
+Description[en]="\n\n\n\n\n\n\n\n\n\n<b>SparkFun Gerber Generator</b><p>\n\nThis CAM job creates the seven needed files to have a PCB created. Based on the original Eagle gerb274x.cam file.<p><p>\nYou will get seven gerber files that contain data for:<br>\n<b>g</b>erber <b>t</b>op <b>l</b>ayer (copper layer): *.GTL<br>\n<b>g</b>erber <b>t</b>op <b>o</b>verlay (silkscreen layer): *.GTO<br>\n<b>g</b>erber <b>t</b>op <b>s</b>oldermask (soldermask layer): *.GTS<br>\n\n<b>g</b>erber <b>b</b>ottom <b>l</b>ayer (copper layer): *.GBL<br>\n<b>g</b>erber <b>b</b>ottom <b>o</b>verlay (silkscreen layer): *.GBO<br>\n<b>g</b>erber <b>b</b>ottom <b>s</b>oldermask (soldermask layer): *.GBS<br>\n\nExcellon Drill File: *.TXT<br><br>\nThese files, zipped together, are the only 7 files you need to have a PCB made at nearly any fab house.\n"
 Section=Sec_1
 Section=Sec_2
 Section=Sec_3
@@ -12,14 +12,15 @@ Section=Sec_9
 
 [Sec_1]
 Name[en]="Top Copper"
-Prompt[en]=""
+Name[fr]="Top Copper"
+Prompt=""
 Device="GERBER_RS274X"
 Wheel=""
 Rack=""
 Scale=1
-Output=".GTL"
+Output="%P\%N - GERBER\%N.GTL"
 Flags="0 0 0 1 0 1 1"
-Emulate="0 0 0"
+Emulate="0"
 Offset="0.0mil 0.0mil"
 Sheet=1
 Tolerance="0 0 0 0 0 0"
@@ -30,14 +31,15 @@ Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1
 
 [Sec_2]
 Name[en]="Bottom Copper"
-Prompt[en]=""
+Name[fr]="Bottom Copper"
+Prompt=""
 Device="GERBER_RS274X"
 Wheel=".whl"
 Rack=""
 Scale=1
-Output=".GBL"
+Output="%P\%N - GERBER\%N.GBL"
 Flags="0 0 0 1 0 1 1"
-Emulate="0 0 0"
+Emulate="0"
 Offset="0.0mil 0.0mil"
 Sheet=1
 Tolerance="0 0 0 0 0 0"
@@ -48,14 +50,15 @@ Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1
 
 [Sec_3]
 Name[en]="Top Silkscreen"
-Prompt[en]=""
+Name[fr]="Top Silkscreen"
+Prompt=""
 Device="GERBER_RS274X"
 Wheel=".whl"
 Rack=""
 Scale=1
-Output=".GTO"
+Output="%P\%N - GERBER\%N.GTO"
 Flags="0 0 0 1 0 1 1"
-Emulate="0 0 0"
+Emulate="0"
 Offset="0.0mil 0.0mil"
 Sheet=1
 Tolerance="0 0 0 0 0 0"
@@ -66,14 +69,15 @@ Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1
 
 [Sec_4]
 Name[en]="Top Paste"
-Prompt[en]=""
+Name[fr]="Top Paste"
+Prompt=""
 Device="GERBER_RS274X"
 Wheel=".whl"
 Rack=""
 Scale=1
-Output=".GTP"
+Output="%P\%N - GERBER\%N.GTP"
 Flags="0 0 0 1 0 1 1"
-Emulate="0 0 0"
+Emulate="0"
 Offset="0.0mil 0.0mil"
 Sheet=1
 Tolerance="0 0 0 0 0 0"
@@ -84,14 +88,15 @@ Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1
 
 [Sec_5]
 Name[en]="Bottom Silkscreen"
-Prompt[en]=""
+Name[fr]="Bottom Silkscreen"
+Prompt=""
 Device="GERBER_RS274X"
 Wheel=".whl"
 Rack=""
 Scale=1
-Output=".GBO"
+Output="%P\%N - GERBER\%N.GBO"
 Flags="0 0 0 1 0 1 1"
-Emulate="0 0 0"
+Emulate="0"
 Offset="0.0mil 0.0mil"
 Sheet=1
 Tolerance="0 0 0 0 0 0"
@@ -102,14 +107,15 @@ Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1
 
 [Sec_6]
 Name[en]="Top Soldermask"
-Prompt[en]=""
+Name[fr]="Top Soldermask"
+Prompt=""
 Device="GERBER_RS274X"
 Wheel=".whl"
 Rack=""
 Scale=1
-Output=".GTS"
+Output="%P\%N - GERBER\%N.GTS"
 Flags="0 0 0 1 0 1 1"
-Emulate="0 0 0"
+Emulate="0"
 Offset="0.0mil 0.0mil"
 Sheet=1
 Tolerance="0 0 0 0 0 0"
@@ -120,14 +126,15 @@ Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1
 
 [Sec_7]
 Name[en]="Bottom Soldermask"
-Prompt[en]=""
+Name[fr]="Bottom Soldermask"
+Prompt=""
 Device="GERBER_RS274X"
 Wheel=".whl"
 Rack=""
 Scale=1
-Output=".GBS"
+Output="%P\%N - GERBER\%N.GBS"
 Flags="0 0 0 1 0 1 1"
-Emulate="0 0 0"
+Emulate="0"
 Offset="0.0mil 0.0mil"
 Sheet=1
 Tolerance="0 0 0 0 0 0"
@@ -138,14 +145,15 @@ Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1
 
 [Sec_8]
 Name[en]="Drill File"
-Prompt[en]=""
+Name[fr]="Drill File"
+Prompt=""
 Device="EXCELLON"
 Wheel=""
 Rack=""
 Scale=1
-Output=".TXT"
+Output="%P\%N - GERBER\%N.TXT"
 Flags="0 0 0 1 0 1 1"
-Emulate="0 0 0"
+Emulate="0"
 Offset="0.0mil 0.0mil"
 Sheet=1
 Tolerance="0 0 0 0 0 0"
@@ -156,14 +164,15 @@ Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1
 
 [Sec_9]
 Name[en]="Mill Layer"
-Prompt[en]=""
+Name[fr]="Mill Layer"
+Prompt=""
 Device="GERBER_RS274X"
 Wheel=""
 Rack=""
 Scale=1
-Output=".GML"
+Output="%P\%N - GERBER\%N.GML"
 Flags="0 0 0 1 0 1 1"
-Emulate="0 0 0"
+Emulate="0"
 Offset="0.0mil 0.0mil"
 Sheet=1
 Tolerance="0 0 0 0 0 0"
