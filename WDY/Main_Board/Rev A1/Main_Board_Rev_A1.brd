@@ -13,18 +13,18 @@
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="20" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -47,8 +47,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="yes"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="yes"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="yes"/>
@@ -2626,7 +2626,7 @@ Your Eurocircuits Team
 </element>
 <element name="C4" library="rcl" package="C0603" value="100nF" x="40.7" y="39.8" rot="MR0"/>
 <element name="C5" library="rcl" package="CT3216" value="10uF" x="43.5" y="45.2" rot="MR270"/>
-<element name="R7" library="rcl" package="R0603" value="4K87" x="33.8" y="47.3" rot="R90"/>
+<element name="R7" library="rcl" package="R0603" value="4K7" x="33.8" y="47.3" rot="R90"/>
 <element name="C6" library="rcl" package="C0603" value="100nF" x="34.05" y="43.8" rot="MR270"/>
 <element name="C7" library="rcl" package="CT3216" value="10uF" x="36.35" y="35.95" rot="MR180"/>
 <element name="C8" library="rcl" package="C0603" value="100nF" x="31.9" y="39.7" rot="MR270"/>
@@ -2648,8 +2648,8 @@ Your Eurocircuits Team
 </element>
 <element name="C13" library="rcl" package="C0603" value="100nF" x="69.5" y="19" rot="MR180"/>
 <element name="C14" library="rcl" package="C0603" value="4700pF" x="64.5" y="16.5" rot="R90"/>
-<element name="R9" library="rcl" package="R0603" value="60" x="71.35" y="15.5" rot="R180"/>
-<element name="R10" library="rcl" package="R0603" value="60" x="68" y="15.5" rot="R180"/>
+<element name="R9" library="rcl" package="R0603" value="60.4" x="71.35" y="15.5" rot="R180"/>
+<element name="R10" library="rcl" package="R0603" value="60.4" x="68" y="15.5" rot="R180"/>
 <element name="U$5" library="con-multicomp" package="5504F1-09S-02A" value="5504F1-09S-02A-03" x="64" y="9.5" rot="R180"/>
 <element name="SJ1" library="SparkFun-Passives" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="77" y="14"/>
 <element name="SJ2" library="SparkFun-Passives" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="51.15" y="14" rot="R180"/>
