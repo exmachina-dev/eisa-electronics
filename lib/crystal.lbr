@@ -467,7 +467,7 @@ Source: www.abracon.com</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ASE">
+<deviceset name="ASE" prefix="X">
 <description>&lt;b&gt;3.3Vdc CMOS SMD CRYSTAL CLOCK OSCILLATOR&lt;/b&gt;&lt;p&gt;
 SOurce: www.abracon.com</description>
 <gates>
