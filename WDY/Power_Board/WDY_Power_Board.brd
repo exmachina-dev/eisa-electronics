@@ -121,10 +121,14 @@
 <wire x1="57" y1="0" x2="57" y2="41" width="0" layer="20"/>
 <wire x1="57" y1="41" x2="0" y2="41" width="0" layer="20"/>
 <wire x1="0" y1="41" x2="0" y2="0" width="0" layer="20"/>
-<text x="27.178" y="35.052" size="1.27" layer="21" font="vector">Power Proto
+<text x="26.162" y="35.052" size="1.27" layer="21" font="vector">Power Proto
 Rev A1</text>
-<text x="11.43" y="39.37" size="1.27" layer="21" font="vector">+5V</text>
-<text x="38.1" y="39.37" size="1.27" layer="21" font="vector">+3V3</text>
+<text x="10.668" y="37.338" size="1.27" layer="21" font="vector">+5V
+1A</text>
+<text x="38.608" y="37.338" size="1.27" layer="21" font="vector">+3V3
+1A</text>
+<text x="3.556" y="10.16" size="1.27" layer="21" font="vector">7-30V
+2A</text>
 </plain>
 <libraries>
 <library name="con-phoenix-508">
@@ -862,17 +866,17 @@ Your Eurocircuits Team
 <attribute name="MF" value="" x="17.526" y="20.574" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="GRT188R61H225KE13D" x="17.526" y="20.574" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="LED4" library="led" package="CHIP-LED0603" value="Blue" x="40.132" y="36.83">
-<attribute name="OC_FARNELL" value="1716771" x="-36.068" y="-27.94" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="OVS-0604" x="-36.068" y="-27.94" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="" x="-36.068" y="-27.94" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="15R2206" x="-36.068" y="-27.94" size="1.778" layer="27" display="off"/>
+<element name="LED4" library="led" package="CHIP-LED0603" value="Blue" x="40.132" y="35.56">
+<attribute name="OC_FARNELL" value="1716771" x="-36.068" y="-29.21" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="OVS-0604" x="-36.068" y="-29.21" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="-36.068" y="-29.21" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="15R2206" x="-36.068" y="-29.21" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R10" library="rcl" package="R0603" value="1k5" x="40.132" y="33.02" rot="R270">
-<attribute name="OC_FARNELL" value="2073391" x="-17.018" y="81.28" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="MC0063W060311K5" x="-17.018" y="81.28" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="Multicomp Passives" x="-17.018" y="81.28" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_NEWARK" value="58K4488" x="-17.018" y="81.28" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="R10" library="rcl" package="R0603" value="1k5" x="40.132" y="31.75" rot="R270">
+<attribute name="OC_FARNELL" value="2073391" x="-17.018" y="80.01" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="MC0063W060311K5" x="-17.018" y="80.01" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="Multicomp Passives" x="-17.018" y="80.01" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="58K4488" x="-17.018" y="80.01" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="TP5" library="testpad" package="B1,27" value="TPB1,27" x="37.592" y="27.94" rot="R180">
 <attribute name="OC_FARNELL" value="unknown" x="111.252" y="91.44" size="1.778" layer="27" rot="R180" display="off"/>
@@ -888,17 +892,17 @@ Your Eurocircuits Team
 <attribute name="OC_NEWARK" value="unknown" x="77.216" y="96.266" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="77.216" y="96.266" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="LED3" library="led" package="CHIP-LED0603" value="Blue" x="12.192" y="36.83">
-<attribute name="OC_FARNELL" value="1716771" x="-74.168" y="-44.45" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="OVS-0604" x="-74.168" y="-44.45" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="" x="-74.168" y="-44.45" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="15R2206" x="-74.168" y="-44.45" size="1.778" layer="27" display="off"/>
+<element name="LED3" library="led" package="CHIP-LED0603" value="Blue" x="10.922" y="35.56">
+<attribute name="OC_FARNELL" value="1716771" x="-75.438" y="-45.72" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="OVS-0604" x="-75.438" y="-45.72" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="-75.438" y="-45.72" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="15R2206" x="-75.438" y="-45.72" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R9" library="rcl" package="R0603" value="1k5" x="12.192" y="33.02" rot="R270">
-<attribute name="OC_FARNELL" value="2073391" x="-60.198" y="91.44" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="MC0063W060311K5" x="-60.198" y="91.44" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="Multicomp Passives" x="-60.198" y="91.44" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_NEWARK" value="58K4488" x="-60.198" y="91.44" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="R9" library="rcl" package="R0603" value="1k5" x="10.922" y="31.75" rot="R270">
+<attribute name="OC_FARNELL" value="2073391" x="-61.468" y="90.17" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="MC0063W060311K5" x="-61.468" y="90.17" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="Multicomp Passives" x="-61.468" y="90.17" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="58K4488" x="-61.468" y="90.17" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="TP3" library="testpad" package="B1,27" value="TPB1,27" x="2.794" y="19.05" rot="R180">
 <attribute name="TP_SIGNAL_NAME" value="" x="76.454" y="97.79" size="1.778" layer="27" rot="R180" display="off"/>
@@ -912,11 +916,11 @@ Your Eurocircuits Team
 <attribute name="MF" value="Multicomp Passives" x="37.592" y="33.02" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_NEWARK" value="58K4488" x="37.592" y="33.02" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R11" library="rcl" package="R0603" value="1k5" x="14.732" y="33.02" rot="R270">
-<attribute name="OC_FARNELL" value="2073391" x="14.732" y="33.02" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="MC0063W060311K5" x="14.732" y="33.02" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="Multicomp Passives" x="14.732" y="33.02" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_NEWARK" value="58K4488" x="14.732" y="33.02" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="R11" library="rcl" package="R0603" value="1k5" x="13.462" y="33.02" rot="R270">
+<attribute name="OC_FARNELL" value="2073391" x="13.462" y="33.02" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="MC0063W060311K5" x="13.462" y="33.02" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="Multicomp Passives" x="13.462" y="33.02" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="58K4488" x="13.462" y="33.02" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="U2" library="lineartechnology" package="DFN300X300X80-11N" value="LT3686HDDPBF" x="43.942" y="17.78">
 <attribute name="PACKAGE" value="DFN-10" x="43.942" y="17.78" size="1.778" layer="27" display="off"/>
@@ -1025,10 +1029,10 @@ Your Eurocircuits Team
 <attribute name="MF" value="" x="19.812" y="23.368" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="MCMT21N220F250CT" x="19.812" y="23.368" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="U$1" library="exmachina" package="EXM-LOGO-BASELINE" value="EXMACHINA-LOGO-NAME" x="23.622" y="37.592">
-<attribute name="OC_NEWARK" value="unknown" x="23.622" y="37.592" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="" x="23.622" y="37.592" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="23.622" y="37.592" size="1.778" layer="27" display="off"/>
+<element name="U$1" library="exmachina" package="EXM-LOGO-BASELINE" value="EXMACHINA-LOGO-NAME" x="22.352" y="37.592">
+<attribute name="OC_NEWARK" value="unknown" x="22.352" y="37.592" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="22.352" y="37.592" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="22.352" y="37.592" size="1.778" layer="27" display="off"/>
 </element>
 <element name="JP1" library="SparkFun" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="1.778" y="10.16">
 <attribute name="OC_NEWARK" value="unknown" x="1.778" y="10.16" size="1.778" layer="27" display="off"/>
@@ -1070,11 +1074,11 @@ Your Eurocircuits Team
 <attribute name="MF" value="" x="4" y="4" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="4" y="4" size="1.778" layer="27" display="off"/>
 </element>
-<element name="J1" library="con-molex" package="7395-02" value="22-05-7028-02" x="18.288" y="36.068" rot="R180">
-<attribute name="MPN" value="22-05-7028" x="18.288" y="36.068" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MF" value="" x="18.288" y="36.068" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_FARNELL" value="9731601" x="18.288" y="36.068" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_NEWARK" value="25M1728" x="18.288" y="36.068" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="J1" library="con-molex" package="7395-02" value="22-05-7028-02" x="17.018" y="36.068" rot="R180">
+<attribute name="MPN" value="22-05-7028" x="17.018" y="36.068" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="17.018" y="36.068" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_FARNELL" value="9731601" x="17.018" y="36.068" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_NEWARK" value="25M1728" x="17.018" y="36.068" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="J2" library="con-molex" package="7395-02" value="22-05-7028-02" x="45.974" y="36.068" rot="R180">
 <attribute name="MPN" value="22-05-7028" x="45.974" y="36.068" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1264,17 +1268,17 @@ Your Eurocircuits Team
 <wire x1="19.3802" y1="18.288" x2="13.208" y2="18.288" width="0.3048" layer="1"/>
 <wire x1="13.208" y1="18.288" x2="13.208" y2="19.05" width="0.3048" layer="1"/>
 <contactref element="J1" pad="1"/>
-<wire x1="17.018" y1="36.068" x2="17.018" y2="31.75" width="0.4064" layer="1"/>
+<wire x1="15.748" y1="36.068" x2="15.748" y2="31.75" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$50">
 <contactref element="LED4" pad="A"/>
 <contactref element="R10" pad="1"/>
-<wire x1="40.132" y1="33.87" x2="40.132" y2="36.08" width="0.254" layer="1"/>
+<wire x1="40.132" y1="32.6" x2="40.132" y2="34.81" width="0.254" layer="1"/>
 </signal>
 <signal name="N$51">
 <contactref element="LED3" pad="A"/>
 <contactref element="R9" pad="1"/>
-<wire x1="12.192" y1="33.87" x2="12.192" y2="36.08" width="0.254" layer="1"/>
+<wire x1="10.922" y1="32.6" x2="10.922" y2="34.81" width="0.254" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="R1" pad="2"/>
