@@ -117,10 +117,14 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="57" y2="0" width="0" layer="20"/>
-<wire x1="57" y1="0" x2="57" y2="41" width="0" layer="20"/>
-<wire x1="57" y1="41" x2="0" y2="41" width="0" layer="20"/>
-<wire x1="0" y1="41" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="0" y1="37" x2="0" y2="4" width="0" layer="20"/>
+<wire x1="0" y1="4" x2="4" y2="0" width="0" layer="20" curve="90"/>
+<wire x1="4" y1="0" x2="53" y2="0" width="0" layer="20"/>
+<wire x1="53" y1="0" x2="57" y2="4" width="0" layer="20" curve="90"/>
+<wire x1="57" y1="4" x2="57" y2="37" width="0" layer="20"/>
+<wire x1="57" y1="37" x2="53" y2="41" width="0" layer="20" curve="90"/>
+<wire x1="53" y1="41" x2="4" y2="41" width="0" layer="20"/>
+<wire x1="4" y1="41" x2="0" y2="37" width="0" layer="20" curve="90"/>
 <text x="26.162" y="35.052" size="1.27" layer="21" font="vector">Power Proto
 Rev A1</text>
 <text x="10.668" y="37.338" size="1.27" layer="21" font="vector">+5V
