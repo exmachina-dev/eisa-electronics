@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.2">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -19876,7 +19876,7 @@ Various fiducial points for machine vision alignment.</description>
 <class number="0" name="default" width="0.2032" drill="0.25">
 <clearance class="0" value="0.205"/>
 </class>
-<class number="1" name="supply" width="0.8128" drill="0.4">
+<class number="1" name="supply" width="0.4064" drill="0.4">
 <clearance class="0" value="0.205"/>
 <clearance class="1" value="0.205"/>
 </class>
