@@ -439,6 +439,9 @@
 <wire x1="80" y1="58.27" x2="80" y2="19.27" width="0" layer="47"/>
 <text x="8.75" y="6.75" size="1.016" layer="21" font="vector" ratio="10" rot="R90" align="top-left">ArmazConnect
 Lite Rev A1</text>
+<dimension x1="0" y1="3" x2="56" y2="5" x3="28" y3="-8" textsize="1.778" layer="100" dtype="horizontal"/>
+<dimension x1="53" y1="0" x2="46" y2="24" x3="66" y3="12" textsize="1.778" layer="100" dtype="vertical"/>
+<dimension x1="3.5" y1="12.5" x2="52.5" y2="13" x3="28" y3="35" textsize="1.778" layer="100" dtype="horizontal"/>
 </plain>
 <libraries>
 <library name="con-molex">
