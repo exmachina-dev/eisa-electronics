@@ -2563,6 +2563,9 @@ Your Eurocircuits Team
 <signal name="OUT1">
 <contactref element="X8" pad="17"/>
 </signal>
+<signal name="+24V">
+<contactref element="X1" pad="1"/>
+</signal>
 </signals>
 <errors>
 <approved hash="4,1,677ee4b5e3b65a91"/>

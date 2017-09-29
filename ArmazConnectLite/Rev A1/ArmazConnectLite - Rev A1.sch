@@ -8012,11 +8012,32 @@ Various fiducial points for machine vision alignment.</description>
 <text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="VDD33A1" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
+<symbol name="+24V">
+<wire x1="1.27" y1="-0.635" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-0.635" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="-1.27" y2="-0.635" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="+24V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="VDD33A1">
 <gates>
 <gate name="G$1" symbol="VDD33A1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+24V" prefix="P+">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="+24V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -9654,6 +9675,7 @@ Various fiducial points for machine vision alignment.</description>
 <part name="X1" library="con-phoenix-508" deviceset="MSTBA3" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="GND1" device=""/>
+<part name="P+1" library="supply3" deviceset="+24V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9735,6 +9757,7 @@ Various fiducial points for machine vision alignment.</description>
 <instance part="X1" gate="-3" x="38.1" y="162.56"/>
 <instance part="GND1" gate="1" x="50.8" y="154.94" rot="MR0"/>
 <instance part="SUPPLY4" gate="G$1" x="33.02" y="10.16"/>
+<instance part="P+1" gate="1" x="50.8" y="185.42"/>
 </instances>
 <busses>
 </busses>
@@ -9962,6 +9985,14 @@ Various fiducial points for machine vision alignment.</description>
 <pinref part="X8" gate="G$1" pin="17"/>
 <wire x1="142.24" y1="45.72" x2="137.16" y2="45.72" width="0.1524" layer="91"/>
 <label x="137.16" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="+24V" class="0">
+<segment>
+<pinref part="X1" gate="-1" pin="1"/>
+<pinref part="P+1" gate="1" pin="+24V"/>
+<wire x1="43.18" y1="172.72" x2="50.8" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="172.72" x2="50.8" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
