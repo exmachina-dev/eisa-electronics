@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="16" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="17" fill="3" visible="no" active="no"/>
@@ -7237,7 +7237,7 @@ DIN A3, landscape with location and doc. field</description>
 <text x="2.0559" y="-3.4021" size="1.27" layer="51" ratio="14" rot="R270">1</text>
 <text x="-2.9733" y="-3.2751" size="1.27" layer="51" ratio="14" rot="R270">3</text>
 <text x="4.6721" y="-2.4399" size="0.8128" layer="27" ratio="10" rot="R270">&gt;VALUE</text>
-<circle x="4.1275" y="0" radius="0.2032" width="0.4064" layer="25"/>
+<circle x="4.1275" y="0" radius="0.2032" width="0.4064" layer="21"/>
 </package>
 <package name="6410-03">
 <description>&lt;b&gt;MOLEX 2.54mm KK  CONNECTOR&lt;/b&gt;</description>
@@ -7858,55 +7858,6 @@ Differential to Common Mode Rejection	-38 dB typ.		1 MHz - 100 MHz</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun">
-<packages>
-<package name="FIDUCIAL-1.5X3">
-<circle x="0" y="0" radius="0.9055" width="1.27" layer="29"/>
-<smd name="1" x="0" y="0" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
-</package>
-<package name="FIDUCIAL-1X2">
-<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
-<text x="-0.635" y="0.635" size="0.6096" layer="25">&gt;NAME</text>
-</package>
-<package name="FIDUCIAL-1X2.5">
-<circle x="0" y="0" radius="0.9" width="1.27" layer="29"/>
-<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
-</package>
-</packages>
-<symbols>
-<symbol name="FIDUCIAL">
-<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
-<wire x1="-0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="0.762" y1="0.762" x2="-0.762" y2="-0.762" width="0.254" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="FIDUCIAL" prefix="JP">
-<description>&lt;b&gt;Fiducial Alignment Points&lt;/b&gt;
-Various fiducial points for machine vision alignment.</description>
-<gates>
-<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="1.5X3" package="FIDUCIAL-1.5X3">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="1X2" package="FIDUCIAL-1X2">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="1X2.5" package="FIDUCIAL-1X2.5">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="exmachina">
 <packages>
 <package name="EXM-LOGO">
@@ -7985,62 +7936,6 @@ Various fiducial points for machine vision alignment.</description>
 </technologies>
 </device>
 <device name="-NAME" package="EXM-LOGO-BASELINE">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="supply3">
-<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
- GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
- Please keep in mind, that these devices are necessary for the
- automatic wiring of the supply signals.&lt;p&gt;
- The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
- In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
- &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-</packages>
-<symbols>
-<symbol name="VDD33A1">
-<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="0" y1="1.27" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-1.905" x2="0" y2="1.27" width="0.254" layer="94"/>
-<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="VDD33A1" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
-<symbol name="+24V">
-<wire x1="1.27" y1="-0.635" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="-0.635" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-0.635" x2="0" y2="1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="1.27" x2="-1.27" y2="-0.635" width="0.254" layer="94"/>
-<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="+24V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="VDD33A1">
-<gates>
-<gate name="G$1" symbol="VDD33A1" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="+24V" prefix="P+">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="+24V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -9480,95 +9375,49 @@ Various fiducial points for machine vision alignment.</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="con-phoenix-508">
+<library name="SparkFun">
 <packages>
-<package name="MSTBA3">
-<description>&lt;b&gt;PHOENIX&lt;/b&gt;</description>
-<wire x1="-8.636" y1="7.112" x2="-8.636" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="-8.636" y1="7.112" x2="-5.715" y2="7.112" width="0.1524" layer="21"/>
-<wire x1="-5.715" y1="7.112" x2="-4.445" y2="7.112" width="0.1524" layer="51"/>
-<wire x1="-4.445" y1="7.112" x2="-0.635" y2="7.112" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="7.112" x2="0.635" y2="7.112" width="0.1524" layer="51"/>
-<wire x1="5.715" y1="7.112" x2="8.636" y2="7.112" width="0.1524" layer="21"/>
-<wire x1="-8.636" y1="-1.905" x2="8.636" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="8.636" y1="7.112" x2="8.636" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="-8.636" y1="-4.953" x2="-5.969" y2="-4.953" width="0.1524" layer="21"/>
-<wire x1="-8.636" y1="-1.905" x2="-8.636" y2="-4.953" width="0.1524" layer="21"/>
-<wire x1="8.636" y1="-1.905" x2="8.636" y2="-4.953" width="0.1524" layer="21"/>
-<wire x1="-4.191" y1="-4.953" x2="-4.572" y2="-3.683" width="0.1524" layer="21"/>
-<wire x1="-4.191" y1="-4.953" x2="-0.889" y2="-4.953" width="0.1524" layer="21"/>
-<wire x1="-4.572" y1="-3.683" x2="-5.588" y2="-3.683" width="0.1524" layer="21"/>
-<wire x1="-5.969" y1="-4.953" x2="-5.588" y2="-3.683" width="0.1524" layer="21"/>
-<wire x1="-5.969" y1="-4.953" x2="-4.191" y2="-4.953" width="0.1524" layer="21"/>
-<wire x1="0.889" y1="-4.953" x2="0.508" y2="-3.683" width="0.1524" layer="21"/>
-<wire x1="0.889" y1="-4.953" x2="4.191" y2="-4.953" width="0.1524" layer="21"/>
-<wire x1="4.191" y1="-4.953" x2="5.969" y2="-4.953" width="0.1524" layer="21"/>
-<wire x1="5.969" y1="-4.953" x2="8.636" y2="-4.953" width="0.1524" layer="21"/>
-<wire x1="-0.889" y1="-4.953" x2="-0.508" y2="-3.683" width="0.1524" layer="21"/>
-<wire x1="-0.889" y1="-4.953" x2="0.889" y2="-4.953" width="0.1524" layer="21"/>
-<wire x1="-0.508" y1="-3.683" x2="0.508" y2="-3.683" width="0.1524" layer="21"/>
-<wire x1="4.572" y1="-3.683" x2="5.588" y2="-3.683" width="0.1524" layer="21"/>
-<wire x1="5.969" y1="-4.953" x2="5.588" y2="-3.683" width="0.1524" layer="21"/>
-<wire x1="4.191" y1="-4.953" x2="4.572" y2="-3.683" width="0.1524" layer="21"/>
-<wire x1="4.445" y1="7.112" x2="5.715" y2="7.112" width="0.1524" layer="51"/>
-<wire x1="0.635" y1="7.112" x2="4.445" y2="7.112" width="0.1524" layer="21"/>
-<pad name="1" x="-5.08" y="5.08" drill="1.397" shape="long" rot="R90"/>
-<pad name="2" x="0" y="5.08" drill="1.397" shape="long" rot="R90"/>
-<pad name="3" x="5.08" y="5.08" drill="1.397" shape="long" rot="R90"/>
-<text x="-8.636" y="7.62" size="1.778" layer="25" ratio="10">&gt;NAME</text>
-<text x="-7.62" y="0" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-7.112" y="4.445" size="1.27" layer="21" ratio="10">1</text>
-<text x="-2.286" y="4.445" size="1.27" layer="21" ratio="10">2</text>
-<text x="2.794" y="4.445" size="1.27" layer="21" ratio="10">3</text>
+<package name="FIDUCIAL-1.5X3">
+<circle x="0" y="0" radius="0.9055" width="1.27" layer="29"/>
+<smd name="1" x="0" y="0" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="FIDUCIAL-1X2">
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
+<text x="-0.635" y="0.635" size="0.6096" layer="25">&gt;NAME</text>
+</package>
+<package name="FIDUCIAL-1X2.5">
+<circle x="0" y="0" radius="0.9" width="1.27" layer="29"/>
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
 </package>
 </packages>
 <symbols>
-<symbol name="SK">
-<circle x="-5.08" y="0" radius="1.27" width="0.254" layer="94"/>
-<circle x="-5.08" y="0" radius="1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.27" x2="-1.27" y2="0" width="0.254" layer="94" curve="-90" cap="flat"/>
-<wire x1="-1.27" y1="0" x2="0" y2="1.27" width="0.254" layer="94" curve="-90" cap="flat"/>
-<wire x1="-3.81" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.27" x2="0" y2="1.27" width="0.254" layer="94" curve="-180" cap="flat"/>
-<wire x1="0" y1="0" x2="2.54" y2="0" width="0.6096" layer="94"/>
-<pin name="1" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
-<text x="-6.604" y="0.889" size="1.778" layer="95" rot="R180">&gt;NAME</text>
-</symbol>
-<symbol name="SKV">
-<circle x="-5.08" y="0" radius="1.27" width="0.254" layer="94"/>
-<circle x="-5.08" y="0" radius="1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.27" x2="-1.27" y2="0" width="0.254" layer="94" curve="-90" cap="flat"/>
-<wire x1="-1.27" y1="0" x2="0" y2="1.27" width="0.254" layer="94" curve="-90" cap="flat"/>
-<wire x1="-3.81" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.27" x2="0" y2="1.27" width="0.254" layer="94" curve="-180" cap="flat"/>
-<wire x1="0" y1="0" x2="2.54" y2="0" width="0.6096" layer="94"/>
-<pin name="1" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
-<text x="-7.62" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-6.604" y="0.889" size="1.778" layer="95" rot="R180">&gt;NAME</text>
+<symbol name="FIDUCIAL">
+<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0.762" x2="-0.762" y2="-0.762" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MSTBA3" prefix="J">
-<description>&lt;b&gt;PHOENIX&lt;/b&gt;</description>
+<deviceset name="FIDUCIAL" prefix="JP">
+<description>&lt;b&gt;Fiducial Alignment Points&lt;/b&gt;
+Various fiducial points for machine vision alignment.</description>
 <gates>
-<gate name="-1" symbol="SK" x="0" y="5.08" addlevel="always"/>
-<gate name="-2" symbol="SK" x="0" y="0" addlevel="always"/>
-<gate name="-3" symbol="SKV" x="0" y="-5.08" addlevel="always"/>
+<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MSTBA3">
-<connects>
-<connect gate="-1" pin="1" pad="1"/>
-<connect gate="-2" pin="1" pad="2"/>
-<connect gate="-3" pin="1" pad="3"/>
-</connects>
+<device name="1.5X3" package="FIDUCIAL-1.5X3">
 <technologies>
-<technology name="">
-<attribute name="MF" value="FARNELL" constant="no"/>
-<attribute name="MPN" value="1757255" constant="no"/>
-<attribute name="OC_FARNELL" value="3705183" constant="no"/>
-<attribute name="OC_NEWARK" value="71C4162" constant="no"/>
-</technology>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1X2" package="FIDUCIAL-1X2">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1X2.5" package="FIDUCIAL-1X2.5">
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -9596,86 +9445,48 @@ Various fiducial points for machine vision alignment.</description>
 </classes>
 <parts>
 <part name="FRAME1" library="frames" deviceset="A3L-LOC" device=""/>
-<part name="X8" library="con-molex" deviceset="87832-26" device="">
+<part name="X1" library="con-molex" deviceset="87832-26" device="">
 <attribute name="MF" value="MOLEX"/>
 <attribute name="MPN" value="87832-2620"/>
 <attribute name="OC_FARNELL" value="2313712"/>
 </part>
-<part name="SUPPLY8" library="supply2" deviceset="+12V" device=""/>
-<part name="SUPPLY9" library="supply2" deviceset="+12V" device=""/>
-<part name="P+5" library="supply1" deviceset="+5V" device=""/>
-<part name="P+6" library="supply1" deviceset="+5V" device=""/>
-<part name="GND32" library="supply1" deviceset="GND" device=""/>
-<part name="GND33" library="supply1" deviceset="GND" device=""/>
-<part name="SUPPLY10" library="supply2" deviceset="GND1" device=""/>
-<part name="SUPPLY11" library="supply2" deviceset="GND1" device=""/>
-<part name="SUPPLY1" library="supply2" deviceset="+5V/1" device=""/>
-<part name="FAN0" library="con-molex" deviceset="22-?-03" device="05-7038">
+<part name="SUPPLY5" library="supply2" deviceset="+12V" device=""/>
+<part name="SUPPLY7" library="supply2" deviceset="+12V" device=""/>
+<part name="P+1" library="supply1" deviceset="+5V" device=""/>
+<part name="P+2" library="supply1" deviceset="+5V" device=""/>
+<part name="GND2" library="supply1" deviceset="GND" device=""/>
+<part name="GND3" library="supply1" deviceset="GND" device=""/>
+<part name="SUPPLY6" library="supply2" deviceset="GND1" device=""/>
+<part name="SUPPLY8" library="supply2" deviceset="GND1" device=""/>
+<part name="SUPPLY4" library="supply2" deviceset="+5V/1" device=""/>
+<part name="J2" library="con-molex" deviceset="22-?-03" device="05-7038">
 <attribute name="MF" value="MOLEX"/>
 <attribute name="MPN" value="22-05-7038"/>
 <attribute name="OC_FARNELL" value="9731610"/>
 </part>
-<part name="FAN1" library="con-molex" deviceset="22-?-03" device="05-7038">
+<part name="J3" library="con-molex" deviceset="22-?-03" device="05-7038">
 <attribute name="MF" value="MOLEX"/>
 <attribute name="MPN" value="22-05-7038"/>
 <attribute name="OC_FARNELL" value="9731610"/>
 </part>
 <part name="SUPPLY3" library="supply2" deviceset="+12V" device=""/>
-<part name="+3V1" library="supply3" deviceset="VDD33A1" device=""/>
-<part name="FI1" library="SparkFun" deviceset="FIDUCIAL" device="1X2">
+<part name="T1" library="exmachina" deviceset="EXMACHINA-LOGO" device="-NAME">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="FI2" library="SparkFun" deviceset="FIDUCIAL" device="1X2">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_FARNELL" value="unknown"/>
-</part>
-<part name="FI3" library="SparkFun" deviceset="FIDUCIAL" device="1X2">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_FARNELL" value="unknown"/>
-</part>
-<part name="FI4" library="SparkFun" deviceset="FIDUCIAL" device="1X2">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_FARNELL" value="unknown"/>
-</part>
-<part name="FI5" library="SparkFun" deviceset="FIDUCIAL" device="1X2">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_FARNELL" value="unknown"/>
-</part>
-<part name="FI6" library="SparkFun" deviceset="FIDUCIAL" device="1X2">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_FARNELL" value="unknown"/>
-</part>
-<part name="FI7" library="SparkFun" deviceset="FIDUCIAL" device="1X2">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_FARNELL" value="unknown"/>
-</part>
-<part name="FI8" library="SparkFun" deviceset="FIDUCIAL" device="1X2">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_FARNELL" value="unknown"/>
-</part>
-<part name="U$1" library="exmachina" deviceset="EXMACHINA-LOGO" device="-NAME">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_FARNELL" value="unknown"/>
-</part>
-<part name="J1" library="con-molex" deviceset="22-?-02" device="05-7028"/>
+<part name="J4" library="con-molex" deviceset="22-?-02" device="05-7028"/>
 <part name="CC1" library="cc-by-sa" deviceset="CC-BY-NC-SA" device=""/>
-<part name="MP1" library="holes" deviceset="MOUNT-PAD" device="3,0"/>
 <part name="MP2" library="holes" deviceset="MOUNT-PAD" device="3,0"/>
-<part name="SUPPLY2" library="supply2" deviceset="+5V/1" device=""/>
-<part name="X1" library="con-phoenix-508" deviceset="MSTBA3" device=""/>
+<part name="MP1" library="holes" deviceset="MOUNT-PAD" device="3,0"/>
+<part name="SUPPLY1" library="supply2" deviceset="+5V/1" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="SUPPLY4" library="supply2" deviceset="GND1" device=""/>
-<part name="P+1" library="supply3" deviceset="+24V" device=""/>
+<part name="SUPPLY2" library="supply2" deviceset="GND1" device=""/>
+<part name="J1" library="con-molex" deviceset="22-?-02" device="05-7028"/>
+<part name="JP1" library="SparkFun" deviceset="FIDUCIAL" device="1X2"/>
+<part name="JP2" library="SparkFun" deviceset="FIDUCIAL" device="1X2"/>
+<part name="JP3" library="SparkFun" deviceset="FIDUCIAL" device="1X2"/>
+<part name="JP4" library="SparkFun" deviceset="FIDUCIAL" device="1X2"/>
 </parts>
 <sheets>
 <sheet>
@@ -9683,166 +9494,127 @@ Various fiducial points for machine vision alignment.</description>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="X8" gate="G$1" x="147.32" y="50.8"/>
-<instance part="SUPPLY8" gate="+12V" x="119.38" y="45.72"/>
-<instance part="SUPPLY9" gate="+12V" x="177.8" y="45.72"/>
-<instance part="P+5" gate="1" x="116.84" y="71.12"/>
-<instance part="P+6" gate="1" x="180.34" y="71.12"/>
-<instance part="GND32" gate="1" x="116.84" y="58.42" rot="MR0"/>
-<instance part="GND33" gate="1" x="180.34" y="58.42" rot="MR0"/>
-<instance part="SUPPLY10" gate="G$1" x="119.38" y="33.02"/>
-<instance part="SUPPLY11" gate="G$1" x="177.8" y="33.02"/>
-<instance part="SUPPLY1" gate="G$1" x="111.76" y="45.72"/>
-<instance part="FAN0" gate="-1" x="27.94" y="76.2" rot="MR0"/>
-<instance part="FAN0" gate="-2" x="27.94" y="71.12" rot="MR0"/>
-<instance part="FAN0" gate="-3" x="27.94" y="66.04" rot="MR0"/>
-<instance part="FAN1" gate="-1" x="27.94" y="55.88" rot="MR0"/>
-<instance part="FAN1" gate="-2" x="27.94" y="50.8" rot="MR0"/>
-<instance part="FAN1" gate="-3" x="27.94" y="45.72" rot="MR0"/>
+<instance part="X1" gate="G$1" x="147.32" y="50.8"/>
+<instance part="SUPPLY5" gate="+12V" x="119.38" y="45.72"/>
+<instance part="SUPPLY7" gate="+12V" x="177.8" y="45.72"/>
+<instance part="P+1" gate="1" x="116.84" y="71.12"/>
+<instance part="P+2" gate="1" x="180.34" y="71.12"/>
+<instance part="GND2" gate="1" x="116.84" y="58.42" rot="MR0"/>
+<instance part="GND3" gate="1" x="180.34" y="58.42" rot="MR0"/>
+<instance part="SUPPLY6" gate="G$1" x="119.38" y="33.02"/>
+<instance part="SUPPLY8" gate="G$1" x="177.8" y="33.02"/>
+<instance part="SUPPLY4" gate="G$1" x="111.76" y="45.72"/>
+<instance part="J2" gate="-1" x="27.94" y="76.2" rot="MR0"/>
+<instance part="J2" gate="-2" x="27.94" y="71.12" rot="MR0"/>
+<instance part="J2" gate="-3" x="27.94" y="66.04" rot="MR0"/>
+<instance part="J3" gate="-1" x="27.94" y="55.88" rot="MR0"/>
+<instance part="J3" gate="-2" x="27.94" y="50.8" rot="MR0"/>
+<instance part="J3" gate="-3" x="27.94" y="45.72" rot="MR0"/>
 <instance part="SUPPLY3" gate="+12V" x="35.56" y="81.28"/>
-<instance part="+3V1" gate="G$1" x="185.42" y="45.72"/>
-<instance part="FI1" gate="G$1" x="289.56" y="27.94">
-<attribute name="OC_FARNELL" x="289.56" y="27.94" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="289.56" y="27.94" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="289.56" y="27.94" size="1.778" layer="96" display="off"/>
+<instance part="T1" gate="G$1" x="311.15" y="19.05">
+<attribute name="OC_FARNELL" x="311.15" y="19.05" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="311.15" y="19.05" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="311.15" y="19.05" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="FI2" gate="G$1" x="294.64" y="27.94">
-<attribute name="OC_FARNELL" x="294.64" y="27.94" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="294.64" y="27.94" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="294.64" y="27.94" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="FI3" gate="G$1" x="299.72" y="27.94">
-<attribute name="OC_FARNELL" x="299.72" y="27.94" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="299.72" y="27.94" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="299.72" y="27.94" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="FI4" gate="G$1" x="304.8" y="27.94">
-<attribute name="OC_FARNELL" x="304.8" y="27.94" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="304.8" y="27.94" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="304.8" y="27.94" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="FI5" gate="G$1" x="309.88" y="27.94">
-<attribute name="OC_FARNELL" x="309.88" y="27.94" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="309.88" y="27.94" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="309.88" y="27.94" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="FI6" gate="G$1" x="314.96" y="27.94">
-<attribute name="OC_FARNELL" x="314.96" y="27.94" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="314.96" y="27.94" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="314.96" y="27.94" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="FI7" gate="G$1" x="320.04" y="27.94">
-<attribute name="OC_FARNELL" x="320.04" y="27.94" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="320.04" y="27.94" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="320.04" y="27.94" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="FI8" gate="G$1" x="325.12" y="27.94">
-<attribute name="OC_FARNELL" x="325.12" y="27.94" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="325.12" y="27.94" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="325.12" y="27.94" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="U$1" gate="G$1" x="358.14" y="30.48">
-<attribute name="OC_FARNELL" x="358.14" y="30.48" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="358.14" y="30.48" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="358.14" y="30.48" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="J1" gate="-1" x="27.94" y="22.86" rot="MR0"/>
-<instance part="J1" gate="-2" x="27.94" y="17.78" rot="MR0"/>
-<instance part="CC1" gate="G$1" x="302.26" y="10.16"/>
-<instance part="MP1" gate="1" x="347.98" y="45.72"/>
-<instance part="MP2" gate="1" x="322.58" y="45.72"/>
-<instance part="SUPPLY2" gate="G$1" x="33.02" y="33.02"/>
-<instance part="X1" gate="-1" x="38.1" y="172.72"/>
-<instance part="X1" gate="-2" x="38.1" y="167.64"/>
-<instance part="X1" gate="-3" x="38.1" y="162.56"/>
-<instance part="GND1" gate="1" x="50.8" y="154.94" rot="MR0"/>
-<instance part="SUPPLY4" gate="G$1" x="33.02" y="10.16"/>
-<instance part="P+1" gate="1" x="50.8" y="185.42"/>
+<instance part="J4" gate="-1" x="27.94" y="22.86" rot="MR0"/>
+<instance part="J4" gate="-2" x="27.94" y="17.78" rot="MR0"/>
+<instance part="CC1" gate="G$1" x="303.53" y="8.89"/>
+<instance part="MP2" gate="1" x="347.98" y="45.72"/>
+<instance part="MP1" gate="1" x="322.58" y="45.72"/>
+<instance part="SUPPLY1" gate="G$1" x="33.02" y="33.02"/>
+<instance part="GND1" gate="1" x="43.18" y="91.44" rot="MR0"/>
+<instance part="SUPPLY2" gate="G$1" x="33.02" y="10.16"/>
+<instance part="J1" gate="-1" x="27.94" y="104.14" rot="MR0"/>
+<instance part="J1" gate="-2" x="27.94" y="99.06" rot="MR0"/>
+<instance part="JP1" gate="G$1" x="327.66" y="27.94"/>
+<instance part="JP2" gate="G$1" x="322.58" y="27.94"/>
+<instance part="JP3" gate="G$1" x="317.5" y="27.94"/>
+<instance part="JP4" gate="G$1" x="312.42" y="27.94"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="1">
 <segment>
-<pinref part="X8" gate="G$1" pin="4"/>
-<pinref part="GND33" gate="1" pin="GND"/>
+<pinref part="X1" gate="G$1" pin="4"/>
+<pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="180.34" y1="60.96" x2="180.34" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="63.5" x2="154.94" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X8" gate="G$1" pin="3"/>
-<pinref part="GND32" gate="1" pin="GND"/>
+<pinref part="X1" gate="G$1" pin="3"/>
+<pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="142.24" y1="63.5" x2="116.84" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="63.5" x2="116.84" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X1" gate="-3" pin="1"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="43.18" y1="162.56" x2="50.8" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="162.56" x2="50.8" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="99.06" x2="43.18" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="99.06" x2="43.18" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="J1" gate="-2" pin="S"/>
 </segment>
 </net>
 <net name="+5V" class="1">
 <segment>
-<pinref part="X8" gate="G$1" pin="2"/>
-<pinref part="P+6" gate="1" pin="+5V"/>
+<pinref part="X1" gate="G$1" pin="2"/>
+<pinref part="P+2" gate="1" pin="+5V"/>
 <wire x1="180.34" y1="68.58" x2="180.34" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="66.04" x2="154.94" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X8" gate="G$1" pin="1"/>
-<pinref part="P+5" gate="1" pin="+5V"/>
+<pinref part="X1" gate="G$1" pin="1"/>
+<pinref part="P+1" gate="1" pin="+5V"/>
 <wire x1="142.24" y1="66.04" x2="116.84" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="66.04" x2="116.84" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ESW0" class="0">
 <segment>
-<pinref part="X8" gate="G$1" pin="5"/>
+<pinref part="X1" gate="G$1" pin="5"/>
 <wire x1="142.24" y1="60.96" x2="137.16" y2="60.96" width="0.1524" layer="91"/>
 <label x="137.16" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="ESW2" class="0">
 <segment>
-<pinref part="X8" gate="G$1" pin="7"/>
+<pinref part="X1" gate="G$1" pin="7"/>
 <wire x1="142.24" y1="58.42" x2="137.16" y2="58.42" width="0.1524" layer="91"/>
 <label x="137.16" y="58.42" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="ESW3" class="0">
 <segment>
-<pinref part="X8" gate="G$1" pin="8"/>
+<pinref part="X1" gate="G$1" pin="8"/>
 <wire x1="154.94" y1="58.42" x2="160.02" y2="58.42" width="0.1524" layer="91"/>
 <label x="160.02" y="58.42" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="ESW1" class="0">
 <segment>
-<pinref part="X8" gate="G$1" pin="6"/>
+<pinref part="X1" gate="G$1" pin="6"/>
 <wire x1="154.94" y1="60.96" x2="160.02" y2="60.96" width="0.1524" layer="91"/>
 <label x="160.02" y="60.96" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="+12V" class="1">
 <segment>
-<pinref part="SUPPLY8" gate="+12V" pin="+12V"/>
-<pinref part="X8" gate="G$1" pin="21"/>
+<pinref part="SUPPLY5" gate="+12V" pin="+12V"/>
+<pinref part="X1" gate="G$1" pin="21"/>
 <wire x1="142.24" y1="40.64" x2="119.38" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="40.64" x2="119.38" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SUPPLY9" gate="+12V" pin="+12V"/>
-<pinref part="X8" gate="G$1" pin="22"/>
+<pinref part="SUPPLY7" gate="+12V" pin="+12V"/>
+<pinref part="X1" gate="G$1" pin="22"/>
 <wire x1="154.94" y1="40.64" x2="177.8" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="40.64" x2="177.8" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="FAN0" gate="-1" pin="S"/>
+<pinref part="J2" gate="-1" pin="S"/>
 <wire x1="30.48" y1="76.2" x2="35.56" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="76.2" x2="35.56" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="76.2" x2="35.56" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="FAN1" gate="-1" pin="S"/>
+<pinref part="J3" gate="-1" pin="S"/>
 <wire x1="35.56" y1="55.88" x2="30.48" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="SUPPLY3" gate="+12V" pin="+12V"/>
 <junction x="35.56" y="76.2"/>
@@ -9850,149 +9622,140 @@ Various fiducial points for machine vision alignment.</description>
 </net>
 <net name="GND1" class="1">
 <segment>
-<pinref part="X8" gate="G$1" pin="25"/>
-<pinref part="SUPPLY10" gate="G$1" pin="GND1"/>
+<pinref part="X1" gate="G$1" pin="25"/>
+<pinref part="SUPPLY6" gate="G$1" pin="GND1"/>
 <wire x1="142.24" y1="35.56" x2="119.38" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X8" gate="G$1" pin="26"/>
-<pinref part="SUPPLY11" gate="G$1" pin="GND1"/>
+<pinref part="X1" gate="G$1" pin="26"/>
+<pinref part="SUPPLY8" gate="G$1" pin="GND1"/>
 <wire x1="154.94" y1="35.56" x2="177.8" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J1" gate="-2" pin="S"/>
+<pinref part="J4" gate="-2" pin="S"/>
 <wire x1="33.02" y1="17.78" x2="30.48" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="SUPPLY4" gate="G$1" pin="GND1"/>
+<pinref part="SUPPLY2" gate="G$1" pin="GND1"/>
 <wire x1="33.02" y1="12.7" x2="33.02" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FAN0_GND" class="2">
 <segment>
-<pinref part="X8" gate="G$1" pin="19"/>
+<pinref part="X1" gate="G$1" pin="19"/>
 <wire x1="142.24" y1="43.18" x2="137.16" y2="43.18" width="0.1524" layer="91"/>
 <label x="137.16" y="43.18" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="FAN0" gate="-3" pin="S"/>
+<pinref part="J2" gate="-3" pin="S"/>
 <wire x1="30.48" y1="66.04" x2="38.1" y2="66.04" width="0.1524" layer="91"/>
 <label x="38.1" y="66.04" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="FAN1_GND" class="2">
 <segment>
-<pinref part="X8" gate="G$1" pin="20"/>
+<pinref part="X1" gate="G$1" pin="20"/>
 <wire x1="154.94" y1="43.18" x2="160.02" y2="43.18" width="0.1524" layer="91"/>
 <label x="160.02" y="43.18" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="FAN1" gate="-3" pin="S"/>
+<pinref part="J3" gate="-3" pin="S"/>
 <wire x1="30.48" y1="45.72" x2="38.1" y2="45.72" width="0.1524" layer="91"/>
 <label x="38.1" y="45.72" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="ESW4" class="0">
 <segment>
-<pinref part="X8" gate="G$1" pin="15"/>
+<pinref part="X1" gate="G$1" pin="15"/>
 <wire x1="142.24" y1="48.26" x2="137.16" y2="48.26" width="0.1524" layer="91"/>
 <label x="137.16" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="50.8" y1="167.64" x2="43.18" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-2" pin="1"/>
-<label x="50.8" y="167.64" size="1.27" layer="95" xref="yes"/>
+<wire x1="43.18" y1="104.14" x2="30.48" y2="104.14" width="0.1524" layer="91"/>
+<label x="43.18" y="104.14" size="1.27" layer="95" xref="yes"/>
+<pinref part="J1" gate="-1" pin="S"/>
 </segment>
 </net>
 <net name="UART5_RXD" class="0">
 <segment>
-<pinref part="X8" gate="G$1" pin="9"/>
+<pinref part="X1" gate="G$1" pin="9"/>
 <wire x1="142.24" y1="55.88" x2="137.16" y2="55.88" width="0.1524" layer="91"/>
 <label x="137.16" y="55.88" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="UART5_TXD" class="0">
 <segment>
-<pinref part="X8" gate="G$1" pin="10"/>
+<pinref part="X1" gate="G$1" pin="10"/>
 <wire x1="154.94" y1="55.88" x2="160.02" y2="55.88" width="0.1524" layer="91"/>
 <label x="160.02" y="55.88" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="+5V/1" class="1">
 <segment>
-<pinref part="SUPPLY1" gate="G$1" pin="+5V/1"/>
-<pinref part="X8" gate="G$1" pin="23"/>
+<pinref part="SUPPLY4" gate="G$1" pin="+5V/1"/>
+<pinref part="X1" gate="G$1" pin="23"/>
 <wire x1="111.76" y1="43.18" x2="111.76" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="38.1" x2="142.24" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J1" gate="-1" pin="S"/>
+<pinref part="J4" gate="-1" pin="S"/>
 <wire x1="33.02" y1="30.48" x2="33.02" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="22.86" x2="30.48" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="SUPPLY2" gate="G$1" pin="+5V/1"/>
-</segment>
-</net>
-<net name="VDD33A1" class="2">
-<segment>
-<pinref part="X8" gate="G$1" pin="24"/>
-<wire x1="154.94" y1="38.1" x2="185.42" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="38.1" x2="185.42" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="+3V1" gate="G$1" pin="VDD33A1"/>
+<pinref part="SUPPLY1" gate="G$1" pin="+5V/1"/>
 </segment>
 </net>
 <net name="UART4_RXD" class="0">
 <segment>
-<pinref part="X8" gate="G$1" pin="11"/>
+<pinref part="X1" gate="G$1" pin="11"/>
 <wire x1="142.24" y1="53.34" x2="137.16" y2="53.34" width="0.1524" layer="91"/>
 <label x="137.16" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="UART4_TXD" class="0">
 <segment>
-<pinref part="X8" gate="G$1" pin="12"/>
+<pinref part="X1" gate="G$1" pin="12"/>
 <wire x1="154.94" y1="53.34" x2="160.02" y2="53.34" width="0.1524" layer="91"/>
 <label x="160.02" y="53.34" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="ESW5" class="0">
 <segment>
-<pinref part="X8" gate="G$1" pin="13"/>
+<pinref part="X1" gate="G$1" pin="13"/>
 <wire x1="142.24" y1="50.8" x2="137.16" y2="50.8" width="0.1524" layer="91"/>
 <label x="137.16" y="50.8" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="ESW6" class="0">
 <segment>
-<pinref part="X8" gate="G$1" pin="14"/>
+<pinref part="X1" gate="G$1" pin="14"/>
 <wire x1="154.94" y1="50.8" x2="160.02" y2="50.8" width="0.1524" layer="91"/>
 <label x="160.02" y="50.8" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="OUT0" class="0">
 <segment>
-<pinref part="X8" gate="G$1" pin="16"/>
+<pinref part="X1" gate="G$1" pin="16"/>
 <wire x1="154.94" y1="48.26" x2="160.02" y2="48.26" width="0.1524" layer="91"/>
 <label x="160.02" y="48.26" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="OUT2" class="0">
 <segment>
-<pinref part="X8" gate="G$1" pin="18"/>
+<pinref part="X1" gate="G$1" pin="18"/>
 <wire x1="154.94" y1="45.72" x2="160.02" y2="45.72" width="0.1524" layer="91"/>
 <label x="160.02" y="45.72" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="OUT1" class="0">
 <segment>
-<pinref part="X8" gate="G$1" pin="17"/>
+<pinref part="X1" gate="G$1" pin="17"/>
 <wire x1="142.24" y1="45.72" x2="137.16" y2="45.72" width="0.1524" layer="91"/>
 <label x="137.16" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="+24V" class="0">
+<net name="N$1" class="2">
 <segment>
-<pinref part="X1" gate="-1" pin="1"/>
-<pinref part="P+1" gate="1" pin="+24V"/>
-<wire x1="43.18" y1="172.72" x2="50.8" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="172.72" x2="50.8" y2="182.88" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="24"/>
+<wire x1="154.94" y1="38.1" x2="185.42" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="38.1" x2="185.42" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
