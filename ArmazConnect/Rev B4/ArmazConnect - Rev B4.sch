@@ -20711,10 +20711,10 @@ Various fiducial points for machine vision alignment.</description>
 <attribute name="MF" x="332.74" y="132.08" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="332.74" y="132.08" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="P+9" gate="1" x="213.36" y="63.5"/>
-<instance part="GND6" gate="1" x="243.84" y="63.5" rot="MR180"/>
-<instance part="SUPPLY7" gate="G$1" x="243.84" y="40.64"/>
-<instance part="+3V6" gate="G$1" x="213.36" y="40.64" rot="R180"/>
+<instance part="P+9" gate="1" x="205.74" y="60.96"/>
+<instance part="GND6" gate="1" x="251.46" y="60.96" rot="MR180"/>
+<instance part="SUPPLY7" gate="G$1" x="251.46" y="38.1"/>
+<instance part="+3V6" gate="G$1" x="205.74" y="38.1" rot="R180"/>
 <instance part="SUPPLY13" gate="G$1" x="325.12" y="121.92"/>
 <instance part="CC1" gate="G$1" x="302.26" y="10.16"/>
 </instances>
@@ -20841,8 +20841,8 @@ Various fiducial points for machine vision alignment.</description>
 <segment>
 <pinref part="X5" gate="A" pin="2"/>
 <pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="246.38" y1="55.88" x2="243.84" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="243.84" y1="58.42" x2="243.84" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="55.88" x2="251.46" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="55.88" x2="251.46" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="1">
@@ -20920,8 +20920,8 @@ Various fiducial points for machine vision alignment.</description>
 <segment>
 <pinref part="X5" gate="A" pin="1"/>
 <pinref part="P+9" gate="1" pin="+5V"/>
-<wire x1="210.82" y1="55.88" x2="213.36" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="58.42" x2="213.36" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="55.88" x2="205.74" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="55.88" x2="205.74" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ESW0" class="0">
@@ -21084,8 +21084,8 @@ Various fiducial points for machine vision alignment.</description>
 <segment>
 <pinref part="X5" gate="A" pin="10"/>
 <pinref part="SUPPLY7" gate="G$1" pin="GND1"/>
-<wire x1="246.38" y1="45.72" x2="243.84" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="243.84" y1="48.26" x2="243.84" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="45.72" x2="251.46" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="45.72" x2="251.46" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LED5" gate="G$1" pin="C"/>
@@ -21318,8 +21318,8 @@ Various fiducial points for machine vision alignment.</description>
 <segment>
 <pinref part="+3V6" gate="G$1" pin="VDD33A1"/>
 <pinref part="X5" gate="A" pin="9"/>
-<wire x1="213.36" y1="43.18" x2="213.36" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="48.26" x2="210.82" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="40.64" x2="205.74" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="45.72" x2="210.82" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -21337,8 +21337,8 @@ Various fiducial points for machine vision alignment.</description>
 </segment>
 <segment>
 <pinref part="X5" gate="A" pin="7"/>
-<wire x1="210.82" y1="48.26" x2="213.36" y2="50.8" width="0.1524" layer="91"/>
-<label x="213.36" y="50.8" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="210.82" y1="48.26" x2="205.74" y2="48.26" width="0.1524" layer="91"/>
+<label x="205.74" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="UART4_TXD" class="0">
@@ -21349,8 +21349,8 @@ Various fiducial points for machine vision alignment.</description>
 </segment>
 <segment>
 <pinref part="X5" gate="A" pin="8"/>
-<wire x1="246.38" y1="48.26" x2="243.84" y2="50.8" width="0.1524" layer="91"/>
-<label x="243.84" y="50.8" size="1.27" layer="95" xref="yes"/>
+<wire x1="246.38" y1="48.26" x2="251.46" y2="48.26" width="0.1524" layer="91"/>
+<label x="251.46" y="48.26" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="ESW5" class="0">
@@ -21361,8 +21361,8 @@ Various fiducial points for machine vision alignment.</description>
 </segment>
 <segment>
 <pinref part="X5" gate="A" pin="3"/>
-<wire x1="210.82" y1="53.34" x2="213.36" y2="55.88" width="0.1524" layer="91"/>
-<label x="213.36" y="55.88" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="210.82" y1="53.34" x2="205.74" y2="53.34" width="0.1524" layer="91"/>
+<label x="205.74" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="ESW6" class="0">
@@ -21373,8 +21373,8 @@ Various fiducial points for machine vision alignment.</description>
 </segment>
 <segment>
 <pinref part="X5" gate="A" pin="4"/>
-<wire x1="246.38" y1="53.34" x2="243.84" y2="55.88" width="0.1524" layer="91"/>
-<label x="243.84" y="55.88" size="1.27" layer="95" xref="yes"/>
+<wire x1="246.38" y1="53.34" x2="251.46" y2="53.34" width="0.1524" layer="91"/>
+<label x="251.46" y="53.34" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="OUT0" class="0">
@@ -21397,8 +21397,8 @@ Various fiducial points for machine vision alignment.</description>
 </segment>
 <segment>
 <pinref part="X5" gate="A" pin="6"/>
-<wire x1="246.38" y1="50.8" x2="243.84" y2="53.34" width="0.1524" layer="91"/>
-<label x="243.84" y="53.34" size="1.27" layer="95" xref="yes"/>
+<wire x1="246.38" y1="50.8" x2="251.46" y2="50.8" width="0.1524" layer="91"/>
+<label x="251.46" y="50.8" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="OUT1" class="0">
@@ -21414,8 +21414,8 @@ Various fiducial points for machine vision alignment.</description>
 </segment>
 <segment>
 <pinref part="X5" gate="A" pin="5"/>
-<wire x1="210.82" y1="50.8" x2="213.36" y2="53.34" width="0.1524" layer="91"/>
-<label x="213.36" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="210.82" y1="50.8" x2="205.74" y2="50.8" width="0.1524" layer="91"/>
+<label x="205.74" y="50.8" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$8" class="0">
